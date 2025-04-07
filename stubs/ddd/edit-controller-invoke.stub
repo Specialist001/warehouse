@@ -1,0 +1,29 @@
+<?php
+
+namespace $NAMESPACE$;
+
+$USES$
+use Illuminate\Http\Request;
+
+class $CLASS_NAME$ extends $PARENT_CLASS$
+{
+    public function __construct(protected $SERVICE_NAME$ $service)
+    {
+        $this->middleware('permission:$MODEL_NAME$ Update', ['only' => ['__invoke']]);
+    }
+
+    public function __invoke(int $$VARIABLE_SINGULAR$_id, Request $request): \Illuminate\Http\JsonResponse
+    {
+        $$VARIABLE_SINGULAR$ = $this->service->one($$VARIABLE_SINGULAR$_id);
+        if (!$$VARIABLE_SINGULAR$) {
+            abort(404);
+        }
+
+        $resource = $RESOURCE_NAME$::make($$VARIABLE_SINGULAR$);
+
+        return response()->json([
+            'restaurant' => $resource,
+            'success' => true
+        ]);
+    }
+}

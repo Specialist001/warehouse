@@ -1,0 +1,35 @@
+<?php
+
+namespace $NAMESPACE$;
+
+$USES$
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Log;
+
+class $CLASS_NAME$ extends $PARENT_CLASS$
+{
+    public function __construct(protected $SERVICE_NAME$ $service)
+    {
+        $this->middleware('permission:$MODEL_NAME$ Delete', ['only' => ['__invoke']]);
+    }
+
+    public function __invoke($MODEL_NAME$ $$VARIABLE_SINGULAR$): \Illuminate\Http\RedirectResponse
+    {
+        $id = $$VARIABLE_SINGULAR$->id;
+
+        DB::beginTransaction();
+        try {
+            $this->service->delete($id);
+            DB::commit();
+
+            return back()->with('success', __('app.label.deleted_successfully', ['name' => $id]));
+        } catch (\Throwable $th) {
+            Log::error($th->getMessage());
+            DB::rollback();
+            return back()->with(
+                'error',
+                __('app.label.deleted_error', ['name' => $id]) . $th->getMessage()
+            );
+        }
+    }
+}

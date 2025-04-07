@@ -1,0 +1,42 @@
+<?php
+
+namespace $NAMESPACE$;
+
+$USES$
+use Inertia\Inertia;
+
+class $CLASS_NAME$ extends $PARENT_CLASS$
+{
+    public function __construct()
+    {
+        $this->middleware('permission:$MODEL_NAME$ List', ['only' => ['__invoke']]);
+    }
+
+    public function __invoke($REQUEST_NAME$ $request)
+    {
+        $filter = new $FILTER_NAME$($request);
+
+        $$VARIABLES$ = $MODEL_NAME$::filter($filter);
+
+        if ($request->has(['field', 'order'])) {
+            $$VARIABLES$->orderBy($request->field, $request->order);
+        }
+        $$VARIABLES$->withTrashed();
+
+        $perPage = $request->has('perPage') ? $request->perPage : 20;
+
+        return Inertia::render('$INERTIA_RENDER$', [
+            "title"       => __("app.label.$VARIABLES$"),
+            'lang'        => app()->getLocale(),
+            "filters"     => $filter->filters(),
+            "perPage"     => (int)$perPage,
+            "$VARIABLES$" => $RESOURCE_NAME$::collection($$VARIABLES$->paginateFilter($perPage)),
+            "breadcrumbs" => [
+                [
+                    "label" => __("app.label.$VARIABLES$"),
+                    "href"  => $ROUTE_NAME$
+                ]
+            ],
+        ]);
+    }
+}

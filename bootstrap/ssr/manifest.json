@@ -1,0 +1,11 @@
+{
+  "resources/js/ssr.js": {
+    "file": "ssr.js",
+    "name": "ssr",
+    "src": "resources/js/ssr.js",
+    "isEntry": true,
+    "css": [
+      "assets/ssr-4po29eMS.css"
+    ]
+  }
+}

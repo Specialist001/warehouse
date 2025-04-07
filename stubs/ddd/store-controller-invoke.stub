@@ -1,0 +1,39 @@
+<?php
+
+namespace $NAMESPACE$;
+
+$USES$
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Log;
+
+class $CLASS_NAME$ extends $PARENT_CLASS$
+{
+    public function __construct(protected $SERVICE_NAME$ $service)
+    {
+        $this->middleware('permission:$MODEL_NAME$ Create', ['only' => ['__invoke']]);
+    }
+
+    public function __invoke($REQUEST_NAME$ $request): \Illuminate\Http\RedirectResponse
+    {
+        DB::beginTransaction();
+        try {
+            $data = $request->validated();
+
+            $$VARIABLE_SINGULAR$ = $this->service->create($data);
+            DB::commit();
+
+            return back()->with('success', __('app.label.created_successfully', [
+                    'id' => $$VARIABLE_SINGULAR$->id,
+                ])
+            );
+        } catch (\Throwable $th) {
+            Log::error($th->getMessage());
+            DB::rollback();
+
+            return back()->with(
+                'error',
+                __('app.label.created_error', ['name' => __('app.label.$VARIABLE_SINGULAR$s')]) . $th->getMessage()
+            );
+        }
+    }
+}
