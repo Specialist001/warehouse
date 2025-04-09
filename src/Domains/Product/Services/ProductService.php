@@ -2,12 +2,13 @@
 
 namespace Domains\Product\Services;
 
+use Domains\Product\Contracts\ProductInterface;
 use Domains\Product\Repositories\ProductRepository;
 use Domains\Product\Models\Product;
 
 readonly class ProductService
 {
-    public function __construct(private ProductRepository $productRepository)
+    public function __construct(private ProductInterface $productRepository)
     {
     }
 

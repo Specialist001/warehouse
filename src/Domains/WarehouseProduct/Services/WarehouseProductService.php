@@ -4,14 +4,14 @@ namespace Domains\WarehouseProduct\Services;
 
 use Domains\Transaction\Services\TransactionService;
 use Domains\Warehouse\Services\WarehouseService;
+use Domains\WarehouseProduct\Contracts\WarehouseProductInterface;
 use Domains\WarehouseProduct\Models\WarehouseProduct;
-use Domains\WarehouseProduct\Repositories\WarehouseProductRepository;
 use Domains\WarehouseProduct\Requests\WarehouseProductUpdateRequest;
 
 readonly class WarehouseProductService
 {
     public function __construct(
-        private WarehouseProductRepository $warehouseProductRepository,
+        private WarehouseProductInterface $warehouseProductRepository,
         protected WarehouseService $warehouseService,
         protected TransactionService $transactionService,
     )
@@ -62,7 +62,6 @@ readonly class WarehouseProductService
         WarehouseProductUpdateRequest $request
     ): void
     {
-
         if ($request->type === 'in') {
             $request->only(['receive_quantity', 'source']);
 

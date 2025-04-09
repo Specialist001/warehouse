@@ -2,11 +2,11 @@
 
 namespace Domains\Warehouse\Services;
 
-use Domains\Warehouse\Repositories\WarehouseRepository;
+use Domains\Warehouse\Contracts\WarehouseInterface;
 
 readonly class WarehouseService
 {
-    public function __construct(private WarehouseRepository $warehouseRepository)
+    public function __construct(private WarehouseInterface $warehouseRepository)
     {
     }
 

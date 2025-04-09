@@ -2,20 +2,20 @@
 
 namespace Domains\Transaction\Services;
 
+use Domains\Product\Contracts\ProductInterface;
 use Domains\Product\Models\Product;
-use Domains\Product\Repositories\ProductRepository;
-use Domains\Transaction\Repositories\TransactionRepository;
+use Domains\Transaction\Contracts\TransactionInterface;
+use Domains\Warehouse\Contracts\WarehouseInterface;
 use Domains\Warehouse\Models\Warehouse;
-use Domains\Warehouse\Repositories\WarehouseRepository;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use InvalidArgumentException;
 
 readonly class TransactionService
 {
     public function __construct(
-        private TransactionRepository $transactionRepository,
-        private WarehouseRepository $warehouseRepository,
-        private ProductRepository $productRepository
+        private TransactionInterface $transactionRepository,
+        private WarehouseInterface $warehouseRepository,
+        private ProductInterface $productRepository
     )
     {
     }
@@ -118,7 +118,7 @@ readonly class TransactionService
         Product $product,
         int $quantity,
         int $executor_id
-    )
+    ): void
     {
         if ($source->id === $destination->id) {
             throw new InvalidArgumentException("Склады назначения и источника не могут совпадать.");

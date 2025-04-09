@@ -3,19 +3,15 @@
 namespace App\Http\Controllers\Admin\WarehouseProduct;
 
 use App\Http\Controllers\Controller;
-use Domains\Transaction\Services\TransactionService;
-use Domains\Warehouse\Services\WarehouseService;
+use Domains\WarehouseProduct\Services\WarehouseProductService;
 use Domains\WarehouseProduct\Models\WarehouseProduct;
 use Domains\WarehouseProduct\Requests\WarehouseProductUpdateRequest;
-use Domains\WarehouseProduct\Services\WarehouseProductService;
 use Illuminate\Support\Facades\DB;
 
 class UpdateController extends Controller
 {
     public function __construct(
         protected WarehouseProductService $warehouseProductService,
-        protected TransactionService      $transactionService,
-        protected WarehouseService        $warehouseService
     )
     {
         $this->middleware('permission:WarehouseProduct Update', ['only' => ['__invoke']]);
