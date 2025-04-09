@@ -8,7 +8,4 @@ return [
         'dash'    => ['admin.dashboard.*' . 'cabinet.dashboard.*'],
         'storage' => ['storage.*']
     ],
-    'except' => [
-        'admin.*',
-    ],
 ];

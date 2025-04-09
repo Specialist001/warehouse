@@ -37,23 +37,23 @@ class WarehouseProductFilter extends Filter
      * @param Builder $builder
      * @return Builder|\Illuminate\Database\Query\Builder
      */
-    public function apply(Builder $builder): Builder | \Illuminate\Database\Query\Builder
-    {
-        // Присоединяем products, чтобы можно было сортировать и фильтровать по products.name
-        $builder->leftJoin('products', 'warehouse_products.product_id', '=', 'products.id')
-            ->select('warehouse_products.*'); // Не забудь указать SELECT, чтобы не было конфликтов
-
-        if ($this->request->filled('field') && $this->request->filled('order')) {
-            $field = $this->request->get('field');
-            $order = $this->request->get('order');
-
-            if (isset($this->sortable[$field])) {
-                $builder->orderBy($this->sortable[$field], $order);
-            }
-        }
-
-        return parent::apply($builder);
-    }
+//    public function apply(Builder $builder): Builder | \Illuminate\Database\Query\Builder
+//    {
+//        // Присоединяем products, чтобы можно было сортировать и фильтровать по products.name
+//        $builder->leftJoin('products', 'warehouse_products.product_id', '=', 'products.id')
+//            ->select('warehouse_products.*'); // Не забудь указать SELECT, чтобы не было конфликтов
+//
+//        if ($this->request->filled('field') && $this->request->filled('order')) {
+//            $field = $this->request->get('field');
+//            $order = $this->request->get('order');
+//
+//            if (isset($this->sortable[$field])) {
+//                $builder->orderBy($this->sortable[$field], $order);
+//            }
+//        }
+//
+//        return parent::apply($builder);
+//    }
 
 
     protected function init()

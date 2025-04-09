@@ -62,4 +62,14 @@ class Warehouse extends Model
             ->withTimestamps();
 
     }
+
+    public function scopeActive()
+    {
+        return $this->where('status', 'active');
+    }
+
+    public function scopeInactive()
+    {
+        return $this->where('status', 'inactive');
+    }
 }
