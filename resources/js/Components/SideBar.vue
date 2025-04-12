@@ -5,7 +5,7 @@ import {
     Dialog,
     DialogOverlay,
 } from "@headlessui/vue";
-import SideBarMenu from "../Components/SideBarMenu.vue";
+import SideBarMenu from "@/Components/SideBarMenu.vue";
 
 const props = defineProps({
     open: Boolean,
@@ -15,7 +15,6 @@ const emit = defineEmits(["close"]);
 </script>
 <template>
     <div class="hidden lg:flex">
-<!--        <h1>123</h1>-->
         <aside
             class="fixed lg:flex flex-col h-screen overflow-hidden w-64 bg-slate-800 dark:bg-slate-900 dark:border-r dark:border-slate-800"
         >

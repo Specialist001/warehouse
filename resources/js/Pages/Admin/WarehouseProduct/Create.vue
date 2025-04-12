@@ -70,6 +70,7 @@ watchEffect(() => {
                         :form="form"
                         :warehouse_list="warehouse_list"
                         :product_list="product_list"
+                        :is_create="true"
                     />
                 </div>
                 <div class="flex justify-end">

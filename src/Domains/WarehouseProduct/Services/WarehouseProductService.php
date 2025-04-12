@@ -67,6 +67,13 @@ class WarehouseProductService
 
             $this->handleIncome($warehouseProduct, $request->validated());
         } elseif ($request->type == 'out') {
+            $request->only([
+                'is_internal_transfer',
+                'executor_id',
+                'send_quantity',
+                'destination',
+            ]);
+
             $this->handleOutcome($warehouseProduct, $request->validated());
         }
     }

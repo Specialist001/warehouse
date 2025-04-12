@@ -6,6 +6,7 @@ import TextInput from "@/Components/TextInput.vue";
 import Checkbox from "@/Components/Checkbox.vue";
 import CustomSelectInput from "@/Components/CustomSelectInput.vue";
 import {computed, onMounted, ref, watch} from "vue";
+import EmptyForm from "@/Pages/Admin/WarehouseProduct/EmptyForm.vue";
 
 const props = defineProps({
     show: Boolean,
@@ -37,97 +38,102 @@ watch(() => props.form.quantity, (newValue, oldValue) => {
 
 <template>
     <div>
-        <div class="grid grid-cols-3 gap-4">
-            <div class="col-span-full md:col-span-1">
-                <div class="">
-                    <InputLabel for="product_id" :value="lang().label.product_id"/>
-
-                    <CustomSelectInput
-                        id="product_id"
-                        class="mt-1 block w-full"
-                        v-model="form.product_id"
-                        required
-                        disabled="disabled"
-                        :dataSet="product_list"
-                    >
-                    </CustomSelectInput>
-                    <InputError class="mt-2" :message="form.errors.product_id"/>
-                </div>
-            </div>
-            <div class="col-span-full md:col-span-1">
-                <div>
-                    <Checkbox
-                        id="is_internal_transfer"
-                        v-model="form.is_internal_transfer"
-                        :label="lang().transaction.is_internal_transfer"
-                    />
-                    <label for="is_internal_transfer" class="ml-2 font-medium text-sm text-slate-600 dark:text-slate-400" >
-                        {{ lang().transaction.is_internal_transfer }}
-                    </label>
-                </div>
-            </div>
+        <div v-if="form.processing">
+            <EmptyForm/>
         </div>
-        <div class="grid grid-cols-3 gap-4 mt-5">
-            <div class="col-span-full md:col-span-1">
-                <div class="">
-                    <InputLabel for="warehouse_id" :value="lang().transaction.source"/>
+        <div v-else>
+            <div class="grid grid-cols-3 gap-4">
+                <div class="col-span-full md:col-span-1">
+                    <div class="">
+                        <InputLabel for="product_id" :value="lang().label.product_id"/>
 
-                    <CustomSelectInput
-                        id="warehouse_id"
-                        class="mt-1 block w-full"
-                        v-model="form.warehouse_id"
-                        required
-                        disabled="disabled"
-                        :dataSet="warehouse_list"
-                    >
-                    </CustomSelectInput>
-                    <InputError class="mt-2" :message="form.errors.warehouse_id"/>
+                        <CustomSelectInput
+                            id="product_id"
+                            class="mt-1 block w-full"
+                            v-model="form.product_id"
+                            required
+                            disabled="disabled"
+                            :dataSet="product_list"
+                        >
+                        </CustomSelectInput>
+                        <InputError class="mt-2" :message="form.errors.product_id"/>
+                    </div>
+                </div>
+                <div class="col-span-full md:col-span-1">
+                    <div>
+                        <Checkbox
+                            id="is_internal_transfer"
+                            v-model="form.is_internal_transfer"
+                            :label="lang().transaction.is_internal_transfer"
+                        />
+                        <label for="is_internal_transfer" class="ml-2 font-medium text-sm text-slate-600 dark:text-slate-400" >
+                            {{ lang().transaction.is_internal_transfer }}
+                        </label>
+                    </div>
                 </div>
             </div>
-            <div class="col-span-full md:col-span-1">
-                <InputLabel for="send_quantity" :value="lang().label.quantity"/>
-                <TextInput
-                    id="send_quantity"
-                    type="number"
-                    min="1"
-                    class="mt-1 block w-full"
-                    v-model="form.send_quantity"
-                    required
-                    :placeholder="lang().placeholder.quantity"
-                    :error="form.errors.send_quantity"
-                />
-                <InputError class="mt-2" :message="form.errors.send_quantity"/>
-            </div>
-            <div class="col-span-full md:col-span-1">
-                <div v-if="form.is_internal_transfer">
-                    <InputLabel for="destination_warehouse_id" :value="lang().transaction.destination" />
-                    <CustomSelectInput
-                        class="mt-1 block w-full"
-                        id="destination_warehouse_id"
-                        v-model="form.destination"
-                        required
-                        :dataSet="filteredDestinationWarehouses"
-                        :prompt="lang().warehouse.select"
-                    />
-                    <InputError :message="form.errors.destination" />
-                </div>
+            <div class="grid grid-cols-3 gap-4 mt-5">
+                <div class="col-span-full md:col-span-1">
+                    <div class="">
+                        <InputLabel for="warehouse_id" :value="lang().transaction.source"/>
 
-                <!-- Иначе текстовое поле -->
-                <div v-else>
-                    <InputLabel for="destination" :value="lang().transaction.destination" />
+                        <CustomSelectInput
+                            id="warehouse_id"
+                            class="mt-1 block w-full"
+                            v-model="form.warehouse_id"
+                            required
+                            disabled="disabled"
+                            :dataSet="warehouse_list"
+                        >
+                        </CustomSelectInput>
+                        <InputError class="mt-2" :message="form.errors.warehouse_id"/>
+                    </div>
+                </div>
+                <div class="col-span-full md:col-span-1">
+                    <InputLabel for="send_quantity" :value="lang().label.quantity"/>
                     <TextInput
-                        id="destination"
-                        v-model="form.destination"
-                        required
-                        type="text"
+                        id="send_quantity"
+                        type="number"
+                        min="1"
                         class="mt-1 block w-full"
+                        v-model="form.send_quantity"
+                        required
+                        :placeholder="lang().placeholder.quantity"
+                        :error="form.errors.send_quantity"
                     />
-                    <InputError :message="form.errors.destination" />
+                    <InputError class="mt-2" :message="form.errors.send_quantity"/>
+                </div>
+                <div class="col-span-full md:col-span-1">
+                    <div v-if="form.is_internal_transfer">
+                        <InputLabel for="destination_warehouse_id" :value="lang().transaction.destination" />
+                        <CustomSelectInput
+                            class="mt-1 block w-full"
+                            id="destination_warehouse_id"
+                            v-model="form.destination"
+                            required
+                            :dataSet="filteredDestinationWarehouses"
+                            :prompt="lang().warehouse.select"
+                        />
+                        <InputError :message="form.errors.destination" />
+                    </div>
+
+                    <!-- Иначе текстовое поле -->
+                    <div v-else>
+                        <InputLabel for="destination" :value="lang().transaction.destination" />
+                        <TextInput
+                            id="destination"
+                            v-model="form.destination"
+                            required
+                            type="text"
+                            class="mt-1 block w-full"
+                        />
+                        <InputError :message="form.errors.destination" />
+                    </div>
+
+
                 </div>
 
-
             </div>
-
         </div>
     </div>
 </template>
