@@ -34,6 +34,8 @@ class TransactionFilter extends Filter
     {
         $this->input = $this->prepareInput($request->all());
         $this->timezone = config('app.timezone', 'UTC');
+
+        parent::__construct($request);
     }
 
     protected function init()

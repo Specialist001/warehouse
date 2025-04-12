@@ -7,7 +7,7 @@ import {useForm} from "@inertiajs/vue3";
 const props = defineProps({
     show: Boolean,
     title: String,
-    restaurant: Object,
+    category: Object,
 });
 
 const emit = defineEmits(["close"]);
@@ -15,7 +15,7 @@ const emit = defineEmits(["close"]);
 const form = useForm({});
 
 const destroy = () => {
-    form.delete(route("admin.restaurant.destroy", props.restaurant?.id), {
+    form.delete(route("admin.category.destroy", props.category?.id), {
         preserveScroll: true,
         onSuccess: () => {
             emit("close");
@@ -36,7 +36,7 @@ const destroy = () => {
                 </h2>
                 <p class="mt-1 text-sm text-slate-600 dark:text-slate-400">
                     {{ lang().label.delete_confirm }}
-                    <b>{{ props.restaurant?.name }}</b>
+                    <b>{{ props.category?.name }}</b>
                 </p>
                 <div class="mt-6 flex justify-end">
                     <SecondaryButton :disabled="form.processing" @click="emit('close')">

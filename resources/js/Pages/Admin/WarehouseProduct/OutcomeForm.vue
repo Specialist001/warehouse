@@ -38,7 +38,7 @@ watch(() => props.form.quantity, (newValue, oldValue) => {
 <template>
     <div>
         <div class="grid grid-cols-3 gap-4">
-            <div class="col-span-1">
+            <div class="col-span-full md:col-span-1">
                 <div class="">
                     <InputLabel for="product_id" :value="lang().label.product_id"/>
 
@@ -54,7 +54,7 @@ watch(() => props.form.quantity, (newValue, oldValue) => {
                     <InputError class="mt-2" :message="form.errors.product_id"/>
                 </div>
             </div>
-            <div class="col-span-1">
+            <div class="col-span-full md:col-span-1">
                 <div>
                     <Checkbox
                         id="is_internal_transfer"
@@ -67,8 +67,8 @@ watch(() => props.form.quantity, (newValue, oldValue) => {
                 </div>
             </div>
         </div>
-        <div class="grid grid-cols-6 gap-4 mt-5">
-            <div class="col-span-2">
+        <div class="grid grid-cols-3 gap-4 mt-5">
+            <div class="col-span-full md:col-span-1">
                 <div class="">
                     <InputLabel for="warehouse_id" :value="lang().transaction.source"/>
 
@@ -84,7 +84,7 @@ watch(() => props.form.quantity, (newValue, oldValue) => {
                     <InputError class="mt-2" :message="form.errors.warehouse_id"/>
                 </div>
             </div>
-            <div class="col-span-2">
+            <div class="col-span-full md:col-span-1">
                 <InputLabel for="send_quantity" :value="lang().label.quantity"/>
                 <TextInput
                     id="send_quantity"
@@ -98,8 +98,7 @@ watch(() => props.form.quantity, (newValue, oldValue) => {
                 />
                 <InputError class="mt-2" :message="form.errors.send_quantity"/>
             </div>
-            <div class="col-span-2">
-
+            <div class="col-span-full md:col-span-1">
                 <div v-if="form.is_internal_transfer">
                     <InputLabel for="destination_warehouse_id" :value="lang().transaction.destination" />
                     <CustomSelectInput

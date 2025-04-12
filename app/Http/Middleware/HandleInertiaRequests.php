@@ -70,12 +70,6 @@ class HandleInertiaRequests extends Middleware
                 $lang = __('app');
                 return response()->json($lang);
             },
-            'telegram_redirect_uri' => function () {
-                return config('services.telegram.redirect');
-            },
-            'telegram_bot_name' => function () {
-                return config('services.telegram.bot');
-            },
             'ziggy' => function () use ($request, $user) {
                 if ($user && ($user->hasRole('superadmin') || $user->hasRole('admin') || $user->hasRole('moderator'))) {
                     return array_merge((new Ziggy)->toArray(), [

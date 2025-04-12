@@ -17,6 +17,12 @@ class TransactionResource extends JsonResource
         return [
             'id'                   => $this->id,
             'warehouse_id'         => $this->warehouse_id,
+            'warehouse_name' => $this->whenLoaded('warehouse', function () {
+                return $this->warehouse->name;
+            }),
+            'warehouse_isset' => $this->whenLoaded('warehouse', function () {
+                return !$this->warehouse->deleted_at;
+            }),
             'product_id'           => $this->product_id,
             'executor_id'          => $this->executor_id,
             'product_name'         => $this->product->name,

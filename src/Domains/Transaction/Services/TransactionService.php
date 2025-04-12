@@ -10,7 +10,7 @@ use Domains\Warehouse\Models\Warehouse;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use InvalidArgumentException;
 
-readonly class TransactionService
+class TransactionService
 {
     public function __construct(
         private TransactionInterface $transactionRepository,

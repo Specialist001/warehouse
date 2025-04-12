@@ -7,17 +7,20 @@ import PrimaryButton from "@/Components/PrimaryButton.vue";
 import SelectInput from "@/Components/SelectInput.vue";
 import {reactive, ref, watch} from "vue";
 import DangerButton from "@/Components/DangerButton.vue";
+import RecoveryButton from "@/Components/Buttons/RecoveryButton.vue";
 import pkg from "lodash";
 import {router} from "@inertiajs/vue3";
 import {
     ChevronUpDownIcon,
     PencilIcon,
     TrashIcon,
-    EyeIcon
+    EyeIcon,
+    BackspaceIcon
 } from "@heroicons/vue/24/solid";
 import Create from "@/Pages/Admin/Product/Create.vue";
 import Edit from "@/Pages/Admin/Product/Edit.vue";
 import Delete from "@/Pages/Admin/Product/Delete.vue";
+import Recovery from "@/Pages/Admin/Product/Recovery.vue";
 import InfoButton from "@/Components/InfoButton.vue";
 import {usePage} from "@inertiajs/vue3";
 import ResourcePagination from "@/Components/ResourcePagination.vue";
@@ -55,6 +58,7 @@ const data = reactive({
     createOpen: false,
     editOpen: false,
     deleteOpen: false,
+    recoveryOpen: false,
     product: null,
     dataSet: usePage().props.app.perpage,
 });
@@ -126,6 +130,12 @@ const timezone = ref({tz: tz, offset: tz_offset});
                         :product="data.product"
                         :title="props.title"
                     />
+                    <Recovery
+                        :show="data.recoveryOpen"
+                        @close="data.recoveryOpen = false"
+                        :product="data.product"
+                        :title="props.title"
+                    />
                 </div>
             </div>
             <div class="relative bg-white dark:bg-slate-800 shadow sm:rounded-lg">
@@ -133,12 +143,6 @@ const timezone = ref({tz: tz, offset: tz_offset});
                     <div class="flex space-x-2">
                         <SelectInput v-model="data.params.perPage" :dataSet="data.dataSet"/>
                     </div>
-                    <TextInput
-                        v-model="data.params.search"
-                        type="text"
-                        class="block w-3/6 md:w-2/6 lg:w-1/6 rounded-lg"
-                        :placeholder="lang().placeholder.search"
-                    />
                 </div>
                 <div class="overflow-x-auto scrollbar-table">
                     <table class="w-full">
@@ -249,9 +253,12 @@ const timezone = ref({tz: tz, offset: tz_offset});
                         </thead>
                         <tbody>
                         <tr v-for="(product, index) in products.data" :key="index"
-                            class="border-t border-slate-200 dark:border-slate-700 hover:bg-slate-200/30
-                             hover:dark:bg-slate-900/20"
-                            :class="{'bg-red-500/30 dark:bg-red-900/20 hover:bg-red-500/30 dark:hover:bg-red-900/20':product.deleted_at}"
+                            :class="[
+                                product.deleted_at
+                                  ? 'bg-red-500/30 dark:bg-red-900/20 hover:bg-red-600/30 dark:hover:bg-red-900/20'
+                                  : 'hover:bg-slate-200/30 hover:dark:bg-slate-900/20',
+                                'border-t border-slate-200 dark:border-slate-700'
+                              ]"
                         >
                             <td class="whitespace-nowrap py-4 px-2 sm:py-3 text-left">
                                 {{ product.id }}
@@ -289,6 +296,7 @@ const timezone = ref({tz: tz, offset: tz_offset});
                                         </Link>
                                         <InfoButton
                                             v-show="can(['Product Update'])"
+                                            :disabled="!!product?.deleted_at"
                                             type="button"
                                             @click="(data.editOpen = true), (data.product = product)"
                                             class="px-2 py-1.5 rounded-none"
@@ -297,7 +305,7 @@ const timezone = ref({tz: tz, offset: tz_offset});
                                             <PencilIcon class="w-4 h-4"/>
                                         </InfoButton>
                                         <DangerButton
-                                            v-show="can(['Product Delete'])"
+                                            v-show="can(['Product Delete']) && !product.deleted_at"
                                             type="button"
                                             @click="(data.deleteOpen = true), (data.product = product)"
                                             class="px-2 py-1.5 rounded-none"
@@ -305,6 +313,15 @@ const timezone = ref({tz: tz, offset: tz_offset});
                                         >
                                             <TrashIcon class="w-4 h-4"/>
                                         </DangerButton>
+                                        <RecoveryButton
+                                            v-show="can(['Product Update']) && product.deleted_at"
+                                            type="button"
+                                            @click="(data.recoveryOpen = true), (data.product = product)"
+                                            class="px-2 py-1.5 rounded-none"
+                                            v-tooltip="lang().tooltip.recovery"
+                                        >
+                                            <BackspaceIcon class="w-4 h-4"/>
+                                        </RecoveryButton>
                                     </div>
                                 </div>
                             </td>

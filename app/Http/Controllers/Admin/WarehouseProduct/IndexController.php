@@ -24,20 +24,14 @@ class IndexController extends Controller
 
         $warehouse_product = WarehouseProduct::filter($filter)->with([
             'product:id,name',
-            'warehouse:id,name,location',
+            'warehouse:id,name,deleted_at',
         ]);
 
-//        foreach ($filter->getSortable() as $field => $column) {
-//            if ($request->field === $field) {
-//                $warehouse_product->orderBy($column, $request->order);
-//            }
-//        }
-
-//        if ($request->has(['field', 'order'])) {
-////            $warehouse_product->orderBy($request->field, $request->order);
-//        } else {
-//            $warehouse_product->orderBy('created_at', 'desc');
-//        }
+        if ($request->has(['field', 'order'])) {
+            $warehouse_product->orderBy($request->field, $request->order);
+        } else {
+            $warehouse_product->orderBy('created_at', 'desc');
+        }
 
         $perPage = $request->has('perPage') ? $request->perPage : 20;
 

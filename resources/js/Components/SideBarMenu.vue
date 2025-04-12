@@ -54,7 +54,7 @@ import {Link} from "@inertiajs/vue3";
                 </Link>
             </li>
             <li v-show="can(['read user'])" class="py-2">
-                <p>{{ lang().label.data }}</p>
+                <p>{{ lang().label.main }}</p>
             </li>
             <li v-show="can(['read user'])"
                 class="text-white rounded-lg hover:bg-red-500 dark:hover:bg-red-500"
@@ -66,7 +66,7 @@ import {Link} from "@inertiajs/vue3";
             </li>
             <li v-show="can(['Warehouse List'])"
                 class="text-white rounded-lg hover:bg-red-500 dark:hover:bg-red-500"
-                v-bind:class="route().current('admin.warehouse.index') ? 'bg-red-500' : 'bg-slate-700/40 dark:bg-slate-800/40'">
+                v-bind:class="route().current('admin.warehouse.*') ? 'bg-red-500' : 'bg-slate-700/40 dark:bg-slate-800/40'">
                 <Link :href="route('admin.warehouse.index')" class="flex items-center py-2 px-4">
                     <UserIcon class="w-6 h-5"/>
                     <span class="ml-3">{{ lang().label.warehouses }}</span>
@@ -74,7 +74,7 @@ import {Link} from "@inertiajs/vue3";
             </li>
             <li v-show="can(['Category List'])"
                 class="text-white rounded-lg hover:bg-red-500 dark:hover:bg-red-500"
-                v-bind:class="route().current('admin.category.index') ? 'bg-red-500' : 'bg-slate-700/40 dark:bg-slate-800/40'">
+                v-bind:class="route().current('admin.category.*') ? 'bg-red-500' : 'bg-slate-700/40 dark:bg-slate-800/40'">
                 <Link :href="route('admin.category.index')" class="flex items-center py-2 px-4">
                     <UserIcon class="w-6 h-5"/>
                     <span class="ml-3">{{ lang().label.categories }}</span>
@@ -82,7 +82,7 @@ import {Link} from "@inertiajs/vue3";
             </li>
             <li v-show="can(['Product List'])"
                 class="text-white rounded-lg hover:bg-red-500 dark:hover:bg-red-500"
-                v-bind:class="route().current('admin.product.index') ? 'bg-red-500' : 'bg-slate-700/40 dark:bg-slate-800/40'">
+                v-bind:class="route().current('admin.product.*') ? 'bg-red-500' : 'bg-slate-700/40 dark:bg-slate-800/40'">
                 <Link :href="route('admin.product.index')" class="flex items-center py-2 px-4">
                     <UserIcon class="w-6 h-5"/>
                     <span class="ml-3">{{ lang().label.products }}</span>
@@ -90,7 +90,7 @@ import {Link} from "@inertiajs/vue3";
             </li>
             <li v-show="can(['WarehouseProduct List'])"
                 class="text-white rounded-lg hover:bg-red-500 dark:hover:bg-red-500"
-                v-bind:class="route().current('admin.warehouse_product.index') ? 'bg-red-500' : 'bg-slate-700/40 dark:bg-slate-800/40'">
+                v-bind:class="route().current('admin.warehouse_product.*') ? 'bg-red-500' : 'bg-slate-700/40 dark:bg-slate-800/40'">
                 <Link :href="route('admin.warehouse_product.index')" class="flex items-center py-2 px-4">
                     <UserIcon class="w-6 h-5"/>
                     <span class="ml-3">{{ lang().label.warehouse_products }}</span>
@@ -98,7 +98,7 @@ import {Link} from "@inertiajs/vue3";
             </li>
             <li v-show="can(['Transaction List'])"
                 class="text-white rounded-lg hover:bg-red-500 dark:hover:bg-red-500"
-                v-bind:class="route().current('admin.transaction.index') ? 'bg-red-500' : 'bg-slate-700/40 dark:bg-slate-800/40'">
+                v-bind:class="route().current('admin.transaction.*') ? 'bg-red-500' : 'bg-slate-700/40 dark:bg-slate-800/40'">
                 <Link :href="route('admin.transaction.index')" class="flex items-center py-2 px-4">
                     <UserIcon class="w-6 h-5"/>
                     <span class="ml-3">{{ lang().label.transactions }}</span>
@@ -109,14 +109,14 @@ import {Link} from "@inertiajs/vue3";
             </li>
             <li v-show="can(['read role'])"
                 class="text-white rounded-lg hover:bg-red-500 dark:hover:bg-red-500"
-                v-bind:class="route().current('admin.role.index') ? 'bg-red-500' : 'bg-slate-700/40 dark:bg-slate-800/40'">
+                v-bind:class="route().current('admin.role.*') ? 'bg-red-500' : 'bg-slate-700/40 dark:bg-slate-800/40'">
                 <Link :href="route('admin.role.index')" class="flex items-center py-2 px-4">
                     <KeyIcon class="w-6 h-5"/>
                     <span class="ml-3">{{ lang().label.role }}</span>
                 </Link>
             </li>
             <li v-show="can(['read permission'])" class="text-white rounded-lg hover:bg-red-500 dark:hover:bg-red-500"
-                v-bind:class="route().current('admin.permission.index') ? 'bg-red-500' : 'bg-slate-700/40 dark:bg-slate-800/40'">
+                v-bind:class="route().current('admin.permission.*') ? 'bg-red-500' : 'bg-slate-700/40 dark:bg-slate-800/40'">
                 <Link :href="route('admin.permission.index')" class="flex items-center py-2 px-4">
                     <ShieldCheckIcon class="w-6 h-5"/>
                     <span class="ml-3">{{ lang().label.permission }}</span>

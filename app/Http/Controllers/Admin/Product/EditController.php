@@ -16,7 +16,7 @@ class EditController extends \App\Http\Controllers\Controller
 
     public function __invoke(string $product_id, Request $request): \Illuminate\Http\JsonResponse
     {
-        $product = $this->service->one($product_id);
+        $product = $this->service->oneWithTrashed($product_id);
         if (!$product) {
             abort(404);
         }

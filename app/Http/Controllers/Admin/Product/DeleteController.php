@@ -17,19 +17,20 @@ class DeleteController extends \App\Http\Controllers\Controller
     public function __invoke(Product $product): \Illuminate\Http\RedirectResponse
     {
         $id = $product->id;
+        $name = $product->name;
 
         DB::beginTransaction();
         try {
             $this->service->delete($id);
             DB::commit();
 
-            return back()->with('success', __('app.label.deleted_successfully', ['name' => $id]));
+            return back()->with('success', __('app.label.deleted_successfully', ['param' => $name]));
         } catch (\Throwable $th) {
             Log::error($th->getMessage());
             DB::rollback();
             return back()->with(
                 'error',
-                __('app.label.deleted_error', ['name' => $id]) . $th->getMessage()
+                __('app.label.deleted_error', ['param' => $name]) . $th->getMessage()
             );
         }
     }

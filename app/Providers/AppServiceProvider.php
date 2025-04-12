@@ -4,6 +4,8 @@ namespace App\Providers;
 
 use App\Models\User;
 use App\Observers\UserObserver;
+use Domains\Category\Contracts\CategoryInterface;
+use Domains\Category\Repositories\EloquentCategoryRepository;
 use Domains\Product\Contracts\ProductInterface;
 use Domains\Product\Models\Product;
 use Domains\Product\Observers\ProductObserver;
@@ -40,6 +42,7 @@ class AppServiceProvider extends ServiceProvider
         $this->app->bind(WarehouseInterface::class, EloquentWarehouseRepository::class);
         $this->app->bind(ProductInterface::class, EloquentProductRepository::class);
         $this->app->bind(TransactionInterface::class, EloquentTransactionRepository::class);
+        $this->app->bind(CategoryInterface::class, EloquentCategoryRepository::class);
 
         Product::observe(ProductObserver::class);
         User::observe(UserObserver::class);

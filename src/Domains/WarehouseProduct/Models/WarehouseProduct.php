@@ -45,6 +45,6 @@ class WarehouseProduct extends Model
 
     public function warehouse(): \Illuminate\Database\Eloquent\Relations\BelongsTo
     {
-        return $this->belongsTo(Warehouse::class);
+        return $this->belongsTo(Warehouse::class)->withTrashed();
     }
 }

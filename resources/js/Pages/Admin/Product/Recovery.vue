@@ -1,21 +1,21 @@
 <script setup>
-import DangerButton from "@/Components/DangerButton.vue";
 import Modal from "@/Components/Modal.vue";
 import SecondaryButton from "@/Components/SecondaryButton.vue";
 import {useForm} from "@inertiajs/vue3";
+import RecoveryButton from "@/Components/Buttons/RecoveryButton.vue";
 
 const props = defineProps({
     show: Boolean,
     title: String,
-    warehouse: Object,
+    product: Object,
 });
 
 const emit = defineEmits(["close"]);
 
 const form = useForm({});
 
-const destroy = () => {
-    form.delete(route("admin.warehouse.delete", props.warehouse?.id), {
+const recovery = () => {
+    form.post(route("admin.product.recovery", props.product?.id), {
         preserveScroll: true,
         onSuccess: () => {
             emit("close");
@@ -30,27 +30,27 @@ const destroy = () => {
 <template>
     <section class="space-y-6">
         <Modal :show="props.show" @close="emit('close')" :maxWidth="'lg'">
-            <form class="p-6" @submit.prevent="destroy">
+            <form class="p-6" @submit.prevent="recovery">
                 <h2 class="text-lg font-medium text-slate-900 dark:text-slate-100">
-                    {{ lang().label.delete }}
+                    {{ lang().label.recovery }} {{ props.title }}
                 </h2>
                 <p class="mt-1 text-sm text-slate-600 dark:text-slate-400">
-                    {{ lang().label.delete_confirm }}
-                    <b>{{ props.warehouse?.name }}</b>
+                    {{ lang().label.recovery_confirm }}
+                    <b>{{ props.product?.name }}</b>
                 </p>
                 <div class="mt-6 flex justify-end">
                     <SecondaryButton :disabled="form.processing" @click="emit('close')">
                         {{ lang().button.close }}
                     </SecondaryButton>
-                    <DangerButton
+                    <RecoveryButton
                         class="ml-3" :class="{ 'opacity-25': form.processing }" :disabled="form.processing"
-                        @click="destroy">
+                        @click="recovery">
                         {{
                             form.processing
-                                ? lang().button.delete + "..."
-                                : lang().button.delete
+                                ? lang().button.recovery + "..."
+                                : lang().button.recovery
                         }}
-                    </DangerButton>
+                    </RecoveryButton>
                 </div>
             </form>
         </Modal>

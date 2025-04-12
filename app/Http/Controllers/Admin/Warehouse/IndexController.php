@@ -26,6 +26,8 @@ class IndexController extends Controller
 
         if ($request->has(['field', 'order'])) {
             $warehouses->orderBy($request->field, $request->order);
+        } else {
+            $warehouses->orderBy('created_at', 'desc');
         }
 
         $perPage = $request->has('perPage') ? $request->perPage : 20;

@@ -136,12 +136,6 @@ const timezone = ref({tz: 'Asia/Tashkent', offset: 5});
                     <div class="flex space-x-2">
                         <SelectInput v-model="data.params.perPage" :dataSet="data.dataSet"/>
                     </div>
-                    <TextInput
-                        v-model="data.params.search"
-                        type="text"
-                        class="block w-3/6 md:w-2/6 lg:w-1/6 rounded-lg"
-                        :placeholder="lang().placeholder.search"
-                    />
                 </div>
                 <div class="overflow-x-auto scrollbar-table">
                     <table class="w-full">
@@ -342,8 +336,10 @@ const timezone = ref({tz: 'Asia/Tashkent', offset: 5});
                             <td class="whitespace-nowrap py-4 px-2 sm:py-3 text-center">
                                 {{ transaction.id }}
                             </td>
-                            <td class="whitespace-nowrap py-4 px-2 sm:py-3 text-left">
-                                {{ props.warehouses[transaction.warehouse_id] }}
+                            <td class="whitespace-nowrap py-4 px-2 sm:py-3 text-left"
+                                :class="{'bg-red-300 text-dark': !transaction.warehouse_isset}"
+                            >
+                                {{ transaction.warehouse_name }}
                             </td>
                             <td class="whitespace-nowrap py-4 px-2 sm:py-3 text-left">
                                 {{ transaction.product_name }}

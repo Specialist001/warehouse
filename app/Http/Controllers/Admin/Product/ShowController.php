@@ -17,9 +17,14 @@ class ShowController extends \App\Http\Controllers\Controller
         $this->middleware('permission:Product List', ['only' => ['__invoke']]);
     }
 
-    public function __invoke(Product $product, Request $request)
+    public function __invoke(string $product_id, Request $request)
     {
-        $product->load(['categories']);
+        $product = $this->productService->oneWithTrashed($product_id);
+        if (!$product) {
+            abort(404);
+        }
+
+        $product->load(['categories', 'warehouse']);
 
         $warehouses = Warehouse::pluck('name', 'id');
         $categories = Category::pluck('name', 'id');

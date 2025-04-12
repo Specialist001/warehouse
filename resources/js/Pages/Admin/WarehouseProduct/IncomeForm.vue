@@ -29,7 +29,7 @@ const filteredDestinationWarehouses = computed(() => {
 <template>
     <div>
         <div class="grid grid-cols-3 gap-4">
-            <div class="col-span-1">
+            <div class="col-span-full md:col-span-1">
                 <div class="">
                     <InputLabel for="product_id" :value="lang().label.product_id"/>
 
@@ -46,8 +46,8 @@ const filteredDestinationWarehouses = computed(() => {
                 </div>
             </div>
         </div>
-        <div class="grid grid-cols-6 gap-4 mt-5">
-            <div class="col-span-2">
+        <div class="grid grid-cols-3 gap-4 mt-5">
+            <div class="col-span-full md:col-span-1">
                 <!-- Иначе текстовое поле -->
                 <div>
                     <InputLabel for="source" :value="lang().transaction.source" />
@@ -62,7 +62,7 @@ const filteredDestinationWarehouses = computed(() => {
                 </div>
             </div>
 
-            <div class="col-span-2">
+            <div class="col-span-full md:col-span-1">
                 <InputLabel for="receive_quantity" :value="lang().label.quantity"/>
                 <TextInput
                     id="receive_quantity"
@@ -77,7 +77,7 @@ const filteredDestinationWarehouses = computed(() => {
                 />
                 <InputError class="mt-2" :message="form.errors.receive_quantity"/>
             </div>
-            <div class="col-span-2">
+            <div class="col-span-full md:col-span-1">
                 <div class="">
                     <InputLabel for="warehouse_id" :value="lang().transaction.source"/>
                     <CustomSelectInput

@@ -11,6 +11,11 @@ class EloquentProductRepository extends ProductRepository
         return Product::find($id);
     }
 
+    public function getWithTrashed(string $id): ?Product
+    {
+        return Product::withTrashed()->find($id);
+    }
+
     public function getAll($pagination = 15)
     {
         return Product::paginate($pagination);
@@ -41,6 +46,16 @@ class EloquentProductRepository extends ProductRepository
         $Product = $this->get($id);
         if ($Product) {
             return $Product->delete();
+        }
+
+        return false;
+    }
+
+    public function restore(string $id): bool
+    {
+        $Product = $this->getWithTrashed($id);
+        if ($Product) {
+            return $Product->restore();
         }
 
         return false;

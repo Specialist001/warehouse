@@ -22,7 +22,7 @@ class DeleteController extends Controller
             $this->warehouseService->delete(id: $warehouse->id);
             DB::commit();
 
-            return back()->with('success', __('app.label.deleted_successfully', ['name' => $name]));
+            return back()->with('success', __('app.label.deleted_successfully', ['param' => $name]));
         } catch (\Throwable $th) {
             DB::rollback();
             return back()->with(

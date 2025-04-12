@@ -27,15 +27,31 @@ class UpdateController extends Controller
 
             DB::commit();
 
-            return back()->with('success', __('app.label.updated_successfully', [
-                    'param' => $product_name,
-                ])
-            );
+            $message = __('app.label.updated_successfully', [
+                'param' => $product_name,
+            ]);
+
+            if ($request->type === 'in') {
+                $message = __('app.warehouse.income_successfully', [
+                    'product' => $product_name,
+                    'warehouse' => $warehouse_product->warehouse->name,
+                ]);
+            } elseif ($request->type === 'out') {
+                $message = __('app.warehouse.outcome_successfully', [
+                    'product' => $product_name,
+                    'warehouse' => $warehouse_product->warehouse->name,
+                ]);
+            }
+
+            return back()->with('success', $message);
         } catch (\Throwable $th) {
             DB::rollback();
+
             return back()->with('error', __('app.label.updated_error', [
                     'param' => $product_name,
                 ]) . $th->getMessage());
         }
+
+
     }
 }

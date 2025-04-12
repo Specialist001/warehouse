@@ -61,7 +61,7 @@ Route::middleware('setLang')->as('admin.')->group(function () {
             Route::post('/store', Warehouse\StoreController::class)->name('store');
             Route::get('/edit/{warehouse}', Warehouse\EditController::class)->name('edit');
             Route::put('/update/{warehouse}', Warehouse\UpdateController::class)->name('update');
-            Route::delete('/{warehouse}', Warehouse\DeleteController::class)->name('destroy');
+            Route::delete('/{warehouse}', Warehouse\DeleteController::class)->name('delete');
         });
 
         Route::prefix('category')->as('category.')->group(function () {
@@ -81,6 +81,7 @@ Route::middleware('setLang')->as('admin.')->group(function () {
             Route::put('/update/{product}', App\Http\Controllers\Admin\Product\UpdateController::class)->name('update');
             Route::delete('/{product}', App\Http\Controllers\Admin\Product\DeleteController::class)->name('delete');
             Route::get('/search-info-by-ean/{barcode}', App\Http\Controllers\Admin\Product\SearchInfoByEanController::class)->name('searchInfoByEan');
+            Route::post('/recovery/{product}', App\Http\Controllers\Admin\Product\RecoveryController::class)->name('recovery');
         });
 
         Route::prefix('warehouse-product')->as('warehouse_product.')->group(function () {

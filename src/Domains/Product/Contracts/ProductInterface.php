@@ -16,4 +16,8 @@ interface ProductInterface
 
     public function delete(string $id): bool;
 
+    public function getWithTrashed(string $id);
+
+    public function restore(string $id);
+
 }

@@ -3,7 +3,7 @@ import Modal from "@/Components/Modal.vue";
 import PrimaryButton from "@/Components/PrimaryButton.vue";
 import SecondaryButton from "@/Components/SecondaryButton.vue";
 import {useForm, usePage} from "@inertiajs/vue3";
-import {ref, watchEffect} from "vue";
+import {watchEffect} from "vue";
 import CategoryForm from "@/Pages/Admin/Category/CategoryForm.vue";
 
 const locales = usePage().props.locales;
@@ -13,16 +13,7 @@ const props = defineProps({
     title: String,
     category: Object,
     locales: Array,
-    restaurants: {
-        type: Object,
-        default: () => ({}) // Provide an empty object as default
-    },
 });
-
-const restaurants = Object.keys(props.restaurants).map(key => ({
-    label: props.restaurants[key],
-    value: key
-}));
 
 const emit = defineEmits(["close"]);
 
@@ -104,7 +95,6 @@ watchEffect(() => {
                     <CategoryForm
                         :form="form"
                         :locales="locales"
-                        :restaurants="restaurants"
                     />
                 </div>
                 <div class="flex justify-end">

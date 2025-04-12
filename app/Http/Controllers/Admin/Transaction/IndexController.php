@@ -34,6 +34,7 @@ class IndexController extends Controller
         $perPage = $request->has('perPage') ? $request->perPage : 20;
         $transactions->with([
             'product:id,name',
+            'warehouse:id,name,deleted_at'
         ]);
 
         $statuses = TransactionStatus::toArray();

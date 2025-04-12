@@ -18,7 +18,7 @@ class ProductFilter extends Filter
         'created_at',
         'updated_at',
         'deleted_at',
-//        'sort', 'perPage',
+        'sort', 'perPage',
     ];
 
     protected array $defaults = [

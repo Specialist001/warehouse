@@ -9,13 +9,7 @@ import CategoryForm from "@/Pages/Admin/Category/CategoryForm.vue";
 const props = defineProps({
     show: Boolean,
     title: String,
-    restaurants: Object,
 });
-
-const restaurants = Object.keys(props.restaurants).map(key => ({
-    label: props.restaurants[key],
-    value: key
-}));
 
 // get locales from use page props
 const locales = usePage().props.locales;
@@ -63,7 +57,6 @@ watchEffect(() => {
                     <CategoryForm
                         :form="form"
                         :locales="locales"
-                        :restaurants="restaurants"
                     />
 
                 </div>

@@ -54,9 +54,16 @@ watch(() => data.editOpen, (newVal) => {
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
             <div class="col-span-1 md:col-span-2 px-4 sm:px-0">
                 <div class="space-y-4">
-                    <div class="px-4 sm:px-0">
+                    <div class="px-4 sm:px-0 ">
                         <div class="bg-white dark:bg-slate-800 shadow sm:rounded-lg">
-                            <div class="px-4 py-5 sm:px-6">
+                            <div
+                                 :class="[
+                                product.deleted_at
+                                  ? 'bg-red-300'
+                                  : '',
+                                'px-4 py-5 sm:px-6 '
+                              ]"
+                            >
                                 <div class="grid grid-cols-6 md:grid-cols-6 gap-4">
                                     <div class="col-span-5">
                                         <h3 class="text-lg leading-6 font-medium text-gray-900 dark:text-slate-200">

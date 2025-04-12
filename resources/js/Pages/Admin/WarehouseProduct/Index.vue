@@ -158,12 +158,6 @@ const timezone = ref({tz: 'Asia/Tashkent', offset: 5});
                     <div class="flex space-x-2">
                         <SelectInput v-model="data.params.perPage" :dataSet="data.dataSet"/>
                     </div>
-                    <TextInput
-                        v-model="data.params.search"
-                        type="text"
-                        class="block w-3/6 md:w-2/6 lg:w-1/6 rounded-lg"
-                        :placeholder="lang().placeholder.search"
-                    />
                 </div>
                 <div class="overflow-x-auto scrollbar-table">
                     <table class="w-full">
@@ -245,6 +239,7 @@ const timezone = ref({tz: 'Asia/Tashkent', offset: 5});
                                            ' rounded-md shadow-sm placeholder:text-slate-400' +
                                             ' placeholder:dark:text-slate-400/50 block w-full ' +
                                              'rounded-lg size-8']"
+                                    :style="`padding-top:0,padding-bottom:0`"
                                 />
                             </th>
                             <th class="px-2 pb-3">
@@ -262,8 +257,10 @@ const timezone = ref({tz: 'Asia/Tashkent', offset: 5});
                             class="border-t border-slate-200 dark:border-slate-700 hover:bg-slate-200/30
                              hover:dark:bg-slate-900/20"
                         >
-                            <td class="whitespace-nowrap py-4 px-2 sm:py-3 text-left">
-                                {{ props.warehouses[warehouse_product.warehouse_id] }}
+                            <td class="whitespace-nowrap py-4 px-2 sm:py-3 text-left"
+                                :class="{'bg-red-600 text-white': !warehouse_product.warehouse_isset}"
+                                >
+                                {{ warehouse_product.warehouse_name }}
                             </td>
                             <td class="whitespace-nowrap py-4 px-2 sm:py-3 text-left">
                                 {{ props.products[warehouse_product.product_id] }}

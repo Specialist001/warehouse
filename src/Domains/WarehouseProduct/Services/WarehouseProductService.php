@@ -8,12 +8,12 @@ use Domains\WarehouseProduct\Contracts\WarehouseProductInterface;
 use Domains\WarehouseProduct\Models\WarehouseProduct;
 use Domains\WarehouseProduct\Requests\WarehouseProductUpdateRequest;
 
-readonly class WarehouseProductService
+class WarehouseProductService
 {
     public function __construct(
         private WarehouseProductInterface $warehouseProductRepository,
-        protected WarehouseService $warehouseService,
-        protected TransactionService $transactionService,
+        private WarehouseService $warehouseService,
+        private TransactionService $transactionService,
     )
     {
     }
@@ -71,7 +71,7 @@ readonly class WarehouseProductService
         }
     }
 
-    protected function handleIncome(WarehouseProduct $warehouseProduct, array $data): void
+    public function handleIncome(WarehouseProduct $warehouseProduct, array $data): void
     {
         $warehouseProduct->increment('quantity', $data['receive_quantity']);
 
@@ -84,7 +84,7 @@ readonly class WarehouseProductService
         );
     }
 
-    protected function handleOutcome(
+    public function handleOutcome(
         WarehouseProduct $warehouseProduct,
         array $data
     ): void
@@ -95,7 +95,7 @@ readonly class WarehouseProductService
             $this->transactionService->outcome(
                 warehouse_id: $warehouseProduct->warehouse_id,
                 product_id: $warehouseProduct->product_id,
-                executor_id: auth()->user()->id,
+                executor_id: auth()->user()->id ?? $data['executor_id'],
                 quantity: $data['send_quantity'],
                 destination: $data['destination']
             );
@@ -128,7 +128,7 @@ readonly class WarehouseProductService
             destination: $destinationWarehouse,
             product: $warehouseProduct->product,
             quantity: $data['send_quantity'],
-            executor_id: auth()->user()->id
+            executor_id: auth()->user()->id ?? $data['executor_id'],
         );
     }
 }

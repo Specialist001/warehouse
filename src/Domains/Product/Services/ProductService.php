@@ -3,10 +3,9 @@
 namespace Domains\Product\Services;
 
 use Domains\Product\Contracts\ProductInterface;
-use Domains\Product\Repositories\ProductRepository;
 use Domains\Product\Models\Product;
 
-readonly class ProductService
+class ProductService
 {
     public function __construct(private ProductInterface $productRepository)
     {
@@ -15,6 +14,11 @@ readonly class ProductService
     public function one(string $id): Product | null
     {
         return $this->productRepository->get(id: $id);
+    }
+
+    public function oneWithTrashed(string $id): Product | null
+    {
+        return $this->productRepository->getWithTrashed(id: $id);
     }
 
     public function all($pagination = 15)
@@ -40,5 +44,10 @@ readonly class ProductService
     public function delete(string $id): bool
     {
         return $this->productRepository->delete($id);
+    }
+
+    public function restore(string $id): bool
+    {
+        return $this->productRepository->restore($id);
     }
 }

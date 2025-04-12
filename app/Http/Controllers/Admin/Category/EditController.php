@@ -14,7 +14,7 @@ class EditController extends \App\Http\Controllers\Controller
         $this->middleware('permission:Category Update', ['only' => ['__invoke']]);
     }
 
-    public function __invoke(int $category_id, Request $request): \Illuminate\Http\JsonResponse
+    public function __invoke(string $category_id, Request $request): \Illuminate\Http\JsonResponse
     {
         $category = $this->service->one($category_id);
         if (!$category) {

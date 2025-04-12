@@ -30,7 +30,6 @@ const props = defineProps({
     title: String,
     filters: Object,
     categories: Object,
-    restaurants: Array,
     breadcrumbs: Object,
     perPage: Number,
 });
@@ -42,11 +41,10 @@ const data = reactive({
         order: props.filters.order,
         perPage: props.perPage,
         id: "",
-        restaurant_id: "",
         name: "",
-        order_num: "",
-        logo: null,
         is_active: "",
+        logo: null,
+        order_num: "",
         created_at: "",
     },
     selectedId: [],
@@ -62,11 +60,6 @@ const order = (field) => {
     data.params.field = field;
     data.params.order = data.params.order === "asc" ? "desc" : "asc";
 };
-
-const restaurant_list = Object.keys(props.restaurants).map(key => ({
-    label: props.restaurants[key],
-    value: key
-}));
 
 watch(
     () => _.cloneDeep(data.params),
@@ -106,14 +99,12 @@ const timezone = ref({tz: 'Asia/Tashkent', offset: 5});
                         :show="data.createOpen"
                         @close="data.createOpen = false"
                         :title="props.title"
-                        :restaurants="props.restaurants"
                     />
                     <Edit
                         :show="data.editOpen"
                         @close="data.editOpen = false"
                         :category="data.category"
                         :title="props.title"
-                        :restaurants="props.restaurants"
                     />
                     <Delete
                         :show="data.deleteOpen"
@@ -128,12 +119,6 @@ const timezone = ref({tz: 'Asia/Tashkent', offset: 5});
                     <div class="flex space-x-2">
                         <SelectInput v-model="data.params.perPage" :dataSet="data.dataSet"/>
                     </div>
-                    <TextInput
-                        v-model="data.params.search"
-                        type="text"
-                        class="block w-3/6 md:w-2/6 lg:w-1/6 rounded-lg"
-                        :placeholder="lang().placeholder.search"
-                    />
                 </div>
                 <div class="overflow-x-auto scrollbar-table">
                     <table class="w-full">
@@ -142,12 +127,6 @@ const timezone = ref({tz: 'Asia/Tashkent', offset: 5});
                             <th class="px-2 py-4 cursor-pointer" v-on:click="order('id')">
                                 <div class="flex justify-between items-center">
                                     <span>{{ lang().label.id }}</span>
-                                    <ChevronUpDownIcon class="w-4 h-4"/>
-                                </div>
-                            </th>
-                            <th class="px-2 py-4 cursor-pointer" v-on:click="order('restaurant_id')">
-                                <div class="flex justify-between items-center">
-                                    <span>{{ lang().label.restaurant }}</span>
                                     <ChevronUpDownIcon class="w-4 h-4"/>
                                 </div>
                             </th>
@@ -166,10 +145,9 @@ const timezone = ref({tz: 'Asia/Tashkent', offset: 5});
                             <th class="px-2 py-4">
                                 <div class="flex justify-between items-center">
                                     <span>{{ lang().label.logo }}</span>
-                                    <ChevronUpDownIcon class="w-4 h-4"/>
                                 </div>
                             </th>
-                            <th class="px-2 py-4">
+                            <th class="px-2 py-4 cursor-pointer" v-on:click="order('order_num')">
                                 <div class="flex justify-between items-center">
                                     <span>{{ lang().label.order_num }}</span>
                                     <ChevronUpDownIcon class="w-4 h-4"/>
@@ -196,16 +174,6 @@ const timezone = ref({tz: 'Asia/Tashkent', offset: 5});
                                     type="number"
                                     class="block w-full rounded-lg size-8"
                                 />
-                            </th>
-                            <th class="px-2 pb-3">
-                                <CustomSelectInput
-                                    id="restaurant_id"
-                                    class="mt-1 block w-full"
-                                    v-model="data.params['restaurant_id']"
-                                    :dataSet="restaurant_list"
-                                    :prompt="lang().label.all"
-                                >
-                                </CustomSelectInput>
                             </th>
                             <th class="px-2 pb-3">
                                 <TextInput
@@ -271,9 +239,6 @@ const timezone = ref({tz: 'Asia/Tashkent', offset: 5});
                         >
                             <td class="whitespace-nowrap py-4 px-2 sm:py-3 text-left">
                                 {{ category.id }}
-                            </td>
-                            <td class="whitespace-nowrap py-4 px-2 sm:py-3 text-left">
-                                {{ category.restaurant.name }}
                             </td>
                             <td class="whitespace-nowrap py-4 px-2 sm:py-3 text-left">
                                 {{ category.name }}

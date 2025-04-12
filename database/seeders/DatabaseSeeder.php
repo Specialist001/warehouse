@@ -19,11 +19,10 @@ class DatabaseSeeder extends Seeder
         $this->call(RoleSeeder::class);
         $this->call(UserSeeder::class);
 
-//        RestaurantFactory::new()->count(5)->create();
-//        $this->call(FillSiteSeeder::class);
         $this->call(CategorySeeder::class);
         $this->call(WarehouseSeeder::class);
         $this->call(ProductSeeder::class);
+        $this->call(WarehouseProductTransactionSeeder::class);
 
     }
 }

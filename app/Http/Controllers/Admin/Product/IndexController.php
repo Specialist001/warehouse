@@ -25,13 +25,12 @@ class IndexController extends \App\Http\Controllers\Controller
 
         if ($request->has(['field', 'order'])) {
             $products->orderBy($request->field, $request->order);
-//            dd($products->toSql());
+        } else {
+            $products->orderBy('created_at', 'desc');
         }
 
         // with categories
-        $products->with('categories');
-
-//        $products->withTrashed();
+        $products->with('categories')->withTrashed();
 
         $perPage = $request->has('perPage') ? $request->perPage : 20;
 

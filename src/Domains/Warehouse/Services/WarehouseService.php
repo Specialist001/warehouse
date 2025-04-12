@@ -4,7 +4,7 @@ namespace Domains\Warehouse\Services;
 
 use Domains\Warehouse\Contracts\WarehouseInterface;
 
-readonly class WarehouseService
+class WarehouseService
 {
     public function __construct(private WarehouseInterface $warehouseRepository)
     {

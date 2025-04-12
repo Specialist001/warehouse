@@ -4,7 +4,6 @@ namespace Domains\WarehouseProduct\Filters;
 
 use App\Services\FilterService\Filter;
 use Carbon\Carbon;
-use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 
 class WarehouseProductFilter extends Filter
@@ -15,12 +14,12 @@ class WarehouseProductFilter extends Filter
         'product_id',
         'product_name',
         'quantity',
-        'created_at',
+        'warehouse_products.created_at',
 //        'sort', 'perPage'
     ];
 
     protected array $defaults = [
-        'sort' => '-created_at',
+        'sort' => '-warehouse_products.created_at',
     ];
 
     private string $timezone;
@@ -31,39 +30,18 @@ class WarehouseProductFilter extends Filter
         $this->timezone = config('app.timezone', 'UTC');
     }
 
-    /**
-     * Применить фильтры к запросу
-     *
-     * @param Builder $builder
-     * @return Builder|\Illuminate\Database\Query\Builder
-     */
-//    public function apply(Builder $builder): Builder | \Illuminate\Database\Query\Builder
-//    {
-//        // Присоединяем products, чтобы можно было сортировать и фильтровать по products.name
-//        $builder->leftJoin('products', 'warehouse_products.product_id', '=', 'products.id')
-//            ->select('warehouse_products.*'); // Не забудь указать SELECT, чтобы не было конфликтов
-//
-//        if ($this->request->filled('field') && $this->request->filled('order')) {
-//            $field = $this->request->get('field');
-//            $order = $this->request->get('order');
-//
-//            if (isset($this->sortable[$field])) {
-//                $builder->orderBy($this->sortable[$field], $order);
-//            }
-//        }
-//
-//        return parent::apply($builder);
-//    }
-
-
     protected function init()
     {
+        $this->builder
+            ->join('products', 'warehouse_products.product_id', '=', 'products.id')
+            ->select('warehouse_products.*', 'products.name as product_name');
+
         $this->addSortable('id');
         $this->addSortable('warehouse_id');
         $this->addSortable('product_id');
-        $this->addSortable('name', 'products', 'product_name');
+        $this->addSortable('name', 'products');
         $this->addSortable('quantity');
-        $this->addSortable('created_at');
+        $this->addSortable('created_at', 'warehouse_products');
     }
 
     public function id($value)
@@ -100,6 +78,6 @@ class WarehouseProductFilter extends Filter
         $begin_at = Carbon::parse($begin_at)->setTimezone($this->timezone)->format('Y-m-d H:i:s');
         $end_at = Carbon::parse($end_at)->setTimezone($this->timezone)->format('Y-m-d H:i:s');
 
-        $this->builder->whereBetween($this->column('created_at'), [$begin_at, $end_at]);
+        $this->builder->whereBetween($this->column('warehouse_products.created_at'), [$begin_at, $end_at]);
     }
 }
