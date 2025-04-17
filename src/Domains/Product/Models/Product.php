@@ -4,6 +4,7 @@ namespace Domains\Product\Models;
 
 use App\Services\FilterService\Filterable;
 use Domains\Category\Models\Category;
+use Domains\Warehouse\Models\Warehouse;
 use Illuminate\Database\Eloquent\Concerns\HasUuids;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\SoftDeletes;
@@ -60,5 +61,9 @@ class Product extends \Illuminate\Database\Eloquent\Model
 
     public function categories(): \Illuminate\Database\Eloquent\Relations\MorphToMany {
         return $this->morphToMany(Category::class, 'categoryable');
+    }
+
+    public function warehouse(): \Illuminate\Database\Eloquent\Relations\BelongsTo {
+        return $this->belongsTo(Warehouse::class);
     }
 }
