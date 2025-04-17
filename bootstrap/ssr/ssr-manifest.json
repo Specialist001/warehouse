@@ -65,6 +65,7 @@
   "resources/js/Pages/Admin/Warehouse/Show.vue": [],
   "resources/js/Pages/Admin/Warehouse/WarehouseForm.vue": [],
   "resources/js/Pages/Admin/WarehouseProduct/Create.vue": [],
+  "resources/js/Pages/Admin/WarehouseProduct/CreateForm.vue": [],
   "resources/js/Pages/Admin/WarehouseProduct/Delete.vue": [],
   "resources/js/Pages/Admin/WarehouseProduct/EmptyForm.vue": [],
   "resources/js/Pages/Admin/WarehouseProduct/Income.vue": [],

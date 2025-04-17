@@ -19,6 +19,7 @@ const emit = defineEmits(["close"]);
 const form = useForm({
     warehouse_id: "",
     product_id: "",
+    product_name: "",
     receive_quantity: "",
     destination: "",
     source: "",

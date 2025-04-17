@@ -82,6 +82,7 @@ Route::middleware('setLang')->as('admin.')->group(function () {
             Route::delete('/{product}', App\Http\Controllers\Admin\Product\DeleteController::class)->name('delete');
             Route::get('/search-info-by-ean/{barcode}', App\Http\Controllers\Admin\Product\SearchInfoByEanController::class)->name('searchInfoByEan');
             Route::post('/recovery/{product}', App\Http\Controllers\Admin\Product\RecoveryController::class)->name('recovery');
+            Route::get('/search', App\Http\Controllers\Admin\Product\SearchController::class)->name('search');
         });
 
         Route::prefix('warehouse-product')->as('warehouse_product.')->group(function () {

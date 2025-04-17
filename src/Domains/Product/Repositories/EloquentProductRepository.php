@@ -60,4 +60,9 @@ class EloquentProductRepository extends ProductRepository
 
         return false;
     }
+
+    public function searchByProductName(string $product_name)
+    {
+        return Product::where('name', 'like', "%$product_name%")->get();
+    }
 }

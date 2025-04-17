@@ -13,17 +13,17 @@ namespace Domains\WarehouseProduct\Requests;
  * @property mixed updated_at
  * @property array category_ids
  */
-
 class WarehouseProductStoreRequest extends \Illuminate\Foundation\Http\FormRequest
 {
     public function rules(): array
     {
         return [
             'warehouse_id' => 'required|exists:warehouses,id',
-            'product_id'  => 'required|exists:products,id',
-            'quantity'   => 'required|integer|min:1',
-            'created_at'    => 'nullable|date',
-            'updated_at'    => 'nullable|date',
+            'product_id'   => 'required|exists:products,id',
+            'source'       => 'required|string|min:3|max:255',
+            'quantity'     => 'required|integer|min:1',
+            'created_at'   => 'nullable|date',
+            'updated_at'   => 'nullable|date',
         ];
     }
 
@@ -44,6 +44,16 @@ class WarehouseProductStoreRequest extends \Illuminate\Foundation\Http\FormReque
             $messages["name.$locale.min"] = __('validation.min.string', ['attribute' => __('app.label.names') . " ($locale)", 'min' => 3]);
             $messages["name.$locale.max"] = __('validation.max.string', ['attribute' => __('app.label.names') . " ($locale)", 'max' => 255]);
         }
+
+        $messages['quantity.integer'] = __('validation.integer', ['attribute' => __('app.label.quantity')]);
+        $messages['quantity.min'] = __('validation.min.numeric', ['attribute' => __('app.label.quantity'), 'min' => 1]);
+        $messages['quantity.required'] = __('validation.required', ['attribute' => __('app.label.quantity')]);
+
+        $messages['source.required'] = __('validation.required', ['attribute' => __('app.transaction.source')]);
+        $messages['product_id.required'] = __('validation.required', ['attribute' => __('app.label.product')]);
+
+        $messages['warehouse_id.required'] = __('validation.required', ['attribute' => __('app.label.warehouse')]);
+        $messages['warehouse_id.exists'] = __('validation.exists', ['attribute' => __('app.label.warehouse')]);
 
         return array_merge($parent_messages, $messages);
     }

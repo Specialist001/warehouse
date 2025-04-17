@@ -20,6 +20,7 @@ class EditController extends Controller
         if (!$warehouse_product) {
             abort(404);
         }
+        $warehouse_product->load(['product', 'warehouse']);
 
         $resource = WarehouseProductResource::make($warehouse_product);
 

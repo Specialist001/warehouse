@@ -20,4 +20,6 @@ interface ProductInterface
 
     public function restore(string $id);
 
+    public function searchByProductName(string $product_name);
+
 }

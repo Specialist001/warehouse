@@ -50,4 +50,18 @@ class ProductService
     {
         return $this->productRepository->restore($id);
     }
+
+    public function searchByProductName(string $product_name)
+    {
+        $products = $this->productRepository->searchByProductName(product_name: $product_name);
+
+        $__find = [];
+        if ($products) {
+            foreach ($products as $product) {
+                $__find[$product->id] = $product->name;
+            }
+        }
+
+        return $__find;
+    }
 }

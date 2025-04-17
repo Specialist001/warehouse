@@ -4,7 +4,7 @@ import PrimaryButton from "@/Components/PrimaryButton.vue";
 import SecondaryButton from "@/Components/SecondaryButton.vue";
 import {useForm} from "@inertiajs/vue3";
 import {watchEffect} from "vue";
-import WarehouseProductIncomeForm from "@/Pages/Admin/WarehouseProduct/IncomeForm.vue";
+import WarehouseProductCreateForm from "@/Pages/Admin/WarehouseProduct/CreateForm.vue";
 
 const props = defineProps({
     show: Boolean,
@@ -19,7 +19,7 @@ const form = useForm({
     warehouse_id: "",
     destination_warehouse_id: "",
     product_id: "",
-    quantity: "",
+    quantity: null,
     destination: "",
     source: "",
     type: "",
@@ -66,7 +66,7 @@ watchEffect(() => {
                     {{ lang().label.add }} {{ lang().label.warehouse_product }}
                 </h2>
                 <div class="my-6 space-y-4">
-                    <WarehouseProductIncomeForm
+                    <WarehouseProductCreateForm
                         :form="form"
                         :warehouse_list="warehouse_list"
                         :product_list="product_list"

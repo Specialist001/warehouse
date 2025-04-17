@@ -3,9 +3,7 @@
 import InputLabel from "@/Components/InputLabel.vue";
 import InputError from "@/Components/InputError.vue";
 import TextInput from "@/Components/TextInput.vue";
-import Checkbox from "@/Components/Checkbox.vue";
 import CustomSelectInput from "@/Components/CustomSelectInput.vue";
-import {computed, onMounted, ref, watch} from "vue";
 import EmptyForm from "@/Pages/Admin/WarehouseProduct/EmptyForm.vue";
 
 const props = defineProps({
@@ -17,15 +15,7 @@ const props = defineProps({
         default: () => [],
     },
     product_list: {},
-    is_create: null,
 });
-
-const filteredDestinationWarehouses = computed(() => {
-    return props.warehouse_list.filter(
-        (w) => w.value !== props.form.warehouse_id
-    );
-});
-
 </script>
 
 <template>
@@ -36,52 +26,77 @@ const filteredDestinationWarehouses = computed(() => {
         <div v-else>
             <div class="grid grid-cols-3 gap-4">
                 <div class="col-span-full md:col-span-1">
+                    <InputLabel for="product" :value="lang().label.product"/>
+                    <TextInput
+                        id="product"
+                        type="text"
+                        class="mt-1 block w-full"
+                        v-model="form.product_name"
+                        :disabled="true"
+                        required
+                        :placeholder="lang().label.product"
+                    />
+                    <InputError class="mt-2" :message="form.errors.product_id"/>
+                </div>
+                <div class="col-span-full md:col-span-1">
                     <div class="">
-                        <InputLabel for="product_id" :value="lang().label.product_id"/>
-
-                        <CustomSelectInput
+                        <TextInput
                             id="product_id"
+                            type="hidden"
                             class="mt-1 block w-full"
                             v-model="form.product_id"
                             required
-                            :disabled="!props.is_create"
-                            :dataSet="product_list"
-                        >
-                        </CustomSelectInput>
-                        <InputError class="mt-2" :message="form.errors.product_id"/>
+                        />
                     </div>
                 </div>
             </div>
             <div class="grid grid-cols-3 gap-4 mt-5">
                 <div class="col-span-full md:col-span-1">
-                    <!-- Иначе текстовое поле -->
                     <div>
-                        <InputLabel for="source" :value="lang().transaction.source" />
+                        <InputLabel for="source" :value="lang().transaction.source"/>
                         <TextInput
                             id="source"
                             v-model="form.source"
                             required
                             type="text"
                             class="mt-1 block w-full"
+                            :error="form.errors.source"
                         />
-                        <InputError :message="form.errors.source" />
+                        <InputError class="mt-2" :message="form.errors.source"/>
                     </div>
                 </div>
 
                 <div class="col-span-full md:col-span-1">
-                    <InputLabel for="receive_quantity" :value="lang().label.quantity"/>
-                    <TextInput
-                        id="receive_quantity"
-                        type="number"
-                        min="1"
-                        step="1"
-                        class="mt-1 block w-full"
-                        v-model="form.receive_quantity"
-                        required
-                        :placeholder="lang().placeholder.quantity"
-                        :error="form.errors.receive_quantity"
-                    />
-                    <InputError class="mt-2" :message="form.errors.receive_quantity"/>
+                    <div v-if="is_create">
+                        <InputLabel for="quantity" :value="lang().label.quantity"/>
+                        <TextInput
+                            id="quantity"
+                            type="number"
+                            min="1"
+                            step="1"
+                            class="mt-1 block w-full"
+                            v-model="form.quantity"
+                            required
+                            :placeholder="lang().placeholder.quantity"
+                            :error="form.errors.quantity"
+                        />
+                        <InputError class="mt-2" :message="form.errors.quantity"/>
+                    </div>
+                    <div v-else>
+                        <InputLabel for="receive_quantity" :value="lang().label.quantity"/>
+                        <TextInput
+                            id="receive_quantity"
+                            type="number"
+                            min="1"
+                            step="1"
+                            class="mt-1 block w-full"
+                            v-model="form.receive_quantity"
+                            required
+                            :placeholder="lang().placeholder.quantity"
+                            :error="form.errors.receive_quantity"
+                        />
+                        <InputError class="mt-2" :message="form.errors.receive_quantity"/>
+                    </div>
                 </div>
                 <div class="col-span-full md:col-span-1">
                     <div class="">
@@ -91,7 +106,7 @@ const filteredDestinationWarehouses = computed(() => {
                             class="mt-1 block w-full"
                             v-model="form.warehouse_id"
                             required
-                            disabled="disabled"
+                            :disabled="props.is_create!==true"
                             :dataSet="warehouse_list"
                         >
                         </CustomSelectInput>
@@ -104,5 +119,4 @@ const filteredDestinationWarehouses = computed(() => {
 </template>
 
 <style scoped>
-
 </style>
