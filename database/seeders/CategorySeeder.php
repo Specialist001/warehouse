@@ -2,13 +2,13 @@
 
 namespace Database\Seeders;
 
-use Domains\Category\Repositories\CategoryRepository;
+use Domains\Category\Contracts\CategoryInterface;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Str;
 
 class CategorySeeder extends Seeder
 {
-    public function __construct(protected CategoryRepository $categoryRepository)
+    public function __construct(protected CategoryInterface $categoryRepository)
     {
     }
 
