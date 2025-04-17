@@ -126,6 +126,7 @@ return [
         'restored_successfully' => "<b>:param</b> muvaffaqiyatli qayta tiklandi.",
         'restored_error' => "<b>:param</b> qayta tiklashda xatolik.",
         'main' => 'Asosiy',
+        'export' => 'Eksport',
     ],
     'warehouse' => [
         'status_active' => "Faol",
@@ -146,6 +147,8 @@ return [
         'is_internal_transfer' => 'Ichki transfer',
         'source' => 'Manba',
         'destination' => 'Manzil',
+        'executor' => 'Ijrochi',
+        'executor_id' => 'Ijrochi IDsi',
     ],
     'category' => [
         'without_restaurant_id' => 'Restoran tanlanmagan',

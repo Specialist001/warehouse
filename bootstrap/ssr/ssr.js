@@ -1,11 +1,11 @@
-import { createSSRApp, h as h$1, mergeProps, useSSRContext, ref, onMounted, computed, watch, onUnmounted, watchEffect, withCtx, unref, createTextVNode, toDisplayString, createVNode, withModifiers, renderSlot, resolveDirective, createBlock, openBlock, Fragment, renderList, withDirectives, vShow, resolveComponent, reactive, createCommentVNode, nextTick, vModelCheckbox, withKeys } from "vue";
+import { createSSRApp, h as h$1, mergeProps, useSSRContext, ref, onMounted, computed, watch, onUnmounted, watchEffect, withCtx, unref, createTextVNode, toDisplayString, createVNode, withModifiers, renderSlot, resolveDirective, createBlock, openBlock, Fragment, renderList, withDirectives, vShow, resolveComponent, reactive, createCommentVNode, nextTick, vModelSelect, vModelCheckbox, withKeys } from "vue";
 import { renderToString } from "@vue/server-renderer";
 import { createInertiaApp, usePage, useForm, Link, router, Head } from "@inertiajs/vue3";
 import createServer from "@inertiajs/vue3/server";
 import FloatingVue from "floating-vue";
-import { ssrRenderAttrs, ssrInterpolate, ssrRenderSlot, ssrLooseContain, ssrGetDynamicModelProps, ssrRenderList, ssrRenderAttr, ssrRenderComponent, ssrRenderClass, ssrRenderStyle, ssrRenderTeleport, ssrGetDirectiveProps, ssrIncludeBooleanAttr } from "vue/server-renderer";
+import { ssrRenderAttrs, ssrInterpolate, ssrRenderSlot, ssrLooseContain, ssrGetDynamicModelProps, ssrRenderList, ssrRenderAttr, ssrRenderComponent, ssrRenderClass, ssrRenderStyle, ssrRenderTeleport, ssrGetDirectiveProps, ssrIncludeBooleanAttr, ssrLooseEqual } from "vue/server-renderer";
 import pkg from "lodash";
-import { SunIcon, MoonIcon, GlobeAltIcon, ChevronDownIcon, Bars3CenterLeftIcon, CheckBadgeIcon, UserIcon, HomeIcon, KeyIcon, ShieldCheckIcon, ExclamationTriangleIcon, InformationCircleIcon, ExclamationCircleIcon, CheckCircleIcon, XMarkIcon, ChevronRightIcon, ChevronUpDownIcon, EyeIcon, PencilIcon, TrashIcon, MagnifyingGlassIcon, QrCodeIcon, BackspaceIcon, ArrowDownTrayIcon as ArrowDownTrayIcon$1, ArrowUpTrayIcon as ArrowUpTrayIcon$1 } from "@heroicons/vue/24/solid";
+import { SunIcon, MoonIcon, GlobeAltIcon, ChevronDownIcon, Bars3CenterLeftIcon, CheckBadgeIcon, UserIcon, HomeIcon, KeyIcon, ShieldCheckIcon, ExclamationTriangleIcon, InformationCircleIcon, ExclamationCircleIcon, CheckCircleIcon, XMarkIcon, ChevronRightIcon, ChevronUpDownIcon, EyeIcon, PencilIcon, TrashIcon, MagnifyingGlassIcon, QrCodeIcon, BackspaceIcon, DocumentArrowDownIcon, ArrowDownTrayIcon as ArrowDownTrayIcon$1, ArrowUpTrayIcon as ArrowUpTrayIcon$1 } from "@heroicons/vue/24/solid";
 import VueDatePicker from "@vuepic/vue-datepicker";
 import { PencilIcon as PencilIcon$1, ArrowDownTrayIcon, ArrowUpTrayIcon } from "@heroicons/vue/24/solid/index.js";
 import Quagga from "quagga";
@@ -5489,6 +5489,7 @@ const _sfc_main$H = {
   setup(__props) {
     const { _, debounce, pickBy } = pkg;
     const props = __props;
+    const selectedFileType = ref("Xlsx");
     const data = reactive({
       params: {
         search: props.filters.search,
@@ -5505,7 +5506,8 @@ const _sfc_main$H = {
         is_internal_transfer: "",
         source: "",
         destination: "",
-        created_at: ""
+        created_at: "",
+        file_type: selectedFileType.value
       },
       selectedId: [],
       multipleSelect: false,
@@ -5540,6 +5542,13 @@ const _sfc_main$H = {
     const startTime = ref({ hours: 0, minutes: 0 });
     const locale = usePage().props.locale;
     const timezone = ref({ tz: "Asia/Tashkent", offset: 5 });
+    function exportData() {
+      const params = {
+        ...props.filters,
+        file_type: selectedFileType.value
+      };
+      window.location.href = route("admin.transaction.export") + "?" + new URLSearchParams(params).toString();
+    }
     return (_ctx, _push, _parent, _attrs) => {
       const _directive_tooltip = resolveDirective("tooltip");
       _push(`<!--[-->`);
@@ -5573,6 +5582,24 @@ const _sfc_main$H = {
               "onUpdate:modelValue": ($event) => data.params.perPage = $event,
               dataSet: data.dataSet
             }, null, _parent2, _scopeId));
+            _push2(`</div><div class="flex space-x-2"${_scopeId}><select class="border border-gray-300 w-36 rounded px-2 py-1 text-sm bg-white dark:bg-gray-800"${_scopeId}><option value="Xlsx"${ssrIncludeBooleanAttr(Array.isArray(selectedFileType.value) ? ssrLooseContain(selectedFileType.value, "Xlsx") : ssrLooseEqual(selectedFileType.value, "Xlsx")) ? " selected" : ""}${_scopeId}>Excel (XLSX)</option><option value="Xls"${ssrIncludeBooleanAttr(Array.isArray(selectedFileType.value) ? ssrLooseContain(selectedFileType.value, "Xls") : ssrLooseEqual(selectedFileType.value, "Xls")) ? " selected" : ""}${_scopeId}>Excel (XLS)</option><option value="Csv"${ssrIncludeBooleanAttr(Array.isArray(selectedFileType.value) ? ssrLooseContain(selectedFileType.value, "Csv") : ssrLooseEqual(selectedFileType.value, "Csv")) ? " selected" : ""}${_scopeId}>CSV</option><option value="Html"${ssrIncludeBooleanAttr(Array.isArray(selectedFileType.value) ? ssrLooseContain(selectedFileType.value, "Html") : ssrLooseEqual(selectedFileType.value, "Html")) ? " selected" : ""}${_scopeId}>HTML</option></select>`);
+            _push2(ssrRenderComponent(_sfc_main$10, {
+              onClick: exportData,
+              class: "px-2 py-1.5 rounded"
+            }, {
+              default: withCtx((_3, _push3, _parent3, _scopeId2) => {
+                if (_push3) {
+                  _push3(ssrRenderComponent(unref(DocumentArrowDownIcon), { class: "w-4 h-4 mr-2" }, null, _parent3, _scopeId2));
+                  _push3(`${ssrInterpolate(_ctx.lang().label.export)}`);
+                } else {
+                  return [
+                    createVNode(unref(DocumentArrowDownIcon), { class: "w-4 h-4 mr-2" }),
+                    createTextVNode(toDisplayString(_ctx.lang().label.export), 1)
+                  ];
+                }
+              }),
+              _: 1
+            }, _parent2, _scopeId));
             _push2(`</div></div><div class="overflow-x-auto scrollbar-table"${_scopeId}><table class="w-full"${_scopeId}><thead class="uppercase text-sm border-t border-slate-200 dark:border-slate-700"${_scopeId}><tr class="dark:bg-slate-900/50 text-left"${_scopeId}><th class="px-2 py-4 cursor-pointer"${_scopeId}><div class="flex justify-between items-center"${_scopeId}><span${_scopeId}>${ssrInterpolate(_ctx.lang().label.id)}</span>`);
             _push2(ssrRenderComponent(unref(ChevronUpDownIcon), { class: "w-4 h-4" }, null, _parent2, _scopeId));
             _push2(`</div></th><th class="px-2 py-4 cursor-pointer"${_scopeId}><div class="flex justify-between items-center"${_scopeId}><span${_scopeId}>${ssrInterpolate(_ctx.lang().label.warehouse_id)}</span>`);
@@ -5816,6 +5843,29 @@ const _sfc_main$H = {
                         "onUpdate:modelValue": ($event) => data.params.perPage = $event,
                         dataSet: data.dataSet
                       }, null, 8, ["modelValue", "onUpdate:modelValue", "dataSet"])
+                    ]),
+                    createVNode("div", { class: "flex space-x-2" }, [
+                      withDirectives(createVNode("select", {
+                        "onUpdate:modelValue": ($event) => selectedFileType.value = $event,
+                        class: "border border-gray-300 w-36 rounded px-2 py-1 text-sm bg-white dark:bg-gray-800"
+                      }, [
+                        createVNode("option", { value: "Xlsx" }, "Excel (XLSX)"),
+                        createVNode("option", { value: "Xls" }, "Excel (XLS)"),
+                        createVNode("option", { value: "Csv" }, "CSV"),
+                        createVNode("option", { value: "Html" }, "HTML")
+                      ], 8, ["onUpdate:modelValue"]), [
+                        [vModelSelect, selectedFileType.value]
+                      ]),
+                      createVNode(_sfc_main$10, {
+                        onClick: exportData,
+                        class: "px-2 py-1.5 rounded"
+                      }, {
+                        default: withCtx(() => [
+                          createVNode(unref(DocumentArrowDownIcon), { class: "w-4 h-4 mr-2" }),
+                          createTextVNode(toDisplayString(_ctx.lang().label.export), 1)
+                        ]),
+                        _: 1
+                      })
                     ])
                   ]),
                   createVNode("div", { class: "overflow-x-auto scrollbar-table" }, [

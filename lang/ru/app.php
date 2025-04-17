@@ -128,6 +128,7 @@ return [
         'restored_successfully' => '<b>:name</b> успешно восстановлен.',
         'restored_error' => 'Ошибка восстановления :name.',
         'main' => 'Главная',
+        'export' => 'Экспорт',
     ],
     'warehouse' => [
         'status_active' => 'Активен',
@@ -148,6 +149,8 @@ return [
         'is_internal_transfer' => 'Внутренний перевод',
         'source' => 'Источник',
         'destination' => 'Назначение',
+        'executor' => 'Исполнитель',
+        'executor_id' => 'ID исполнителя',
     ],
     'category' => [
         'without_restaurant_id' => 'Без ресторана',

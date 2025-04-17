@@ -129,6 +129,7 @@ return [
         'restored_successfully' => '<b>:param</b> restored successfully.',
         'restored_error' => 'Error restoring :name.',
         'main' => 'Main',
+        'export' => 'Export',
     ],
     'warehouse' => [
         'status_active' => 'Active',
@@ -149,6 +150,8 @@ return [
         'is_internal_transfer' => 'Is Internal Transfer',
         'source' => 'Source',
         'destination' => 'Destination',
+        'executor' => 'Executor',
+        'executor_id' => 'Executor ID',
     ],
     'category' => [
         'without_restaurant_id' => 'Without Warehouse',

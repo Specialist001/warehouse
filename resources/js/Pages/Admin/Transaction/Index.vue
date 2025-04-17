@@ -1,24 +1,16 @@
 <script setup>
 import AuthenticatedLayout from "@/Layouts/AuthenticatedLayout.vue";
-import {Head, Link} from "@inertiajs/vue3";
+import {Head, Link, router, usePage} from "@inertiajs/vue3";
 import Breadcrumb from "@/Components/Breadcrumb.vue";
 import TextInput from "@/Components/TextInput.vue";
-import PrimaryButton from "@/Components/PrimaryButton.vue";
 import SelectInput from "@/Components/SelectInput.vue";
 import {reactive, ref, watch} from "vue";
 import DangerButton from "@/Components/DangerButton.vue";
 import pkg from "lodash";
-import {router} from "@inertiajs/vue3";
-import {
-    ChevronUpDownIcon,
-    PencilIcon,
-    TrashIcon,
-    EyeIcon
-} from "@heroicons/vue/24/solid";
+import {ChevronUpDownIcon, DocumentArrowDownIcon, EyeIcon, PencilIcon, TrashIcon,} from "@heroicons/vue/24/solid";
 import Edit from "@/Pages/Admin/Transaction/Edit.vue";
 import Delete from "@/Pages/Admin/Transaction/Delete.vue";
 import InfoButton from "@/Components/InfoButton.vue";
-import {usePage} from "@inertiajs/vue3";
 import ResourcePagination from "@/Components/ResourcePagination.vue";
 import VueDatePicker from '@vuepic/vue-datepicker';
 import '@vuepic/vue-datepicker/dist/main.css';
@@ -35,6 +27,9 @@ const props = defineProps({
     breadcrumbs: Object,
     perPage: Number,
 });
+
+const selectedFileType = ref('Xlsx')
+
 const data = reactive({
     params: {
         search: props.filters.search,
@@ -52,6 +47,7 @@ const data = reactive({
         source: "",
         destination: "",
         created_at: "",
+        file_type: selectedFileType.value,
     },
     selectedId: [],
     multipleSelect: false,
@@ -70,7 +66,6 @@ const status_dropdown = Object.keys(props.status_list).map(key => ({
     label: props.status_list[key],
     value: key
 }));
-
 
 const order = (field) => {
     data.params.field = field;
@@ -106,6 +101,14 @@ const datetime_format = 'yyyy-MM-dd HH:mm';
 const locale = usePage().props.locale;
 const timezone = ref({tz: 'Asia/Tashkent', offset: 5});
 
+function exportData() {
+    const params = {
+        ...props.filters,
+        file_type: selectedFileType.value,
+    }
+    window.location.href = route("admin.transaction.export") + '?' + new URLSearchParams(params).toString()
+}
+
 </script>
 
 <template>
@@ -135,6 +138,21 @@ const timezone = ref({tz: 'Asia/Tashkent', offset: 5});
                 <div class="flex justify-between p-2">
                     <div class="flex space-x-2">
                         <SelectInput v-model="data.params.perPage" :dataSet="data.dataSet"/>
+                    </div>
+                    <div class="flex space-x-2">
+                        <select v-model="selectedFileType"
+                                class="border border-gray-300 w-36 rounded px-2 py-1 text-sm bg-white dark:bg-gray-800">
+                            <option value="Xlsx">Excel (XLSX)</option>
+                            <option value="Xls">Excel (XLS)</option>
+                            <option value="Csv">CSV</option>
+                            <option value="Html">HTML</option>
+                        </select>
+                        <InfoButton
+                            @click="exportData"
+                            class="px-2 py-1.5 rounded"
+                        >
+                            <DocumentArrowDownIcon class="w-4 h-4 mr-2"/>{{ lang().label.export }}
+                        </InfoButton>
                     </div>
                 </div>
                 <div class="overflow-x-auto scrollbar-table">

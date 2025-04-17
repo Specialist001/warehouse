@@ -116,8 +116,11 @@ class TransactionFilter extends Filter
         }
     }
 
-    public function created_at(array $value)
+    public function created_at(array|string $value)
     {
+        if (is_string($value)) {
+            $value = explode(',', $value);
+        }
         $begin_at = $value[0];
         $end_at = $value[1];
 

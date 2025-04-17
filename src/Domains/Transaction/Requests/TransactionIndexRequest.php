@@ -25,6 +25,9 @@ class TransactionIndexRequest extends FormRequest
             ],
             'order'   => ['in:asc,desc'],
             'perPage' => ['numeric'],
+            'file_type' => [
+                'in:Xlsx,Xls,Csv,Html',
+            ],
         ];
     }
 }

@@ -96,6 +96,7 @@ Route::middleware('setLang')->as('admin.')->group(function () {
 
         Route::prefix('transaction')->as('transaction.')->group(function () {
             Route::get('/', Transaction\IndexController::class)->name('index');
+            Route::get('/export', Transaction\ExportController::class)->name('export');
             Route::get('/show/{transaction}', Transaction\ShowController::class)->name('show');
             Route::get('/edit/{transaction}', Transaction\EditController::class)->name('edit');
             Route::put('/update/{transaction}', Transaction\UpdateController::class)->name('update');
