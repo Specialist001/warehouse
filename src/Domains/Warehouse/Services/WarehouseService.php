@@ -3,6 +3,7 @@
 namespace Domains\Warehouse\Services;
 
 use Domains\Warehouse\Contracts\WarehouseInterface;
+use Domains\Warehouse\States\Status\WarehouseStatus;
 
 class WarehouseService
 {
@@ -48,5 +49,10 @@ class WarehouseService
     public function addProduct(string $id, array $data): \Domains\Warehouse\Models\Warehouse|bool
     {
         return $this->warehouseRepository->createProduct($id, $data);
+    }
+
+    public function getActiveWarehouses()
+    {
+        return $this->warehouseRepository->getWhereStatus(WarehouseStatus::active()->value);
     }
 }

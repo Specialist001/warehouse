@@ -7,6 +7,7 @@ use Domains\WarehouseProduct\Services\WarehouseProductService;
 use Domains\WarehouseProduct\Models\WarehouseProduct;
 use Domains\WarehouseProduct\Requests\WarehouseProductUpdateRequest;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Log;
 
 class UpdateController extends Controller
 {
@@ -33,12 +34,12 @@ class UpdateController extends Controller
 
             if ($request->type === 'in') {
                 $message = __('app.warehouse.income_successfully', [
-                    'product' => $product_name,
+                    'product'   => $product_name,
                     'warehouse' => $warehouse_product->warehouse->name,
                 ]);
             } elseif ($request->type === 'out') {
                 $message = __('app.warehouse.outcome_successfully', [
-                    'product' => $product_name,
+                    'product'   => $product_name,
                     'warehouse' => $warehouse_product->warehouse->name,
                 ]);
             }
@@ -47,9 +48,14 @@ class UpdateController extends Controller
         } catch (\Throwable $th) {
             DB::rollback();
 
+            Log::error('WarehouseProduct Update Error', [
+                'product_id' => $warehouse_product->id,
+                'error'      => $th->getMessage(),
+            ]);
+
             return back()->with('error', __('app.label.updated_error', [
-                    'param' => $product_name,
-                ]) . $th->getMessage());
+                'param' => $product_name,
+            ]));
         }
 
 

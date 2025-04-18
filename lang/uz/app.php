@@ -38,7 +38,7 @@ return [
         'created_successfully' => "<b>:param</b> muvaffaqiyatli qo'shildi.",
         'created_error' => 'Error creating :name.',
         'updated_successfully' => "<b>:param</b> muvaffaqiyatli o'zgartirildi.",
-        'updated_error' => 'Error updating :name.',
+        'updated_error' => ":param ni o'zgartirishda xatolik.",
         'deleted_successfully' => "<b>:param</b> muvaffaqiyatli o'chirildi.",
         'deleted_error' => ":param o'chirishda xatolik.",
         'all_permission' => "Barcha ruxsatnomalar",

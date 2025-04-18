@@ -38,7 +38,7 @@ return [
         'created_successfully' => '<b>:name</b> успешно создан.',
         'created_error' => 'Ошибка создания :name.',
         'updated_successfully' => '<b>:name</b> успешно обновлен.',
-        'updated_error' => 'Ошибка обновления :name.',
+        'updated_error' => 'Ошибка обновления :param.',
         'deleted_successfully' => '<b>:name</b> успешно удален.',
         'deleted_error' => 'Ошибка удаления :name.',
         'all_permission' => 'Все разрешения',

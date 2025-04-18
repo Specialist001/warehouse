@@ -66,4 +66,9 @@ class EloquentWarehouseRepository extends WarehouseRepository
 
         return false;
     }
+
+    public function getWhereStatus(string $string)
+    {
+        return Warehouse::where('status', $string)->get();
+    }
 }

@@ -38,7 +38,7 @@ return [
         'created_successfully' => '<b>:param</b> created successfully.',
         'created_error' => 'Error creating :name.',
         'updated_successfully' => '<b>:param</b> updated successfully.',
-        'updated_error' => 'Error updating :name.',
+        'updated_error' => 'Error updating :param.',
         'deleted_successfully' => '<b>:param</b> deleted successfully.',
         'deleted_error' => 'Error deleting :name.',
         'all_permission' => 'All Permission',

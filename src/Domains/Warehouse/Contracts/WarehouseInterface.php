@@ -19,4 +19,6 @@ interface WarehouseInterface
     public function delete(string $id): bool;
 
     public function createProduct(string $id, array $data): \Domains\Warehouse\Models\Warehouse | bool;
+
+    public function getWhereStatus(string $string);
 }

@@ -25,7 +25,8 @@ class Transaction extends Model
         'type', 'product_id',
         'warehouse_id', 'destination',
         'status', 'source', 'quantity',
-        'executor_id', 'is_internal_transfer'
+        'executor_id', 'is_internal_transfer',
+        'created_at', 'updated_at',
     ];
 
     public function product()
