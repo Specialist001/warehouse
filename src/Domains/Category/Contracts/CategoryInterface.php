@@ -2,6 +2,8 @@
 
 namespace Domains\Category\Contracts;
 
+use Domains\Category\Dto\CategoryDto;
+
 interface CategoryInterface
 {
     public function get(string $id): \Domains\Category\Models\Category | null;
@@ -12,9 +14,9 @@ interface CategoryInterface
 
     public function getLatest($pagination = 15);
 
-    public function create(array $data): \Domains\Category\Models\Category;
+    public function create(CategoryDto $dto): \Domains\Category\Models\Category;
 
-    public function update(string $id, array $data): \Domains\Category\Models\Category | bool;
+    public function update(string $id, CategoryDto $dto): \Domains\Category\Models\Category | bool;
 
     public function delete(string $id): bool;
 

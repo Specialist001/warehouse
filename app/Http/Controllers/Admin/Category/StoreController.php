@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Admin\Category;
 
+use Domains\Category\Factory\CategoryDtoFactory;
 use Domains\Category\Requests\CategoryStoreRequest;
 use Domains\Category\Services\CategoryService;
 use Illuminate\Support\Facades\DB;
@@ -18,9 +19,9 @@ class StoreController extends \App\Http\Controllers\Controller
     {
         DB::beginTransaction();
         try {
-            $data = $request->validated();
+            $dto = CategoryDtoFactory::fromRequest($request);
 
-            $category = $this->service->create($data);
+            $category = $this->service->create($dto);
             DB::commit();
 
             return back()->with('success', __('app.label.created_successfully', [

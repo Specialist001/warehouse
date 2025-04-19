@@ -3,7 +3,9 @@
 namespace Domains\Product\Services;
 
 use Domains\Product\Contracts\ProductInterface;
+use Domains\Product\Dto\ProductDto;
 use Domains\Product\Models\Product;
+use Illuminate\Support\Facades\Log;
 
 class ProductService
 {
@@ -31,14 +33,28 @@ class ProductService
         return $this->productRepository->getLatest($pagination);
     }
 
-    public function create(array $data): Product
+    public function create(ProductDto $dto): Product
     {
-        return $this->productRepository->create($data);
+        $product = $this->productRepository->create($dto);
+        if ($dto->category_ids) {
+            $product->categories()->attach($dto->category_ids);
+        }
+
+        return $product;
     }
 
-    public function update(string $id, array $data): Product | bool
+    public function update(string $id, ProductDto $dto): Product | bool
     {
-        return $this->productRepository->update($id, $data);
+        $product = $this->productRepository->update($id, $dto);
+        if ($product) {
+            if ($dto->category_ids) {
+                $product->categories()->sync($dto->category_ids);
+            } else {
+                $product->categories()->detach();
+            }
+        }
+
+        return $product;
     }
 
     public function delete(string $id): bool

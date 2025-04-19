@@ -9,7 +9,16 @@ import WarehouseForm from "@/Pages/Admin/Warehouse/WarehouseForm.vue";
 const props = defineProps({
     show: Boolean,
     title: String,
+    status_list: {
+        type: Object,
+        default: () => ({}),
+    }
 });
+
+const status_list = Object.keys(props.status_list).map(key => ({
+    label: props.status_list[key],
+    value: key
+}));
 
 // get locales from use page props
 const locales = usePage().props.locales;
@@ -54,6 +63,7 @@ watchEffect(() => {
                     <WarehouseForm
                         :form="form"
                         :locales="locales"
+                        :status_list="status_list"
                     />
 
 

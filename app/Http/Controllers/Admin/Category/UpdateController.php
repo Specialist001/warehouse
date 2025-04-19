@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Admin\Category;
 
+use Domains\Category\Factory\CategoryDtoFactory;
 use Domains\Category\Models\Category;use Domains\Category\Requests\CategoryStoreRequest;
 use Domains\Category\Services\CategoryService;
 use Illuminate\Support\Facades\DB;
@@ -18,9 +19,9 @@ class UpdateController extends \App\Http\Controllers\Controller
     {
         DB::beginTransaction();
         try {
-            $data = $request->validated();
+            $dto = CategoryDtoFactory::fromRequest($request);
 
-            $category = $this->service->update($category->id, $data);
+            $category = $this->service->update($category->id, $dto);
             DB::commit();
 
             return back()->with('success', __('app.label.updated_successfully', [

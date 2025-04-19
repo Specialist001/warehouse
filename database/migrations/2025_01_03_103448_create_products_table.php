@@ -18,6 +18,7 @@ return new class extends Migration
             $table->text('description')->nullable();
             $table->string('sku')->unique();
             $table->unsignedInteger('price')->nullable();
+            $table->string('unit', 64)->nullable();
             $table->string('barcode')->unique()->nullable();
             $table->string('qr_code')->unique()->nullable();
             $table->timestamps();

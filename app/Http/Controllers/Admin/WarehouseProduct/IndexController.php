@@ -23,7 +23,7 @@ class IndexController extends Controller
         $filter = new WarehouseProductFilter($request);
 
         $warehouse_product = WarehouseProduct::filter($filter)->with([
-            'product:id,name',
+            'product:id,name,unit',
             'warehouse:id,name,deleted_at',
         ]);
 

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Admin\Product;
 
+use Domains\Product\Factory\ProductDtoFactory;
 use Domains\Product\Models\Product;
 use Domains\Product\Requests\ProductUpdateRequest;
 use Domains\Product\Services\ProductService;
@@ -19,16 +20,9 @@ class UpdateController extends \App\Http\Controllers\Controller
     {
         DB::beginTransaction();
         try {
-            $data = $request->validated();
+            $dto = ProductDtoFactory::fromRequest($request);
 
-            $product = $this->service->update($product->id, $data);
-
-            if ($request->has('category_ids')) {
-                // first detach all categories, and then attach the new ones
-                $product->categories()->detach();
-                $product->categories()->attach($request->category_ids);
-            }
-
+            $product = $this->service->update($product->id, $dto);
             DB::commit();
 
             return back()->with('success', __('app.label.updated_successfully', [
@@ -41,8 +35,7 @@ class UpdateController extends \App\Http\Controllers\Controller
 
             return back()->with(
                 'error',
-                __('app.label.updated_error', ['name' => __('app.label.products')]) . $th->getMessage()
-            );
+                __('app.label.updated_error', ['name' => __('app.label.products')]));
         }
     }
 }

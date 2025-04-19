@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Admin\Product;
 
+use Domains\Product\Factory\ProductDtoFactory;
 use Domains\Product\Requests\ProductStoreRequest;
 use Domains\Product\Services\ProductService;
 use Illuminate\Support\Facades\DB;
@@ -18,13 +19,9 @@ class StoreController extends \App\Http\Controllers\Controller
     {
         DB::beginTransaction();
         try {
-            $data = $request->validated();
+            $dto = ProductDtoFactory::fromRequest($request);
 
-            $product = $this->service->create($data);
-
-            if ($request->has('category_ids')) {
-                $product->categories()->attach($request->category_ids);
-            }
+            $product = $this->service->create($dto);
 
             DB::commit();
 
@@ -38,8 +35,7 @@ class StoreController extends \App\Http\Controllers\Controller
 
             return back()->with(
                 'error',
-                __('app.label.created_error', ['name' => __('app.label.products')]) . $th->getMessage()
-            );
+                __('app.label.created_error', ['name' => __('app.label.products')]));
         }
     }
 }

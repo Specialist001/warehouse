@@ -2,6 +2,8 @@
 
 namespace Domains\Product\Contracts;
 
+use Domains\Product\Dto\ProductDto;
+
 interface ProductInterface
 {
     public function get(string $id): \Domains\Product\Models\Product | null;
@@ -10,9 +12,9 @@ interface ProductInterface
 
     public function getLatest($pagination = 15);
 
-    public function create(array $data): \Domains\Product\Models\Product;
+    public function create(ProductDto $dto): \Domains\Product\Models\Product;
 
-    public function update(string $id, array $data): \Domains\Product\Models\Product | bool;
+    public function update(string $id, ProductDto $dto): \Domains\Product\Models\Product | bool;
 
     public function delete(string $id): bool;
 

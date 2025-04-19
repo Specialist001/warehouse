@@ -3,6 +3,7 @@
 namespace Domains\WarehouseProduct\Repositories;
 
 
+use Domains\WarehouseProduct\Dto\WarehouseProductDto;
 use Domains\WarehouseProduct\Models\WarehouseProduct;
 
 class EloquentWarehouseProductRepository extends WarehouseProductRepository
@@ -22,16 +23,16 @@ class EloquentWarehouseProductRepository extends WarehouseProductRepository
         return WarehouseProduct::latest()->paginate($pagination);
     }
 
-    public function create(array $data): WarehouseProduct
+    public function create(WarehouseProductDto $dto): WarehouseProduct
     {
-        return WarehouseProduct::create($data);
+        return WarehouseProduct::create($dto->toArray());
     }
 
-    public function update(string $id, array $data): WarehouseProduct|bool
+    public function update(string $id, WarehouseProductDto $dto): WarehouseProduct|bool
     {
         $warehouse_product = $this->get($id);
         if ($warehouse_product) {
-            $warehouse_product->update($data);
+            $warehouse_product->update($dto->toArray());
             return $warehouse_product;
         }
         return false;

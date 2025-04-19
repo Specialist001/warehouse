@@ -10,10 +10,16 @@ const props = defineProps({
     show: Boolean,
     title: String,
     categories: Object,
+    units: Object,
 });
 
 const category_list = Object.keys(props.categories).map(key => ({
     label: props.categories[key],
+    value: key
+}));
+
+const unit_list = Object.keys(props.units).map(key => ({
+    label: props.units[key],
     value: key
 }));
 
@@ -27,6 +33,7 @@ const form = useForm({
     description: Object.fromEntries(locales.map(locale => [locale, ""])),
     sku: null,
     price: null,
+    unit: null,
     barcode: null,
     category_ids: [],
 });
@@ -64,6 +71,7 @@ watchEffect(() => {
                         :form="form"
                         :locales="locales"
                         :category_list="category_list"
+                        :unit_list="unit_list"
                     />
 
                 </div>

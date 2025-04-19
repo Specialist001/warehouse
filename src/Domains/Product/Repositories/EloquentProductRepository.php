@@ -2,6 +2,7 @@
 
 namespace Domains\Product\Repositories;
 
+use Domains\Product\Dto\ProductDto;
 use Domains\Product\Models\Product;
 
 class EloquentProductRepository extends ProductRepository
@@ -26,26 +27,26 @@ class EloquentProductRepository extends ProductRepository
         return Product::latest()->paginate($pagination);
     }
 
-    public function create(array $data): Product
+    public function create(ProductDto $dto): Product
     {
-        return Product::create($data);
+        return Product::create($dto->toArray());
     }
 
-    public function update(string $id, array $data): Product|bool
+    public function update(string $id, ProductDto $dto): Product|bool
     {
-        $Product = $this->get($id);
-        if ($Product) {
-            $Product->update($data);
-            return $Product;
+        $product = $this->get($id);
+        if ($product) {
+            $product->update($dto->toArray());
+            return $product;
         }
         return false;
     }
 
     public function delete(string $id): bool
     {
-        $Product = $this->get($id);
-        if ($Product) {
-            return $Product->delete();
+        $product = $this->get($id);
+        if ($product) {
+            return $product->delete();
         }
 
         return false;
@@ -53,9 +54,9 @@ class EloquentProductRepository extends ProductRepository
 
     public function restore(string $id): bool
     {
-        $Product = $this->getWithTrashed($id);
-        if ($Product) {
-            return $Product->restore();
+        $product = $this->getWithTrashed($id);
+        if ($product) {
+            return $product->restore();
         }
 
         return false;

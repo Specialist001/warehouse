@@ -20,7 +20,6 @@ const status_list = Object.keys(props.status_list).map(key => ({
     label: props.status_list[key],
     value: key
 }));
-console.log(status_list);
 
 const emit = defineEmits(["close"]);
 

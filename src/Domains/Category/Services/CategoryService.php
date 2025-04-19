@@ -3,6 +3,7 @@
 namespace Domains\Category\Services;
 
 use Domains\Category\Contracts\CategoryInterface;
+use Domains\Category\Dto\CategoryDto;
 
 class CategoryService
 {
@@ -30,14 +31,14 @@ class CategoryService
         return $this->categoryRepository->getLatest($pagination);
     }
 
-    public function create(array $data): \Domains\Category\Models\Category
+    public function create(CategoryDto $dto): \Domains\Category\Models\Category
     {
-        return $this->categoryRepository->create($data);
+        return $this->categoryRepository->create($dto);
     }
 
-    public function update(string $id, array $data): \Domains\Category\Models\Category | bool
+    public function update(string $id, CategoryDto $dto): \Domains\Category\Models\Category | bool
     {
-        return $this->categoryRepository->update($id, $data);
+        return $this->categoryRepository->update($id, $dto);
     }
 
     public function delete(string $id): bool

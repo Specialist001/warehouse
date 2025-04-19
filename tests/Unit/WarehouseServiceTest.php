@@ -108,4 +108,61 @@ class WarehouseServiceTest extends TestCase
         $this->assertEquals('Tashkent', $result->location);
         $this->assertEquals('active', $result->status);
     }
+
+    public function test_update_returns_true_when_successful()
+    {
+        $id = 1;
+        $data = [
+            'name' => 'Updated Warehouse',
+            'location' => 'Tashkent',
+            'status' => WarehouseStatus::active()->value,
+        ];
+
+        $mockRepository = Mockery::mock(WarehouseInterface::class);
+        $mockRepository
+            ->shouldReceive('update')
+            ->once()
+            ->with($id, $data)
+            ->andReturn(true);
+
+        $service = new WarehouseService($mockRepository);
+
+        $result = $service->update($id, $data);
+        $this->assertTrue($result);
+    }
+
+    public function test_delete_returns_true_when_successful()
+    {
+        $id = 1;
+
+        $mockRepository = Mockery::mock(WarehouseInterface::class);
+        $mockRepository
+            ->shouldReceive('delete')
+            ->once()
+            ->with($id)
+            ->andReturn(true);
+
+        $service = new WarehouseService($mockRepository);
+
+        $this->assertTrue($service->delete($id));
+    }
+
+    public function test_delete_throws_exception_on_failure()
+    {
+        $this->expectException(\Exception::class);
+        $this->expectExceptionMessage('Failed to delete warehouse');
+
+        $id = 1;
+
+        $mockRepository = Mockery::mock(WarehouseInterface::class);
+        $mockRepository
+            ->shouldReceive('delete')
+            ->once()
+            ->with($id)
+            ->andThrow(new \Exception('Failed to delete warehouse'));
+
+        $service = new WarehouseService($mockRepository);
+
+        $service->delete($id);
+    }
 }

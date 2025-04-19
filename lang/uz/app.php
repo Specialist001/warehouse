@@ -127,6 +127,7 @@ return [
         'restored_error' => "<b>:param</b> qayta tiklashda xatolik.",
         'main' => 'Asosiy',
         'export' => 'Eksport',
+        'unit' => "O'lchov birligi",
     ],
     'warehouse' => [
         'status_active' => "Faol",
@@ -226,5 +227,18 @@ return [
     'auth' => [
         'via_bot' => 'Telegram Bot orqali',
         'via_email' => 'Email orqali',
+    ],
+    'product_units' => [
+        'piece' => 'Dona',
+        'kg' => 'Kilogramm',
+        'liter' => 'Litr',
+        'gram' => 'Gramm',
+        'ml' => 'Millilitr',
+        'pack' => "Paket",
+        'box' => "Quti",
+        'bottle' => "Shisha",
+        'cup' => 'Chashka',
+        'slice' => "Parcha",
+        'meter' => 'Metr',
     ],
 ];

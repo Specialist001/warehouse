@@ -15,6 +15,7 @@ const props = defineProps({
     title: String,
     items: Object,
     categories: Object,
+    units: Object,
     breadcrumbs: Object,
 });
 const data = reactive({
@@ -47,6 +48,7 @@ watch(() => data.editOpen, (newVal) => {
                         :product="data.product"
                         :title="props.title"
                         :categories="props.categories"
+                        :units="props.units"
                     />
                 </div>
             </div>
@@ -128,6 +130,15 @@ watch(() => data.editOpen, (newVal) => {
                                         </dt>
                                         <dd class="mt-1 text-sm text-gray-900 dark:text-slate-200 sm:mt-0 sm:col-span-2">
                                             {{ product.price }}
+                                        </dd>
+                                    </div>
+                                    <div
+                                        class="bg-white dark:bg-slate-800 px-4 py-2.5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                                        <dt class="text-sm font-medium text-gray-500 dark:text-slate-400">
+                                            {{ lang().label.unit }}
+                                        </dt>
+                                        <dd class="mt-1 text-sm text-gray-900 dark:text-slate-200 sm:mt-0 sm:col-span-2">
+                                            {{ product.unit }}
                                         </dd>
                                     </div>
                                     <div

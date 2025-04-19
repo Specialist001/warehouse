@@ -2,6 +2,7 @@
 
 namespace Domains\WarehouseProduct\Contracts;
 
+use Domains\WarehouseProduct\Dto\WarehouseProductDto;
 use Domains\WarehouseProduct\Models\WarehouseProduct;
 use Domains\WarehouseProduct\Requests\WarehouseProductUpdateRequest;
 
@@ -13,9 +14,9 @@ interface WarehouseProductInterface
 
     public function getLatest($pagination = 15);
 
-    public function create(array $data): WarehouseProduct;
+    public function create(WarehouseProductDto $dto): WarehouseProduct;
 
-    public function update(string $id, array $data): WarehouseProduct | bool;
+    public function update(string $id, WarehouseProductDto $dto): WarehouseProduct | bool;
 
     public function delete(string $id): bool;
 

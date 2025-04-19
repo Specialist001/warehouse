@@ -13,11 +13,17 @@ const props = defineProps({
     title: String,
     product: Object,
     categories: Object,
+    units: Object,
     locales: Array,
 });
 
 const category_list = Object.keys(props.categories).map(key => ({
     label: props.categories[key],
+    value: key
+}));
+
+const unit_list = Object.keys(props.units).map(key => ({
+    label: props.units[key],
     value: key
 }));
 
@@ -27,6 +33,7 @@ const form = useForm({
     name: Object.fromEntries(locales.map(locale => [locale, ""])),
     description: Object.fromEntries(locales.map(locale => [locale, ""])),
     price: null,
+    unit: null,
     sku: null,
     barcode: null,
     category_ids: [],
@@ -111,6 +118,7 @@ watchEffect(() => {
                         :locales="locales"
                         :isEdit="true"
                         :category_list="category_list"
+                        :unit_list="unit_list"
                     />
                 </div>
                 <div class="flex justify-end">

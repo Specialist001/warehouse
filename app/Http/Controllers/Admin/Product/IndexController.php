@@ -7,6 +7,7 @@ use Domains\Product\Models\Product;
 use Domains\Product\Requests\ProductIndexRequest;
 use Domains\Product\Filters\ProductFilter;
 use Domains\Product\Resources\ProductResource;
+use Domains\Product\States\Unit\ProductUnit;
 use Domains\Warehouse\Models\Warehouse;
 use Inertia\Inertia;
 
@@ -37,12 +38,15 @@ class IndexController extends \App\Http\Controllers\Controller
         $warehouses = Warehouse::pluck('name', 'id');
         $categories = Category::pluck('name', 'id');
 
+        $units = ProductUnit::toArray();
+
         return Inertia::render('Admin/Product/Index', [
             "title"       => __("app.label.products"),
             'lang'        => app()->getLocale(),
             "filters"     => $filter->filters(),
             "perPage"     => (int)$perPage,
             "products"    => ProductResource::collection($products->paginateFilter($perPage)),
+            "units"       => $units,
             "warehouses"  => $warehouses,
             "categories"  => $categories,
             "breadcrumbs" => [

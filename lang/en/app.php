@@ -130,6 +130,7 @@ return [
         'restored_error' => 'Error restoring :name.',
         'main' => 'Main',
         'export' => 'Export',
+        'unit' => 'Unit',
     ],
     'warehouse' => [
         'status_active' => 'Active',
@@ -230,5 +231,17 @@ return [
         'via_bot' => 'Via Bot',
         'via_email' => 'Via Email',
     ],
-
+    'product_units' => [
+        'piece' => 'Piece',
+        'kg' => 'Kg',
+        'liter' => 'Liter',
+        'gram' => 'Gram',
+        'ml' => 'Ml',
+        'pack' => 'Pack',
+        'box' => 'Box',
+        'bottle' => 'Bottle',
+        'cup' => 'Cup',
+        'slice' => 'Slice',
+        'meter' => 'Meter',
+    ],
 ];

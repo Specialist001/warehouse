@@ -3119,6 +3119,10 @@ const _sfc_main$V = {
       type: Object,
       default: () => ({})
     },
+    unit_list: {
+      type: Object,
+      default: () => ({})
+    },
     isEdit: {
       type: Boolean,
       default: false
@@ -3335,13 +3339,13 @@ const _sfc_main$V = {
     });
     return (_ctx, _push, _parent, _attrs) => {
       const _component_v_select = resolveComponent("v-select");
-      _push(`<div${ssrRenderAttrs(_attrs)} data-v-f3e7a985>`);
+      _push(`<div${ssrRenderAttrs(_attrs)} data-v-eeaa79f7>`);
       if (__props.form.processing) {
-        _push(`<div data-v-f3e7a985>`);
+        _push(`<div data-v-eeaa79f7>`);
         _push(ssrRenderComponent(EmptyForm$4, null, null, _parent));
         _push(`</div>`);
       } else {
-        _push(`<div data-v-f3e7a985><div class="grid grid-cols-1 md:grid-cols-3 gap-4" data-v-f3e7a985><div class="col-span-2" data-v-f3e7a985><div class="grid grid-cols-1 md:grid-cols-2 gap-4" data-v-f3e7a985><div data-v-f3e7a985>`);
+        _push(`<div data-v-eeaa79f7><div class="grid grid-cols-1 md:grid-cols-3 gap-4" data-v-eeaa79f7><div class="col-span-2" data-v-eeaa79f7><div class="grid grid-cols-1 md:grid-cols-3 gap-4" data-v-eeaa79f7><div data-v-eeaa79f7>`);
         _push(ssrRenderComponent(_sfc_main$1r, {
           for: "sku",
           value: _ctx.lang().product.sku
@@ -3360,7 +3364,7 @@ const _sfc_main$V = {
           class: "mt-2",
           message: __props.form.errors.sku
         }, null, _parent));
-        _push(`</div><div data-v-f3e7a985>`);
+        _push(`</div><div data-v-eeaa79f7>`);
         _push(ssrRenderComponent(_sfc_main$1r, {
           for: "price",
           value: _ctx.lang().label.price
@@ -3381,7 +3385,24 @@ const _sfc_main$V = {
           class: "mt-2",
           message: __props.form.errors.price
         }, null, _parent));
-        _push(`</div></div><div class="grid grid-cols-1 md:grid-cols-1 gap-4 mt-5" data-v-f3e7a985><div data-v-f3e7a985>`);
+        _push(`</div><div data-v-eeaa79f7>`);
+        _push(ssrRenderComponent(_sfc_main$1r, {
+          for: "unit",
+          value: _ctx.lang().label.unit
+        }, null, _parent));
+        _push(ssrRenderComponent(_sfc_main$1n, {
+          id: "unit",
+          class: "mt-1 block w-full",
+          modelValue: __props.form.unit,
+          "onUpdate:modelValue": ($event) => __props.form.unit = $event,
+          dataSet: __props.unit_list,
+          error: __props.form.errors.unit
+        }, null, _parent));
+        _push(ssrRenderComponent(_sfc_main$1q, {
+          class: "mt-2",
+          message: __props.form.errors.unit
+        }, null, _parent));
+        _push(`</div></div><div class="grid grid-cols-1 md:grid-cols-1 gap-4 mt-5" data-v-eeaa79f7><div data-v-eeaa79f7>`);
         _push(ssrRenderComponent(_sfc_main$1r, {
           for: "category_ids",
           value: _ctx.lang().label.categories
@@ -3398,7 +3419,7 @@ const _sfc_main$V = {
           class: "mt-2",
           message: __props.form.errors.category_ids
         }, null, _parent));
-        _push(`</div></div><div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-5" data-v-f3e7a985><div class="col-span-1" data-v-f3e7a985><div class="grid grid-cols-4 gap-2" data-v-f3e7a985><div class="col-span-3" data-v-f3e7a985>`);
+        _push(`</div></div><div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-5" data-v-eeaa79f7><div class="col-span-1" data-v-eeaa79f7><div class="grid grid-cols-4 gap-2" data-v-eeaa79f7><div class="col-span-3" data-v-eeaa79f7>`);
         _push(ssrRenderComponent(_sfc_main$1r, {
           for: "barcode",
           value: _ctx.lang().product.barcode
@@ -3417,7 +3438,7 @@ const _sfc_main$V = {
           class: "mt-2",
           message: __props.form.errors.barcode
         }, null, _parent));
-        _push(`</div><div class="col-span-1" data-v-f3e7a985>`);
+        _push(`</div><div class="col-span-1" data-v-eeaa79f7>`);
         _push(ssrRenderComponent(_sfc_main$1j, {
           type: "button",
           onClick: searchProductByBarCode,
@@ -3436,7 +3457,7 @@ const _sfc_main$V = {
           }),
           _: 1
         }, _parent));
-        _push(`</div></div></div><div class="col-span-1" data-v-f3e7a985><div class="grid grid-cols-4 gap-2" data-v-f3e7a985><div class="col-span-3" data-v-f3e7a985>`);
+        _push(`</div></div></div><div class="col-span-1" data-v-eeaa79f7><div class="grid grid-cols-4 gap-2" data-v-eeaa79f7><div class="col-span-3" data-v-eeaa79f7>`);
         _push(ssrRenderComponent(_sfc_main$1r, {
           for: "camera-select",
           value: _ctx.lang().label.camera_list
@@ -3449,7 +3470,7 @@ const _sfc_main$V = {
           dataSet: cameras.value,
           onChange: startScanner
         }, null, _parent));
-        _push(`</div><div class="md:col-span-1" data-v-f3e7a985>`);
+        _push(`</div><div class="md:col-span-1" data-v-eeaa79f7>`);
         _push(ssrRenderComponent(_sfc_main$1i, {
           type: "button",
           onClick: toggleScanner,
@@ -3467,19 +3488,19 @@ const _sfc_main$V = {
           }),
           _: 1
         }, _parent));
-        _push(`</div></div></div></div></div><div class="col-span-1" data-v-f3e7a985><div class="grid grid-cols-1 md:grid-cols-1 gap-4" data-v-f3e7a985>`);
+        _push(`</div></div></div></div></div><div class="col-span-1" data-v-eeaa79f7><div class="grid grid-cols-1 md:grid-cols-1 gap-4" data-v-eeaa79f7>`);
         if (scanning.value) {
-          _push(`<div class="mt-4 relative" data-v-f3e7a985><video class="w-full border rounded" autoplay data-v-f3e7a985></video><div class="scanner-overlay" data-v-f3e7a985><div class="scanner-line" style="${ssrRenderStyle({ top: linePosition.value + "px" })}" data-v-f3e7a985></div></div></div>`);
+          _push(`<div class="mt-4 relative" data-v-eeaa79f7><video class="w-full border rounded" autoplay data-v-eeaa79f7></video><div class="scanner-overlay" data-v-eeaa79f7><div class="scanner-line" style="${ssrRenderStyle({ top: linePosition.value + "px" })}" data-v-eeaa79f7></div></div></div>`);
         } else {
           _push(`<!---->`);
         }
-        _push(`</div></div></div><h4 class="text-lg font-medium text-slate-700 dark:text-slate-100 mt-5" data-v-f3e7a985>${ssrInterpolate(_ctx.lang().label.names)}</h4><div class="grid grid-cols-1 gap-4 mt-1" data-v-f3e7a985><ul class="flex border-b" data-v-f3e7a985><!--[-->`);
+        _push(`</div></div></div><h4 class="text-lg font-medium text-slate-700 dark:text-slate-100 mt-5" data-v-eeaa79f7>${ssrInterpolate(_ctx.lang().label.names)}</h4><div class="grid grid-cols-1 gap-4 mt-1" data-v-eeaa79f7><ul class="flex border-b" data-v-eeaa79f7><!--[-->`);
         ssrRenderList(__props.locales, (locale) => {
-          _push(`<li class="-mb-px mr-1" data-v-f3e7a985><a href="javascript:void(0);" class="${ssrRenderClass([activeMainTab.value === locale ? "border-blue-500 text-blue-500" : "border-transparent text-gray-500", "inline-block py-2 px-4 font-semibold border-b-2 cursor-pointer"])}" data-v-f3e7a985>${ssrInterpolate(locale)}</a></li>`);
+          _push(`<li class="-mb-px mr-1" data-v-eeaa79f7><a href="javascript:void(0);" class="${ssrRenderClass([activeMainTab.value === locale ? "border-blue-500 text-blue-500" : "border-transparent text-gray-500", "inline-block py-2 px-4 font-semibold border-b-2 cursor-pointer"])}" data-v-eeaa79f7>${ssrInterpolate(locale)}</a></li>`);
         });
-        _push(`<!--]--></ul><div class="py-3" data-v-f3e7a985><!--[-->`);
+        _push(`<!--]--></ul><div class="py-3" data-v-eeaa79f7><!--[-->`);
         ssrRenderList(__props.locales, (locale) => {
-          _push(`<div style="${ssrRenderStyle(activeMainTab.value === locale ? null : { display: "none" })}" data-v-f3e7a985><div class="grid grid-cols-1 sm:grid-cols-3 gap-4" data-v-f3e7a985><div class="col-pan-1 sm:col-span-1 sm:px-0" data-v-f3e7a985>`);
+          _push(`<div style="${ssrRenderStyle(activeMainTab.value === locale ? null : { display: "none" })}" data-v-eeaa79f7><div class="grid grid-cols-1 sm:grid-cols-3 gap-4" data-v-eeaa79f7><div class="col-pan-1 sm:col-span-1 sm:px-0" data-v-eeaa79f7>`);
           _push(ssrRenderComponent(_sfc_main$1r, {
             for: "name-" + locale,
             value: _ctx.lang().label.name
@@ -3498,7 +3519,7 @@ const _sfc_main$V = {
             class: "mt-2",
             message: __props.form.errors["name." + locale]
           }, null, _parent));
-          _push(`</div><div class="col-pan-1 sm:col-span-2 sm:px-0" data-v-f3e7a985>`);
+          _push(`</div><div class="col-pan-1 sm:col-span-2 sm:px-0" data-v-eeaa79f7>`);
           _push(ssrRenderComponent(_sfc_main$1r, {
             for: "description-" + locale,
             value: _ctx.lang().label.description
@@ -3530,7 +3551,7 @@ _sfc_main$V.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Pages/Admin/Product/Form.vue");
   return _sfc_setup$V ? _sfc_setup$V(props, ctx) : void 0;
 };
-const ProductForm = /* @__PURE__ */ _export_sfc(_sfc_main$V, [["__scopeId", "data-v-f3e7a985"]]);
+const ProductForm = /* @__PURE__ */ _export_sfc(_sfc_main$V, [["__scopeId", "data-v-eeaa79f7"]]);
 const Form$1 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   default: ProductForm
@@ -3541,13 +3562,18 @@ const _sfc_main$U = {
   props: {
     show: Boolean,
     title: String,
-    categories: Object
+    categories: Object,
+    units: Object
   },
   emits: ["close"],
   setup(__props, { emit: __emit }) {
     const props = __props;
     const category_list = Object.keys(props.categories).map((key) => ({
       label: props.categories[key],
+      value: key
+    }));
+    const unit_list = Object.keys(props.units).map((key) => ({
+      label: props.units[key],
       value: key
     }));
     const locales = usePage().props.locales;
@@ -3557,6 +3583,7 @@ const _sfc_main$U = {
       description: Object.fromEntries(locales.map((locale) => [locale, ""])),
       sku: null,
       price: null,
+      unit: null,
       barcode: null,
       category_ids: []
     });
@@ -3589,7 +3616,8 @@ const _sfc_main$U = {
             _push2(ssrRenderComponent(ProductForm, {
               form: unref(form),
               locales: unref(locales),
-              category_list: unref(category_list)
+              category_list: unref(category_list),
+              unit_list: unref(unit_list)
             }, null, _parent2, _scopeId));
             _push2(`</div><div class="flex justify-end"${_scopeId}>`);
             _push2(ssrRenderComponent(_sfc_main$1i, {
@@ -3635,8 +3663,9 @@ const _sfc_main$U = {
                   createVNode(ProductForm, {
                     form: unref(form),
                     locales: unref(locales),
-                    category_list: unref(category_list)
-                  }, null, 8, ["form", "locales", "category_list"])
+                    category_list: unref(category_list),
+                    unit_list: unref(unit_list)
+                  }, null, 8, ["form", "locales", "category_list", "unit_list"])
                 ]),
                 createVNode("div", { class: "flex justify-end" }, [
                   createVNode(_sfc_main$1i, {
@@ -3807,6 +3836,7 @@ const _sfc_main$S = {
     title: String,
     product: Object,
     categories: Object,
+    units: Object,
     locales: Array
   },
   emits: ["close"],
@@ -3817,11 +3847,16 @@ const _sfc_main$S = {
       label: props.categories[key],
       value: key
     }));
+    const unit_list = Object.keys(props.units).map((key) => ({
+      label: props.units[key],
+      value: key
+    }));
     const emit = __emit;
     const form = useForm({
       name: Object.fromEntries(locales.map((locale) => [locale, ""])),
       description: Object.fromEntries(locales.map((locale) => [locale, ""])),
       price: null,
+      unit: null,
       sku: null,
       barcode: null,
       category_ids: []
@@ -3892,7 +3927,8 @@ const _sfc_main$S = {
               form: unref(form),
               locales: unref(locales),
               isEdit: true,
-              category_list: unref(category_list)
+              category_list: unref(category_list),
+              unit_list: unref(unit_list)
             }, null, _parent2, _scopeId));
             _push2(`</div><div class="flex justify-end"${_scopeId}>`);
             _push2(ssrRenderComponent(_sfc_main$1i, {
@@ -3939,8 +3975,9 @@ const _sfc_main$S = {
                     form: unref(form),
                     locales: unref(locales),
                     isEdit: true,
-                    category_list: unref(category_list)
-                  }, null, 8, ["form", "locales", "category_list"])
+                    category_list: unref(category_list),
+                    unit_list: unref(unit_list)
+                  }, null, 8, ["form", "locales", "category_list", "unit_list"])
                 ]),
                 createVNode("div", { class: "flex justify-end" }, [
                   createVNode(_sfc_main$1i, {
@@ -4138,6 +4175,7 @@ const _sfc_main$P = {
     filters: Object,
     products: Object,
     categories: Object,
+    units: Object,
     breadcrumbs: Object,
     perPage: Number
   },
@@ -4155,6 +4193,7 @@ const _sfc_main$P = {
         description: "",
         sku: null,
         price: "",
+        unit: "",
         barcode: "",
         created_at: "",
         updated_at: ""
@@ -4205,7 +4244,7 @@ const _sfc_main$P = {
               title: __props.title,
               breadcrumbs: __props.breadcrumbs
             }, null, _parent2, _scopeId));
-            _push2(`<div class="space-y-4" data-v-c0b4ceee${_scopeId}><div class="px-4 sm:px-0" data-v-c0b4ceee${_scopeId}><div class="rounded-lg overflow-hidden w-fit" data-v-c0b4ceee${_scopeId}>`);
+            _push2(`<div class="space-y-4" data-v-e57fb4ed${_scopeId}><div class="px-4 sm:px-0" data-v-e57fb4ed${_scopeId}><div class="rounded-lg overflow-hidden w-fit" data-v-e57fb4ed${_scopeId}>`);
             _push2(ssrRenderComponent(_sfc_main$1j, {
               style: _ctx.can(["Product Create"]) ? null : { display: "none" },
               class: "rounded-none",
@@ -4226,14 +4265,16 @@ const _sfc_main$P = {
               show: data.createOpen,
               onClose: ($event) => data.createOpen = false,
               title: props.title,
-              categories: props.categories
+              categories: props.categories,
+              units: props.units
             }, null, _parent2, _scopeId));
             _push2(ssrRenderComponent(_sfc_main$S, {
               show: data.editOpen,
               onClose: ($event) => data.editOpen = false,
               product: data.product,
               title: props.title,
-              categories: props.categories
+              categories: props.categories,
+              units: props.units
             }, null, _parent2, _scopeId));
             _push2(ssrRenderComponent(_sfc_main$T, {
               show: data.deleteOpen,
@@ -4247,27 +4288,29 @@ const _sfc_main$P = {
               product: data.product,
               title: props.title
             }, null, _parent2, _scopeId));
-            _push2(`</div></div><div class="relative bg-white dark:bg-slate-800 shadow sm:rounded-lg" data-v-c0b4ceee${_scopeId}><div class="flex justify-between p-2" data-v-c0b4ceee${_scopeId}><div class="flex space-x-2" data-v-c0b4ceee${_scopeId}>`);
+            _push2(`</div></div><div class="relative bg-white dark:bg-slate-800 shadow sm:rounded-lg" data-v-e57fb4ed${_scopeId}><div class="flex justify-between p-2" data-v-e57fb4ed${_scopeId}><div class="flex space-x-2" data-v-e57fb4ed${_scopeId}>`);
             _push2(ssrRenderComponent(_sfc_main$11, {
               modelValue: data.params.perPage,
               "onUpdate:modelValue": ($event) => data.params.perPage = $event,
               dataSet: data.dataSet
             }, null, _parent2, _scopeId));
-            _push2(`</div></div><div class="overflow-x-auto scrollbar-table" data-v-c0b4ceee${_scopeId}><table class="w-full" data-v-c0b4ceee${_scopeId}><thead class="uppercase text-sm border-t border-slate-200 dark:border-slate-700" data-v-c0b4ceee${_scopeId}><tr class="dark:bg-slate-900/50 text-left" data-v-c0b4ceee${_scopeId}><th class="px-2 py-4 cursor-pointer" data-v-c0b4ceee${_scopeId}><div class="flex justify-between items-center" data-v-c0b4ceee${_scopeId}><span data-v-c0b4ceee${_scopeId}>${ssrInterpolate(_ctx.lang().label.id)}</span>`);
+            _push2(`</div></div><div class="overflow-x-auto scrollbar-table" data-v-e57fb4ed${_scopeId}><table class="w-full" data-v-e57fb4ed${_scopeId}><thead class="uppercase text-sm border-t border-slate-200 dark:border-slate-700" data-v-e57fb4ed${_scopeId}><tr class="dark:bg-slate-900/50 text-left" data-v-e57fb4ed${_scopeId}><th class="px-2 py-4 cursor-pointer" data-v-e57fb4ed${_scopeId}><div class="flex justify-between items-center" data-v-e57fb4ed${_scopeId}><span data-v-e57fb4ed${_scopeId}>${ssrInterpolate(_ctx.lang().label.id)}</span>`);
             _push2(ssrRenderComponent(unref(ChevronUpDownIcon), { class: "w-4 h-4" }, null, _parent2, _scopeId));
-            _push2(`</div></th><th class="px-2 py-4 cursor-pointer" data-v-c0b4ceee${_scopeId}><div class="flex justify-between items-center" data-v-c0b4ceee${_scopeId}><span data-v-c0b4ceee${_scopeId}>${ssrInterpolate(_ctx.lang().label.name)}</span>`);
+            _push2(`</div></th><th class="px-2 py-4 cursor-pointer" data-v-e57fb4ed${_scopeId}><div class="flex justify-between items-center" data-v-e57fb4ed${_scopeId}><span data-v-e57fb4ed${_scopeId}>${ssrInterpolate(_ctx.lang().label.name)}</span>`);
             _push2(ssrRenderComponent(unref(ChevronUpDownIcon), { class: "w-4 h-4" }, null, _parent2, _scopeId));
-            _push2(`</div></th><th class="px-2 py-4 cursor-pointer" data-v-c0b4ceee${_scopeId}><div class="flex justify-between items-center" data-v-c0b4ceee${_scopeId}><span data-v-c0b4ceee${_scopeId}>${ssrInterpolate(_ctx.lang().product.sku)}</span>`);
+            _push2(`</div></th><th class="px-2 py-4 cursor-pointer" data-v-e57fb4ed${_scopeId}><div class="flex justify-between items-center" data-v-e57fb4ed${_scopeId}><span data-v-e57fb4ed${_scopeId}>${ssrInterpolate(_ctx.lang().product.sku)}</span>`);
             _push2(ssrRenderComponent(unref(ChevronUpDownIcon), { class: "w-4 h-4" }, null, _parent2, _scopeId));
-            _push2(`</div></th><th class="px-2 py-4 cursor-pointer" data-v-c0b4ceee${_scopeId}><div class="flex justify-between items-right" data-v-c0b4ceee${_scopeId}><span data-v-c0b4ceee${_scopeId}>${ssrInterpolate(_ctx.lang().label.price)}</span>`);
+            _push2(`</div></th><th class="px-2 py-4 cursor-pointer" data-v-e57fb4ed${_scopeId}><div class="flex justify-between items-right" data-v-e57fb4ed${_scopeId}><span data-v-e57fb4ed${_scopeId}>${ssrInterpolate(_ctx.lang().label.price)}</span>`);
             _push2(ssrRenderComponent(unref(ChevronUpDownIcon), { class: "w-4 h-4" }, null, _parent2, _scopeId));
-            _push2(`</div></th><th class="px-2 py-4 cursor-pointer" data-v-c0b4ceee${_scopeId}><div class="flex justify-between items-right" data-v-c0b4ceee${_scopeId}><span data-v-c0b4ceee${_scopeId}>${ssrInterpolate(_ctx.lang().product.barcode)}</span>`);
+            _push2(`</div></th><th class="px-2 py-4 cursor-pointer" data-v-e57fb4ed${_scopeId}><div class="flex justify-between items-right" data-v-e57fb4ed${_scopeId}><span data-v-e57fb4ed${_scopeId}>${ssrInterpolate(_ctx.lang().label.unit)}</span>`);
             _push2(ssrRenderComponent(unref(ChevronUpDownIcon), { class: "w-4 h-4" }, null, _parent2, _scopeId));
-            _push2(`</div></th><th class="px-2 py-4 cursor-pointer" data-v-c0b4ceee${_scopeId}><div class="flex justify-between items-center" data-v-c0b4ceee${_scopeId}><span data-v-c0b4ceee${_scopeId}>${ssrInterpolate(_ctx.lang().label.created_at)}</span>`);
+            _push2(`</div></th><th class="px-2 py-4 cursor-pointer" data-v-e57fb4ed${_scopeId}><div class="flex justify-between items-right" data-v-e57fb4ed${_scopeId}><span data-v-e57fb4ed${_scopeId}>${ssrInterpolate(_ctx.lang().product.barcode)}</span>`);
             _push2(ssrRenderComponent(unref(ChevronUpDownIcon), { class: "w-4 h-4" }, null, _parent2, _scopeId));
-            _push2(`</div></th><th class="px-2 py-4 cursor-pointer" data-v-c0b4ceee${_scopeId}><div class="flex justify-between items-center" data-v-c0b4ceee${_scopeId}><span data-v-c0b4ceee${_scopeId}>${ssrInterpolate(_ctx.lang().label.updated_at)}</span>`);
+            _push2(`</div></th><th class="px-2 py-4 cursor-pointer" data-v-e57fb4ed${_scopeId}><div class="flex justify-between items-center" data-v-e57fb4ed${_scopeId}><span data-v-e57fb4ed${_scopeId}>${ssrInterpolate(_ctx.lang().label.created_at)}</span>`);
             _push2(ssrRenderComponent(unref(ChevronUpDownIcon), { class: "w-4 h-4" }, null, _parent2, _scopeId));
-            _push2(`</div></th><th class="px-2 py-4 sr-only" data-v-c0b4ceee${_scopeId}>Action</th></tr><tr data-v-c0b4ceee${_scopeId}><th class="px-2 pb-3" data-v-c0b4ceee${_scopeId}>`);
+            _push2(`</div></th><th class="px-2 py-4 cursor-pointer" data-v-e57fb4ed${_scopeId}><div class="flex justify-between items-center" data-v-e57fb4ed${_scopeId}><span data-v-e57fb4ed${_scopeId}>${ssrInterpolate(_ctx.lang().label.updated_at)}</span>`);
+            _push2(ssrRenderComponent(unref(ChevronUpDownIcon), { class: "w-4 h-4" }, null, _parent2, _scopeId));
+            _push2(`</div></th><th class="px-2 py-4 sr-only" data-v-e57fb4ed${_scopeId}>Action</th></tr><tr data-v-e57fb4ed${_scopeId}><th class="px-2 pb-3" data-v-e57fb4ed${_scopeId}>`);
             _push2(ssrRenderComponent(_sfc_main$1p, {
               modelValue: data.params["id"],
               "onUpdate:modelValue": ($event) => data.params["id"] = $event,
@@ -4275,14 +4318,14 @@ const _sfc_main$P = {
               type: "text",
               class: "block w-full rounded-lg size-8"
             }, null, _parent2, _scopeId));
-            _push2(`</th><th class="px-2 pb-3" data-v-c0b4ceee${_scopeId}>`);
+            _push2(`</th><th class="px-2 pb-3" data-v-e57fb4ed${_scopeId}>`);
             _push2(ssrRenderComponent(_sfc_main$1p, {
               modelValue: data.params["name"],
               "onUpdate:modelValue": ($event) => data.params["name"] = $event,
               type: "text",
               class: "block w-full rounded-lg size-8"
             }, null, _parent2, _scopeId));
-            _push2(`</th><th class="px-2 pb-3" data-v-c0b4ceee${_scopeId}>`);
+            _push2(`</th><th class="px-2 pb-3" data-v-e57fb4ed${_scopeId}>`);
             _push2(ssrRenderComponent(_sfc_main$1p, {
               modelValue: data.params["sku"],
               "onUpdate:modelValue": ($event) => data.params["sku"] = $event,
@@ -4290,7 +4333,7 @@ const _sfc_main$P = {
               type: "text",
               class: "block w-full rounded-lg size-8"
             }, null, _parent2, _scopeId));
-            _push2(`</th><th class="px-2 pb-3" data-v-c0b4ceee${_scopeId}>`);
+            _push2(`</th><th class="px-2 pb-3" data-v-e57fb4ed${_scopeId}>`);
             _push2(ssrRenderComponent(_sfc_main$1p, {
               modelValue: data.params["price"],
               "onUpdate:modelValue": ($event) => data.params["price"] = $event,
@@ -4298,7 +4341,15 @@ const _sfc_main$P = {
               type: "number",
               class: "block w-full rounded-lg size-8"
             }, null, _parent2, _scopeId));
-            _push2(`</th><th class="px-2 pb-3" data-v-c0b4ceee${_scopeId}>`);
+            _push2(`</th><th class="px-2 pb-3" data-v-e57fb4ed${_scopeId}>`);
+            _push2(ssrRenderComponent(_sfc_main$1p, {
+              modelValue: data.params["unit"],
+              "onUpdate:modelValue": ($event) => data.params["unit"] = $event,
+              modelModifiers: { lazy: true },
+              type: "text",
+              class: "block w-full rounded-lg size-8"
+            }, null, _parent2, _scopeId));
+            _push2(`</th><th class="px-2 pb-3" data-v-e57fb4ed${_scopeId}>`);
             _push2(ssrRenderComponent(_sfc_main$1p, {
               modelValue: data.params["barcode"],
               "onUpdate:modelValue": ($event) => data.params["barcode"] = $event,
@@ -4306,7 +4357,7 @@ const _sfc_main$P = {
               type: "number",
               class: "block w-full rounded-lg size-8"
             }, null, _parent2, _scopeId));
-            _push2(`</th><th class="px-2 pb-3" data-v-c0b4ceee${_scopeId}>`);
+            _push2(`</th><th class="px-2 pb-3" data-v-e57fb4ed${_scopeId}>`);
             _push2(ssrRenderComponent(unref(VueDatePicker), {
               modelValue: data.params.created_at,
               "onUpdate:modelValue": ($event) => data.params.created_at = $event,
@@ -4320,19 +4371,19 @@ const _sfc_main$P = {
               timezone: timezone.value,
               style: { "line-height": "14px" }
             }, null, _parent2, _scopeId));
-            _push2(`</th><th class="px-2 pb-3" data-v-c0b4ceee${_scopeId}>`);
+            _push2(`</th><th class="px-2 pb-3" data-v-e57fb4ed${_scopeId}>`);
             _push2(ssrRenderComponent(_sfc_main$1p, {
               modelValue: data.params.updated_at,
               "onUpdate:modelValue": ($event) => data.params.updated_at = $event,
               type: "text",
               class: "block w-full rounded-lg size-8"
             }, null, _parent2, _scopeId));
-            _push2(`</th><th class="px-2 pb-3" data-v-c0b4ceee${_scopeId}></th></tr></thead><tbody data-v-c0b4ceee${_scopeId}><!--[-->`);
+            _push2(`</th><th class="px-2 pb-3" data-v-e57fb4ed${_scopeId}></th></tr></thead><tbody data-v-e57fb4ed${_scopeId}><!--[-->`);
             ssrRenderList(__props.products.data, (product, index) => {
               _push2(`<tr class="${ssrRenderClass([
                 product.deleted_at ? "bg-red-500/30 dark:bg-red-900/20 hover:bg-red-600/30 dark:hover:bg-red-900/20" : "hover:bg-slate-200/30 hover:dark:bg-slate-900/20",
                 "border-t border-slate-200 dark:border-slate-700"
-              ])}" data-v-c0b4ceee${_scopeId}><td class="whitespace-nowrap py-4 px-2 sm:py-3 text-left" data-v-c0b4ceee${_scopeId}>${ssrInterpolate(product.id)}</td><td class="whitespace-nowrap py-4 px-2 sm:py-3 text-left" data-v-c0b4ceee${_scopeId}>${ssrInterpolate(product.name)}</td><td class="whitespace-nowrap py-4 px-2 sm:py-3 text-center" data-v-c0b4ceee${_scopeId}>${ssrInterpolate(product.sku)}</td><td class="whitespace-nowrap py-4 px-2 sm:py-3 text-center" data-v-c0b4ceee${_scopeId}>${ssrInterpolate(product.price)}</td><td class="whitespace-nowrap py-4 px-2 sm:py-3 text-center" data-v-c0b4ceee${_scopeId}>${ssrInterpolate(product.barcode)}</td><td class="whitespace-nowrap py-4 px-2 sm:py-3" data-v-c0b4ceee${_scopeId}>${ssrInterpolate(product.created_at)}</td><td class="whitespace-nowrap py-4 px-2 sm:py-3" data-v-c0b4ceee${_scopeId}>${ssrInterpolate(product.updated_at)}</td><td class="whitespace-nowrap py-4 px-2 sm:py-3" data-v-c0b4ceee${_scopeId}><div class="flex justify-center items-center" data-v-c0b4ceee${_scopeId}><div class="rounded-md overflow-hidden" data-v-c0b4ceee${_scopeId}>`);
+              ])}" data-v-e57fb4ed${_scopeId}><td class="whitespace-nowrap py-4 px-2 sm:py-3 text-left" data-v-e57fb4ed${_scopeId}>${ssrInterpolate(product.id)}</td><td class="whitespace-nowrap py-4 px-2 sm:py-3 text-left" data-v-e57fb4ed${_scopeId}>${ssrInterpolate(product.name)}</td><td class="whitespace-nowrap py-4 px-2 sm:py-3 text-center" data-v-e57fb4ed${_scopeId}>${ssrInterpolate(product.sku)}</td><td class="whitespace-nowrap py-4 px-2 sm:py-3 text-center" data-v-e57fb4ed${_scopeId}>${ssrInterpolate(product.price)}</td><td class="whitespace-nowrap py-4 px-2 sm:py-3 text-left" data-v-e57fb4ed${_scopeId}>${ssrInterpolate(product.unit)}</td><td class="whitespace-nowrap py-4 px-2 sm:py-3 text-center" data-v-e57fb4ed${_scopeId}>${ssrInterpolate(product.barcode)}</td><td class="whitespace-nowrap py-4 px-2 sm:py-3" data-v-e57fb4ed${_scopeId}>${ssrInterpolate(product.created_at)}</td><td class="whitespace-nowrap py-4 px-2 sm:py-3" data-v-e57fb4ed${_scopeId}>${ssrInterpolate(product.updated_at)}</td><td class="whitespace-nowrap py-4 px-2 sm:py-3" data-v-e57fb4ed${_scopeId}><div class="flex justify-center items-center" data-v-e57fb4ed${_scopeId}><div class="rounded-md overflow-hidden" data-v-e57fb4ed${_scopeId}>`);
               _push2(ssrRenderComponent(unref(Link), {
                 class: "inline-flex items-center px-2 py-1.5 bg-green-600 border border-transparent font-semibold text-xs text-white uppercase tracking-widest hover:bg-green-500 active:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 dark:focus:ring-offset-slate-800 transition ease-in-out duration-150",
                 href: _ctx.route("admin.product.show", product == null ? void 0 : product.id),
@@ -4403,7 +4454,7 @@ const _sfc_main$P = {
               }, _parent2, _scopeId));
               _push2(`</div></div></td></tr>`);
             });
-            _push2(`<!--]--></tbody></table></div><div class="flex justify-between items-center p-2 border-t border-slate-200 dark:border-slate-700" data-v-c0b4ceee${_scopeId}>`);
+            _push2(`<!--]--></tbody></table></div><div class="flex justify-between items-center p-2 border-t border-slate-200 dark:border-slate-700" data-v-e57fb4ed${_scopeId}>`);
             _push2(ssrRenderComponent(_sfc_main$_, {
               links: props.products,
               filters: data.params
@@ -4433,15 +4484,17 @@ const _sfc_main$P = {
                       show: data.createOpen,
                       onClose: ($event) => data.createOpen = false,
                       title: props.title,
-                      categories: props.categories
-                    }, null, 8, ["show", "onClose", "title", "categories"]),
+                      categories: props.categories,
+                      units: props.units
+                    }, null, 8, ["show", "onClose", "title", "categories", "units"]),
                     createVNode(_sfc_main$S, {
                       show: data.editOpen,
                       onClose: ($event) => data.editOpen = false,
                       product: data.product,
                       title: props.title,
-                      categories: props.categories
-                    }, null, 8, ["show", "onClose", "product", "title", "categories"]),
+                      categories: props.categories,
+                      units: props.units
+                    }, null, 8, ["show", "onClose", "product", "title", "categories", "units"]),
                     createVNode(_sfc_main$T, {
                       show: data.deleteOpen,
                       onClose: ($event) => data.deleteOpen = false,
@@ -4503,6 +4556,15 @@ const _sfc_main$P = {
                           }, [
                             createVNode("div", { class: "flex justify-between items-right" }, [
                               createVNode("span", null, toDisplayString(_ctx.lang().label.price), 1),
+                              createVNode(unref(ChevronUpDownIcon), { class: "w-4 h-4" })
+                            ])
+                          ], 8, ["onClick"]),
+                          createVNode("th", {
+                            class: "px-2 py-4 cursor-pointer",
+                            onClick: ($event) => order("unit")
+                          }, [
+                            createVNode("div", { class: "flex justify-between items-right" }, [
+                              createVNode("span", null, toDisplayString(_ctx.lang().label.unit), 1),
                               createVNode(unref(ChevronUpDownIcon), { class: "w-4 h-4" })
                             ])
                           ], 8, ["onClick"]),
@@ -4573,6 +4635,15 @@ const _sfc_main$P = {
                           ]),
                           createVNode("th", { class: "px-2 pb-3" }, [
                             createVNode(_sfc_main$1p, {
+                              modelValue: data.params["unit"],
+                              "onUpdate:modelValue": ($event) => data.params["unit"] = $event,
+                              modelModifiers: { lazy: true },
+                              type: "text",
+                              class: "block w-full rounded-lg size-8"
+                            }, null, 8, ["modelValue", "onUpdate:modelValue"])
+                          ]),
+                          createVNode("th", { class: "px-2 pb-3" }, [
+                            createVNode(_sfc_main$1p, {
                               modelValue: data.params["barcode"],
                               "onUpdate:modelValue": ($event) => data.params["barcode"] = $event,
                               modelModifiers: { lazy: true },
@@ -4619,6 +4690,7 @@ const _sfc_main$P = {
                             createVNode("td", { class: "whitespace-nowrap py-4 px-2 sm:py-3 text-left" }, toDisplayString(product.name), 1),
                             createVNode("td", { class: "whitespace-nowrap py-4 px-2 sm:py-3 text-center" }, toDisplayString(product.sku), 1),
                             createVNode("td", { class: "whitespace-nowrap py-4 px-2 sm:py-3 text-center" }, toDisplayString(product.price), 1),
+                            createVNode("td", { class: "whitespace-nowrap py-4 px-2 sm:py-3 text-left" }, toDisplayString(product.unit), 1),
                             createVNode("td", { class: "whitespace-nowrap py-4 px-2 sm:py-3 text-center" }, toDisplayString(product.barcode), 1),
                             createVNode("td", { class: "whitespace-nowrap py-4 px-2 sm:py-3" }, toDisplayString(product.created_at), 1),
                             createVNode("td", { class: "whitespace-nowrap py-4 px-2 sm:py-3" }, toDisplayString(product.updated_at), 1),
@@ -4706,7 +4778,7 @@ _sfc_main$P.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Pages/Admin/Product/Index.vue");
   return _sfc_setup$P ? _sfc_setup$P(props, ctx) : void 0;
 };
-const Index$7 = /* @__PURE__ */ _export_sfc(_sfc_main$P, [["__scopeId", "data-v-c0b4ceee"]]);
+const Index$7 = /* @__PURE__ */ _export_sfc(_sfc_main$P, [["__scopeId", "data-v-e57fb4ed"]]);
 const Index$8 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   default: Index$7
@@ -4718,6 +4790,7 @@ const _sfc_main$O = {
     title: String,
     items: Object,
     categories: Object,
+    units: Object,
     breadcrumbs: Object
   },
   setup(__props) {
@@ -4750,7 +4823,8 @@ const _sfc_main$O = {
               onClose: ($event) => data.editOpen = false,
               product: data.product,
               title: props.title,
-              categories: props.categories
+              categories: props.categories,
+              units: props.units
             }, null, _parent2, _scopeId));
             _push2(`</div></div></div><div class="grid grid-cols-1 md:grid-cols-3 gap-4"${_scopeId}><div class="col-span-1 md:col-span-2 px-4 sm:px-0"${_scopeId}><div class="space-y-4"${_scopeId}><div class="px-4 sm:px-0"${_scopeId}><div class="bg-white dark:bg-slate-800 shadow sm:rounded-lg"${_scopeId}><div class="${ssrRenderClass([
               unref(product).deleted_at ? "bg-red-300" : "",
@@ -4773,7 +4847,7 @@ const _sfc_main$O = {
               }),
               _: 1
             }, _parent2, _scopeId));
-            _push2(`</div></div></div><div class="border-t border-gray-200 dark:border-slate-700"${_scopeId}><div${_scopeId}><div class="bg-white dark:bg-slate-900 px-4 py-2.5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6"${_scopeId}><dt class="text-sm font-medium text-gray-500 dark:text-slate-400"${_scopeId}> ID </dt><dd class="mt-1 text-sm text-gray-900 dark:text-slate-200 sm:mt-0 sm:col-span-2"${_scopeId}>${ssrInterpolate(unref(product).id)}</dd></div><div class="bg-gray-100 dark:bg-slate-900 px-4 py-2.5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6"${_scopeId}><dt class="text-sm font-medium text-gray-500 dark:text-slate-400"${_scopeId}>${ssrInterpolate(_ctx.lang().label.name)}</dt><dd class="mt-1 text-sm text-gray-900 dark:text-slate-200 sm:mt-0 sm:col-span-2"${_scopeId}>${ssrInterpolate(unref(product).name)}</dd></div><div class="bg-white dark:bg-slate-800 px-4 py-2.5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6"${_scopeId}><dt class="text-sm font-medium text-gray-500 dark:text-slate-400"${_scopeId}>${ssrInterpolate(_ctx.lang().label.description)}</dt><dd class="mt-1 text-sm text-gray-900 dark:text-slate-200 sm:mt-0 sm:col-span-2"${_scopeId}>${ssrInterpolate(unref(product).description)}</dd></div><div class="bg-gray-100 dark:bg-slate-800 px-4 py-2.5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6"${_scopeId}><dt class="text-sm font-medium text-gray-500 dark:text-slate-400"${_scopeId}>${ssrInterpolate(_ctx.lang().product.sku)}</dt><dd class="mt-1 text-sm text-gray-900 dark:text-slate-200 sm:mt-0 sm:col-span-2"${_scopeId}>${ssrInterpolate(unref(product).sku)}</dd></div><div class="bg-white dark:bg-slate-800 px-4 py-2.5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6"${_scopeId}><dt class="text-sm font-medium text-gray-500 dark:text-slate-400"${_scopeId}>${ssrInterpolate(_ctx.lang().label.price)}</dt><dd class="mt-1 text-sm text-gray-900 dark:text-slate-200 sm:mt-0 sm:col-span-2"${_scopeId}>${ssrInterpolate(unref(product).price)}</dd></div><div class="bg-gray-100 dark:bg-slate-800 px-4 py-2.5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6"${_scopeId}><dt class="text-sm font-medium text-gray-500 dark:text-slate-400"${_scopeId}>${ssrInterpolate(_ctx.lang().product.barcode)}</dt><dd class="mt-1 text-sm text-gray-900 dark:text-slate-200 sm:mt-0 sm:col-span-2"${_scopeId}>${ssrInterpolate(unref(product).barcode)}</dd></div><div class="bg-white dark:bg-slate-800 px-4 py-2.5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6"${_scopeId}><dt class="text-sm font-medium text-gray-500 dark:text-slate-400"${_scopeId}>${ssrInterpolate(_ctx.lang().label.created_at)}</dt><dd class="mt-1 text-sm text-gray-900 dark:text-slate-200 sm:mt-0 sm:col-span-2"${_scopeId}>${ssrInterpolate(unref(product).created_at)}</dd></div><div class="bg-gray-100 dark:bg-slate-900 px-4 py-2.5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6"${_scopeId}><dt class="text-sm font-medium text-gray-500 dark:text-slate-400"${_scopeId}>${ssrInterpolate(_ctx.lang().label.updated_at)}</dt><dd class="mt-1 text-sm text-gray-900 dark:text-slate-200 sm:mt-0 sm:col-span-2"${_scopeId}>${ssrInterpolate(unref(product).updated_at)}</dd></div></div></div></div></div></div></div><div class="col-span-1 md:col-span-1 px-4 sm:px-0"${_scopeId}><div class="bg-white dark:bg-slate-800 shadow sm:rounded-lg"${_scopeId}><div class="px-4 py-5 sm:px-6"${_scopeId}><h3 class="text-lg leading-6 font-medium text-gray-900 dark:text-slate-200"${_scopeId}>${ssrInterpolate(_ctx.lang().label.categories)}</h3></div><div class="border-t border-gray-200 dark:border-slate-700"${_scopeId}><ul class="divide-y divide-gray-200 dark:divide-slate-700"${_scopeId}><!--[-->`);
+            _push2(`</div></div></div><div class="border-t border-gray-200 dark:border-slate-700"${_scopeId}><div${_scopeId}><div class="bg-white dark:bg-slate-900 px-4 py-2.5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6"${_scopeId}><dt class="text-sm font-medium text-gray-500 dark:text-slate-400"${_scopeId}> ID </dt><dd class="mt-1 text-sm text-gray-900 dark:text-slate-200 sm:mt-0 sm:col-span-2"${_scopeId}>${ssrInterpolate(unref(product).id)}</dd></div><div class="bg-gray-100 dark:bg-slate-900 px-4 py-2.5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6"${_scopeId}><dt class="text-sm font-medium text-gray-500 dark:text-slate-400"${_scopeId}>${ssrInterpolate(_ctx.lang().label.name)}</dt><dd class="mt-1 text-sm text-gray-900 dark:text-slate-200 sm:mt-0 sm:col-span-2"${_scopeId}>${ssrInterpolate(unref(product).name)}</dd></div><div class="bg-white dark:bg-slate-800 px-4 py-2.5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6"${_scopeId}><dt class="text-sm font-medium text-gray-500 dark:text-slate-400"${_scopeId}>${ssrInterpolate(_ctx.lang().label.description)}</dt><dd class="mt-1 text-sm text-gray-900 dark:text-slate-200 sm:mt-0 sm:col-span-2"${_scopeId}>${ssrInterpolate(unref(product).description)}</dd></div><div class="bg-gray-100 dark:bg-slate-800 px-4 py-2.5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6"${_scopeId}><dt class="text-sm font-medium text-gray-500 dark:text-slate-400"${_scopeId}>${ssrInterpolate(_ctx.lang().product.sku)}</dt><dd class="mt-1 text-sm text-gray-900 dark:text-slate-200 sm:mt-0 sm:col-span-2"${_scopeId}>${ssrInterpolate(unref(product).sku)}</dd></div><div class="bg-white dark:bg-slate-800 px-4 py-2.5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6"${_scopeId}><dt class="text-sm font-medium text-gray-500 dark:text-slate-400"${_scopeId}>${ssrInterpolate(_ctx.lang().label.price)}</dt><dd class="mt-1 text-sm text-gray-900 dark:text-slate-200 sm:mt-0 sm:col-span-2"${_scopeId}>${ssrInterpolate(unref(product).price)}</dd></div><div class="bg-white dark:bg-slate-800 px-4 py-2.5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6"${_scopeId}><dt class="text-sm font-medium text-gray-500 dark:text-slate-400"${_scopeId}>${ssrInterpolate(_ctx.lang().label.unit)}</dt><dd class="mt-1 text-sm text-gray-900 dark:text-slate-200 sm:mt-0 sm:col-span-2"${_scopeId}>${ssrInterpolate(unref(product).unit)}</dd></div><div class="bg-gray-100 dark:bg-slate-800 px-4 py-2.5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6"${_scopeId}><dt class="text-sm font-medium text-gray-500 dark:text-slate-400"${_scopeId}>${ssrInterpolate(_ctx.lang().product.barcode)}</dt><dd class="mt-1 text-sm text-gray-900 dark:text-slate-200 sm:mt-0 sm:col-span-2"${_scopeId}>${ssrInterpolate(unref(product).barcode)}</dd></div><div class="bg-white dark:bg-slate-800 px-4 py-2.5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6"${_scopeId}><dt class="text-sm font-medium text-gray-500 dark:text-slate-400"${_scopeId}>${ssrInterpolate(_ctx.lang().label.created_at)}</dt><dd class="mt-1 text-sm text-gray-900 dark:text-slate-200 sm:mt-0 sm:col-span-2"${_scopeId}>${ssrInterpolate(unref(product).created_at)}</dd></div><div class="bg-gray-100 dark:bg-slate-900 px-4 py-2.5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6"${_scopeId}><dt class="text-sm font-medium text-gray-500 dark:text-slate-400"${_scopeId}>${ssrInterpolate(_ctx.lang().label.updated_at)}</dt><dd class="mt-1 text-sm text-gray-900 dark:text-slate-200 sm:mt-0 sm:col-span-2"${_scopeId}>${ssrInterpolate(unref(product).updated_at)}</dd></div></div></div></div></div></div></div><div class="col-span-1 md:col-span-1 px-4 sm:px-0"${_scopeId}><div class="bg-white dark:bg-slate-800 shadow sm:rounded-lg"${_scopeId}><div class="px-4 py-5 sm:px-6"${_scopeId}><h3 class="text-lg leading-6 font-medium text-gray-900 dark:text-slate-200"${_scopeId}>${ssrInterpolate(_ctx.lang().label.categories)}</h3></div><div class="border-t border-gray-200 dark:border-slate-700"${_scopeId}><ul class="divide-y divide-gray-200 dark:divide-slate-700"${_scopeId}><!--[-->`);
             ssrRenderList(unref(product).categories, (category) => {
               _push2(`<li class="px-4 py-4 sm:px-6"${_scopeId}><div class="text-sm font-medium text-gray-700 dark:text-slate-200"${_scopeId}>${ssrInterpolate(category.label)}</div></li>`);
             });
@@ -4792,8 +4866,9 @@ const _sfc_main$O = {
                       onClose: ($event) => data.editOpen = false,
                       product: data.product,
                       title: props.title,
-                      categories: props.categories
-                    }, null, 8, ["show", "onClose", "product", "title", "categories"])
+                      categories: props.categories,
+                      units: props.units
+                    }, null, 8, ["show", "onClose", "product", "title", "categories", "units"])
                   ])
                 ])
               ]),
@@ -4850,6 +4925,10 @@ const _sfc_main$O = {
                             createVNode("div", { class: "bg-white dark:bg-slate-800 px-4 py-2.5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6" }, [
                               createVNode("dt", { class: "text-sm font-medium text-gray-500 dark:text-slate-400" }, toDisplayString(_ctx.lang().label.price), 1),
                               createVNode("dd", { class: "mt-1 text-sm text-gray-900 dark:text-slate-200 sm:mt-0 sm:col-span-2" }, toDisplayString(unref(product).price), 1)
+                            ]),
+                            createVNode("div", { class: "bg-white dark:bg-slate-800 px-4 py-2.5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6" }, [
+                              createVNode("dt", { class: "text-sm font-medium text-gray-500 dark:text-slate-400" }, toDisplayString(_ctx.lang().label.unit), 1),
+                              createVNode("dd", { class: "mt-1 text-sm text-gray-900 dark:text-slate-200 sm:mt-0 sm:col-span-2" }, toDisplayString(unref(product).unit), 1)
                             ]),
                             createVNode("div", { class: "bg-gray-100 dark:bg-slate-800 px-4 py-2.5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6" }, [
                               createVNode("dt", { class: "text-sm font-medium text-gray-500 dark:text-slate-400" }, toDisplayString(_ctx.lang().product.barcode), 1),
@@ -6234,7 +6313,6 @@ const _sfc_main$G = {
       label: props.status_list[key],
       value: key
     }));
-    console.log(status_list);
     const emit = __emit;
     const form = useForm({
       name: "",
@@ -6566,11 +6644,19 @@ const _sfc_main$E = {
   __ssrInlineRender: true,
   props: {
     show: Boolean,
-    title: String
+    title: String,
+    status_list: {
+      type: Object,
+      default: () => ({})
+    }
   },
   emits: ["close"],
   setup(__props, { emit: __emit }) {
     const props = __props;
+    const status_list = Object.keys(props.status_list).map((key) => ({
+      label: props.status_list[key],
+      value: key
+    }));
     const locales = usePage().props.locales;
     const emit = __emit;
     const form = useForm({
@@ -6606,7 +6692,8 @@ const _sfc_main$E = {
             _push2(`<form class="p-6"${_scopeId}><h2 class="text-lg font-medium text-slate-900 dark:text-slate-100"${_scopeId}>${ssrInterpolate(_ctx.lang().label.add)} ${ssrInterpolate(_ctx.lang().label.warehouse)}</h2><div class="my-6 space-y-4"${_scopeId}>`);
             _push2(ssrRenderComponent(_sfc_main$M, {
               form: unref(form),
-              locales: unref(locales)
+              locales: unref(locales),
+              status_list: unref(status_list)
             }, null, _parent2, _scopeId));
             _push2(`</div><div class="flex justify-end"${_scopeId}>`);
             _push2(ssrRenderComponent(_sfc_main$1i, {
@@ -6651,8 +6738,9 @@ const _sfc_main$E = {
                 createVNode("div", { class: "my-6 space-y-4" }, [
                   createVNode(_sfc_main$M, {
                     form: unref(form),
-                    locales: unref(locales)
-                  }, null, 8, ["form", "locales"])
+                    locales: unref(locales),
+                    status_list: unref(status_list)
+                  }, null, 8, ["form", "locales", "status_list"])
                 ]),
                 createVNode("div", { class: "flex justify-end" }, [
                   createVNode(_sfc_main$1i, {
@@ -8686,6 +8774,7 @@ const _sfc_main$r = {
         product_id: "",
         product_name: "",
         quantity: "",
+        product_unit: "",
         created_at: ""
       },
       selectedId: [],
@@ -8791,6 +8880,8 @@ const _sfc_main$r = {
             _push2(ssrRenderComponent(unref(ChevronUpDownIcon), { class: "w-4 h-4" }, null, _parent2, _scopeId));
             _push2(`</div></th><th class="px-2 py-4 cursor-pointer w-36"${_scopeId}><div class="flex justify-between items-center"${_scopeId}><span${_scopeId}>${ssrInterpolate(_ctx.lang().label.quantity)}</span>`);
             _push2(ssrRenderComponent(unref(ChevronUpDownIcon), { class: "w-4 h-4" }, null, _parent2, _scopeId));
+            _push2(`</div></th><th class="px-2 py-4 cursor-pointer w-36"${_scopeId}><div class="flex justify-between items-center"${_scopeId}><span${_scopeId}>${ssrInterpolate(_ctx.lang().label.product_unit)}</span>`);
+            _push2(ssrRenderComponent(unref(ChevronUpDownIcon), { class: "w-4 h-4" }, null, _parent2, _scopeId));
             _push2(`</div></th><th class="px-2 py-4 cursor-pointer"${_scopeId}><div class="flex justify-between items-center"${_scopeId}><span${_scopeId}>${ssrInterpolate(_ctx.lang().label.created)}</span>`);
             _push2(ssrRenderComponent(unref(ChevronUpDownIcon), { class: "w-4 h-4" }, null, _parent2, _scopeId));
             _push2(`</div></th><th class="px-2 py-4 cursor-pointer"${_scopeId}><div class="flex justify-between items-center"${_scopeId}><span${_scopeId}>${ssrInterpolate(_ctx.lang().label.updated)}</span>`);
@@ -8821,6 +8912,14 @@ const _sfc_main$r = {
               placeholder: _ctx.lang().label.quantity
             }, null, _parent2, _scopeId));
             _push2(`</th><th class="px-2 pb-3"${_scopeId}>`);
+            _push2(ssrRenderComponent(_sfc_main$1p, {
+              modelValue: data.params["product_unit"],
+              "onUpdate:modelValue": ($event) => data.params["product_unit"] = $event,
+              type: "text",
+              class: "block w-full rounded-lg size-8",
+              placeholder: _ctx.lang().label.unit
+            }, null, _parent2, _scopeId));
+            _push2(`</th><th class="px-2 pb-3"${_scopeId}>`);
             _push2(ssrRenderComponent(unref(VueDatePicker), {
               modelValue: data.params.created_at,
               "onUpdate:modelValue": ($event) => data.params.created_at = $event,
@@ -8846,7 +8945,7 @@ const _sfc_main$r = {
             }, null, _parent2, _scopeId));
             _push2(`</th><th class="px-2 pb-3"${_scopeId}></th></tr></thead><tbody${_scopeId}><!--[-->`);
             ssrRenderList(__props.warehouse_products.data, (warehouse_product, index) => {
-              _push2(`<tr class="border-t border-slate-200 dark:border-slate-700 hover:bg-slate-200/30 hover:dark:bg-slate-900/20"${_scopeId}><td class="${ssrRenderClass([{ "bg-red-600 text-white": !warehouse_product.warehouse_isset }, "whitespace-nowrap py-4 px-2 sm:py-3 text-left"])}"${_scopeId}>${ssrInterpolate(warehouse_product.warehouse_name)}</td><td class="whitespace-nowrap py-4 px-2 sm:py-3 text-left"${_scopeId}>${ssrInterpolate(props.products[warehouse_product.product_id])}</td><td class="whitespace-nowrap py-4 px-2 sm:py-3 text-right"${_scopeId}>${ssrInterpolate(warehouse_product.quantity)}</td><td class="whitespace-nowrap py-4 px-2 sm:py-3 text-right"${_scopeId}>${ssrInterpolate(warehouse_product.created_at)}</td><td class="whitespace-nowrap py-4 px-2 sm:py-3 text-right"${_scopeId}>${ssrInterpolate(warehouse_product.updated_at)}</td><td class="whitespace-nowrap py-4 px-2 sm:py-3"${_scopeId}><div class="flex justify-center items-center"${_scopeId}><div class="rounded-md overflow-hidden"${_scopeId}>`);
+              _push2(`<tr class="border-t border-slate-200 dark:border-slate-700 hover:bg-slate-200/30 hover:dark:bg-slate-900/20"${_scopeId}><td class="${ssrRenderClass([{ "bg-red-600 text-white": !warehouse_product.warehouse_isset }, "whitespace-nowrap py-4 px-2 sm:py-3 text-left"])}"${_scopeId}>${ssrInterpolate(warehouse_product.warehouse_name)}</td><td class="whitespace-nowrap py-4 px-2 sm:py-3 text-left"${_scopeId}>${ssrInterpolate(props.products[warehouse_product.product_id])}</td><td class="whitespace-nowrap py-4 px-2 sm:py-3 text-right"${_scopeId}>${ssrInterpolate(warehouse_product.quantity)}</td><td class="whitespace-nowrap py-4 px-2 sm:py-3 text-left"${_scopeId}>${ssrInterpolate(warehouse_product.product_unit)}</td><td class="whitespace-nowrap py-4 px-2 sm:py-3 text-right"${_scopeId}>${ssrInterpolate(warehouse_product.created_at)}</td><td class="whitespace-nowrap py-4 px-2 sm:py-3 text-right"${_scopeId}>${ssrInterpolate(warehouse_product.updated_at)}</td><td class="whitespace-nowrap py-4 px-2 sm:py-3"${_scopeId}><div class="flex justify-center items-center"${_scopeId}><div class="rounded-md overflow-hidden"${_scopeId}>`);
               _push2(ssrRenderComponent(unref(Link), {
                 class: "inline-flex items-center px-2 py-1.5 bg-slate-600 border border-transparent font-semibold text-xs text-white uppercase tracking-widest hover:bg-slate-500 active:bg-slate-700 focus:outline-none focus:ring-2 focus:ring-slate-500 focus:ring-offset-2 dark:focus:ring-offset-slate-800 transition ease-in-out duration-150",
                 href: _ctx.route("admin.warehouse_product.show", warehouse_product == null ? void 0 : warehouse_product.id),
@@ -8998,6 +9097,15 @@ const _sfc_main$r = {
                             ])
                           ], 8, ["onClick"]),
                           createVNode("th", {
+                            class: "px-2 py-4 cursor-pointer w-36",
+                            onClick: ($event) => order("product_unit")
+                          }, [
+                            createVNode("div", { class: "flex justify-between items-center" }, [
+                              createVNode("span", null, toDisplayString(_ctx.lang().label.product_unit), 1),
+                              createVNode(unref(ChevronUpDownIcon), { class: "w-4 h-4" })
+                            ])
+                          ], 8, ["onClick"]),
+                          createVNode("th", {
                             class: "px-2 py-4 cursor-pointer",
                             onClick: ($event) => order("created_at")
                           }, [
@@ -9047,6 +9155,15 @@ const _sfc_main$r = {
                             }, null, 8, ["modelValue", "onUpdate:modelValue", "placeholder"])
                           ]),
                           createVNode("th", { class: "px-2 pb-3" }, [
+                            createVNode(_sfc_main$1p, {
+                              modelValue: data.params["product_unit"],
+                              "onUpdate:modelValue": ($event) => data.params["product_unit"] = $event,
+                              type: "text",
+                              class: "block w-full rounded-lg size-8",
+                              placeholder: _ctx.lang().label.unit
+                            }, null, 8, ["modelValue", "onUpdate:modelValue", "placeholder"])
+                          ]),
+                          createVNode("th", { class: "px-2 pb-3" }, [
                             createVNode(unref(VueDatePicker), {
                               modelValue: data.params.created_at,
                               "onUpdate:modelValue": ($event) => data.params.created_at = $event,
@@ -9086,6 +9203,7 @@ const _sfc_main$r = {
                             }, toDisplayString(warehouse_product.warehouse_name), 3),
                             createVNode("td", { class: "whitespace-nowrap py-4 px-2 sm:py-3 text-left" }, toDisplayString(props.products[warehouse_product.product_id]), 1),
                             createVNode("td", { class: "whitespace-nowrap py-4 px-2 sm:py-3 text-right" }, toDisplayString(warehouse_product.quantity), 1),
+                            createVNode("td", { class: "whitespace-nowrap py-4 px-2 sm:py-3 text-left" }, toDisplayString(warehouse_product.product_unit), 1),
                             createVNode("td", { class: "whitespace-nowrap py-4 px-2 sm:py-3 text-right" }, toDisplayString(warehouse_product.created_at), 1),
                             createVNode("td", { class: "whitespace-nowrap py-4 px-2 sm:py-3 text-right" }, toDisplayString(warehouse_product.updated_at), 1),
                             createVNode("td", { class: "whitespace-nowrap py-4 px-2 sm:py-3" }, [

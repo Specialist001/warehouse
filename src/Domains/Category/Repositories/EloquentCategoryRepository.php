@@ -3,6 +3,7 @@
 namespace Domains\Category\Repositories;
 
 
+use Domains\Category\Dto\CategoryDto;
 use Domains\Category\Models\Category;
 
 class EloquentCategoryRepository extends CategoryRepository
@@ -27,28 +28,28 @@ class EloquentCategoryRepository extends CategoryRepository
         return Category::latest()->paginate($pagination);
     }
 
-    public function create(array $data): Category
+    public function create(CategoryDto $dto): Category
     {
-        return Category::create($data);
+        return Category::create($dto->toArray());
     }
 
-    public function update(string $id, array $data): Category|bool
+    public function update(string $id, CategoryDto $dto): Category|bool
     {
-        $restaurant = $this->get($id);
-        if ($restaurant) {
-            $restaurant->update($data);
-            return $restaurant;
+        $category = $this->get($id);
+        if ($category) {
+            $category->update($dto->toArray());
+            return $category;
         }
         return false;
     }
 
     public function delete(string $id): bool
     {
-        $restaurant = $this->get($id);
-        if ($restaurant) {
-            $restaurant->save();
+        $category = $this->get($id);
+        if ($category) {
+            $category->save();
 
-            return $restaurant->delete();
+            return $category->delete();
         }
 
         return false;

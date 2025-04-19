@@ -19,6 +19,7 @@ import {usePage} from "@inertiajs/vue3";
 import Quagga from 'quagga';
 import PrimaryButton from "@/Components/PrimaryButton.vue";
 import "vue-select/dist/vue-select.css";
+import CustomSelectInput from "@/Components/CustomSelectInput.vue";
 
 
 const props = defineProps({
@@ -27,6 +28,10 @@ const props = defineProps({
     form: Object,
     locales: Array,
     category_list: {
+        type: Object,
+        default: () => ({})
+    },
+    unit_list: {
         type: Object,
         default: () => ({})
     },
@@ -310,7 +315,7 @@ onMounted(() => {
         <div v-else>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
                 <div class="col-span-2">
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
                         <div>
                             <InputLabel for="sku" :value="lang().product.sku"/>
                             <TextInput
@@ -337,6 +342,18 @@ onMounted(() => {
                                 :error="form.errors.price"
                             />
                             <InputError class="mt-2" :message="form.errors.price"/>
+                        </div>
+                        <div>
+                            <InputLabel for="unit" :value="lang().label.unit"/>
+                            <CustomSelectInput
+                                id="unit"
+                                class="mt-1 block w-full"
+                                v-model="form.unit"
+                                :dataSet="unit_list"
+                                :error="form.errors.unit"
+                            >
+                            </CustomSelectInput>
+                            <InputError class="mt-2" :message="form.errors.unit"/>
                         </div>
                     </div>
                     <div class="grid grid-cols-1 md:grid-cols-1 gap-4 mt-5">

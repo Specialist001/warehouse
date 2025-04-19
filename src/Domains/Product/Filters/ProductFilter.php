@@ -14,6 +14,7 @@ class ProductFilter extends Filter
         'description',
         'sku',
         'price',
+        'unit',
         'barcode',
         'created_at',
         'updated_at',
@@ -42,6 +43,7 @@ class ProductFilter extends Filter
         $this->addSortable('description');
         $this->addSortable('sku');
         $this->addSortable('price');
+        $this->addSortable('unit');
         $this->addSortable('barcode');
         $this->addSortable('created_at');
         $this->addSortable('updated_at');
@@ -71,6 +73,11 @@ class ProductFilter extends Filter
     public function price($value)
     {
         $this->builder->where($this->column('price'), '=', $value);
+    }
+
+    public function unit($value)
+    {
+        $this->builder->where($this->column('unit'), '=', $value);
     }
 
     public function created_at($value)

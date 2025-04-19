@@ -34,6 +34,7 @@ const props = defineProps({
     filters: Object,
     products: Object,
     categories: Object,
+    units: Object,
     breadcrumbs: Object,
     perPage: Number,
 });
@@ -49,6 +50,7 @@ const data = reactive({
         description: "",
         sku: null,
         price: "",
+        unit: "",
         barcode: "",
         created_at: "",
         updated_at: "",
@@ -116,6 +118,7 @@ const timezone = ref({tz: tz, offset: tz_offset});
                         @close="data.createOpen = false"
                         :title="props.title"
                         :categories="props.categories"
+                        :units="props.units"
                     />
                     <Edit
                         :show="data.editOpen"
@@ -123,6 +126,7 @@ const timezone = ref({tz: tz, offset: tz_offset});
                         :product="data.product"
                         :title="props.title"
                         :categories="props.categories"
+                        :units="props.units"
                     />
                     <Delete
                         :show="data.deleteOpen"
@@ -169,6 +173,12 @@ const timezone = ref({tz: tz, offset: tz_offset});
                             <th class="px-2 py-4 cursor-pointer" v-on:click="order('price')">
                                 <div class="flex justify-between items-right">
                                     <span>{{ lang().label.price }}</span>
+                                    <ChevronUpDownIcon class="w-4 h-4"/>
+                                </div>
+                            </th>
+                            <th class="px-2 py-4 cursor-pointer" v-on:click="order('unit')">
+                                <div class="flex justify-between items-right">
+                                    <span>{{ lang().label.unit }}</span>
                                     <ChevronUpDownIcon class="w-4 h-4"/>
                                 </div>
                             </th>
@@ -223,6 +233,13 @@ const timezone = ref({tz: tz, offset: tz_offset});
                             </th>
                             <th class="px-2 pb-3">
                                 <TextInput
+                                    v-model.lazy="data.params['unit']"
+                                    type="text"
+                                    class="block w-full rounded-lg size-8"
+                                />
+                            </th>
+                            <th class="px-2 pb-3">
+                                <TextInput
                                     v-model.lazy="data.params['barcode']"
                                     type="number"
                                     class="block w-full rounded-lg size-8"
@@ -271,6 +288,9 @@ const timezone = ref({tz: tz, offset: tz_offset});
                             </td>
                             <td class="whitespace-nowrap py-4 px-2 sm:py-3 text-center">
                                 {{ product.price }}
+                            </td>
+                            <td class="whitespace-nowrap py-4 px-2 sm:py-3 text-left">
+                                {{ product.unit }}
                             </td>
                             <td class="whitespace-nowrap py-4 px-2 sm:py-3 text-center">
                                 {{ product.barcode }}

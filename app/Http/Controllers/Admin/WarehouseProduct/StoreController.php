@@ -3,8 +3,10 @@
 namespace App\Http\Controllers\Admin\WarehouseProduct;
 
 use App\Http\Controllers\Controller;
+use Domains\Transaction\Factory\TransactionDtoFactory;
 use Domains\Transaction\Services\TransactionService;
 use Domains\Transaction\States\Status\TransactionStatus;
+use Domains\WarehouseProduct\Factory\WarehouseProductDtoFactory;
 use Domains\WarehouseProduct\Requests\WarehouseProductStoreRequest;
 use Domains\WarehouseProduct\Services\WarehouseProductService;
 use Illuminate\Support\Facades\DB;
@@ -14,7 +16,7 @@ class StoreController extends Controller
 {
     public function __construct(
         protected WarehouseProductService $warehouseProductService,
-        protected TransactionService $transactionService
+        protected TransactionService      $transactionService
     )
     {
         $this->middleware('permission:WarehouseProduct Create', ['only' => ['__invoke']]);
@@ -24,18 +26,13 @@ class StoreController extends Controller
     {
         DB::beginTransaction();
         try {
-            $data = $request->validated();
+            $dto = WarehouseProductDtoFactory::fromRequest($request);
 
-            $warehouse_product = $this->warehouseProductService->create($data);
+            $warehouse_product = $this->warehouseProductService->create($dto);
 
-            $this->transactionService->income(
-                warehouse_id: $warehouse_product->warehouse_id,
-                product_id: $warehouse_product->product_id,
-                executor_id: auth()->user()->id,
-                quantity: $warehouse_product->quantity,
-                source: $data['source'],
-                status: TransactionStatus::completed()->value,
-            );
+            $transactionDto = TransactionDtoFactory::incomeFromWarehouseProduct($dto);
+            $this->transactionService->incomeProcess($transactionDto);
+
             DB::commit();
 
             return back()->with('success', __('app.label.created_successfully', [
@@ -46,10 +43,9 @@ class StoreController extends Controller
             Log::error($th->getMessage());
             DB::rollback();
 
-            return back()->with(
-                'error',
-                __('app.label.created_error', ['name' => __('app.label.warehouses')]) . $th->getMessage()
-            );
+            return back()->with('error', __('app.label.created_error', [
+                'param' => __('app.label.warehouse_products')
+            ]));
         }
     }
 }

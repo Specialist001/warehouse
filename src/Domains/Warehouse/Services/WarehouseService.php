@@ -3,6 +3,7 @@
 namespace Domains\Warehouse\Services;
 
 use Domains\Warehouse\Contracts\WarehouseInterface;
+use Domains\Warehouse\Dto\WarehouseDto;
 use Domains\Warehouse\States\Status\WarehouseStatus;
 
 class WarehouseService
@@ -31,14 +32,14 @@ class WarehouseService
         return $this->warehouseRepository->getLatest($pagination);
     }
 
-    public function create(array $data): \Domains\Warehouse\Models\Warehouse
+    public function create(WarehouseDto $dto): \Domains\Warehouse\Models\Warehouse
     {
-        return $this->warehouseRepository->create($data);
+        return $this->warehouseRepository->create($dto);
     }
 
-    public function update(string $id, array $data): \Domains\Warehouse\Models\Warehouse | bool
+    public function update(string $id, WarehouseDto $dto): \Domains\Warehouse\Models\Warehouse | bool
     {
-        return $this->warehouseRepository->update($id, $data);
+        return $this->warehouseRepository->update($id, $dto);
     }
 
     public function delete(string $id): bool

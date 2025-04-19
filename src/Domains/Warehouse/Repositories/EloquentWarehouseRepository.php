@@ -2,6 +2,7 @@
 
 namespace Domains\Warehouse\Repositories;
 
+use Domains\Warehouse\Dto\WarehouseDto;
 use Domains\Warehouse\Models\Warehouse;
 
 class EloquentWarehouseRepository extends WarehouseRepository
@@ -26,16 +27,16 @@ class EloquentWarehouseRepository extends WarehouseRepository
         return Warehouse::latest()->paginate($pagination);
     }
 
-    public function create(array $data): Warehouse
+    public function create(WarehouseDto $dto): Warehouse
     {
-        return Warehouse::create($data);
+        return Warehouse::create($dto->toArray());
     }
 
-    public function update(string $id, array $data): Warehouse|bool
+    public function update(string $id, WarehouseDto $dto): Warehouse|bool
     {
         $warehouse = $this->get($id);
         if ($warehouse) {
-            $warehouse->update($data);
+            $warehouse->update($dto->toArray());
             return $warehouse;
         }
         return false;

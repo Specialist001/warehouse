@@ -5,6 +5,8 @@ namespace Domains\Transaction\Services;
 use Domains\Product\Contracts\ProductInterface;
 use Domains\Product\Models\Product;
 use Domains\Transaction\Contracts\TransactionInterface;
+use Domains\Transaction\Dto\TransactionDto;
+use Domains\Transaction\Models\Transaction;
 use Domains\Warehouse\Contracts\WarehouseInterface;
 use Domains\Warehouse\Models\Warehouse;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
@@ -150,6 +152,19 @@ class TransactionService
             'executor_id' => $executor_id,
             'is_internal_transfer' => true
         ]);
+    }
+
+    public function incomeProcess(TransactionDto $transactionDto): Transaction
+    {
+        return $this->processTransaction(
+            type: 'in',
+            warehouse_id: $transactionDto->warehouse_id,
+            product_id: $transactionDto->product_id,
+            executor_id: $transactionDto->executor_id,
+            quantity: $transactionDto->quantity,
+            status: $transactionDto->status,
+            extraData: ['source' => $transactionDto->source]
+        );
     }
 
 }

@@ -26,7 +26,7 @@ class WarehouseStoreRequest extends FormRequest
         return [
             'name'     => ['required', 'string', 'min:3', 'max:255'],
             'location' => ['nullable', 'string', 'min:10', 'max:255'],
-            'status'   => ['nullable', 'in:active,inactive'],
+            'status'   => ['required', 'in:active,inactive'],
         ];
     }
 
@@ -42,6 +42,9 @@ class WarehouseStoreRequest extends FormRequest
             $messages["name.$locale.min"] = __('validation.min.string', ['attribute' => __('app.label.names') . " ($locale)", 'min' => 3]);
             $messages["name.$locale.max"] = __('validation.max.string', ['attribute' => __('app.label.names') . " ($locale)", 'max' => 255]);
         }
+
+        $messages['location.string'] = __('validation.string', ['attribute' => __('app.label.location')]);
+        $messages['status.required'] = __('validation.required', ['attribute' => __('app.label.status')]);
 
         return array_merge($parent_messages, $messages);
     }

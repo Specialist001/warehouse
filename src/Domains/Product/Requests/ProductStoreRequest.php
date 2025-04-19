@@ -26,6 +26,7 @@ class ProductStoreRequest extends \Illuminate\Foundation\Http\FormRequest
             'description.*' => 'nullable|string|min:3|max:255',
             'sku'           => 'required|string|min:5|max:255|unique:'. Product::class,
             'price'         => 'required|numeric',
+            'unit'          => 'nullable|string|max:255',
             'barcode'       => 'nullable|string|min:12|max:14,unique:products,barcode',
             'created_at'    => 'nullable|date',
             'updated_at'    => 'nullable|date',

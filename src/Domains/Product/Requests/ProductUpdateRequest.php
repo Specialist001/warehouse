@@ -26,6 +26,7 @@ class ProductUpdateRequest extends \Illuminate\Foundation\Http\FormRequest
             'sku'            => // must be unique except for the current product
                 'required|string|min:5|max:255|unique:' . Product::class . ',sku,' . $this->route('product')->id,
             'price'          => 'required|numeric',
+            'unit'           => 'nullable|string|max:255',
             'barcode'        => 'nullable|string|min:12|max:14,unique:products,barcode',
             'created_at'     => 'nullable|date',
             'updated_at'     => 'nullable|date',

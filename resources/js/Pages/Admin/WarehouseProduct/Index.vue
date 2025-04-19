@@ -53,6 +53,7 @@ const data = reactive({
         product_id: "",
         product_name: "",
         quantity: "",
+        product_unit: "",
         created_at: "",
     },
     selectedId: [],
@@ -181,6 +182,12 @@ const timezone = ref({tz: 'Asia/Tashkent', offset: 5});
                                     <ChevronUpDownIcon class="w-4 h-4"/>
                                 </div>
                             </th>
+                            <th class="px-2 py-4 cursor-pointer w-36" v-on:click="order('product_unit')">
+                                <div class="flex justify-between items-center">
+                                    <span>{{ lang().label.product_unit }}</span>
+                                    <ChevronUpDownIcon class="w-4 h-4"/>
+                                </div>
+                            </th>
                             <th class="px-2 py-4 cursor-pointer" v-on:click="order('created_at')">
                                 <div class="flex justify-between items-center">
                                     <span>{{ lang().label.created }}</span>
@@ -220,6 +227,14 @@ const timezone = ref({tz: 'Asia/Tashkent', offset: 5});
                                     type="number"
                                     class="block w-full rounded-lg size-8"
                                     :placeholder="lang().label.quantity"
+                                />
+                            </th>
+                            <th class="px-2 pb-3">
+                                <TextInput
+                                    v-model="data.params['product_unit']"
+                                    type="text"
+                                    class="block w-full rounded-lg size-8"
+                                    :placeholder="lang().label.unit"
                                 />
                             </th>
                             <th class="px-2 pb-3">
@@ -267,6 +282,9 @@ const timezone = ref({tz: 'Asia/Tashkent', offset: 5});
                             </td>
                             <td class="whitespace-nowrap py-4 px-2 sm:py-3 text-right">
                                 {{ warehouse_product.quantity }}
+                            </td>
+                            <td class="whitespace-nowrap py-4 px-2 sm:py-3 text-left">
+                                {{ warehouse_product.product_unit }}
                             </td>
                             <td class="whitespace-nowrap py-4 px-2 sm:py-3 text-right">
                                 {{ warehouse_product.created_at }}

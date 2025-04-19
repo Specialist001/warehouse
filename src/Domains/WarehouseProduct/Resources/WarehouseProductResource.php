@@ -29,6 +29,9 @@ class WarehouseProductResource extends JsonResource
                 return !$this->warehouse->deleted_at;
             }),
             'quantity'     => $this->quantity,
+            'product_unit' => $this->whenLoaded('product', function () {
+                return __('app.product_units.' . $this->product->unit);
+            }),
             'created_at'   => $this->created_at->format('Y-m-d H:i:s'),
             'updated_at'   => $this->updated_at->format('Y-m-d H:i:s'),
         ];

@@ -3,6 +3,8 @@
 namespace Database\Seeders;
 
 use Domains\Category\Contracts\CategoryInterface;
+use Domains\Category\Dto\CategoryDto;
+use Domains\Category\Factory\CategoryDtoFactory;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Str;
 
@@ -20,7 +22,7 @@ class CategorySeeder extends Seeder
         $categories = ['Elektronika', 'Oziq-ovqat', 'Kiyim-kechak', 'Mebel', 'Ofis maxsulotlari'];
 
         foreach ($categories as $key => $category) {
-            $this->categoryRepository->create([
+            $category_dto = CategoryDtoFactory::fromArray([
                 'id' => Str::uuid(),
                 'name' => [
                     'uz' => $category,
@@ -35,6 +37,8 @@ class CategorySeeder extends Seeder
                 'is_active' => true,
                 'order_num' => $key + 1
             ]);
+
+            $this->categoryRepository->create($category_dto);
         }
     }
 }

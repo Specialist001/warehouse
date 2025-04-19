@@ -16,6 +16,7 @@ use Spatie\Translatable\HasTranslations;
  * @property string $description
  * @property string $sku
  * @property float $price
+ * @property string $unit
  * @property string $barcode
  * @property \Illuminate\Support\Carbon $created_at
  * @property \Illuminate\Support\Carbon $updated_at
@@ -36,6 +37,7 @@ class Product extends \Illuminate\Database\Eloquent\Model
 		'description',
 		'sku',
 		'price',
+        'unit',
 		'barcode',
 		'created_at',
 		'updated_at',

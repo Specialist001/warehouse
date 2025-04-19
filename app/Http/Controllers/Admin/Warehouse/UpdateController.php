@@ -3,10 +3,12 @@
 namespace App\Http\Controllers\Admin\Warehouse;
 
 use App\Http\Controllers\Controller;
+use Domains\Warehouse\Factory\WarehouseDtoFactory;
 use Domains\Warehouse\Models\Warehouse;
 use Domains\Warehouse\Services\WarehouseService;
 use Domains\Warehouse\Requests\WarehouseStoreRequest;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Log;
 
 class UpdateController extends Controller
 {
@@ -19,7 +21,8 @@ class UpdateController extends Controller
     {
         DB::beginTransaction();
         try {
-            $warehouse->update($request->validated());
+            $dto = WarehouseDtoFactory::formRequest($request);
+            $this->warehouseService->update($warehouse->id, $dto);
             DB::commit();
 
             return back()->with('success', __('app.label.updated_successfully', [
@@ -27,10 +30,12 @@ class UpdateController extends Controller
                 ])
             );
         } catch (\Throwable $th) {
+            Log::error($th->getMessage());
             DB::rollback();
+
             return back()->with('error', __('app.label.updated_error', [
                     'param' => $warehouse->name,
-                ]) . $th->getMessage());
+                ]));
         }
     }
 }
