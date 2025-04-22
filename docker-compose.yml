@@ -20,6 +20,8 @@ services:
             DB_DATABASE: ${DB_DATABASE}
             DB_USERNAME: ${DB_USERNAME}
             DB_PASSWORD: ${DB_PASSWORD}
+        networks:
+            - app-network
 
     db:
         image: mysql:8.0
@@ -32,6 +34,12 @@ services:
             - db_data:/var/lib/mysql
         ports:
             - "${DB_PORT}:${DB_PORT}"
+        networks:
+            - app-network
 
 volumes:
     db_data:
+
+networks:
+    app-network:
+        driver: bridge
