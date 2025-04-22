@@ -93,12 +93,12 @@ class TransactionFilter extends Filter
 
     public function source($value)
     {
-        $this->builder->where($this->column('source'), 'ILIKE', "%$value%");
+        $this->builder->where($this->column('source'), 'LIKE', "%$value%");
     }
 
     public function destination($value)
     {
-        $this->builder->where($this->column('destination'), 'ILIKE', "%$value%");
+        $this->builder->where($this->column('destination'), 'LIKE', "%$value%");
     }
 
     public function status($value)

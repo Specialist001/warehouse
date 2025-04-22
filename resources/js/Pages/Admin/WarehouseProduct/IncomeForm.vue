@@ -5,6 +5,7 @@ import InputError from "@/Components/InputError.vue";
 import TextInput from "@/Components/TextInput.vue";
 import CustomSelectInput from "@/Components/CustomSelectInput.vue";
 import EmptyForm from "@/Pages/Admin/WarehouseProduct/EmptyForm.vue";
+import TextInputGroup from "@/Components/TextInputGroup.vue";
 
 const props = defineProps({
     show: Boolean,
@@ -69,13 +70,14 @@ const props = defineProps({
                 <div class="col-span-full md:col-span-1">
                     <div v-if="is_create">
                         <InputLabel for="quantity" :value="lang().label.quantity"/>
-                        <TextInput
+                        <TextInputGroup
                             id="quantity"
                             type="number"
                             min="1"
                             step="1"
                             class="mt-1 block w-full"
                             v-model="form.quantity"
+                            :unit="form.product_unit"
                             required
                             :placeholder="lang().placeholder.quantity"
                             :error="form.errors.quantity"
@@ -84,13 +86,14 @@ const props = defineProps({
                     </div>
                     <div v-else>
                         <InputLabel for="receive_quantity" :value="lang().label.quantity"/>
-                        <TextInput
+                        <TextInputGroup
                             id="receive_quantity"
                             type="number"
                             min="1"
                             step="1"
-                            class="mt-1 block w-full"
+                            class="mt-2 block w-full"
                             v-model="form.receive_quantity"
+                            :unit="form.product_unit"
                             required
                             :placeholder="lang().placeholder.quantity"
                             :error="form.errors.receive_quantity"

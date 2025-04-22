@@ -40,6 +40,7 @@ const data = reactive({
         warehouse_id: "",
         executor_id: "",
         product_name: "",
+        product_unit: "",
         type: "",
         quantity: "",
         status: "",
@@ -189,6 +190,12 @@ function exportData() {
                                     <ChevronUpDownIcon class="w-4 h-4"/>
                                 </div>
                             </th>
+                            <th class="px-2 py-4 cursor-pointer">
+                                <div class="flex justify-between items-center">
+                                    <span>{{ lang().label.unit }}</span>
+                                    <ChevronUpDownIcon class="w-4 h-4"/>
+                                </div>
+                            </th>
                             <th class="px-2 py-4 cursor-pointer" v-on:click="order('status')">
                                 <div class="flex justify-between items-center">
                                     <span>{{ lang().label.status }}</span>
@@ -277,6 +284,14 @@ function exportData() {
                                 />
                             </th>
                             <th class="px-2 pb-3">
+                                <TextInput
+                                    v-model="data.params['product_unit']"
+                                    type="text"
+                                    class="block w-full rounded-lg size-8"
+                                    :placeholder="lang().label.unit"
+                                />
+                            </th>
+                            <th class="px-2 pb-3">
                                 <CustomSelectInput
                                     id="status"
                                     class="block w-full"
@@ -351,18 +366,18 @@ function exportData() {
                              hover:dark:bg-slate-900/20"
                             :class="{'bg-slate-200/30 dark:bg-slate-900/20': transaction.deleted_at}"
                         >
-                            <td class="whitespace-nowrap py-4 px-2 sm:py-3 text-center">
+                            <td class="whitespace-nowrap py-1 px-2 sm:py-1 text-center">
                                 {{ transaction.id }}
                             </td>
-                            <td class="whitespace-nowrap py-4 px-2 sm:py-3 text-left"
+                            <td class="whitespace-nowrap py-1 px-2 sm:py-1 text-left"
                                 :class="{'bg-red-300 text-dark': !transaction.warehouse_isset}"
                             >
                                 {{ transaction.warehouse_name }}
                             </td>
-                            <td class="whitespace-nowrap py-4 px-2 sm:py-3 text-left">
+                            <td class="whitespace-nowrap py-1 px-2 sm:py-1 text-left">
                                 {{ transaction.product_name }}
                             </td>
-                            <td class="whitespace-nowrap py-4 px-2 sm:py-3 text-center">
+                            <td class="whitespace-nowrap py-1 px-2 sm:py-1 text-center">
                                 <template v-if="transaction.type === 'in'">
                                     <span class="text-green-500">
                                         <ArrowDownTrayIcon class="w-7 h-7 mx-auto"/>
@@ -374,10 +389,13 @@ function exportData() {
                                     </span>
                                 </template>
                             </td>
-                            <td class="whitespace-nowrap py-4 px-2 sm:py-3 text-center">
+                            <td class="whitespace-nowrap py-1 px-2 sm:py-1 text-center">
                                 {{ transaction.quantity }}
                             </td>
-                            <td class="whitespace-nowrap py-4 px-2 sm:py-3 text-left font-bold">
+                            <td class="whitespace-nowrap py-1 px-2 sm:py-1 text-left">
+                                {{ transaction.product_unit }}
+                            </td>
+                            <td class="whitespace-nowrap py-1 px-2 sm:py-1 text-left font-bold">
                                 <template v-if="transaction.status === 'completed'">
                                     <span class="text-green-500">{{ lang().transaction.status_completed }}</span>
                                 </template>
@@ -391,22 +409,22 @@ function exportData() {
                                     <span class="text-rose-500">{{ lang().warehouse.status_unknown }}</span>
                                 </template>
                             </td>
-                            <td class="whitespace-nowrap py-4 px-2 sm:py-3 text-center">
-                                {{ transaction.is_internal_transfer }}
+                            <td class="whitespace-nowrap py-1 px-2 sm:py-1 text-center">
+                                {{ transaction.is_internal_transfer === 1 ? lang().button.yes : lang().button.no }}
                             </td>
-                            <td class="whitespace-nowrap py-4 px-2 sm:py-3">
+                            <td class="whitespace-nowrap py-1 px-2 sm:py-1">
                                 {{ transaction.source }}
                             </td>
-                            <td class="whitespace-nowrap py-4 px-2 sm:py-3">
+                            <td class="whitespace-nowrap py-1 px-2 sm:py-1">
                                 {{ transaction.destination }}
                             </td>
-                            <td class="whitespace-nowrap py-4 px-2 sm:py-3">
+                            <td class="whitespace-nowrap py-1 px-2 sm:py-1">
                                 {{ transaction.created_at }}
                             </td>
-                            <td class="whitespace-nowrap py-4 px-2 sm:py-3">
+                            <td class="whitespace-nowrap py-1 px-2 sm:py-1">
                                 {{ transaction.updated_at }}
                             </td>
-                            <td class="whitespace-nowrap py-4 px-2 sm:py-3">
+                            <td class="whitespace-nowrap py-1 px-2 sm:py-1">
                                 <div class="flex justify-center items-center">
                                     <div class="rounded-md overflow-hidden">
                                         <Link class="inline-flex items-center px-2 py-1.5 bg-green-600 border

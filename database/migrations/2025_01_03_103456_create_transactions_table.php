@@ -29,6 +29,10 @@ return new class extends Migration
             $table->foreign('warehouse_id')->references('id')->on('warehouses')->onDelete('cascade');
             $table->foreign('product_id')->references('id')->on('products')->onDelete('cascade');
             $table->foreign('executor_id')->references('id')->on('users')->onDelete('set null');
+
+            $table->index(['warehouse_id', 'product_id']);
+            $table->index('source');
+            $table->index('destination');
         });
     }
 

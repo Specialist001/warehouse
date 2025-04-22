@@ -21,6 +21,7 @@ const form = useForm({
     product_id: "",
     quantity: "",
     send_quantity: "",
+    product_unit: "",
     destination: null,
     source: null,
     type: "out",

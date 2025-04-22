@@ -42,7 +42,7 @@ class WarehouseProductTransactionSeeder extends Seeder
 
             $warehouse = $this->warehouseService->addProduct($randomWarehouseId, [
                 'product_id' => $product->id,
-                'quantity'   => rand(1, 100),
+                'quantity'   => rand(1, 200),
             ]);
 
             if ($warehouse) {
@@ -50,7 +50,7 @@ class WarehouseProductTransactionSeeder extends Seeder
                     warehouse_id: $randomWarehouseId,
                     product_id: $product->id,
                     executor_id: $executors_ids[array_rand($executors_ids)],
-                    quantity: rand(1, 100),
+                    quantity: rand(1, 200),
                     source: $this->faker->company,
                     status: 'completed'
                 );

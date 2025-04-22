@@ -33,7 +33,7 @@ class IndexController extends Controller
 
         $perPage = $request->has('perPage') ? $request->perPage : 20;
         $transactions->with([
-            'product:id,name',
+            'product:id,name,unit',
             'warehouse:id,name,deleted_at'
         ]);
 

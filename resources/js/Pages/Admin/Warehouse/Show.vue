@@ -56,7 +56,7 @@ watch(() => data.editOpen, (newVal) => {
             </div>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-            <div class="col-span-2 px-4 sm:px-0">
+            <div class="col-span-2 md:px-4 sm:px-0">
                 <div class="space-y-4">
                     <div class="px-4 sm:px-0">
                         <div class="bg-white dark:bg-slate-800 shadow sm:rounded-lg">

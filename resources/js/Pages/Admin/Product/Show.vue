@@ -13,7 +13,6 @@ import InfoButton from "@/Components/InfoButton.vue";
 const {_, debounce, pickBy} = pkg;
 const props = defineProps({
     title: String,
-    items: Object,
     categories: Object,
     units: Object,
     breadcrumbs: Object,

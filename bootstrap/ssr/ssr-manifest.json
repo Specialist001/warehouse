@@ -32,6 +32,7 @@
   "resources/js/Components/SwitchDarkModeNavbar.vue": [],
   "resources/js/Components/SwitchLangNavbar.vue": [],
   "resources/js/Components/TextInput.vue": [],
+  "resources/js/Components/TextInputGroup.vue": [],
   "resources/js/Components/Toast.vue": [],
   "resources/js/Components/Toast.vue?vue&type=style&index=0&lang.css": [],
   "resources/js/Layouts/AuthenticatedLayout.vue": [],

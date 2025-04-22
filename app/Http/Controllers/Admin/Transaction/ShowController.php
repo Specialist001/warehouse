@@ -25,7 +25,7 @@ class ShowController extends Controller
 
         return Inertia::render('Admin/Transaction/Show', [
             'title'       => __('app.label.transactions') . ' - ' . $transaction->id,
-            'warehouse'   => TransactionResource::make($transaction),
+            'transaction'   => TransactionResource::make($transaction),
             'status_list' => TransactionStatus::toArray(),
             'breadcrumbs' => [
                 ['label' => __('app.label.transactions'), 'href' => route('admin.transaction.index')],

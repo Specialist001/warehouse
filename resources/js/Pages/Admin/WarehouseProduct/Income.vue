@@ -20,6 +20,7 @@ const form = useForm({
     warehouse_id: "",
     product_id: "",
     product_name: "",
+    product_unit: "",
     receive_quantity: "",
     destination: "",
     source: "",

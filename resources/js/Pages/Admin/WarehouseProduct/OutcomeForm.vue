@@ -7,6 +7,7 @@ import Checkbox from "@/Components/Checkbox.vue";
 import CustomSelectInput from "@/Components/CustomSelectInput.vue";
 import {computed, onMounted, ref, watch} from "vue";
 import EmptyForm from "@/Pages/Admin/WarehouseProduct/EmptyForm.vue";
+import TextInputGroup from "@/Components/TextInputGroup.vue";
 
 const props = defineProps({
     show: Boolean,
@@ -91,12 +92,13 @@ watch(() => props.form.quantity, (newValue, oldValue) => {
                 </div>
                 <div class="col-span-full md:col-span-1">
                     <InputLabel for="send_quantity" :value="lang().label.quantity"/>
-                    <TextInput
+                    <TextInputGroup
                         id="send_quantity"
                         type="number"
                         min="1"
                         class="mt-1 block w-full"
                         v-model="form.send_quantity"
+                        :unit="form.product_unit"
                         required
                         :placeholder="lang().placeholder.quantity"
                         :error="form.errors.send_quantity"

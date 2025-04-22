@@ -6,25 +6,24 @@ import Breadcrumb from "@/Components/Breadcrumb.vue";
 import {usePage} from "@inertiajs/vue3";
 import pkg from "lodash";
 import {reactive, watch} from "vue";
-import Edit from "@/Pages/Admin/Warehouse/Edit.vue";
+import Edit from "@/Pages/Admin/Transaction/Edit.vue";
 import {PencilIcon} from "@heroicons/vue/24/solid/index.js";
 import InfoButton from "@/Components/InfoButton.vue";
 
 const {_, debounce, pickBy} = pkg;
 const props = defineProps({
     title: String,
-    items: Object,
     breadcrumbs: Object,
     status_list: Object,
 });
 const data = reactive({
     params: {},
-    warehouse: null,
+    transaction: null,
     editOpen: false,
 });
 
 // get customer from the route
-const {warehouse} = usePage().props;
+const {transaction} = usePage().props;
 
 watch(() => data.editOpen, (newVal) => {
     if (!newVal) {
@@ -48,7 +47,7 @@ watch(() => data.editOpen, (newVal) => {
                     <Edit
                         :show="data.editOpen"
                         @close="data.editOpen = false"
-                        :warehouse="data.warehouse"
+                        :transaction="data.transaction"
                         :title="props.title"
                         :status_list="props.status_list"
                     />
@@ -64,7 +63,7 @@ watch(() => data.editOpen, (newVal) => {
                                 <div class="grid grid-cols-6 md:grid-cols-6 gap-4">
                                     <div class="col-span-5">
                                         <h3 class="text-lg leading-6 font-medium text-gray-900 dark:text-slate-200">
-                                            {{ warehouse.name }}
+                                            {{ transaction.id }}
 
                                         </h3>
                                     </div>
@@ -72,7 +71,7 @@ watch(() => data.editOpen, (newVal) => {
                                         <InfoButton
                                             v-show="can(['Warehouse Update'])"
                                             type="button"
-                                            @click="(data.editOpen = true), (data.warehouse = warehouse)"
+                                            @click="(data.editOpen = true), (data.transaction = transaction)"
                                             class="px-2 py-1.5 rounded float-right"
                                             v-tooltip="lang().label.edit"
                                         >
@@ -91,16 +90,16 @@ watch(() => data.editOpen, (newVal) => {
                                             ID
                                         </dt>
                                         <dd class="mt-1 text-sm text-gray-900 dark:text-slate-200 sm:mt-0 sm:col-span-2">
-                                            {{ warehouse.id }}
+                                            {{ transaction.id }}
                                         </dd>
                                     </div>
                                     <div
                                         class="bg-gray-50 dark:bg-slate-900 px-4 py-2.5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
                                         <dt class="text-sm font-medium text-gray-500 dark:text-slate-400">
-                                            {{ lang().label.address }}
+                                            {{ lang().label.warehouse }}
                                         </dt>
                                         <dd class="mt-1 text-sm text-gray-900 dark:text-slate-200 sm:mt-0 sm:col-span-2">
-                                            {{ warehouse.location }}
+                                            {{ transaction.warehouse_id }}
                                         </dd>
                                     </div>
                                     <div
@@ -109,17 +108,20 @@ watch(() => data.editOpen, (newVal) => {
                                             {{ lang().label.status }}
                                         </dt>
                                         <dd class="mt-1 text-sm text-gray-900 dark:text-slate-200 sm:mt-0 sm:col-span-2">
-                                            <template v-if="warehouse.status === 'active'">
+                                            <template v-if="transaction.status === 'completed'">
                                                 <span class="text-green-500">{{
-                                                        lang().warehouse.status_active
+                                                        lang().transaction.status_completed
                                                     }}</span>
                                             </template>
-                                            <template v-else-if="warehouse.status === 'inactive'">
-                                                <span class="text-rose-500">{{ lang().warehouse.status_inactive }}</span>
+                                            <template v-else-if="transaction.status === 'cancelled'">
+                                                <span class="text-rose-500">{{ lang().transaction.status_cancelled }}</span>
+                                            </template>
+                                            <template v-else-if="transaction.status === 'pending'">
+                                                <span class="text-yellow-500">{{ lang().transaction.status_pending }}</span>
                                             </template>
                                             <template v-else>
                                                 <span class="text-rose-500">{{
-                                                        lang().warehouse.status_unknown
+                                                        lang().transaction.status_unknown
                                                     }}</span>
                                             </template>
                                         </dd>
@@ -130,7 +132,7 @@ watch(() => data.editOpen, (newVal) => {
                                             {{ lang().label.created_at }}
                                         </dt>
                                         <dd class="mt-1 text-sm text-gray-900 dark:text-slate-200 sm:mt-0 sm:col-span-2">
-                                            {{ warehouse.created_at }}
+                                            {{ transaction.created_at }}
                                         </dd>
                                     </div>
                                     <div
@@ -139,7 +141,7 @@ watch(() => data.editOpen, (newVal) => {
                                             {{ lang().label.updated_at }}
                                         </dt>
                                         <dd class="mt-1 text-sm text-gray-900 dark:text-slate-200 sm:mt-0 sm:col-span-2">
-                                            {{ warehouse.updated_at }}
+                                            {{ transaction.updated_at }}
                                         </dd>
                                     </div>
                                 </div>

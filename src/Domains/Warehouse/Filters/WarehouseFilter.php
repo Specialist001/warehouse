@@ -22,11 +22,13 @@ class WarehouseFilter extends Filter
     ];
 
     private string $timezone;
+    private string $like_condition;
 
     public function __construct(Request $request)
     {
         $this->input = $this->prepareInput($request->all());
         $this->timezone = config('app.timezone', 'UTC');
+        $this->like_condition = config('database.default') === 'pgsql' ? 'ilike' : 'like';
     }
 
     protected function init()
@@ -45,12 +47,12 @@ class WarehouseFilter extends Filter
 
     public function name($value)
     {
-        $this->builder->where($this->column('name'), 'ILIKE', "%$value%");
+        $this->builder->where($this->column('name'), $this->like_condition, "%$value%");
     }
 
     public function location($value)
     {
-        $this->builder->where($this->column('location'), 'ILIKE', "%$value%");
+        $this->builder->where($this->column('location'), $this->like_condition, "%$value%");
     }
 
     public function status($value)

@@ -381,7 +381,7 @@ createServer(
     }
   })
 );
-const _sfc_main$1r = {
+const _sfc_main$1s = {
   __name: "InputLabel",
   __ssrInlineRender: true,
   props: ["value"],
@@ -399,13 +399,13 @@ const _sfc_main$1r = {
     };
   }
 };
-const _sfc_setup$1r = _sfc_main$1r.setup;
-_sfc_main$1r.setup = (props, ctx) => {
+const _sfc_setup$1s = _sfc_main$1s.setup;
+_sfc_main$1s.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Components/InputLabel.vue");
-  return _sfc_setup$1r ? _sfc_setup$1r(props, ctx) : void 0;
+  return _sfc_setup$1s ? _sfc_setup$1s(props, ctx) : void 0;
 };
-const _sfc_main$1q = {
+const _sfc_main$1r = {
   __name: "InputError",
   __ssrInlineRender: true,
   props: ["message"],
@@ -417,13 +417,13 @@ const _sfc_main$1q = {
     };
   }
 };
-const _sfc_setup$1q = _sfc_main$1q.setup;
-_sfc_main$1q.setup = (props, ctx) => {
+const _sfc_setup$1r = _sfc_main$1r.setup;
+_sfc_main$1r.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Components/InputError.vue");
-  return _sfc_setup$1q ? _sfc_setup$1q(props, ctx) : void 0;
+  return _sfc_setup$1r ? _sfc_setup$1r(props, ctx) : void 0;
 };
-const _sfc_main$1p = {
+const _sfc_main$1q = {
   __name: "TextInput",
   __ssrInlineRender: true,
   props: {
@@ -455,13 +455,13 @@ const _sfc_main$1p = {
     };
   }
 };
-const _sfc_setup$1p = _sfc_main$1p.setup;
-_sfc_main$1p.setup = (props, ctx) => {
+const _sfc_setup$1q = _sfc_main$1q.setup;
+_sfc_main$1q.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Components/TextInput.vue");
-  return _sfc_setup$1p ? _sfc_setup$1p(props, ctx) : void 0;
+  return _sfc_setup$1q ? _sfc_setup$1q(props, ctx) : void 0;
 };
-const _sfc_main$1o = {
+const _sfc_main$1p = {
   __name: "Checkbox",
   __ssrInlineRender: true,
   props: {
@@ -496,13 +496,13 @@ const _sfc_main$1o = {
     };
   }
 };
-const _sfc_setup$1o = _sfc_main$1o.setup;
-_sfc_main$1o.setup = (props, ctx) => {
+const _sfc_setup$1p = _sfc_main$1p.setup;
+_sfc_main$1p.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Components/Checkbox.vue");
-  return _sfc_setup$1o ? _sfc_setup$1o(props, ctx) : void 0;
+  return _sfc_setup$1p ? _sfc_setup$1p(props, ctx) : void 0;
 };
-const _sfc_main$1n = {
+const _sfc_main$1o = {
   __name: "CustomSelectInput",
   __ssrInlineRender: true,
   props: ["modelValue", "dataSet", "prompt", "promptDisabled", "multiple"],
@@ -532,11 +532,11 @@ const _sfc_main$1n = {
     };
   }
 };
-const _sfc_setup$1n = _sfc_main$1n.setup;
-_sfc_main$1n.setup = (props, ctx) => {
+const _sfc_setup$1o = _sfc_main$1o.setup;
+_sfc_main$1o.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Components/CustomSelectInput.vue");
-  return _sfc_setup$1n ? _sfc_setup$1n(props, ctx) : void 0;
+  return _sfc_setup$1o ? _sfc_setup$1o(props, ctx) : void 0;
 };
 const _export_sfc = (sfc, props) => {
   const target = sfc.__vccOpts || sfc;
@@ -545,22 +545,22 @@ const _export_sfc = (sfc, props) => {
   }
   return target;
 };
-const _sfc_main$1m = {};
+const _sfc_main$1n = {};
 function _sfc_ssrRender$6(_ctx, _push, _parent, _attrs) {
   _push(`<!--[--><div class="grid grid-cols-3 gap-4 animate-pulse"><div class="col-span-2 h-10 bg-gray-300 rounded"></div><div class="col-span-1 h-10 bg-gray-300 rounded"></div></div><h4 class="text-lg font-medium text-slate-700 dark:text-slate-100 mt-5">${ssrInterpolate(_ctx.lang().label.names)}</h4><div class="grid grid-cols-1 gap-4 mt-1 animate-pulse"><ul class="flex border-b"><li class="-mb-px mr-1 h-8 w-24 bg-gray-300 rounded"></li><li class="-mb-px mr-1 h-8 w-24 bg-gray-300 rounded"></li><li class="-mb-px mr-1 h-8 w-24 bg-gray-300 rounded"></li></ul><div class="py-3"><div class="grid grid-cols-3 md:grid-cols-3 gap-4"><div class="col-span-1 px-4 sm:px-0"><div class="h-6 bg-gray-300 rounded w-24 mb-2"></div><div class="h-10 bg-gray-300 rounded w-full"></div></div><div class="col-span-2 px-4 sm:px-0"><div class="h-6 bg-gray-300 rounded w-24 mb-2"></div><div class="h-10 bg-gray-300 rounded w-full"></div></div></div></div></div><!--]-->`);
 }
-const _sfc_setup$1m = _sfc_main$1m.setup;
-_sfc_main$1m.setup = (props, ctx) => {
+const _sfc_setup$1n = _sfc_main$1n.setup;
+_sfc_main$1n.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Pages/Admin/Category/EmptyForm.vue");
-  return _sfc_setup$1m ? _sfc_setup$1m(props, ctx) : void 0;
+  return _sfc_setup$1n ? _sfc_setup$1n(props, ctx) : void 0;
 };
-const EmptyForm$6 = /* @__PURE__ */ _export_sfc(_sfc_main$1m, [["ssrRender", _sfc_ssrRender$6]]);
+const EmptyForm$6 = /* @__PURE__ */ _export_sfc(_sfc_main$1n, [["ssrRender", _sfc_ssrRender$6]]);
 const EmptyForm$7 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   default: EmptyForm$6
 }, Symbol.toStringTag, { value: "Module" }));
-const _sfc_main$1l = {
+const _sfc_main$1m = {
   __name: "CategoryForm",
   __ssrInlineRender: true,
   props: {
@@ -579,11 +579,11 @@ const _sfc_main$1l = {
         _push(`</div>`);
       } else {
         _push(`<div><div class="grid grid-cols-3 gap-4"><div>`);
-        _push(ssrRenderComponent(_sfc_main$1r, {
+        _push(ssrRenderComponent(_sfc_main$1s, {
           for: "order_num",
           value: _ctx.lang().label.order_num
         }, null, _parent));
-        _push(ssrRenderComponent(_sfc_main$1p, {
+        _push(ssrRenderComponent(_sfc_main$1q, {
           id: "order_num",
           type: "number",
           class: "mt-1 block w-full",
@@ -595,23 +595,23 @@ const _sfc_main$1l = {
           placeholder: _ctx.lang().label.order_num,
           error: __props.form.errors.order_num
         }, null, _parent));
-        _push(ssrRenderComponent(_sfc_main$1q, {
+        _push(ssrRenderComponent(_sfc_main$1r, {
           class: "mt-2",
           message: __props.form.errors.order_num
         }, null, _parent));
         _push(`</div><div>`);
-        _push(ssrRenderComponent(_sfc_main$1r, {
+        _push(ssrRenderComponent(_sfc_main$1s, {
           for: "is_active",
           value: _ctx.lang().label.is_active
         }, null, _parent));
-        _push(ssrRenderComponent(_sfc_main$1o, {
+        _push(ssrRenderComponent(_sfc_main$1p, {
           id: "is_active",
           modelValue: __props.form.is_active,
           "onUpdate:modelValue": ($event) => __props.form.is_active = $event,
           checked: __props.form.is_active,
           error: __props.form.errors.is_active
         }, null, _parent));
-        _push(ssrRenderComponent(_sfc_main$1q, {
+        _push(ssrRenderComponent(_sfc_main$1r, {
           class: "mt-2",
           message: __props.form.errors.is_active
         }, null, _parent));
@@ -622,11 +622,11 @@ const _sfc_main$1l = {
         _push(`<!--]--></ul><div class="py-3"><!--[-->`);
         ssrRenderList(__props.locales, (locale) => {
           _push(`<div style="${ssrRenderStyle(activeMainTab.value === locale ? null : { display: "none" })}"><div class="grid grid-cols-1 sm:grid-cols-3 gap-4"><div class="col-pan-1 sm:col-span-1 sm:px-0">`);
-          _push(ssrRenderComponent(_sfc_main$1r, {
+          _push(ssrRenderComponent(_sfc_main$1s, {
             for: "name-" + locale,
             value: _ctx.lang().label.name
           }, null, _parent));
-          _push(ssrRenderComponent(_sfc_main$1p, {
+          _push(ssrRenderComponent(_sfc_main$1q, {
             id: "name-" + locale,
             type: "text",
             class: "mt-1 block w-full",
@@ -636,16 +636,16 @@ const _sfc_main$1l = {
             placeholder: _ctx.lang().label.name,
             error: __props.form.errors["name." + locale]
           }, null, _parent));
-          _push(ssrRenderComponent(_sfc_main$1q, {
+          _push(ssrRenderComponent(_sfc_main$1r, {
             class: "mt-2",
             message: __props.form.errors["name." + locale]
           }, null, _parent));
           _push(`</div><div class="col-pan-1 sm:col-span-2 sm:px-0">`);
-          _push(ssrRenderComponent(_sfc_main$1r, {
+          _push(ssrRenderComponent(_sfc_main$1s, {
             for: "short_description-" + locale,
             value: _ctx.lang().label.short_description
           }, null, _parent));
-          _push(ssrRenderComponent(_sfc_main$1p, {
+          _push(ssrRenderComponent(_sfc_main$1q, {
             id: "short_description-" + locale,
             type: "text",
             class: "mt-1 block w-full",
@@ -654,7 +654,7 @@ const _sfc_main$1l = {
             placeholder: _ctx.lang().label.short_description,
             error: __props.form.errors["short_description." + locale]
           }, null, _parent));
-          _push(ssrRenderComponent(_sfc_main$1q, {
+          _push(ssrRenderComponent(_sfc_main$1r, {
             class: "mt-2",
             message: __props.form.errors["short_description." + locale]
           }, null, _parent));
@@ -666,17 +666,17 @@ const _sfc_main$1l = {
     };
   }
 };
-const _sfc_setup$1l = _sfc_main$1l.setup;
-_sfc_main$1l.setup = (props, ctx) => {
+const _sfc_setup$1m = _sfc_main$1m.setup;
+_sfc_main$1m.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Pages/Admin/Category/CategoryForm.vue");
-  return _sfc_setup$1l ? _sfc_setup$1l(props, ctx) : void 0;
+  return _sfc_setup$1m ? _sfc_setup$1m(props, ctx) : void 0;
 };
 const CategoryForm = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: _sfc_main$1l
+  default: _sfc_main$1m
 }, Symbol.toStringTag, { value: "Module" }));
-const _sfc_main$1k = {
+const _sfc_main$1l = {
   __name: "Modal",
   __ssrInlineRender: true,
   props: {
@@ -746,13 +746,13 @@ const _sfc_main$1k = {
     };
   }
 };
-const _sfc_setup$1k = _sfc_main$1k.setup;
-_sfc_main$1k.setup = (props, ctx) => {
+const _sfc_setup$1l = _sfc_main$1l.setup;
+_sfc_main$1l.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Components/Modal.vue");
-  return _sfc_setup$1k ? _sfc_setup$1k(props, ctx) : void 0;
+  return _sfc_setup$1l ? _sfc_setup$1l(props, ctx) : void 0;
 };
-const _sfc_main$1j = {
+const _sfc_main$1k = {
   __name: "PrimaryButton",
   __ssrInlineRender: true,
   props: {
@@ -772,13 +772,13 @@ const _sfc_main$1j = {
     };
   }
 };
-const _sfc_setup$1j = _sfc_main$1j.setup;
-_sfc_main$1j.setup = (props, ctx) => {
+const _sfc_setup$1k = _sfc_main$1k.setup;
+_sfc_main$1k.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Components/PrimaryButton.vue");
-  return _sfc_setup$1j ? _sfc_setup$1j(props, ctx) : void 0;
+  return _sfc_setup$1k ? _sfc_setup$1k(props, ctx) : void 0;
 };
-const _sfc_main$1i = {
+const _sfc_main$1j = {
   __name: "SecondaryButton",
   __ssrInlineRender: true,
   props: {
@@ -798,13 +798,13 @@ const _sfc_main$1i = {
     };
   }
 };
-const _sfc_setup$1i = _sfc_main$1i.setup;
-_sfc_main$1i.setup = (props, ctx) => {
+const _sfc_setup$1j = _sfc_main$1j.setup;
+_sfc_main$1j.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Components/SecondaryButton.vue");
-  return _sfc_setup$1i ? _sfc_setup$1i(props, ctx) : void 0;
+  return _sfc_setup$1j ? _sfc_setup$1j(props, ctx) : void 0;
 };
-const _sfc_main$1h = {
+const _sfc_main$1i = {
   __name: "Create",
   __ssrInlineRender: true,
   props: {
@@ -842,7 +842,7 @@ const _sfc_main$1h = {
     });
     return (_ctx, _push, _parent, _attrs) => {
       _push(`<section${ssrRenderAttrs(mergeProps({ class: "space-y-6" }, _attrs))}>`);
-      _push(ssrRenderComponent(_sfc_main$1k, {
+      _push(ssrRenderComponent(_sfc_main$1l, {
         show: props.show,
         onClose: ($event) => emit("close"),
         "max-width": `4xl`
@@ -850,12 +850,12 @@ const _sfc_main$1h = {
         default: withCtx((_, _push2, _parent2, _scopeId) => {
           if (_push2) {
             _push2(`<form class="p-6"${_scopeId}><h2 class="text-lg font-medium text-slate-900 dark:text-slate-100"${_scopeId}>${ssrInterpolate(_ctx.lang().label.add)} ${ssrInterpolate(_ctx.lang().label.category)}</h2><div class="my-6 space-y-4"${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$1l, {
+            _push2(ssrRenderComponent(_sfc_main$1m, {
               form: unref(form),
               locales: unref(locales)
             }, null, _parent2, _scopeId));
             _push2(`</div><div class="flex justify-end"${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$1i, {
+            _push2(ssrRenderComponent(_sfc_main$1j, {
               disabled: unref(form).processing,
               onClick: ($event) => emit("close")
             }, {
@@ -870,7 +870,7 @@ const _sfc_main$1h = {
               }),
               _: 1
             }, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$1j, {
+            _push2(ssrRenderComponent(_sfc_main$1k, {
               class: ["ml-3", { "opacity-25": unref(form).processing }],
               disabled: unref(form).processing,
               onClick: create
@@ -895,13 +895,13 @@ const _sfc_main$1h = {
               }, [
                 createVNode("h2", { class: "text-lg font-medium text-slate-900 dark:text-slate-100" }, toDisplayString(_ctx.lang().label.add) + " " + toDisplayString(_ctx.lang().label.category), 1),
                 createVNode("div", { class: "my-6 space-y-4" }, [
-                  createVNode(_sfc_main$1l, {
+                  createVNode(_sfc_main$1m, {
                     form: unref(form),
                     locales: unref(locales)
                   }, null, 8, ["form", "locales"])
                 ]),
                 createVNode("div", { class: "flex justify-end" }, [
-                  createVNode(_sfc_main$1i, {
+                  createVNode(_sfc_main$1j, {
                     disabled: unref(form).processing,
                     onClick: ($event) => emit("close")
                   }, {
@@ -910,7 +910,7 @@ const _sfc_main$1h = {
                     ]),
                     _: 1
                   }, 8, ["disabled", "onClick"]),
-                  createVNode(_sfc_main$1j, {
+                  createVNode(_sfc_main$1k, {
                     class: ["ml-3", { "opacity-25": unref(form).processing }],
                     disabled: unref(form).processing,
                     onClick: create
@@ -931,17 +931,17 @@ const _sfc_main$1h = {
     };
   }
 };
-const _sfc_setup$1h = _sfc_main$1h.setup;
-_sfc_main$1h.setup = (props, ctx) => {
+const _sfc_setup$1i = _sfc_main$1i.setup;
+_sfc_main$1i.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Pages/Admin/Category/Create.vue");
-  return _sfc_setup$1h ? _sfc_setup$1h(props, ctx) : void 0;
+  return _sfc_setup$1i ? _sfc_setup$1i(props, ctx) : void 0;
 };
 const Create$7 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: _sfc_main$1h
+  default: _sfc_main$1i
 }, Symbol.toStringTag, { value: "Module" }));
-const _sfc_main$1g = {
+const _sfc_main$1h = {
   __name: "DangerButton",
   __ssrInlineRender: true,
   props: {
@@ -961,13 +961,13 @@ const _sfc_main$1g = {
     };
   }
 };
-const _sfc_setup$1g = _sfc_main$1g.setup;
-_sfc_main$1g.setup = (props, ctx) => {
+const _sfc_setup$1h = _sfc_main$1h.setup;
+_sfc_main$1h.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Components/DangerButton.vue");
-  return _sfc_setup$1g ? _sfc_setup$1g(props, ctx) : void 0;
+  return _sfc_setup$1h ? _sfc_setup$1h(props, ctx) : void 0;
 };
-const _sfc_main$1f = {
+const _sfc_main$1g = {
   __name: "Delete",
   __ssrInlineRender: true,
   props: {
@@ -994,7 +994,7 @@ const _sfc_main$1f = {
     };
     return (_ctx, _push, _parent, _attrs) => {
       _push(`<section${ssrRenderAttrs(mergeProps({ class: "space-y-6" }, _attrs))}>`);
-      _push(ssrRenderComponent(_sfc_main$1k, {
+      _push(ssrRenderComponent(_sfc_main$1l, {
         show: props.show,
         onClose: ($event) => emit("close"),
         maxWidth: "lg"
@@ -1003,7 +1003,7 @@ const _sfc_main$1f = {
           var _a, _b;
           if (_push2) {
             _push2(`<form class="p-6"${_scopeId}><h2 class="text-lg font-medium text-slate-900 dark:text-slate-100"${_scopeId}>${ssrInterpolate(_ctx.lang().label.delete)} ${ssrInterpolate(props.title)}</h2><p class="mt-1 text-sm text-slate-600 dark:text-slate-400"${_scopeId}>${ssrInterpolate(_ctx.lang().label.delete_confirm)} <b${_scopeId}>${ssrInterpolate((_a = props.category) == null ? void 0 : _a.name)}</b></p><div class="mt-6 flex justify-end"${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$1i, {
+            _push2(ssrRenderComponent(_sfc_main$1j, {
               disabled: unref(form).processing,
               onClick: ($event) => emit("close")
             }, {
@@ -1018,7 +1018,7 @@ const _sfc_main$1f = {
               }),
               _: 1
             }, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$1g, {
+            _push2(ssrRenderComponent(_sfc_main$1h, {
               class: ["ml-3", { "opacity-25": unref(form).processing }],
               disabled: unref(form).processing,
               onClick: destroy
@@ -1047,7 +1047,7 @@ const _sfc_main$1f = {
                   createVNode("b", null, toDisplayString((_b = props.category) == null ? void 0 : _b.name), 1)
                 ]),
                 createVNode("div", { class: "mt-6 flex justify-end" }, [
-                  createVNode(_sfc_main$1i, {
+                  createVNode(_sfc_main$1j, {
                     disabled: unref(form).processing,
                     onClick: ($event) => emit("close")
                   }, {
@@ -1056,7 +1056,7 @@ const _sfc_main$1f = {
                     ]),
                     _: 1
                   }, 8, ["disabled", "onClick"]),
-                  createVNode(_sfc_main$1g, {
+                  createVNode(_sfc_main$1h, {
                     class: ["ml-3", { "opacity-25": unref(form).processing }],
                     disabled: unref(form).processing,
                     onClick: destroy
@@ -1077,17 +1077,17 @@ const _sfc_main$1f = {
     };
   }
 };
-const _sfc_setup$1f = _sfc_main$1f.setup;
-_sfc_main$1f.setup = (props, ctx) => {
+const _sfc_setup$1g = _sfc_main$1g.setup;
+_sfc_main$1g.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Pages/Admin/Category/Delete.vue");
-  return _sfc_setup$1f ? _sfc_setup$1f(props, ctx) : void 0;
+  return _sfc_setup$1g ? _sfc_setup$1g(props, ctx) : void 0;
 };
 const Delete$7 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: _sfc_main$1f
+  default: _sfc_main$1g
 }, Symbol.toStringTag, { value: "Module" }));
-const _sfc_main$1e = {
+const _sfc_main$1f = {
   __name: "Edit",
   __ssrInlineRender: true,
   props: {
@@ -1158,7 +1158,7 @@ const _sfc_main$1e = {
     });
     return (_ctx, _push, _parent, _attrs) => {
       _push(`<section${ssrRenderAttrs(mergeProps({ class: "space-y-6" }, _attrs))}>`);
-      _push(ssrRenderComponent(_sfc_main$1k, {
+      _push(ssrRenderComponent(_sfc_main$1l, {
         show: props.show,
         onClose: ($event) => emit("close"),
         "max-width": `4xl`
@@ -1166,12 +1166,12 @@ const _sfc_main$1e = {
         default: withCtx((_, _push2, _parent2, _scopeId) => {
           if (_push2) {
             _push2(`<form class="p-6"${_scopeId}><h2 class="text-lg font-medium text-slate-900 dark:text-slate-100"${_scopeId}>${ssrInterpolate(_ctx.lang().label.edit)} ${ssrInterpolate(props.title)}</h2><div class="my-6 space-y-4"${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$1l, {
+            _push2(ssrRenderComponent(_sfc_main$1m, {
               form: unref(form),
               locales: unref(locales)
             }, null, _parent2, _scopeId));
             _push2(`</div><div class="flex justify-end"${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$1i, {
+            _push2(ssrRenderComponent(_sfc_main$1j, {
               disabled: unref(form).processing,
               onClick: ($event) => emit("close")
             }, {
@@ -1186,7 +1186,7 @@ const _sfc_main$1e = {
               }),
               _: 1
             }, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$1j, {
+            _push2(ssrRenderComponent(_sfc_main$1k, {
               class: ["ml-3", { "opacity-25": unref(form).processing }],
               disabled: unref(form).processing,
               onClick: update
@@ -1211,13 +1211,13 @@ const _sfc_main$1e = {
               }, [
                 createVNode("h2", { class: "text-lg font-medium text-slate-900 dark:text-slate-100" }, toDisplayString(_ctx.lang().label.edit) + " " + toDisplayString(props.title), 1),
                 createVNode("div", { class: "my-6 space-y-4" }, [
-                  createVNode(_sfc_main$1l, {
+                  createVNode(_sfc_main$1m, {
                     form: unref(form),
                     locales: unref(locales)
                   }, null, 8, ["form", "locales"])
                 ]),
                 createVNode("div", { class: "flex justify-end" }, [
-                  createVNode(_sfc_main$1i, {
+                  createVNode(_sfc_main$1j, {
                     disabled: unref(form).processing,
                     onClick: ($event) => emit("close")
                   }, {
@@ -1226,7 +1226,7 @@ const _sfc_main$1e = {
                     ]),
                     _: 1
                   }, 8, ["disabled", "onClick"]),
-                  createVNode(_sfc_main$1j, {
+                  createVNode(_sfc_main$1k, {
                     class: ["ml-3", { "opacity-25": unref(form).processing }],
                     disabled: unref(form).processing,
                     onClick: update
@@ -1247,31 +1247,31 @@ const _sfc_main$1e = {
     };
   }
 };
-const _sfc_setup$1e = _sfc_main$1e.setup;
-_sfc_main$1e.setup = (props, ctx) => {
+const _sfc_setup$1f = _sfc_main$1f.setup;
+_sfc_main$1f.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Pages/Admin/Category/Edit.vue");
-  return _sfc_setup$1e ? _sfc_setup$1e(props, ctx) : void 0;
+  return _sfc_setup$1f ? _sfc_setup$1f(props, ctx) : void 0;
 };
 const Edit$7 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: _sfc_main$1e
+  default: _sfc_main$1f
 }, Symbol.toStringTag, { value: "Module" }));
-const _sfc_main$1d = {};
+const _sfc_main$1e = {};
 function _sfc_ssrRender$5(_ctx, _push, _parent, _attrs) {
   _push(`<svg${ssrRenderAttrs(mergeProps({
     viewBox: "0 0 316 316",
     xmlns: "http://www.w3.org/2000/svg"
   }, _attrs))}><path d="M305.8 81.125C305.77 80.995 305.69 80.885 305.65 80.755C305.56 80.525 305.49 80.285 305.37 80.075C305.29 79.935 305.17 79.815 305.07 79.685C304.94 79.515 304.83 79.325 304.68 79.175C304.55 79.045 304.39 78.955 304.25 78.845C304.09 78.715 303.95 78.575 303.77 78.475L251.32 48.275C249.97 47.495 248.31 47.495 246.96 48.275L194.51 78.475C194.33 78.575 194.19 78.725 194.03 78.845C193.89 78.955 193.73 79.045 193.6 79.175C193.45 79.325 193.34 79.515 193.21 79.685C193.11 79.815 192.99 79.935 192.91 80.075C192.79 80.285 192.71 80.525 192.63 80.755C192.58 80.875 192.51 80.995 192.48 81.125C192.38 81.495 192.33 81.875 192.33 82.265V139.625L148.62 164.795V52.575C148.62 52.185 148.57 51.805 148.47 51.435C148.44 51.305 148.36 51.195 148.32 51.065C148.23 50.835 148.16 50.595 148.04 50.385C147.96 50.245 147.84 50.125 147.74 49.995C147.61 49.825 147.5 49.635 147.35 49.485C147.22 49.355 147.06 49.265 146.92 49.155C146.76 49.025 146.62 48.885 146.44 48.785L93.99 18.585C92.64 17.805 90.98 17.805 89.63 18.585L37.18 48.785C37 48.885 36.86 49.035 36.7 49.155C36.56 49.265 36.4 49.355 36.27 49.485C36.12 49.635 36.01 49.825 35.88 49.995C35.78 50.125 35.66 50.245 35.58 50.385C35.46 50.595 35.38 50.835 35.3 51.065C35.25 51.185 35.18 51.305 35.15 51.435C35.05 51.805 35 52.185 35 52.575V232.235C35 233.795 35.84 235.245 37.19 236.025L142.1 296.425C142.33 296.555 142.58 296.635 142.82 296.725C142.93 296.765 143.04 296.835 143.16 296.865C143.53 296.965 143.9 297.015 144.28 297.015C144.66 297.015 145.03 296.965 145.4 296.865C145.5 296.835 145.59 296.775 145.69 296.745C145.95 296.655 146.21 296.565 146.45 296.435L251.36 236.035C252.72 235.255 253.55 233.815 253.55 232.245V174.885L303.81 145.945C305.17 145.165 306 143.725 306 142.155V82.265C305.95 81.875 305.89 81.495 305.8 81.125ZM144.2 227.205L100.57 202.515L146.39 176.135L196.66 147.195L240.33 172.335L208.29 190.625L144.2 227.205ZM244.75 114.995V164.795L226.39 154.225L201.03 139.625V89.825L219.39 100.395L244.75 114.995ZM249.12 57.105L292.81 82.265L249.12 107.425L205.43 82.265L249.12 57.105ZM114.49 184.425L96.13 194.995V85.305L121.49 70.705L139.85 60.135V169.815L114.49 184.425ZM91.76 27.425L135.45 52.585L91.76 77.745L48.07 52.585L91.76 27.425ZM43.67 60.135L62.03 70.705L87.39 85.305V202.545V202.555V202.565C87.39 202.735 87.44 202.895 87.46 203.055C87.49 203.265 87.49 203.485 87.55 203.695V203.705C87.6 203.875 87.69 204.035 87.76 204.195C87.84 204.375 87.89 204.575 87.99 204.745C87.99 204.745 87.99 204.755 88 204.755C88.09 204.905 88.22 205.035 88.33 205.175C88.45 205.335 88.55 205.495 88.69 205.635L88.7 205.645C88.82 205.765 88.98 205.855 89.12 205.965C89.28 206.085 89.42 206.225 89.59 206.325C89.6 206.325 89.6 206.325 89.61 206.335C89.62 206.335 89.62 206.345 89.63 206.345L139.87 234.775V285.065L43.67 229.705V60.135ZM244.75 229.705L148.58 285.075V234.775L219.8 194.115L244.75 179.875V229.705ZM297.2 139.625L253.49 164.795V114.995L278.85 100.395L297.21 89.825V139.625H297.2Z"></path></svg>`);
 }
-const _sfc_setup$1d = _sfc_main$1d.setup;
-_sfc_main$1d.setup = (props, ctx) => {
+const _sfc_setup$1e = _sfc_main$1e.setup;
+_sfc_main$1e.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Components/ApplicationLogo.vue");
-  return _sfc_setup$1d ? _sfc_setup$1d(props, ctx) : void 0;
+  return _sfc_setup$1e ? _sfc_setup$1e(props, ctx) : void 0;
 };
-const ApplicationLogo = /* @__PURE__ */ _export_sfc(_sfc_main$1d, [["ssrRender", _sfc_ssrRender$5]]);
-const _sfc_main$1c = {
+const ApplicationLogo = /* @__PURE__ */ _export_sfc(_sfc_main$1e, [["ssrRender", _sfc_ssrRender$5]]);
+const _sfc_main$1d = {
   __name: "Dropdown",
   __ssrInlineRender: true,
   props: {
@@ -1321,13 +1321,13 @@ const _sfc_main$1c = {
     };
   }
 };
-const _sfc_setup$1c = _sfc_main$1c.setup;
-_sfc_main$1c.setup = (props, ctx) => {
+const _sfc_setup$1d = _sfc_main$1d.setup;
+_sfc_main$1d.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Components/Dropdown.vue");
-  return _sfc_setup$1c ? _sfc_setup$1c(props, ctx) : void 0;
+  return _sfc_setup$1d ? _sfc_setup$1d(props, ctx) : void 0;
 };
-const _sfc_main$1b = {
+const _sfc_main$1c = {
   __name: "DropdownLink",
   __ssrInlineRender: true,
   setup(__props) {
@@ -1347,13 +1347,13 @@ const _sfc_main$1b = {
     };
   }
 };
-const _sfc_setup$1b = _sfc_main$1b.setup;
-_sfc_main$1b.setup = (props, ctx) => {
+const _sfc_setup$1c = _sfc_main$1c.setup;
+_sfc_main$1c.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Components/DropdownLink.vue");
-  return _sfc_setup$1b ? _sfc_setup$1b(props, ctx) : void 0;
+  return _sfc_setup$1c ? _sfc_setup$1c(props, ctx) : void 0;
 };
-const _sfc_main$1a = {
+const _sfc_main$1b = {
   __name: "SwitchDarkModeNavbar",
   __ssrInlineRender: true,
   setup(__props) {
@@ -1376,13 +1376,13 @@ const _sfc_main$1a = {
     };
   }
 };
-const _sfc_setup$1a = _sfc_main$1a.setup;
-_sfc_main$1a.setup = (props, ctx) => {
+const _sfc_setup$1b = _sfc_main$1b.setup;
+_sfc_main$1b.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Components/SwitchDarkModeNavbar.vue");
-  return _sfc_setup$1a ? _sfc_setup$1a(props, ctx) : void 0;
+  return _sfc_setup$1b ? _sfc_setup$1b(props, ctx) : void 0;
 };
-const _sfc_main$19 = {
+const _sfc_main$1a = {
   __name: "SwitchLangNavbar",
   __ssrInlineRender: true,
   setup(__props) {
@@ -1392,7 +1392,7 @@ const _sfc_main$19 = {
       resolveDirective("tooltip");
       {
         _push(`<div${ssrRenderAttrs(mergeProps({ class: "relative inline-block text-left" }, _attrs))}>`);
-        _push(ssrRenderComponent(_sfc_main$1c, {
+        _push(ssrRenderComponent(_sfc_main$1d, {
           align: "right",
           width: "48"
         }, {
@@ -1428,7 +1428,7 @@ const _sfc_main$19 = {
               _push2(`<!--[-->`);
               ssrRenderList(unref(locales), (locale) => {
                 _push2(`<div${_scopeId}>`);
-                _push2(ssrRenderComponent(_sfc_main$1b, {
+                _push2(ssrRenderComponent(_sfc_main$1c, {
                   href: _ctx.route("setLang.set", locale),
                   class: ["dark:text-white text-gray-500 block px-4 py-2 text-sm hover:bg-red-500 hover:dark:bg-red-500", { "bg-red-500": locale === unref(lang) }],
                   role: "menuitem"
@@ -1451,7 +1451,7 @@ const _sfc_main$19 = {
               return [
                 (openBlock(true), createBlock(Fragment, null, renderList(unref(locales), (locale) => {
                   return openBlock(), createBlock("div", { key: locale }, [
-                    createVNode(_sfc_main$1b, {
+                    createVNode(_sfc_main$1c, {
                       href: _ctx.route("setLang.set", locale),
                       class: ["dark:text-white text-gray-500 block px-4 py-2 text-sm hover:bg-red-500 hover:dark:bg-red-500", { "bg-red-500": locale === unref(lang) }],
                       role: "menuitem"
@@ -1473,13 +1473,13 @@ const _sfc_main$19 = {
     };
   }
 };
-const _sfc_setup$19 = _sfc_main$19.setup;
-_sfc_main$19.setup = (props, ctx) => {
+const _sfc_setup$1a = _sfc_main$1a.setup;
+_sfc_main$1a.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Components/SwitchLangNavbar.vue");
-  return _sfc_setup$19 ? _sfc_setup$19(props, ctx) : void 0;
+  return _sfc_setup$1a ? _sfc_setup$1a(props, ctx) : void 0;
 };
-const _sfc_main$18 = {
+const _sfc_main$19 = {
   __name: "Navbar",
   __ssrInlineRender: true,
   emits: ["open"],
@@ -1506,10 +1506,10 @@ const _sfc_main$18 = {
         _: 1
       }, _parent));
       _push(`</div></div><div class="flex items-center space-x-2">`);
-      _push(ssrRenderComponent(_sfc_main$19, null, null, _parent));
       _push(ssrRenderComponent(_sfc_main$1a, null, null, _parent));
+      _push(ssrRenderComponent(_sfc_main$1b, null, null, _parent));
       _push(`<div class=""><div class="relative">`);
-      _push(ssrRenderComponent(_sfc_main$1c, {
+      _push(ssrRenderComponent(_sfc_main$1d, {
         align: "right",
         width: "48"
       }, {
@@ -1565,7 +1565,7 @@ const _sfc_main$18 = {
               style: _ctx.$page.props.auth.user.email_verified_at ? null : { display: "none" }
             }, null, _parent2, _scopeId));
             _push2(`</span><span class="block text-sm font-medium text-slate-500 truncate dark:text-slate-400"${_scopeId}>${ssrInterpolate(_ctx.$page.props.auth.user.email)}</span></div>`);
-            _push2(ssrRenderComponent(_sfc_main$1b, {
+            _push2(ssrRenderComponent(_sfc_main$1c, {
               href: _ctx.route("admin.profile.edit")
             }, {
               default: withCtx((_2, _push3, _parent3, _scopeId2) => {
@@ -1579,7 +1579,7 @@ const _sfc_main$18 = {
               }),
               _: 1
             }, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$1b, {
+            _push2(ssrRenderComponent(_sfc_main$1c, {
               href: _ctx.route("admin.logout"),
               method: "post",
               as: "button"
@@ -1609,7 +1609,7 @@ const _sfc_main$18 = {
                 ]),
                 createVNode("span", { class: "block text-sm font-medium text-slate-500 truncate dark:text-slate-400" }, toDisplayString(_ctx.$page.props.auth.user.email), 1)
               ]),
-              createVNode(_sfc_main$1b, {
+              createVNode(_sfc_main$1c, {
                 href: _ctx.route("admin.profile.edit")
               }, {
                 default: withCtx(() => [
@@ -1617,7 +1617,7 @@ const _sfc_main$18 = {
                 ]),
                 _: 1
               }, 8, ["href"]),
-              createVNode(_sfc_main$1b, {
+              createVNode(_sfc_main$1c, {
                 href: _ctx.route("admin.logout"),
                 method: "post",
                 as: "button"
@@ -1636,13 +1636,13 @@ const _sfc_main$18 = {
     };
   }
 };
-const _sfc_setup$18 = _sfc_main$18.setup;
-_sfc_main$18.setup = (props, ctx) => {
+const _sfc_setup$19 = _sfc_main$19.setup;
+_sfc_main$19.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Components/Navbar.vue");
-  return _sfc_setup$18 ? _sfc_setup$18(props, ctx) : void 0;
+  return _sfc_setup$19 ? _sfc_setup$19(props, ctx) : void 0;
 };
-const _sfc_main$17 = {
+const _sfc_main$18 = {
   __name: "SideBarMenu",
   __ssrInlineRender: true,
   setup(__props) {
@@ -1818,13 +1818,13 @@ const _sfc_main$17 = {
     };
   }
 };
-const _sfc_setup$17 = _sfc_main$17.setup;
-_sfc_main$17.setup = (props, ctx) => {
+const _sfc_setup$18 = _sfc_main$18.setup;
+_sfc_main$18.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Components/SideBarMenu.vue");
-  return _sfc_setup$17 ? _sfc_setup$17(props, ctx) : void 0;
+  return _sfc_setup$18 ? _sfc_setup$18(props, ctx) : void 0;
 };
-const _sfc_main$16 = {
+const _sfc_main$17 = {
   __name: "SideBar",
   __ssrInlineRender: true,
   props: {
@@ -1835,7 +1835,7 @@ const _sfc_main$16 = {
     const emit = __emit;
     return (_ctx, _push, _parent, _attrs) => {
       _push(`<!--[--><div class="hidden lg:flex"><aside class="fixed lg:flex flex-col h-screen overflow-hidden w-64 bg-slate-800 dark:bg-slate-900 dark:border-r dark:border-slate-800"><div class="flex-1 h-screen overflow-y-auto scrollbar-sidebar px-3">`);
-      _push(ssrRenderComponent(_sfc_main$17, null, null, _parent));
+      _push(ssrRenderComponent(_sfc_main$18, null, null, _parent));
       _push(`</div></aside></div>`);
       _push(ssrRenderComponent(unref(TransitionRoot), { show: __props.open }, {
         default: withCtx((_, _push2, _parent2, _scopeId) => {
@@ -1859,14 +1859,14 @@ const _sfc_main$16 = {
                     default: withCtx((_3, _push4, _parent4, _scopeId3) => {
                       if (_push4) {
                         _push4(`<aside class="flex flex-col relative z-10 w-64 bg-slate-800 dark:bg-slate-900 dark:border-r dark:border-slate-800"${_scopeId3}><div class="flex flex-col relative h-screen min-h-screen"${_scopeId3}><div class="overflow-y-auto flex-1 scrollbar-sidebar px-3"${_scopeId3}>`);
-                        _push4(ssrRenderComponent(_sfc_main$17, null, null, _parent4, _scopeId3));
+                        _push4(ssrRenderComponent(_sfc_main$18, null, null, _parent4, _scopeId3));
                         _push4(`</div></div></aside>`);
                       } else {
                         return [
                           createVNode("aside", { class: "flex flex-col relative z-10 w-64 bg-slate-800 dark:bg-slate-900 dark:border-r dark:border-slate-800" }, [
                             createVNode("div", { class: "flex flex-col relative h-screen min-h-screen" }, [
                               createVNode("div", { class: "overflow-y-auto flex-1 scrollbar-sidebar px-3" }, [
-                                createVNode(_sfc_main$17)
+                                createVNode(_sfc_main$18)
                               ])
                             ])
                           ])
@@ -1910,7 +1910,7 @@ const _sfc_main$16 = {
                         createVNode("aside", { class: "flex flex-col relative z-10 w-64 bg-slate-800 dark:bg-slate-900 dark:border-r dark:border-slate-800" }, [
                           createVNode("div", { class: "flex flex-col relative h-screen min-h-screen" }, [
                             createVNode("div", { class: "overflow-y-auto flex-1 scrollbar-sidebar px-3" }, [
-                              createVNode(_sfc_main$17)
+                              createVNode(_sfc_main$18)
                             ])
                           ])
                         ])
@@ -1957,7 +1957,7 @@ const _sfc_main$16 = {
                       createVNode("aside", { class: "flex flex-col relative z-10 w-64 bg-slate-800 dark:bg-slate-900 dark:border-r dark:border-slate-800" }, [
                         createVNode("div", { class: "flex flex-col relative h-screen min-h-screen" }, [
                           createVNode("div", { class: "overflow-y-auto flex-1 scrollbar-sidebar px-3" }, [
-                            createVNode(_sfc_main$17)
+                            createVNode(_sfc_main$18)
                           ])
                         ])
                       ])
@@ -1990,13 +1990,13 @@ const _sfc_main$16 = {
     };
   }
 };
-const _sfc_setup$16 = _sfc_main$16.setup;
-_sfc_main$16.setup = (props, ctx) => {
+const _sfc_setup$17 = _sfc_main$17.setup;
+_sfc_main$17.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Components/SideBar.vue");
-  return _sfc_setup$16 ? _sfc_setup$16(props, ctx) : void 0;
+  return _sfc_setup$17 ? _sfc_setup$17(props, ctx) : void 0;
 };
-const _sfc_main$15 = {
+const _sfc_main$16 = {
   components: {
     XMarkIcon,
     CheckCircleIcon,
@@ -2093,25 +2093,25 @@ function _sfc_ssrRender$4(_ctx, _push, _parent, _attrs, $props, $setup, $data, $
   }
   _push(`<!--]-->`);
 }
-const _sfc_setup$15 = _sfc_main$15.setup;
-_sfc_main$15.setup = (props, ctx) => {
+const _sfc_setup$16 = _sfc_main$16.setup;
+_sfc_main$16.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Components/Toast.vue");
-  return _sfc_setup$15 ? _sfc_setup$15(props, ctx) : void 0;
+  return _sfc_setup$16 ? _sfc_setup$16(props, ctx) : void 0;
 };
-const Toast = /* @__PURE__ */ _export_sfc(_sfc_main$15, [["ssrRender", _sfc_ssrRender$4]]);
-const _sfc_main$14 = {};
+const Toast = /* @__PURE__ */ _export_sfc(_sfc_main$16, [["ssrRender", _sfc_ssrRender$4]]);
+const _sfc_main$15 = {};
 function _sfc_ssrRender$3(_ctx, _push, _parent, _attrs) {
   _push(`<footer${ssrRenderAttrs(mergeProps({ class: "sticky top-[100vh] border-t border-slate-200 dark:border-slate-800 text-slate-500 dark:text-slate-300" }, _attrs))}><div class="flex items-center justify-center sm:justify-end max-w-7xl mx-auto p-4 sm:px-6 lg:px-8"><p class="text-center"><a href="https://example.com" target="_blank" class="font-bold">${ssrInterpolate(_ctx.$page.props.app.name)}</a> ©️ ${ssrInterpolate((/* @__PURE__ */ new Date()).getFullYear())} <a href="https://example.com" target="_blank" class="font-bold text-primary">Example</a></p></div></footer>`);
 }
-const _sfc_setup$14 = _sfc_main$14.setup;
-_sfc_main$14.setup = (props, ctx) => {
+const _sfc_setup$15 = _sfc_main$15.setup;
+_sfc_main$15.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Components/Footer.vue");
-  return _sfc_setup$14 ? _sfc_setup$14(props, ctx) : void 0;
+  return _sfc_setup$15 ? _sfc_setup$15(props, ctx) : void 0;
 };
-const Footer = /* @__PURE__ */ _export_sfc(_sfc_main$14, [["ssrRender", _sfc_ssrRender$3]]);
-const _sfc_main$13 = {
+const Footer = /* @__PURE__ */ _export_sfc(_sfc_main$15, [["ssrRender", _sfc_ssrRender$3]]);
+const _sfc_main$14 = {
   __name: "AuthenticatedLayout",
   __ssrInlineRender: true,
   emits: ["close", "open"],
@@ -2119,7 +2119,7 @@ const _sfc_main$13 = {
     const sidebarOpened = ref(false);
     return (_ctx, _push, _parent, _attrs) => {
       _push(`<div${ssrRenderAttrs(mergeProps({ class: "flex w-full overflow-hidden" }, _attrs))}>`);
-      _push(ssrRenderComponent(_sfc_main$16, {
+      _push(ssrRenderComponent(_sfc_main$17, {
         open: sidebarOpened.value,
         onClose: ($event) => sidebarOpened.value = false
       }, null, _parent));
@@ -2127,7 +2127,7 @@ const _sfc_main$13 = {
       _push(ssrRenderComponent(Toast, {
         flash: _ctx.$page.props.flash
       }, null, _parent));
-      _push(ssrRenderComponent(_sfc_main$18, {
+      _push(ssrRenderComponent(_sfc_main$19, {
         open: sidebarOpened.value,
         onOpen: ($event) => sidebarOpened.value = true
       }, null, _parent));
@@ -2139,13 +2139,13 @@ const _sfc_main$13 = {
     };
   }
 };
-const _sfc_setup$13 = _sfc_main$13.setup;
-_sfc_main$13.setup = (props, ctx) => {
+const _sfc_setup$14 = _sfc_main$14.setup;
+_sfc_main$14.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Layouts/AuthenticatedLayout.vue");
-  return _sfc_setup$13 ? _sfc_setup$13(props, ctx) : void 0;
+  return _sfc_setup$14 ? _sfc_setup$14(props, ctx) : void 0;
 };
-const _sfc_main$12 = {
+const _sfc_main$13 = {
   __name: "Breadcrumb",
   __ssrInlineRender: true,
   props: {
@@ -2194,13 +2194,13 @@ const _sfc_main$12 = {
     };
   }
 };
-const _sfc_setup$12 = _sfc_main$12.setup;
-_sfc_main$12.setup = (props, ctx) => {
+const _sfc_setup$13 = _sfc_main$13.setup;
+_sfc_main$13.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Components/Breadcrumb.vue");
-  return _sfc_setup$12 ? _sfc_setup$12(props, ctx) : void 0;
+  return _sfc_setup$13 ? _sfc_setup$13(props, ctx) : void 0;
 };
-const _sfc_main$11 = {
+const _sfc_main$12 = {
   __name: "SelectInput",
   __ssrInlineRender: true,
   props: ["modelValue", "dataSet"],
@@ -2221,13 +2221,13 @@ const _sfc_main$11 = {
     };
   }
 };
-const _sfc_setup$11 = _sfc_main$11.setup;
-_sfc_main$11.setup = (props, ctx) => {
+const _sfc_setup$12 = _sfc_main$12.setup;
+_sfc_main$12.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Components/SelectInput.vue");
-  return _sfc_setup$11 ? _sfc_setup$11(props, ctx) : void 0;
+  return _sfc_setup$12 ? _sfc_setup$12(props, ctx) : void 0;
 };
-const _sfc_main$10 = {
+const _sfc_main$11 = {
   __name: "InfoButton",
   __ssrInlineRender: true,
   props: {
@@ -2247,13 +2247,13 @@ const _sfc_main$10 = {
     };
   }
 };
-const _sfc_setup$10 = _sfc_main$10.setup;
-_sfc_main$10.setup = (props, ctx) => {
+const _sfc_setup$11 = _sfc_main$11.setup;
+_sfc_main$11.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Components/InfoButton.vue");
-  return _sfc_setup$10 ? _sfc_setup$10(props, ctx) : void 0;
+  return _sfc_setup$11 ? _sfc_setup$11(props, ctx) : void 0;
 };
-const _sfc_main$$ = {
+const _sfc_main$10 = {
   __name: "Icon",
   __ssrInlineRender: true,
   props: {
@@ -2277,13 +2277,13 @@ const _sfc_main$$ = {
     };
   }
 };
-const _sfc_setup$$ = _sfc_main$$.setup;
-_sfc_main$$.setup = (props, ctx) => {
+const _sfc_setup$10 = _sfc_main$10.setup;
+_sfc_main$10.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Components/Icon.vue");
-  return _sfc_setup$$ ? _sfc_setup$$(props, ctx) : void 0;
+  return _sfc_setup$10 ? _sfc_setup$10(props, ctx) : void 0;
 };
-const _sfc_main$_ = {
+const _sfc_main$$ = {
   __name: "ResourcePagination",
   __ssrInlineRender: true,
   props: {
@@ -2317,7 +2317,7 @@ const _sfc_main$_ = {
       }
       if (__props.links.data.length == 0) {
         _push(`<div class="flex flex-col space-y-2 mx-auto p-6 text-lg">`);
-        _push(ssrRenderComponent(_sfc_main$$, {
+        _push(ssrRenderComponent(_sfc_main$10, {
           name: "nodata",
           class: "w-auto h-16"
         }, null, _parent));
@@ -2334,14 +2334,14 @@ const _sfc_main$_ = {
     };
   }
 };
-const _sfc_setup$_ = _sfc_main$_.setup;
-_sfc_main$_.setup = (props, ctx) => {
+const _sfc_setup$$ = _sfc_main$$.setup;
+_sfc_main$$.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Components/ResourcePagination.vue");
-  return _sfc_setup$_ ? _sfc_setup$_(props, ctx) : void 0;
+  return _sfc_setup$$ ? _sfc_setup$$(props, ctx) : void 0;
 };
 const datetime_format$4 = "yyyy-MM-dd HH:mm";
-const _sfc_main$Z = {
+const _sfc_main$_ = {
   __name: "Index",
   __ssrInlineRender: true,
   props: {
@@ -2399,15 +2399,15 @@ const _sfc_main$Z = {
       _push(ssrRenderComponent(unref(Head), {
         title: props.title
       }, null, _parent));
-      _push(ssrRenderComponent(_sfc_main$13, null, {
+      _push(ssrRenderComponent(_sfc_main$14, null, {
         default: withCtx((_2, _push2, _parent2, _scopeId) => {
           if (_push2) {
-            _push2(ssrRenderComponent(_sfc_main$12, {
+            _push2(ssrRenderComponent(_sfc_main$13, {
               title: __props.title,
               breadcrumbs: __props.breadcrumbs
             }, null, _parent2, _scopeId));
             _push2(`<div class="space-y-4"${_scopeId}><div class="px-4 sm:px-0"${_scopeId}><div class="rounded-lg overflow-hidden w-fit"${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$1j, {
+            _push2(ssrRenderComponent(_sfc_main$1k, {
               style: _ctx.can(["Category Create"]) ? null : { display: "none" },
               class: "rounded-none",
               onClick: ($event) => data.createOpen = true
@@ -2423,25 +2423,25 @@ const _sfc_main$Z = {
               }),
               _: 1
             }, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$1h, {
+            _push2(ssrRenderComponent(_sfc_main$1i, {
               show: data.createOpen,
               onClose: ($event) => data.createOpen = false,
               title: props.title
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$1e, {
+            _push2(ssrRenderComponent(_sfc_main$1f, {
               show: data.editOpen,
               onClose: ($event) => data.editOpen = false,
               category: data.category,
               title: props.title
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$1f, {
+            _push2(ssrRenderComponent(_sfc_main$1g, {
               show: data.deleteOpen,
               onClose: ($event) => data.deleteOpen = false,
               category: data.category,
               title: props.title
             }, null, _parent2, _scopeId));
             _push2(`</div></div><div class="relative bg-white dark:bg-slate-800 shadow sm:rounded-lg"${_scopeId}><div class="flex justify-between p-2"${_scopeId}><div class="flex space-x-2"${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$11, {
+            _push2(ssrRenderComponent(_sfc_main$12, {
               modelValue: data.params.perPage,
               "onUpdate:modelValue": ($event) => data.params.perPage = $event,
               dataSet: data.dataSet
@@ -2459,7 +2459,7 @@ const _sfc_main$Z = {
             _push2(`</div></th><th class="px-2 py-4 cursor-pointer"${_scopeId}><div class="flex justify-between items-center"${_scopeId}><span${_scopeId}>${ssrInterpolate(_ctx.lang().label.updated)}</span>`);
             _push2(ssrRenderComponent(unref(ChevronUpDownIcon), { class: "w-4 h-4" }, null, _parent2, _scopeId));
             _push2(`</div></th><th class="px-2 py-4 sr-only"${_scopeId}>Action</th></tr><tr${_scopeId}><th class="px-2 pb-3"${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$1p, {
+            _push2(ssrRenderComponent(_sfc_main$1q, {
               modelValue: data.params["id"],
               "onUpdate:modelValue": ($event) => data.params["id"] = $event,
               modelModifiers: { lazy: true },
@@ -2467,14 +2467,14 @@ const _sfc_main$Z = {
               class: "block w-full rounded-lg size-8"
             }, null, _parent2, _scopeId));
             _push2(`</th><th class="px-2 pb-3"${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$1p, {
+            _push2(ssrRenderComponent(_sfc_main$1q, {
               modelValue: data.params["name"],
               "onUpdate:modelValue": ($event) => data.params["name"] = $event,
               type: "text",
               class: "block w-full rounded-lg size-8"
             }, null, _parent2, _scopeId));
             _push2(`</th><th class="px-2 pb-3"${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$11, {
+            _push2(ssrRenderComponent(_sfc_main$12, {
               class: "block w-full rounded-lg size-8 text-sm font-light py-0",
               modelValue: data.params["is_active"],
               "onUpdate:modelValue": ($event) => data.params["is_active"] = $event,
@@ -2486,7 +2486,7 @@ const _sfc_main$Z = {
               selected: data.params["is_active"] === "" ? -1 : data.params["is_active"]
             }, null, _parent2, _scopeId));
             _push2(`</th><th class="px-2 pb-3"${_scopeId}></th><th class="px-2 pb-3"${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$1p, {
+            _push2(ssrRenderComponent(_sfc_main$1q, {
               modelValue: data.params["order_num"],
               "onUpdate:modelValue": ($event) => data.params["order_num"] = $event,
               modelModifiers: { lazy: true },
@@ -2510,7 +2510,7 @@ const _sfc_main$Z = {
               ]
             }, null, _parent2, _scopeId));
             _push2(`</th><th class="px-2 pb-3"${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$1p, {
+            _push2(ssrRenderComponent(_sfc_main$1q, {
               modelValue: data.params.updated_at,
               "onUpdate:modelValue": ($event) => data.params.updated_at = $event,
               type: "text",
@@ -2541,7 +2541,7 @@ const _sfc_main$Z = {
                 }),
                 _: 2
               }, _parent2, _scopeId));
-              _push2(ssrRenderComponent(_sfc_main$10, mergeProps({
+              _push2(ssrRenderComponent(_sfc_main$11, mergeProps({
                 style: _ctx.can(["Category Update"]) ? null : { display: "none" },
                 type: "button",
                 onClick: ($event) => (data.editOpen = true, data.category = category),
@@ -2558,7 +2558,7 @@ const _sfc_main$Z = {
                 }),
                 _: 2
               }, _parent2, _scopeId));
-              _push2(ssrRenderComponent(_sfc_main$1g, mergeProps({
+              _push2(ssrRenderComponent(_sfc_main$1h, mergeProps({
                 style: _ctx.can(["Category Delete"]) ? null : { display: "none" },
                 type: "button",
                 onClick: ($event) => (data.deleteOpen = true, data.category = category),
@@ -2578,21 +2578,21 @@ const _sfc_main$Z = {
               _push2(`</div></div></td></tr>`);
             });
             _push2(`<!--]--></tbody></table></div><div class="flex justify-between items-center p-2 border-t border-slate-200 dark:border-slate-700"${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$_, {
+            _push2(ssrRenderComponent(_sfc_main$$, {
               links: props.categories,
               filters: data.params
             }, null, _parent2, _scopeId));
             _push2(`</div></div></div>`);
           } else {
             return [
-              createVNode(_sfc_main$12, {
+              createVNode(_sfc_main$13, {
                 title: __props.title,
                 breadcrumbs: __props.breadcrumbs
               }, null, 8, ["title", "breadcrumbs"]),
               createVNode("div", { class: "space-y-4" }, [
                 createVNode("div", { class: "px-4 sm:px-0" }, [
                   createVNode("div", { class: "rounded-lg overflow-hidden w-fit" }, [
-                    withDirectives(createVNode(_sfc_main$1j, {
+                    withDirectives(createVNode(_sfc_main$1k, {
                       class: "rounded-none",
                       onClick: ($event) => data.createOpen = true
                     }, {
@@ -2603,18 +2603,18 @@ const _sfc_main$Z = {
                     }, 8, ["onClick"]), [
                       [vShow, _ctx.can(["Category Create"])]
                     ]),
-                    createVNode(_sfc_main$1h, {
+                    createVNode(_sfc_main$1i, {
                       show: data.createOpen,
                       onClose: ($event) => data.createOpen = false,
                       title: props.title
                     }, null, 8, ["show", "onClose", "title"]),
-                    createVNode(_sfc_main$1e, {
+                    createVNode(_sfc_main$1f, {
                       show: data.editOpen,
                       onClose: ($event) => data.editOpen = false,
                       category: data.category,
                       title: props.title
                     }, null, 8, ["show", "onClose", "category", "title"]),
-                    createVNode(_sfc_main$1f, {
+                    createVNode(_sfc_main$1g, {
                       show: data.deleteOpen,
                       onClose: ($event) => data.deleteOpen = false,
                       category: data.category,
@@ -2625,7 +2625,7 @@ const _sfc_main$Z = {
                 createVNode("div", { class: "relative bg-white dark:bg-slate-800 shadow sm:rounded-lg" }, [
                   createVNode("div", { class: "flex justify-between p-2" }, [
                     createVNode("div", { class: "flex space-x-2" }, [
-                      createVNode(_sfc_main$11, {
+                      createVNode(_sfc_main$12, {
                         modelValue: data.params.perPage,
                         "onUpdate:modelValue": ($event) => data.params.perPage = $event,
                         dataSet: data.dataSet
@@ -2699,7 +2699,7 @@ const _sfc_main$Z = {
                         ]),
                         createVNode("tr", null, [
                           createVNode("th", { class: "px-2 pb-3" }, [
-                            createVNode(_sfc_main$1p, {
+                            createVNode(_sfc_main$1q, {
                               modelValue: data.params["id"],
                               "onUpdate:modelValue": ($event) => data.params["id"] = $event,
                               modelModifiers: { lazy: true },
@@ -2708,7 +2708,7 @@ const _sfc_main$Z = {
                             }, null, 8, ["modelValue", "onUpdate:modelValue"])
                           ]),
                           createVNode("th", { class: "px-2 pb-3" }, [
-                            createVNode(_sfc_main$1p, {
+                            createVNode(_sfc_main$1q, {
                               modelValue: data.params["name"],
                               "onUpdate:modelValue": ($event) => data.params["name"] = $event,
                               type: "text",
@@ -2716,7 +2716,7 @@ const _sfc_main$Z = {
                             }, null, 8, ["modelValue", "onUpdate:modelValue"])
                           ]),
                           createVNode("th", { class: "px-2 pb-3" }, [
-                            createVNode(_sfc_main$11, {
+                            createVNode(_sfc_main$12, {
                               class: "block w-full rounded-lg size-8 text-sm font-light py-0",
                               modelValue: data.params["is_active"],
                               "onUpdate:modelValue": ($event) => data.params["is_active"] = $event,
@@ -2730,7 +2730,7 @@ const _sfc_main$Z = {
                           ]),
                           createVNode("th", { class: "px-2 pb-3" }),
                           createVNode("th", { class: "px-2 pb-3" }, [
-                            createVNode(_sfc_main$1p, {
+                            createVNode(_sfc_main$1q, {
                               modelValue: data.params["order_num"],
                               "onUpdate:modelValue": ($event) => data.params["order_num"] = $event,
                               modelModifiers: { lazy: true },
@@ -2756,7 +2756,7 @@ const _sfc_main$Z = {
                             }, null, 8, ["modelValue", "onUpdate:modelValue", "start-time", "locale", "timezone"])
                           ]),
                           createVNode("th", { class: "px-2 pb-3" }, [
-                            createVNode(_sfc_main$1p, {
+                            createVNode(_sfc_main$1q, {
                               modelValue: data.params.updated_at,
                               "onUpdate:modelValue": ($event) => data.params.updated_at = $event,
                               type: "text",
@@ -2810,7 +2810,7 @@ const _sfc_main$Z = {
                                     ]),
                                     _: 2
                                   }, 1032, ["href"]),
-                                  withDirectives((openBlock(), createBlock(_sfc_main$10, {
+                                  withDirectives((openBlock(), createBlock(_sfc_main$11, {
                                     type: "button",
                                     onClick: ($event) => (data.editOpen = true, data.category = category),
                                     class: "px-2 py-1.5 rounded-none"
@@ -2823,7 +2823,7 @@ const _sfc_main$Z = {
                                     [vShow, _ctx.can(["Category Update"])],
                                     [_directive_tooltip, _ctx.lang().tooltip.edit]
                                   ]),
-                                  withDirectives((openBlock(), createBlock(_sfc_main$1g, {
+                                  withDirectives((openBlock(), createBlock(_sfc_main$1h, {
                                     type: "button",
                                     onClick: ($event) => (data.deleteOpen = true, data.category = category),
                                     class: "px-2 py-1.5 rounded-none"
@@ -2845,7 +2845,7 @@ const _sfc_main$Z = {
                     ])
                   ]),
                   createVNode("div", { class: "flex justify-between items-center p-2 border-t border-slate-200 dark:border-slate-700" }, [
-                    createVNode(_sfc_main$_, {
+                    createVNode(_sfc_main$$, {
                       links: props.categories,
                       filters: data.params
                     }, null, 8, ["links", "filters"])
@@ -2861,17 +2861,17 @@ const _sfc_main$Z = {
     };
   }
 };
-const _sfc_setup$Z = _sfc_main$Z.setup;
-_sfc_main$Z.setup = (props, ctx) => {
+const _sfc_setup$_ = _sfc_main$_.setup;
+_sfc_main$_.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Pages/Admin/Category/Index.vue");
-  return _sfc_setup$Z ? _sfc_setup$Z(props, ctx) : void 0;
+  return _sfc_setup$_ ? _sfc_setup$_(props, ctx) : void 0;
 };
 const Index$9 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: _sfc_main$Z
+  default: _sfc_main$_
 }, Symbol.toStringTag, { value: "Module" }));
-const _sfc_main$Y = {
+const _sfc_main$Z = {
   __name: "Show",
   __ssrInlineRender: true,
   props: {
@@ -2899,22 +2899,22 @@ const _sfc_main$Y = {
       _push(ssrRenderComponent(unref(Head), {
         title: props.title
       }, null, _parent));
-      _push(ssrRenderComponent(_sfc_main$13, null, {
+      _push(ssrRenderComponent(_sfc_main$14, null, {
         default: withCtx((_2, _push2, _parent2, _scopeId) => {
           if (_push2) {
-            _push2(ssrRenderComponent(_sfc_main$12, {
+            _push2(ssrRenderComponent(_sfc_main$13, {
               title: __props.title,
               breadcrumbs: __props.breadcrumbs
             }, null, _parent2, _scopeId));
             _push2(`<div class="space-y-4"${_scopeId}><div class="px-4 sm:px-0"${_scopeId}><div class="rounded-lg overflow-hidden w-fit"${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$1e, {
+            _push2(ssrRenderComponent(_sfc_main$1f, {
               show: data.editOpen,
               onClose: ($event) => data.editOpen = false,
               category: data.category,
               title: props.title
             }, null, _parent2, _scopeId));
             _push2(`</div></div></div><div class="grid grid-cols-1 md:grid-cols-3 gap-4"${_scopeId}><div class="col-span-2 px-4 sm:px-0"${_scopeId}><div class="space-y-4"${_scopeId}><div class="px-4 sm:px-0"${_scopeId}><div class="bg-white dark:bg-slate-800 shadow sm:rounded-lg"${_scopeId}><div class="px-4 py-5 sm:px-6"${_scopeId}><div class="grid grid-cols-6 md:grid-cols-6 gap-4"${_scopeId}><div class="col-span-5"${_scopeId}><h3 class="text-lg leading-6 font-medium text-gray-900 dark:text-slate-200"${_scopeId}>${ssrInterpolate(unref(category).name)}</h3></div><div class="col-span-1"${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$10, mergeProps({
+            _push2(ssrRenderComponent(_sfc_main$11, mergeProps({
               style: _ctx.can(["Category Update"]) ? null : { display: "none" },
               type: "button",
               onClick: ($event) => (data.editOpen = true, data.category = unref(category)),
@@ -2946,14 +2946,14 @@ const _sfc_main$Y = {
             _push2(`</dd></div><div class="bg-white dark:bg-slate-800 px-4 py-2.5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6"${_scopeId}><dt class="text-sm font-medium text-gray-500 dark:text-slate-400"${_scopeId}>${ssrInterpolate(_ctx.lang().label.order_num)}</dt><dd class="mt-1 text-sm text-gray-900 dark:text-slate-200 sm:mt-0 sm:col-span-2"${_scopeId}>${ssrInterpolate(unref(category).order_num)}</dd></div><div class="bg-white dark:bg-slate-800 px-4 py-2.5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6"${_scopeId}><dt class="text-sm font-medium text-gray-500 dark:text-slate-400"${_scopeId}>${ssrInterpolate(_ctx.lang().label.created_at)}</dt><dd class="mt-1 text-sm text-gray-900 dark:text-slate-200 sm:mt-0 sm:col-span-2"${_scopeId}>${ssrInterpolate(unref(category).created_at)}</dd></div><div class="bg-gray-50 dark:bg-slate-900 px-4 py-2.5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6"${_scopeId}><dt class="text-sm font-medium text-gray-500 dark:text-slate-400"${_scopeId}>${ssrInterpolate(_ctx.lang().label.updated_at)}</dt><dd class="mt-1 text-sm text-gray-900 dark:text-slate-200 sm:mt-0 sm:col-span-2"${_scopeId}>${ssrInterpolate(unref(category).updated_at)}</dd></div></div></div></div></div></div></div></div>`);
           } else {
             return [
-              createVNode(_sfc_main$12, {
+              createVNode(_sfc_main$13, {
                 title: __props.title,
                 breadcrumbs: __props.breadcrumbs
               }, null, 8, ["title", "breadcrumbs"]),
               createVNode("div", { class: "space-y-4" }, [
                 createVNode("div", { class: "px-4 sm:px-0" }, [
                   createVNode("div", { class: "rounded-lg overflow-hidden w-fit" }, [
-                    createVNode(_sfc_main$1e, {
+                    createVNode(_sfc_main$1f, {
                       show: data.editOpen,
                       onClose: ($event) => data.editOpen = false,
                       category: data.category,
@@ -2973,7 +2973,7 @@ const _sfc_main$Y = {
                               createVNode("h3", { class: "text-lg leading-6 font-medium text-gray-900 dark:text-slate-200" }, toDisplayString(unref(category).name), 1)
                             ]),
                             createVNode("div", { class: "col-span-1" }, [
-                              withDirectives((openBlock(), createBlock(_sfc_main$10, {
+                              withDirectives((openBlock(), createBlock(_sfc_main$11, {
                                 type: "button",
                                 onClick: ($event) => (data.editOpen = true, data.category = unref(category)),
                                 class: "px-2 py-1.5 rounded float-right"
@@ -3054,17 +3054,17 @@ const _sfc_main$Y = {
     };
   }
 };
-const _sfc_setup$Y = _sfc_main$Y.setup;
-_sfc_main$Y.setup = (props, ctx) => {
+const _sfc_setup$Z = _sfc_main$Z.setup;
+_sfc_main$Z.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Pages/Admin/Category/Show.vue");
-  return _sfc_setup$Y ? _sfc_setup$Y(props, ctx) : void 0;
+  return _sfc_setup$Z ? _sfc_setup$Z(props, ctx) : void 0;
 };
 const Show$4 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: _sfc_main$Y
+  default: _sfc_main$Z
 }, Symbol.toStringTag, { value: "Module" }));
-const _sfc_main$X = {
+const _sfc_main$Y = {
   __name: "CameraSelectInput",
   __ssrInlineRender: true,
   props: ["modelValue", "dataSet"],
@@ -3085,29 +3085,29 @@ const _sfc_main$X = {
     };
   }
 };
-const _sfc_setup$X = _sfc_main$X.setup;
-_sfc_main$X.setup = (props, ctx) => {
+const _sfc_setup$Y = _sfc_main$Y.setup;
+_sfc_main$Y.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Components/CameraSelectInput.vue");
-  return _sfc_setup$X ? _sfc_setup$X(props, ctx) : void 0;
+  return _sfc_setup$Y ? _sfc_setup$Y(props, ctx) : void 0;
 };
-const _sfc_main$W = {};
+const _sfc_main$X = {};
 function _sfc_ssrRender$2(_ctx, _push, _parent, _attrs) {
   _push(`<!--[--><div class="grid grid-cols-3 gap-4 animate-pulse"><div class="h-10 bg-gray-300 rounded"></div><div class="h-10 bg-gray-300 rounded"></div><div class="h-10 bg-gray-300 rounded"></div></div><h4 class="text-lg font-medium text-slate-700 dark:text-slate-100 mt-5">${ssrInterpolate(_ctx.lang().label.names)}</h4><div class="grid grid-cols-1 gap-4 mt-1 animate-pulse"><ul class="flex border-b"><li class="-mb-px mr-1 h-8 w-24 bg-gray-300 rounded"></li><li class="-mb-px mr-1 h-8 w-24 bg-gray-300 rounded"></li><li class="-mb-px mr-1 h-8 w-24 bg-gray-300 rounded"></li></ul><div class="py-3"><div class="grid grid-cols-3 md:grid-cols-3 gap-4"><div class="col-span-1 px-4 sm:px-0"><div class="h-6 bg-gray-300 rounded w-24 mb-2"></div><div class="h-10 bg-gray-300 rounded w-full"></div></div><div class="col-span-2 px-4 sm:px-0"><div class="h-6 bg-gray-300 rounded w-24 mb-2"></div><div class="h-10 bg-gray-300 rounded w-full"></div></div></div></div></div><!--]-->`);
 }
-const _sfc_setup$W = _sfc_main$W.setup;
-_sfc_main$W.setup = (props, ctx) => {
+const _sfc_setup$X = _sfc_main$X.setup;
+_sfc_main$X.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Pages/Admin/Product/EmptyForm.vue");
-  return _sfc_setup$W ? _sfc_setup$W(props, ctx) : void 0;
+  return _sfc_setup$X ? _sfc_setup$X(props, ctx) : void 0;
 };
-const EmptyForm$4 = /* @__PURE__ */ _export_sfc(_sfc_main$W, [["ssrRender", _sfc_ssrRender$2]]);
+const EmptyForm$4 = /* @__PURE__ */ _export_sfc(_sfc_main$X, [["ssrRender", _sfc_ssrRender$2]]);
 const EmptyForm$5 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   default: EmptyForm$4
 }, Symbol.toStringTag, { value: "Module" }));
 const lineSpeed = 2;
-const _sfc_main$V = {
+const _sfc_main$W = {
   __name: "Form",
   __ssrInlineRender: true,
   props: {
@@ -3346,11 +3346,11 @@ const _sfc_main$V = {
         _push(`</div>`);
       } else {
         _push(`<div data-v-eeaa79f7><div class="grid grid-cols-1 md:grid-cols-3 gap-4" data-v-eeaa79f7><div class="col-span-2" data-v-eeaa79f7><div class="grid grid-cols-1 md:grid-cols-3 gap-4" data-v-eeaa79f7><div data-v-eeaa79f7>`);
-        _push(ssrRenderComponent(_sfc_main$1r, {
+        _push(ssrRenderComponent(_sfc_main$1s, {
           for: "sku",
           value: _ctx.lang().product.sku
         }, null, _parent));
-        _push(ssrRenderComponent(_sfc_main$1p, {
+        _push(ssrRenderComponent(_sfc_main$1q, {
           id: "sku",
           type: "text",
           class: "mt-1 block w-full",
@@ -3360,16 +3360,16 @@ const _sfc_main$V = {
           placeholder: _ctx.lang().product.sku,
           error: __props.form.errors.sku
         }, null, _parent));
-        _push(ssrRenderComponent(_sfc_main$1q, {
+        _push(ssrRenderComponent(_sfc_main$1r, {
           class: "mt-2",
           message: __props.form.errors.sku
         }, null, _parent));
         _push(`</div><div data-v-eeaa79f7>`);
-        _push(ssrRenderComponent(_sfc_main$1r, {
+        _push(ssrRenderComponent(_sfc_main$1s, {
           for: "price",
           value: _ctx.lang().label.price
         }, null, _parent));
-        _push(ssrRenderComponent(_sfc_main$1p, {
+        _push(ssrRenderComponent(_sfc_main$1q, {
           id: "price",
           type: "number",
           class: "mt-1 block w-full",
@@ -3381,16 +3381,16 @@ const _sfc_main$V = {
           placeholder: _ctx.lang().label.price,
           error: __props.form.errors.price
         }, null, _parent));
-        _push(ssrRenderComponent(_sfc_main$1q, {
+        _push(ssrRenderComponent(_sfc_main$1r, {
           class: "mt-2",
           message: __props.form.errors.price
         }, null, _parent));
         _push(`</div><div data-v-eeaa79f7>`);
-        _push(ssrRenderComponent(_sfc_main$1r, {
+        _push(ssrRenderComponent(_sfc_main$1s, {
           for: "unit",
           value: _ctx.lang().label.unit
         }, null, _parent));
-        _push(ssrRenderComponent(_sfc_main$1n, {
+        _push(ssrRenderComponent(_sfc_main$1o, {
           id: "unit",
           class: "mt-1 block w-full",
           modelValue: __props.form.unit,
@@ -3398,12 +3398,12 @@ const _sfc_main$V = {
           dataSet: __props.unit_list,
           error: __props.form.errors.unit
         }, null, _parent));
-        _push(ssrRenderComponent(_sfc_main$1q, {
+        _push(ssrRenderComponent(_sfc_main$1r, {
           class: "mt-2",
           message: __props.form.errors.unit
         }, null, _parent));
         _push(`</div></div><div class="grid grid-cols-1 md:grid-cols-1 gap-4 mt-5" data-v-eeaa79f7><div data-v-eeaa79f7>`);
-        _push(ssrRenderComponent(_sfc_main$1r, {
+        _push(ssrRenderComponent(_sfc_main$1s, {
           for: "category_ids",
           value: _ctx.lang().label.categories
         }, null, _parent));
@@ -3415,16 +3415,16 @@ const _sfc_main$V = {
           reduce: (option) => option.value,
           clearable: ""
         }, null, _parent));
-        _push(ssrRenderComponent(_sfc_main$1q, {
+        _push(ssrRenderComponent(_sfc_main$1r, {
           class: "mt-2",
           message: __props.form.errors.category_ids
         }, null, _parent));
         _push(`</div></div><div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-5" data-v-eeaa79f7><div class="col-span-1" data-v-eeaa79f7><div class="grid grid-cols-4 gap-2" data-v-eeaa79f7><div class="col-span-3" data-v-eeaa79f7>`);
-        _push(ssrRenderComponent(_sfc_main$1r, {
+        _push(ssrRenderComponent(_sfc_main$1s, {
           for: "barcode",
           value: _ctx.lang().product.barcode
         }, null, _parent));
-        _push(ssrRenderComponent(_sfc_main$1p, {
+        _push(ssrRenderComponent(_sfc_main$1q, {
           id: "barcode",
           type: "number",
           class: "mt-1 block w-full",
@@ -3434,12 +3434,12 @@ const _sfc_main$V = {
           placeholder: _ctx.lang().product.barcode,
           error: __props.form.errors.barcode
         }, null, _parent));
-        _push(ssrRenderComponent(_sfc_main$1q, {
+        _push(ssrRenderComponent(_sfc_main$1r, {
           class: "mt-2",
           message: __props.form.errors.barcode
         }, null, _parent));
         _push(`</div><div class="col-span-1" data-v-eeaa79f7>`);
-        _push(ssrRenderComponent(_sfc_main$1j, {
+        _push(ssrRenderComponent(_sfc_main$1k, {
           type: "button",
           onClick: searchProductByBarCode,
           disabled: !__props.form.barcode,
@@ -3458,11 +3458,11 @@ const _sfc_main$V = {
           _: 1
         }, _parent));
         _push(`</div></div></div><div class="col-span-1" data-v-eeaa79f7><div class="grid grid-cols-4 gap-2" data-v-eeaa79f7><div class="col-span-3" data-v-eeaa79f7>`);
-        _push(ssrRenderComponent(_sfc_main$1r, {
+        _push(ssrRenderComponent(_sfc_main$1s, {
           for: "camera-select",
           value: _ctx.lang().label.camera_list
         }, null, _parent));
-        _push(ssrRenderComponent(_sfc_main$X, {
+        _push(ssrRenderComponent(_sfc_main$Y, {
           id: "camera-select",
           class: "mt-1 block w-full",
           modelValue: selectedCamera.value,
@@ -3471,7 +3471,7 @@ const _sfc_main$V = {
           onChange: startScanner
         }, null, _parent));
         _push(`</div><div class="md:col-span-1" data-v-eeaa79f7>`);
-        _push(ssrRenderComponent(_sfc_main$1i, {
+        _push(ssrRenderComponent(_sfc_main$1j, {
           type: "button",
           onClick: toggleScanner,
           class: "mt-6 right-2 top-2 bg-gray-300 p-2 rounded h-auto float-end",
@@ -3501,11 +3501,11 @@ const _sfc_main$V = {
         _push(`<!--]--></ul><div class="py-3" data-v-eeaa79f7><!--[-->`);
         ssrRenderList(__props.locales, (locale) => {
           _push(`<div style="${ssrRenderStyle(activeMainTab.value === locale ? null : { display: "none" })}" data-v-eeaa79f7><div class="grid grid-cols-1 sm:grid-cols-3 gap-4" data-v-eeaa79f7><div class="col-pan-1 sm:col-span-1 sm:px-0" data-v-eeaa79f7>`);
-          _push(ssrRenderComponent(_sfc_main$1r, {
+          _push(ssrRenderComponent(_sfc_main$1s, {
             for: "name-" + locale,
             value: _ctx.lang().label.name
           }, null, _parent));
-          _push(ssrRenderComponent(_sfc_main$1p, {
+          _push(ssrRenderComponent(_sfc_main$1q, {
             id: "name-" + locale,
             type: "text",
             class: "mt-1 block w-full",
@@ -3515,16 +3515,16 @@ const _sfc_main$V = {
             placeholder: _ctx.lang().label.name,
             error: __props.form.errors["name." + locale]
           }, null, _parent));
-          _push(ssrRenderComponent(_sfc_main$1q, {
+          _push(ssrRenderComponent(_sfc_main$1r, {
             class: "mt-2",
             message: __props.form.errors["name." + locale]
           }, null, _parent));
           _push(`</div><div class="col-pan-1 sm:col-span-2 sm:px-0" data-v-eeaa79f7>`);
-          _push(ssrRenderComponent(_sfc_main$1r, {
+          _push(ssrRenderComponent(_sfc_main$1s, {
             for: "description-" + locale,
             value: _ctx.lang().label.description
           }, null, _parent));
-          _push(ssrRenderComponent(_sfc_main$1p, {
+          _push(ssrRenderComponent(_sfc_main$1q, {
             id: "description-" + locale,
             type: "text",
             class: "mt-1 block w-full",
@@ -3533,7 +3533,7 @@ const _sfc_main$V = {
             placeholder: _ctx.lang().label.description,
             error: __props.form.errors["description." + locale]
           }, null, _parent));
-          _push(ssrRenderComponent(_sfc_main$1q, {
+          _push(ssrRenderComponent(_sfc_main$1r, {
             class: "mt-2",
             message: __props.form.errors["description." + locale]
           }, null, _parent));
@@ -3545,18 +3545,18 @@ const _sfc_main$V = {
     };
   }
 };
-const _sfc_setup$V = _sfc_main$V.setup;
-_sfc_main$V.setup = (props, ctx) => {
+const _sfc_setup$W = _sfc_main$W.setup;
+_sfc_main$W.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Pages/Admin/Product/Form.vue");
-  return _sfc_setup$V ? _sfc_setup$V(props, ctx) : void 0;
+  return _sfc_setup$W ? _sfc_setup$W(props, ctx) : void 0;
 };
-const ProductForm = /* @__PURE__ */ _export_sfc(_sfc_main$V, [["__scopeId", "data-v-eeaa79f7"]]);
+const ProductForm = /* @__PURE__ */ _export_sfc(_sfc_main$W, [["__scopeId", "data-v-eeaa79f7"]]);
 const Form$1 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   default: ProductForm
 }, Symbol.toStringTag, { value: "Module" }));
-const _sfc_main$U = {
+const _sfc_main$V = {
   __name: "Create",
   __ssrInlineRender: true,
   props: {
@@ -3605,7 +3605,7 @@ const _sfc_main$U = {
     });
     return (_ctx, _push, _parent, _attrs) => {
       _push(`<section${ssrRenderAttrs(mergeProps({ class: "space-y-6" }, _attrs))}>`);
-      _push(ssrRenderComponent(_sfc_main$1k, {
+      _push(ssrRenderComponent(_sfc_main$1l, {
         show: props.show,
         onClose: ($event) => emit("close"),
         "max-width": `4xl`
@@ -3620,7 +3620,7 @@ const _sfc_main$U = {
               unit_list: unref(unit_list)
             }, null, _parent2, _scopeId));
             _push2(`</div><div class="flex justify-end"${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$1i, {
+            _push2(ssrRenderComponent(_sfc_main$1j, {
               disabled: unref(form).processing,
               onClick: ($event) => emit("close")
             }, {
@@ -3635,7 +3635,7 @@ const _sfc_main$U = {
               }),
               _: 1
             }, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$1j, {
+            _push2(ssrRenderComponent(_sfc_main$1k, {
               class: ["ml-3", { "opacity-25": unref(form).processing }],
               disabled: unref(form).processing,
               onClick: create
@@ -3668,7 +3668,7 @@ const _sfc_main$U = {
                   }, null, 8, ["form", "locales", "category_list", "unit_list"])
                 ]),
                 createVNode("div", { class: "flex justify-end" }, [
-                  createVNode(_sfc_main$1i, {
+                  createVNode(_sfc_main$1j, {
                     disabled: unref(form).processing,
                     onClick: ($event) => emit("close")
                   }, {
@@ -3677,7 +3677,7 @@ const _sfc_main$U = {
                     ]),
                     _: 1
                   }, 8, ["disabled", "onClick"]),
-                  createVNode(_sfc_main$1j, {
+                  createVNode(_sfc_main$1k, {
                     class: ["ml-3", { "opacity-25": unref(form).processing }],
                     disabled: unref(form).processing,
                     onClick: create
@@ -3698,17 +3698,17 @@ const _sfc_main$U = {
     };
   }
 };
-const _sfc_setup$U = _sfc_main$U.setup;
-_sfc_main$U.setup = (props, ctx) => {
+const _sfc_setup$V = _sfc_main$V.setup;
+_sfc_main$V.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Pages/Admin/Product/Create.vue");
-  return _sfc_setup$U ? _sfc_setup$U(props, ctx) : void 0;
+  return _sfc_setup$V ? _sfc_setup$V(props, ctx) : void 0;
 };
 const Create$6 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: _sfc_main$U
+  default: _sfc_main$V
 }, Symbol.toStringTag, { value: "Module" }));
-const _sfc_main$T = {
+const _sfc_main$U = {
   __name: "Delete",
   __ssrInlineRender: true,
   props: {
@@ -3735,7 +3735,7 @@ const _sfc_main$T = {
     };
     return (_ctx, _push, _parent, _attrs) => {
       _push(`<section${ssrRenderAttrs(mergeProps({ class: "space-y-6" }, _attrs))}>`);
-      _push(ssrRenderComponent(_sfc_main$1k, {
+      _push(ssrRenderComponent(_sfc_main$1l, {
         show: props.show,
         onClose: ($event) => emit("close"),
         maxWidth: "lg"
@@ -3744,7 +3744,7 @@ const _sfc_main$T = {
           var _a, _b;
           if (_push2) {
             _push2(`<form class="p-6"${_scopeId}><h2 class="text-lg font-medium text-slate-900 dark:text-slate-100"${_scopeId}>${ssrInterpolate(_ctx.lang().label.delete)} ${ssrInterpolate(props.title)}</h2><p class="mt-1 text-sm text-slate-600 dark:text-slate-400"${_scopeId}>${ssrInterpolate(_ctx.lang().label.delete_confirm)} <b${_scopeId}>${ssrInterpolate((_a = props.product) == null ? void 0 : _a.name)}</b></p><div class="mt-6 flex justify-end"${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$1i, {
+            _push2(ssrRenderComponent(_sfc_main$1j, {
               disabled: unref(form).processing,
               onClick: ($event) => emit("close")
             }, {
@@ -3759,7 +3759,7 @@ const _sfc_main$T = {
               }),
               _: 1
             }, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$1g, {
+            _push2(ssrRenderComponent(_sfc_main$1h, {
               class: ["ml-3", { "opacity-25": unref(form).processing }],
               disabled: unref(form).processing,
               onClick: destroy
@@ -3788,7 +3788,7 @@ const _sfc_main$T = {
                   createVNode("b", null, toDisplayString((_b = props.product) == null ? void 0 : _b.name), 1)
                 ]),
                 createVNode("div", { class: "mt-6 flex justify-end" }, [
-                  createVNode(_sfc_main$1i, {
+                  createVNode(_sfc_main$1j, {
                     disabled: unref(form).processing,
                     onClick: ($event) => emit("close")
                   }, {
@@ -3797,7 +3797,7 @@ const _sfc_main$T = {
                     ]),
                     _: 1
                   }, 8, ["disabled", "onClick"]),
-                  createVNode(_sfc_main$1g, {
+                  createVNode(_sfc_main$1h, {
                     class: ["ml-3", { "opacity-25": unref(form).processing }],
                     disabled: unref(form).processing,
                     onClick: destroy
@@ -3818,17 +3818,17 @@ const _sfc_main$T = {
     };
   }
 };
-const _sfc_setup$T = _sfc_main$T.setup;
-_sfc_main$T.setup = (props, ctx) => {
+const _sfc_setup$U = _sfc_main$U.setup;
+_sfc_main$U.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Pages/Admin/Product/Delete.vue");
-  return _sfc_setup$T ? _sfc_setup$T(props, ctx) : void 0;
+  return _sfc_setup$U ? _sfc_setup$U(props, ctx) : void 0;
 };
 const Delete$6 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: _sfc_main$T
+  default: _sfc_main$U
 }, Symbol.toStringTag, { value: "Module" }));
-const _sfc_main$S = {
+const _sfc_main$T = {
   __name: "Edit",
   __ssrInlineRender: true,
   props: {
@@ -3915,7 +3915,7 @@ const _sfc_main$S = {
     });
     return (_ctx, _push, _parent, _attrs) => {
       _push(`<section${ssrRenderAttrs(mergeProps({ class: "space-y-6" }, _attrs))}>`);
-      _push(ssrRenderComponent(_sfc_main$1k, {
+      _push(ssrRenderComponent(_sfc_main$1l, {
         show: props.show,
         onClose: ($event) => emit("close"),
         "max-width": `4xl`
@@ -3931,7 +3931,7 @@ const _sfc_main$S = {
               unit_list: unref(unit_list)
             }, null, _parent2, _scopeId));
             _push2(`</div><div class="flex justify-end"${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$1i, {
+            _push2(ssrRenderComponent(_sfc_main$1j, {
               disabled: unref(form).processing,
               onClick: ($event) => emit("close")
             }, {
@@ -3946,7 +3946,7 @@ const _sfc_main$S = {
               }),
               _: 1
             }, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$1j, {
+            _push2(ssrRenderComponent(_sfc_main$1k, {
               class: ["ml-3", { "opacity-25": unref(form).processing }],
               disabled: unref(form).processing,
               onClick: update
@@ -3980,7 +3980,7 @@ const _sfc_main$S = {
                   }, null, 8, ["form", "locales", "category_list", "unit_list"])
                 ]),
                 createVNode("div", { class: "flex justify-end" }, [
-                  createVNode(_sfc_main$1i, {
+                  createVNode(_sfc_main$1j, {
                     disabled: unref(form).processing,
                     onClick: ($event) => emit("close")
                   }, {
@@ -3989,7 +3989,7 @@ const _sfc_main$S = {
                     ]),
                     _: 1
                   }, 8, ["disabled", "onClick"]),
-                  createVNode(_sfc_main$1j, {
+                  createVNode(_sfc_main$1k, {
                     class: ["ml-3", { "opacity-25": unref(form).processing }],
                     disabled: unref(form).processing,
                     onClick: update
@@ -4010,17 +4010,17 @@ const _sfc_main$S = {
     };
   }
 };
-const _sfc_setup$S = _sfc_main$S.setup;
-_sfc_main$S.setup = (props, ctx) => {
+const _sfc_setup$T = _sfc_main$T.setup;
+_sfc_main$T.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Pages/Admin/Product/Edit.vue");
-  return _sfc_setup$S ? _sfc_setup$S(props, ctx) : void 0;
+  return _sfc_setup$T ? _sfc_setup$T(props, ctx) : void 0;
 };
 const Edit$6 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: _sfc_main$S
+  default: _sfc_main$T
 }, Symbol.toStringTag, { value: "Module" }));
-const _sfc_main$R = {
+const _sfc_main$S = {
   __name: "RecoveryButton",
   __ssrInlineRender: true,
   props: {
@@ -4040,13 +4040,13 @@ const _sfc_main$R = {
     };
   }
 };
-const _sfc_setup$R = _sfc_main$R.setup;
-_sfc_main$R.setup = (props, ctx) => {
+const _sfc_setup$S = _sfc_main$S.setup;
+_sfc_main$S.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Components/Buttons/RecoveryButton.vue");
-  return _sfc_setup$R ? _sfc_setup$R(props, ctx) : void 0;
+  return _sfc_setup$S ? _sfc_setup$S(props, ctx) : void 0;
 };
-const _sfc_main$Q = {
+const _sfc_main$R = {
   __name: "Recovery",
   __ssrInlineRender: true,
   props: {
@@ -4073,7 +4073,7 @@ const _sfc_main$Q = {
     };
     return (_ctx, _push, _parent, _attrs) => {
       _push(`<section${ssrRenderAttrs(mergeProps({ class: "space-y-6" }, _attrs))}>`);
-      _push(ssrRenderComponent(_sfc_main$1k, {
+      _push(ssrRenderComponent(_sfc_main$1l, {
         show: props.show,
         onClose: ($event) => emit("close"),
         maxWidth: "lg"
@@ -4082,7 +4082,7 @@ const _sfc_main$Q = {
           var _a, _b;
           if (_push2) {
             _push2(`<form class="p-6"${_scopeId}><h2 class="text-lg font-medium text-slate-900 dark:text-slate-100"${_scopeId}>${ssrInterpolate(_ctx.lang().label.recovery)} ${ssrInterpolate(props.title)}</h2><p class="mt-1 text-sm text-slate-600 dark:text-slate-400"${_scopeId}>${ssrInterpolate(_ctx.lang().label.recovery_confirm)} <b${_scopeId}>${ssrInterpolate((_a = props.product) == null ? void 0 : _a.name)}</b></p><div class="mt-6 flex justify-end"${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$1i, {
+            _push2(ssrRenderComponent(_sfc_main$1j, {
               disabled: unref(form).processing,
               onClick: ($event) => emit("close")
             }, {
@@ -4097,7 +4097,7 @@ const _sfc_main$Q = {
               }),
               _: 1
             }, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$R, {
+            _push2(ssrRenderComponent(_sfc_main$S, {
               class: ["ml-3", { "opacity-25": unref(form).processing }],
               disabled: unref(form).processing,
               onClick: recovery
@@ -4126,7 +4126,7 @@ const _sfc_main$Q = {
                   createVNode("b", null, toDisplayString((_b = props.product) == null ? void 0 : _b.name), 1)
                 ]),
                 createVNode("div", { class: "mt-6 flex justify-end" }, [
-                  createVNode(_sfc_main$1i, {
+                  createVNode(_sfc_main$1j, {
                     disabled: unref(form).processing,
                     onClick: ($event) => emit("close")
                   }, {
@@ -4135,7 +4135,7 @@ const _sfc_main$Q = {
                     ]),
                     _: 1
                   }, 8, ["disabled", "onClick"]),
-                  createVNode(_sfc_main$R, {
+                  createVNode(_sfc_main$S, {
                     class: ["ml-3", { "opacity-25": unref(form).processing }],
                     disabled: unref(form).processing,
                     onClick: recovery
@@ -4156,18 +4156,18 @@ const _sfc_main$Q = {
     };
   }
 };
-const _sfc_setup$Q = _sfc_main$Q.setup;
-_sfc_main$Q.setup = (props, ctx) => {
+const _sfc_setup$R = _sfc_main$R.setup;
+_sfc_main$R.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Pages/Admin/Product/Recovery.vue");
-  return _sfc_setup$Q ? _sfc_setup$Q(props, ctx) : void 0;
+  return _sfc_setup$R ? _sfc_setup$R(props, ctx) : void 0;
 };
 const Recovery = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: _sfc_main$Q
+  default: _sfc_main$R
 }, Symbol.toStringTag, { value: "Module" }));
 const datetime_format$3 = "yyyy-MM-dd HH:mm";
-const _sfc_main$P = {
+const _sfc_main$Q = {
   __name: "Index",
   __ssrInlineRender: true,
   props: {
@@ -4237,15 +4237,15 @@ const _sfc_main$P = {
       _push(ssrRenderComponent(unref(Head), {
         title: props.title
       }, null, _parent));
-      _push(ssrRenderComponent(_sfc_main$13, null, {
+      _push(ssrRenderComponent(_sfc_main$14, null, {
         default: withCtx((_2, _push2, _parent2, _scopeId) => {
           if (_push2) {
-            _push2(ssrRenderComponent(_sfc_main$12, {
+            _push2(ssrRenderComponent(_sfc_main$13, {
               title: __props.title,
               breadcrumbs: __props.breadcrumbs
             }, null, _parent2, _scopeId));
             _push2(`<div class="space-y-4" data-v-e57fb4ed${_scopeId}><div class="px-4 sm:px-0" data-v-e57fb4ed${_scopeId}><div class="rounded-lg overflow-hidden w-fit" data-v-e57fb4ed${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$1j, {
+            _push2(ssrRenderComponent(_sfc_main$1k, {
               style: _ctx.can(["Product Create"]) ? null : { display: "none" },
               class: "rounded-none",
               onClick: ($event) => data.createOpen = true
@@ -4261,14 +4261,14 @@ const _sfc_main$P = {
               }),
               _: 1
             }, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$U, {
+            _push2(ssrRenderComponent(_sfc_main$V, {
               show: data.createOpen,
               onClose: ($event) => data.createOpen = false,
               title: props.title,
               categories: props.categories,
               units: props.units
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$S, {
+            _push2(ssrRenderComponent(_sfc_main$T, {
               show: data.editOpen,
               onClose: ($event) => data.editOpen = false,
               product: data.product,
@@ -4276,20 +4276,20 @@ const _sfc_main$P = {
               categories: props.categories,
               units: props.units
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$T, {
+            _push2(ssrRenderComponent(_sfc_main$U, {
               show: data.deleteOpen,
               onClose: ($event) => data.deleteOpen = false,
               product: data.product,
               title: props.title
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$Q, {
+            _push2(ssrRenderComponent(_sfc_main$R, {
               show: data.recoveryOpen,
               onClose: ($event) => data.recoveryOpen = false,
               product: data.product,
               title: props.title
             }, null, _parent2, _scopeId));
             _push2(`</div></div><div class="relative bg-white dark:bg-slate-800 shadow sm:rounded-lg" data-v-e57fb4ed${_scopeId}><div class="flex justify-between p-2" data-v-e57fb4ed${_scopeId}><div class="flex space-x-2" data-v-e57fb4ed${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$11, {
+            _push2(ssrRenderComponent(_sfc_main$12, {
               modelValue: data.params.perPage,
               "onUpdate:modelValue": ($event) => data.params.perPage = $event,
               dataSet: data.dataSet
@@ -4311,7 +4311,7 @@ const _sfc_main$P = {
             _push2(`</div></th><th class="px-2 py-4 cursor-pointer" data-v-e57fb4ed${_scopeId}><div class="flex justify-between items-center" data-v-e57fb4ed${_scopeId}><span data-v-e57fb4ed${_scopeId}>${ssrInterpolate(_ctx.lang().label.updated_at)}</span>`);
             _push2(ssrRenderComponent(unref(ChevronUpDownIcon), { class: "w-4 h-4" }, null, _parent2, _scopeId));
             _push2(`</div></th><th class="px-2 py-4 sr-only" data-v-e57fb4ed${_scopeId}>Action</th></tr><tr data-v-e57fb4ed${_scopeId}><th class="px-2 pb-3" data-v-e57fb4ed${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$1p, {
+            _push2(ssrRenderComponent(_sfc_main$1q, {
               modelValue: data.params["id"],
               "onUpdate:modelValue": ($event) => data.params["id"] = $event,
               modelModifiers: { lazy: true },
@@ -4319,14 +4319,14 @@ const _sfc_main$P = {
               class: "block w-full rounded-lg size-8"
             }, null, _parent2, _scopeId));
             _push2(`</th><th class="px-2 pb-3" data-v-e57fb4ed${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$1p, {
+            _push2(ssrRenderComponent(_sfc_main$1q, {
               modelValue: data.params["name"],
               "onUpdate:modelValue": ($event) => data.params["name"] = $event,
               type: "text",
               class: "block w-full rounded-lg size-8"
             }, null, _parent2, _scopeId));
             _push2(`</th><th class="px-2 pb-3" data-v-e57fb4ed${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$1p, {
+            _push2(ssrRenderComponent(_sfc_main$1q, {
               modelValue: data.params["sku"],
               "onUpdate:modelValue": ($event) => data.params["sku"] = $event,
               modelModifiers: { lazy: true },
@@ -4334,7 +4334,7 @@ const _sfc_main$P = {
               class: "block w-full rounded-lg size-8"
             }, null, _parent2, _scopeId));
             _push2(`</th><th class="px-2 pb-3" data-v-e57fb4ed${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$1p, {
+            _push2(ssrRenderComponent(_sfc_main$1q, {
               modelValue: data.params["price"],
               "onUpdate:modelValue": ($event) => data.params["price"] = $event,
               modelModifiers: { lazy: true },
@@ -4342,7 +4342,7 @@ const _sfc_main$P = {
               class: "block w-full rounded-lg size-8"
             }, null, _parent2, _scopeId));
             _push2(`</th><th class="px-2 pb-3" data-v-e57fb4ed${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$1p, {
+            _push2(ssrRenderComponent(_sfc_main$1q, {
               modelValue: data.params["unit"],
               "onUpdate:modelValue": ($event) => data.params["unit"] = $event,
               modelModifiers: { lazy: true },
@@ -4350,7 +4350,7 @@ const _sfc_main$P = {
               class: "block w-full rounded-lg size-8"
             }, null, _parent2, _scopeId));
             _push2(`</th><th class="px-2 pb-3" data-v-e57fb4ed${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$1p, {
+            _push2(ssrRenderComponent(_sfc_main$1q, {
               modelValue: data.params["barcode"],
               "onUpdate:modelValue": ($event) => data.params["barcode"] = $event,
               modelModifiers: { lazy: true },
@@ -4372,7 +4372,7 @@ const _sfc_main$P = {
               style: { "line-height": "14px" }
             }, null, _parent2, _scopeId));
             _push2(`</th><th class="px-2 pb-3" data-v-e57fb4ed${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$1p, {
+            _push2(ssrRenderComponent(_sfc_main$1q, {
               modelValue: data.params.updated_at,
               "onUpdate:modelValue": ($event) => data.params.updated_at = $event,
               type: "text",
@@ -4400,7 +4400,7 @@ const _sfc_main$P = {
                 }),
                 _: 2
               }, _parent2, _scopeId));
-              _push2(ssrRenderComponent(_sfc_main$10, mergeProps({
+              _push2(ssrRenderComponent(_sfc_main$11, mergeProps({
                 style: _ctx.can(["Product Update"]) ? null : { display: "none" },
                 disabled: !!(product == null ? void 0 : product.deleted_at),
                 type: "button",
@@ -4418,7 +4418,7 @@ const _sfc_main$P = {
                 }),
                 _: 2
               }, _parent2, _scopeId));
-              _push2(ssrRenderComponent(_sfc_main$1g, mergeProps({
+              _push2(ssrRenderComponent(_sfc_main$1h, mergeProps({
                 style: _ctx.can(["Product Delete"]) && !product.deleted_at ? null : { display: "none" },
                 type: "button",
                 onClick: ($event) => (data.deleteOpen = true, data.product = product),
@@ -4435,7 +4435,7 @@ const _sfc_main$P = {
                 }),
                 _: 2
               }, _parent2, _scopeId));
-              _push2(ssrRenderComponent(_sfc_main$R, mergeProps({
+              _push2(ssrRenderComponent(_sfc_main$S, mergeProps({
                 style: _ctx.can(["Product Update"]) && product.deleted_at ? null : { display: "none" },
                 type: "button",
                 onClick: ($event) => (data.recoveryOpen = true, data.product = product),
@@ -4455,21 +4455,21 @@ const _sfc_main$P = {
               _push2(`</div></div></td></tr>`);
             });
             _push2(`<!--]--></tbody></table></div><div class="flex justify-between items-center p-2 border-t border-slate-200 dark:border-slate-700" data-v-e57fb4ed${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$_, {
+            _push2(ssrRenderComponent(_sfc_main$$, {
               links: props.products,
               filters: data.params
             }, null, _parent2, _scopeId));
             _push2(`</div></div></div>`);
           } else {
             return [
-              createVNode(_sfc_main$12, {
+              createVNode(_sfc_main$13, {
                 title: __props.title,
                 breadcrumbs: __props.breadcrumbs
               }, null, 8, ["title", "breadcrumbs"]),
               createVNode("div", { class: "space-y-4" }, [
                 createVNode("div", { class: "px-4 sm:px-0" }, [
                   createVNode("div", { class: "rounded-lg overflow-hidden w-fit" }, [
-                    withDirectives(createVNode(_sfc_main$1j, {
+                    withDirectives(createVNode(_sfc_main$1k, {
                       class: "rounded-none",
                       onClick: ($event) => data.createOpen = true
                     }, {
@@ -4480,14 +4480,14 @@ const _sfc_main$P = {
                     }, 8, ["onClick"]), [
                       [vShow, _ctx.can(["Product Create"])]
                     ]),
-                    createVNode(_sfc_main$U, {
+                    createVNode(_sfc_main$V, {
                       show: data.createOpen,
                       onClose: ($event) => data.createOpen = false,
                       title: props.title,
                       categories: props.categories,
                       units: props.units
                     }, null, 8, ["show", "onClose", "title", "categories", "units"]),
-                    createVNode(_sfc_main$S, {
+                    createVNode(_sfc_main$T, {
                       show: data.editOpen,
                       onClose: ($event) => data.editOpen = false,
                       product: data.product,
@@ -4495,13 +4495,13 @@ const _sfc_main$P = {
                       categories: props.categories,
                       units: props.units
                     }, null, 8, ["show", "onClose", "product", "title", "categories", "units"]),
-                    createVNode(_sfc_main$T, {
+                    createVNode(_sfc_main$U, {
                       show: data.deleteOpen,
                       onClose: ($event) => data.deleteOpen = false,
                       product: data.product,
                       title: props.title
                     }, null, 8, ["show", "onClose", "product", "title"]),
-                    createVNode(_sfc_main$Q, {
+                    createVNode(_sfc_main$R, {
                       show: data.recoveryOpen,
                       onClose: ($event) => data.recoveryOpen = false,
                       product: data.product,
@@ -4512,7 +4512,7 @@ const _sfc_main$P = {
                 createVNode("div", { class: "relative bg-white dark:bg-slate-800 shadow sm:rounded-lg" }, [
                   createVNode("div", { class: "flex justify-between p-2" }, [
                     createVNode("div", { class: "flex space-x-2" }, [
-                      createVNode(_sfc_main$11, {
+                      createVNode(_sfc_main$12, {
                         modelValue: data.params.perPage,
                         "onUpdate:modelValue": ($event) => data.params.perPage = $event,
                         dataSet: data.dataSet
@@ -4599,7 +4599,7 @@ const _sfc_main$P = {
                         ]),
                         createVNode("tr", null, [
                           createVNode("th", { class: "px-2 pb-3" }, [
-                            createVNode(_sfc_main$1p, {
+                            createVNode(_sfc_main$1q, {
                               modelValue: data.params["id"],
                               "onUpdate:modelValue": ($event) => data.params["id"] = $event,
                               modelModifiers: { lazy: true },
@@ -4608,7 +4608,7 @@ const _sfc_main$P = {
                             }, null, 8, ["modelValue", "onUpdate:modelValue"])
                           ]),
                           createVNode("th", { class: "px-2 pb-3" }, [
-                            createVNode(_sfc_main$1p, {
+                            createVNode(_sfc_main$1q, {
                               modelValue: data.params["name"],
                               "onUpdate:modelValue": ($event) => data.params["name"] = $event,
                               type: "text",
@@ -4616,7 +4616,7 @@ const _sfc_main$P = {
                             }, null, 8, ["modelValue", "onUpdate:modelValue"])
                           ]),
                           createVNode("th", { class: "px-2 pb-3" }, [
-                            createVNode(_sfc_main$1p, {
+                            createVNode(_sfc_main$1q, {
                               modelValue: data.params["sku"],
                               "onUpdate:modelValue": ($event) => data.params["sku"] = $event,
                               modelModifiers: { lazy: true },
@@ -4625,7 +4625,7 @@ const _sfc_main$P = {
                             }, null, 8, ["modelValue", "onUpdate:modelValue"])
                           ]),
                           createVNode("th", { class: "px-2 pb-3" }, [
-                            createVNode(_sfc_main$1p, {
+                            createVNode(_sfc_main$1q, {
                               modelValue: data.params["price"],
                               "onUpdate:modelValue": ($event) => data.params["price"] = $event,
                               modelModifiers: { lazy: true },
@@ -4634,7 +4634,7 @@ const _sfc_main$P = {
                             }, null, 8, ["modelValue", "onUpdate:modelValue"])
                           ]),
                           createVNode("th", { class: "px-2 pb-3" }, [
-                            createVNode(_sfc_main$1p, {
+                            createVNode(_sfc_main$1q, {
                               modelValue: data.params["unit"],
                               "onUpdate:modelValue": ($event) => data.params["unit"] = $event,
                               modelModifiers: { lazy: true },
@@ -4643,7 +4643,7 @@ const _sfc_main$P = {
                             }, null, 8, ["modelValue", "onUpdate:modelValue"])
                           ]),
                           createVNode("th", { class: "px-2 pb-3" }, [
-                            createVNode(_sfc_main$1p, {
+                            createVNode(_sfc_main$1q, {
                               modelValue: data.params["barcode"],
                               "onUpdate:modelValue": ($event) => data.params["barcode"] = $event,
                               modelModifiers: { lazy: true },
@@ -4667,7 +4667,7 @@ const _sfc_main$P = {
                             }, null, 8, ["modelValue", "onUpdate:modelValue", "start-time", "locale", "timezone"])
                           ]),
                           createVNode("th", { class: "px-2 pb-3" }, [
-                            createVNode(_sfc_main$1p, {
+                            createVNode(_sfc_main$1q, {
                               modelValue: data.params.updated_at,
                               "onUpdate:modelValue": ($event) => data.params.updated_at = $event,
                               type: "text",
@@ -4707,7 +4707,7 @@ const _sfc_main$P = {
                                     ]),
                                     _: 2
                                   }, 1032, ["href"]),
-                                  withDirectives((openBlock(), createBlock(_sfc_main$10, {
+                                  withDirectives((openBlock(), createBlock(_sfc_main$11, {
                                     disabled: !!(product == null ? void 0 : product.deleted_at),
                                     type: "button",
                                     onClick: ($event) => (data.editOpen = true, data.product = product),
@@ -4721,7 +4721,7 @@ const _sfc_main$P = {
                                     [vShow, _ctx.can(["Product Update"])],
                                     [_directive_tooltip, _ctx.lang().tooltip.edit]
                                   ]),
-                                  withDirectives((openBlock(), createBlock(_sfc_main$1g, {
+                                  withDirectives((openBlock(), createBlock(_sfc_main$1h, {
                                     type: "button",
                                     onClick: ($event) => (data.deleteOpen = true, data.product = product),
                                     class: "px-2 py-1.5 rounded-none"
@@ -4734,7 +4734,7 @@ const _sfc_main$P = {
                                     [vShow, _ctx.can(["Product Delete"]) && !product.deleted_at],
                                     [_directive_tooltip, _ctx.lang().tooltip.delete]
                                   ]),
-                                  withDirectives((openBlock(), createBlock(_sfc_main$R, {
+                                  withDirectives((openBlock(), createBlock(_sfc_main$S, {
                                     type: "button",
                                     onClick: ($event) => (data.recoveryOpen = true, data.product = product),
                                     class: "px-2 py-1.5 rounded-none"
@@ -4756,7 +4756,7 @@ const _sfc_main$P = {
                     ])
                   ]),
                   createVNode("div", { class: "flex justify-between items-center p-2 border-t border-slate-200 dark:border-slate-700" }, [
-                    createVNode(_sfc_main$_, {
+                    createVNode(_sfc_main$$, {
                       links: props.products,
                       filters: data.params
                     }, null, 8, ["links", "filters"])
@@ -4772,23 +4772,22 @@ const _sfc_main$P = {
     };
   }
 };
-const _sfc_setup$P = _sfc_main$P.setup;
-_sfc_main$P.setup = (props, ctx) => {
+const _sfc_setup$Q = _sfc_main$Q.setup;
+_sfc_main$Q.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Pages/Admin/Product/Index.vue");
-  return _sfc_setup$P ? _sfc_setup$P(props, ctx) : void 0;
+  return _sfc_setup$Q ? _sfc_setup$Q(props, ctx) : void 0;
 };
-const Index$7 = /* @__PURE__ */ _export_sfc(_sfc_main$P, [["__scopeId", "data-v-e57fb4ed"]]);
+const Index$7 = /* @__PURE__ */ _export_sfc(_sfc_main$Q, [["__scopeId", "data-v-e57fb4ed"]]);
 const Index$8 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   default: Index$7
 }, Symbol.toStringTag, { value: "Module" }));
-const _sfc_main$O = {
+const _sfc_main$P = {
   __name: "Show",
   __ssrInlineRender: true,
   props: {
     title: String,
-    items: Object,
     categories: Object,
     units: Object,
     breadcrumbs: Object
@@ -4810,15 +4809,15 @@ const _sfc_main$O = {
       _push(ssrRenderComponent(unref(Head), {
         title: props.title
       }, null, _parent));
-      _push(ssrRenderComponent(_sfc_main$13, null, {
+      _push(ssrRenderComponent(_sfc_main$14, null, {
         default: withCtx((_2, _push2, _parent2, _scopeId) => {
           if (_push2) {
-            _push2(ssrRenderComponent(_sfc_main$12, {
+            _push2(ssrRenderComponent(_sfc_main$13, {
               title: __props.title,
               breadcrumbs: __props.breadcrumbs
             }, null, _parent2, _scopeId));
             _push2(`<div class="space-y-4"${_scopeId}><div class="px-4 sm:px-0"${_scopeId}><div class="rounded-lg overflow-hidden w-fit"${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$S, {
+            _push2(ssrRenderComponent(_sfc_main$T, {
               show: data.editOpen,
               onClose: ($event) => data.editOpen = false,
               product: data.product,
@@ -4830,7 +4829,7 @@ const _sfc_main$O = {
               unref(product).deleted_at ? "bg-red-300" : "",
               "px-4 py-5 sm:px-6 "
             ])}"${_scopeId}><div class="grid grid-cols-6 md:grid-cols-6 gap-4"${_scopeId}><div class="col-span-5"${_scopeId}><h3 class="text-lg leading-6 font-medium text-gray-900 dark:text-slate-200"${_scopeId}>${ssrInterpolate(unref(product).name)}</h3></div><div class="col-span-1"${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$10, mergeProps({
+            _push2(ssrRenderComponent(_sfc_main$11, mergeProps({
               style: _ctx.can(["Product Update"]) ? null : { display: "none" },
               type: "button",
               onClick: ($event) => (data.editOpen = true, data.product = unref(product)),
@@ -4854,14 +4853,14 @@ const _sfc_main$O = {
             _push2(`<!--]--></ul></div></div></div></div>`);
           } else {
             return [
-              createVNode(_sfc_main$12, {
+              createVNode(_sfc_main$13, {
                 title: __props.title,
                 breadcrumbs: __props.breadcrumbs
               }, null, 8, ["title", "breadcrumbs"]),
               createVNode("div", { class: "space-y-4" }, [
                 createVNode("div", { class: "px-4 sm:px-0" }, [
                   createVNode("div", { class: "rounded-lg overflow-hidden w-fit" }, [
-                    createVNode(_sfc_main$S, {
+                    createVNode(_sfc_main$T, {
                       show: data.editOpen,
                       onClose: ($event) => data.editOpen = false,
                       product: data.product,
@@ -4888,7 +4887,7 @@ const _sfc_main$O = {
                               createVNode("h3", { class: "text-lg leading-6 font-medium text-gray-900 dark:text-slate-200" }, toDisplayString(unref(product).name), 1)
                             ]),
                             createVNode("div", { class: "col-span-1" }, [
-                              withDirectives((openBlock(), createBlock(_sfc_main$10, {
+                              withDirectives((openBlock(), createBlock(_sfc_main$11, {
                                 type: "button",
                                 onClick: ($event) => (data.editOpen = true, data.product = unref(product)),
                                 class: "px-2 py-1.5 rounded float-right"
@@ -4977,32 +4976,32 @@ const _sfc_main$O = {
     };
   }
 };
-const _sfc_setup$O = _sfc_main$O.setup;
-_sfc_main$O.setup = (props, ctx) => {
+const _sfc_setup$P = _sfc_main$P.setup;
+_sfc_main$P.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Pages/Admin/Product/Show.vue");
-  return _sfc_setup$O ? _sfc_setup$O(props, ctx) : void 0;
+  return _sfc_setup$P ? _sfc_setup$P(props, ctx) : void 0;
 };
 const Show$3 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: _sfc_main$O
+  default: _sfc_main$P
 }, Symbol.toStringTag, { value: "Module" }));
-const _sfc_main$N = {};
+const _sfc_main$O = {};
 function _sfc_ssrRender$1(_ctx, _push, _parent, _attrs) {
   _push(`<!--[--><div class="grid grid-cols-4 gap-4 animate-pulse"><div class="col-span-2 h-10 bg-gray-300 rounded"></div></div><div class="grid grid-cols-4 gap-4 animate-pulse mt-6"><div class="col-span-3 h-10 bg-gray-300 rounded"></div><div class="col-span-1 h-10 bg-gray-300 rounded"></div></div><!--]-->`);
 }
-const _sfc_setup$N = _sfc_main$N.setup;
-_sfc_main$N.setup = (props, ctx) => {
+const _sfc_setup$O = _sfc_main$O.setup;
+_sfc_main$O.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Pages/Admin/Warehouse/EmptyForm.vue");
-  return _sfc_setup$N ? _sfc_setup$N(props, ctx) : void 0;
+  return _sfc_setup$O ? _sfc_setup$O(props, ctx) : void 0;
 };
-const EmptyForm$2 = /* @__PURE__ */ _export_sfc(_sfc_main$N, [["ssrRender", _sfc_ssrRender$1]]);
+const EmptyForm$2 = /* @__PURE__ */ _export_sfc(_sfc_main$O, [["ssrRender", _sfc_ssrRender$1]]);
 const EmptyForm$3 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   default: EmptyForm$2
 }, Symbol.toStringTag, { value: "Module" }));
-const _sfc_main$M = {
+const _sfc_main$N = {
   __name: "WarehouseForm",
   __ssrInlineRender: true,
   props: {
@@ -5020,11 +5019,11 @@ const _sfc_main$M = {
         _push(`</div>`);
       } else {
         _push(`<div><div class="grid grid-cols-4 gap-4"><div class="col-span-2">`);
-        _push(ssrRenderComponent(_sfc_main$1r, {
+        _push(ssrRenderComponent(_sfc_main$1s, {
           for: "name",
           value: _ctx.lang().label.name
         }, null, _parent));
-        _push(ssrRenderComponent(_sfc_main$1p, {
+        _push(ssrRenderComponent(_sfc_main$1q, {
           id: "name",
           type: "text",
           class: "mt-1 block w-full",
@@ -5034,16 +5033,16 @@ const _sfc_main$M = {
           placeholder: _ctx.lang().placeholder.name,
           error: __props.form.errors.name
         }, null, _parent));
-        _push(ssrRenderComponent(_sfc_main$1q, {
+        _push(ssrRenderComponent(_sfc_main$1r, {
           class: "mt-2",
           message: __props.form.errors.name
         }, null, _parent));
         _push(`</div></div><div class="grid grid-cols-4 gap-4 mt-3"><div class="col-span-3">`);
-        _push(ssrRenderComponent(_sfc_main$1r, {
+        _push(ssrRenderComponent(_sfc_main$1s, {
           for: "location",
           value: _ctx.lang().label.address
         }, null, _parent));
-        _push(ssrRenderComponent(_sfc_main$1p, {
+        _push(ssrRenderComponent(_sfc_main$1q, {
           id: "location",
           type: "text",
           class: "mt-1 block w-full",
@@ -5052,16 +5051,16 @@ const _sfc_main$M = {
           required: "",
           error: __props.form.errors.location
         }, null, _parent));
-        _push(ssrRenderComponent(_sfc_main$1q, {
+        _push(ssrRenderComponent(_sfc_main$1r, {
           class: "mt-2",
           message: __props.form.errors.location
         }, null, _parent));
         _push(`</div><div class="">`);
-        _push(ssrRenderComponent(_sfc_main$1r, {
+        _push(ssrRenderComponent(_sfc_main$1s, {
           for: "status",
           value: _ctx.lang().label.status
         }, null, _parent));
-        _push(ssrRenderComponent(_sfc_main$11, {
+        _push(ssrRenderComponent(_sfc_main$12, {
           id: "role",
           class: "mt-1 block w-full",
           modelValue: __props.form.status,
@@ -5069,7 +5068,7 @@ const _sfc_main$M = {
           required: "",
           dataSet: __props.status_list
         }, null, _parent));
-        _push(ssrRenderComponent(_sfc_main$1q, {
+        _push(ssrRenderComponent(_sfc_main$1r, {
           class: "mt-2",
           message: __props.form.errors.status
         }, null, _parent));
@@ -5079,17 +5078,17 @@ const _sfc_main$M = {
     };
   }
 };
-const _sfc_setup$M = _sfc_main$M.setup;
-_sfc_main$M.setup = (props, ctx) => {
+const _sfc_setup$N = _sfc_main$N.setup;
+_sfc_main$N.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Pages/Admin/Warehouse/WarehouseForm.vue");
-  return _sfc_setup$M ? _sfc_setup$M(props, ctx) : void 0;
+  return _sfc_setup$N ? _sfc_setup$N(props, ctx) : void 0;
 };
 const WarehouseForm = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: _sfc_main$M
+  default: _sfc_main$N
 }, Symbol.toStringTag, { value: "Module" }));
-const _sfc_main$L = {
+const _sfc_main$M = {
   __name: "Create",
   __ssrInlineRender: true,
   props: {
@@ -5124,7 +5123,7 @@ const _sfc_main$L = {
     });
     return (_ctx, _push, _parent, _attrs) => {
       _push(`<section${ssrRenderAttrs(mergeProps({ class: "space-y-6" }, _attrs))}>`);
-      _push(ssrRenderComponent(_sfc_main$1k, {
+      _push(ssrRenderComponent(_sfc_main$1l, {
         show: props.show,
         onClose: ($event) => emit("close"),
         "max-width": `4xl`
@@ -5132,12 +5131,12 @@ const _sfc_main$L = {
         default: withCtx((_, _push2, _parent2, _scopeId) => {
           if (_push2) {
             _push2(`<form class="p-6"${_scopeId}><h2 class="text-lg font-medium text-slate-900 dark:text-slate-100"${_scopeId}>${ssrInterpolate(_ctx.lang().label.add)} ${ssrInterpolate(_ctx.lang().label.warehouse)}</h2><div class="my-6 space-y-4"${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$M, {
+            _push2(ssrRenderComponent(_sfc_main$N, {
               form: unref(form),
               locales: unref(locales)
             }, null, _parent2, _scopeId));
             _push2(`</div><div class="flex justify-end"${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$1i, {
+            _push2(ssrRenderComponent(_sfc_main$1j, {
               disabled: unref(form).processing,
               onClick: ($event) => emit("close")
             }, {
@@ -5152,7 +5151,7 @@ const _sfc_main$L = {
               }),
               _: 1
             }, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$1j, {
+            _push2(ssrRenderComponent(_sfc_main$1k, {
               class: ["ml-3", { "opacity-25": unref(form).processing }],
               disabled: unref(form).processing,
               onClick: create
@@ -5177,13 +5176,13 @@ const _sfc_main$L = {
               }, [
                 createVNode("h2", { class: "text-lg font-medium text-slate-900 dark:text-slate-100" }, toDisplayString(_ctx.lang().label.add) + " " + toDisplayString(_ctx.lang().label.warehouse), 1),
                 createVNode("div", { class: "my-6 space-y-4" }, [
-                  createVNode(_sfc_main$M, {
+                  createVNode(_sfc_main$N, {
                     form: unref(form),
                     locales: unref(locales)
                   }, null, 8, ["form", "locales"])
                 ]),
                 createVNode("div", { class: "flex justify-end" }, [
-                  createVNode(_sfc_main$1i, {
+                  createVNode(_sfc_main$1j, {
                     disabled: unref(form).processing,
                     onClick: ($event) => emit("close")
                   }, {
@@ -5192,7 +5191,7 @@ const _sfc_main$L = {
                     ]),
                     _: 1
                   }, 8, ["disabled", "onClick"]),
-                  createVNode(_sfc_main$1j, {
+                  createVNode(_sfc_main$1k, {
                     class: ["ml-3", { "opacity-25": unref(form).processing }],
                     disabled: unref(form).processing,
                     onClick: create
@@ -5213,17 +5212,17 @@ const _sfc_main$L = {
     };
   }
 };
-const _sfc_setup$L = _sfc_main$L.setup;
-_sfc_main$L.setup = (props, ctx) => {
+const _sfc_setup$M = _sfc_main$M.setup;
+_sfc_main$M.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Pages/Admin/Transaction/Create.vue");
-  return _sfc_setup$L ? _sfc_setup$L(props, ctx) : void 0;
+  return _sfc_setup$M ? _sfc_setup$M(props, ctx) : void 0;
 };
 const Create$5 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: _sfc_main$L
+  default: _sfc_main$M
 }, Symbol.toStringTag, { value: "Module" }));
-const _sfc_main$K = {
+const _sfc_main$L = {
   __name: "Delete",
   __ssrInlineRender: true,
   props: {
@@ -5250,7 +5249,7 @@ const _sfc_main$K = {
     };
     return (_ctx, _push, _parent, _attrs) => {
       _push(`<section${ssrRenderAttrs(mergeProps({ class: "space-y-6" }, _attrs))}>`);
-      _push(ssrRenderComponent(_sfc_main$1k, {
+      _push(ssrRenderComponent(_sfc_main$1l, {
         show: props.show,
         onClose: ($event) => emit("close"),
         maxWidth: "lg"
@@ -5259,7 +5258,7 @@ const _sfc_main$K = {
           var _a, _b;
           if (_push2) {
             _push2(`<form class="p-6"${_scopeId}><h2 class="text-lg font-medium text-slate-900 dark:text-slate-100"${_scopeId}>${ssrInterpolate(_ctx.lang().label.delete)} ${ssrInterpolate(props.title)}</h2><p class="mt-1 text-sm text-slate-600 dark:text-slate-400"${_scopeId}>${ssrInterpolate(_ctx.lang().label.delete_confirm)} <b${_scopeId}>${ssrInterpolate((_a = props.warehouse) == null ? void 0 : _a.name)}</b></p><div class="mt-6 flex justify-end"${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$1i, {
+            _push2(ssrRenderComponent(_sfc_main$1j, {
               disabled: unref(form).processing,
               onClick: ($event) => emit("close")
             }, {
@@ -5274,7 +5273,7 @@ const _sfc_main$K = {
               }),
               _: 1
             }, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$1g, {
+            _push2(ssrRenderComponent(_sfc_main$1h, {
               class: ["ml-3", { "opacity-25": unref(form).processing }],
               disabled: unref(form).processing,
               onClick: destroy
@@ -5303,7 +5302,7 @@ const _sfc_main$K = {
                   createVNode("b", null, toDisplayString((_b = props.warehouse) == null ? void 0 : _b.name), 1)
                 ]),
                 createVNode("div", { class: "mt-6 flex justify-end" }, [
-                  createVNode(_sfc_main$1i, {
+                  createVNode(_sfc_main$1j, {
                     disabled: unref(form).processing,
                     onClick: ($event) => emit("close")
                   }, {
@@ -5312,7 +5311,7 @@ const _sfc_main$K = {
                     ]),
                     _: 1
                   }, 8, ["disabled", "onClick"]),
-                  createVNode(_sfc_main$1g, {
+                  createVNode(_sfc_main$1h, {
                     class: ["ml-3", { "opacity-25": unref(form).processing }],
                     disabled: unref(form).processing,
                     onClick: destroy
@@ -5333,17 +5332,17 @@ const _sfc_main$K = {
     };
   }
 };
-const _sfc_setup$K = _sfc_main$K.setup;
-_sfc_main$K.setup = (props, ctx) => {
+const _sfc_setup$L = _sfc_main$L.setup;
+_sfc_main$L.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Pages/Admin/Transaction/Delete.vue");
-  return _sfc_setup$K ? _sfc_setup$K(props, ctx) : void 0;
+  return _sfc_setup$L ? _sfc_setup$L(props, ctx) : void 0;
 };
 const Delete$5 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: _sfc_main$K
+  default: _sfc_main$L
 }, Symbol.toStringTag, { value: "Module" }));
-const _sfc_main$J = {
+const _sfc_main$K = {
   __name: "Form",
   __ssrInlineRender: true,
   props: {
@@ -5355,11 +5354,11 @@ const _sfc_main$J = {
   setup(__props) {
     return (_ctx, _push, _parent, _attrs) => {
       _push(`<div${ssrRenderAttrs(_attrs)}><div class="grid grid-cols-2 gap-4"><div class="col-span-1"><div class="">`);
-      _push(ssrRenderComponent(_sfc_main$1r, {
+      _push(ssrRenderComponent(_sfc_main$1s, {
         for: "status",
         value: _ctx.lang().label.status
       }, null, _parent));
-      _push(ssrRenderComponent(_sfc_main$11, {
+      _push(ssrRenderComponent(_sfc_main$12, {
         id: "role",
         class: "mt-1 block w-full",
         modelValue: __props.form.status,
@@ -5367,7 +5366,7 @@ const _sfc_main$J = {
         required: "",
         dataSet: __props.status_list
       }, null, _parent));
-      _push(ssrRenderComponent(_sfc_main$1q, {
+      _push(ssrRenderComponent(_sfc_main$1r, {
         class: "mt-2",
         message: __props.form.errors.status
       }, null, _parent));
@@ -5375,17 +5374,17 @@ const _sfc_main$J = {
     };
   }
 };
-const _sfc_setup$J = _sfc_main$J.setup;
-_sfc_main$J.setup = (props, ctx) => {
+const _sfc_setup$K = _sfc_main$K.setup;
+_sfc_main$K.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Pages/Admin/Transaction/Form.vue");
-  return _sfc_setup$J ? _sfc_setup$J(props, ctx) : void 0;
+  return _sfc_setup$K ? _sfc_setup$K(props, ctx) : void 0;
 };
 const Form = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: _sfc_main$J
+  default: _sfc_main$K
 }, Symbol.toStringTag, { value: "Module" }));
-const _sfc_main$I = {
+const _sfc_main$J = {
   __name: "Edit",
   __ssrInlineRender: true,
   props: {
@@ -5453,7 +5452,7 @@ const _sfc_main$I = {
     });
     return (_ctx, _push, _parent, _attrs) => {
       _push(`<section${ssrRenderAttrs(mergeProps({ class: "space-y-6" }, _attrs))}>`);
-      _push(ssrRenderComponent(_sfc_main$1k, {
+      _push(ssrRenderComponent(_sfc_main$1l, {
         show: props.show,
         onClose: ($event) => emit("close"),
         "max-width": `4xl`
@@ -5461,12 +5460,12 @@ const _sfc_main$I = {
         default: withCtx((_, _push2, _parent2, _scopeId) => {
           if (_push2) {
             _push2(`<form class="p-6"${_scopeId}><h2 class="text-lg font-medium text-slate-900 dark:text-slate-100"${_scopeId}>${ssrInterpolate(_ctx.lang().label.edit)} ${ssrInterpolate(props.title)}</h2><div class="my-6 space-y-4"${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$J, {
+            _push2(ssrRenderComponent(_sfc_main$K, {
               form: unref(form),
               status_list: unref(status_list)
             }, null, _parent2, _scopeId));
             _push2(`</div><div class="flex justify-end"${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$1i, {
+            _push2(ssrRenderComponent(_sfc_main$1j, {
               disabled: unref(form).processing,
               onClick: ($event) => emit("close")
             }, {
@@ -5481,7 +5480,7 @@ const _sfc_main$I = {
               }),
               _: 1
             }, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$1j, {
+            _push2(ssrRenderComponent(_sfc_main$1k, {
               class: ["ml-3", { "opacity-25": unref(form).processing }],
               disabled: unref(form).processing,
               onClick: update
@@ -5506,13 +5505,13 @@ const _sfc_main$I = {
               }, [
                 createVNode("h2", { class: "text-lg font-medium text-slate-900 dark:text-slate-100" }, toDisplayString(_ctx.lang().label.edit) + " " + toDisplayString(props.title), 1),
                 createVNode("div", { class: "my-6 space-y-4" }, [
-                  createVNode(_sfc_main$J, {
+                  createVNode(_sfc_main$K, {
                     form: unref(form),
                     status_list: unref(status_list)
                   }, null, 8, ["form", "status_list"])
                 ]),
                 createVNode("div", { class: "flex justify-end" }, [
-                  createVNode(_sfc_main$1i, {
+                  createVNode(_sfc_main$1j, {
                     disabled: unref(form).processing,
                     onClick: ($event) => emit("close")
                   }, {
@@ -5521,7 +5520,7 @@ const _sfc_main$I = {
                     ]),
                     _: 1
                   }, 8, ["disabled", "onClick"]),
-                  createVNode(_sfc_main$1j, {
+                  createVNode(_sfc_main$1k, {
                     class: ["ml-3", { "opacity-25": unref(form).processing }],
                     disabled: unref(form).processing,
                     onClick: update
@@ -5542,18 +5541,18 @@ const _sfc_main$I = {
     };
   }
 };
-const _sfc_setup$I = _sfc_main$I.setup;
-_sfc_main$I.setup = (props, ctx) => {
+const _sfc_setup$J = _sfc_main$J.setup;
+_sfc_main$J.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Pages/Admin/Transaction/Edit.vue");
-  return _sfc_setup$I ? _sfc_setup$I(props, ctx) : void 0;
+  return _sfc_setup$J ? _sfc_setup$J(props, ctx) : void 0;
 };
 const Edit$5 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: _sfc_main$I
+  default: _sfc_main$J
 }, Symbol.toStringTag, { value: "Module" }));
 const datetime_format$2 = "yyyy-MM-dd HH:mm";
-const _sfc_main$H = {
+const _sfc_main$I = {
   __name: "Index",
   __ssrInlineRender: true,
   props: {
@@ -5579,6 +5578,7 @@ const _sfc_main$H = {
         warehouse_id: "",
         executor_id: "",
         product_name: "",
+        product_unit: "",
         type: "",
         quantity: "",
         status: "",
@@ -5634,35 +5634,35 @@ const _sfc_main$H = {
       _push(ssrRenderComponent(unref(Head), {
         title: props.title
       }, null, _parent));
-      _push(ssrRenderComponent(_sfc_main$13, null, {
+      _push(ssrRenderComponent(_sfc_main$14, null, {
         default: withCtx((_2, _push2, _parent2, _scopeId) => {
           if (_push2) {
-            _push2(ssrRenderComponent(_sfc_main$12, {
+            _push2(ssrRenderComponent(_sfc_main$13, {
               title: __props.title,
               breadcrumbs: __props.breadcrumbs
             }, null, _parent2, _scopeId));
             _push2(`<div class="space-y-4"${_scopeId}><div class="px-4 sm:px-0"${_scopeId}><div class="rounded-lg overflow-hidden w-fit"${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$I, {
+            _push2(ssrRenderComponent(_sfc_main$J, {
               show: data.editOpen,
               onClose: ($event) => data.editOpen = false,
               transaction: data.transaction,
               title: props.title,
               status_list: props.status_list
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$K, {
+            _push2(ssrRenderComponent(_sfc_main$L, {
               show: data.deleteOpen,
               onClose: ($event) => data.deleteOpen = false,
               transaction: data.transaction,
               title: props.title
             }, null, _parent2, _scopeId));
             _push2(`</div></div><div class="relative bg-white dark:bg-slate-800 shadow sm:rounded-lg"${_scopeId}><div class="flex justify-between p-2"${_scopeId}><div class="flex space-x-2"${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$11, {
+            _push2(ssrRenderComponent(_sfc_main$12, {
               modelValue: data.params.perPage,
               "onUpdate:modelValue": ($event) => data.params.perPage = $event,
               dataSet: data.dataSet
             }, null, _parent2, _scopeId));
             _push2(`</div><div class="flex space-x-2"${_scopeId}><select class="border border-gray-300 w-36 rounded px-2 py-1 text-sm bg-white dark:bg-gray-800"${_scopeId}><option value="Xlsx"${ssrIncludeBooleanAttr(Array.isArray(selectedFileType.value) ? ssrLooseContain(selectedFileType.value, "Xlsx") : ssrLooseEqual(selectedFileType.value, "Xlsx")) ? " selected" : ""}${_scopeId}>Excel (XLSX)</option><option value="Xls"${ssrIncludeBooleanAttr(Array.isArray(selectedFileType.value) ? ssrLooseContain(selectedFileType.value, "Xls") : ssrLooseEqual(selectedFileType.value, "Xls")) ? " selected" : ""}${_scopeId}>Excel (XLS)</option><option value="Csv"${ssrIncludeBooleanAttr(Array.isArray(selectedFileType.value) ? ssrLooseContain(selectedFileType.value, "Csv") : ssrLooseEqual(selectedFileType.value, "Csv")) ? " selected" : ""}${_scopeId}>CSV</option><option value="Html"${ssrIncludeBooleanAttr(Array.isArray(selectedFileType.value) ? ssrLooseContain(selectedFileType.value, "Html") : ssrLooseEqual(selectedFileType.value, "Html")) ? " selected" : ""}${_scopeId}>HTML</option></select>`);
-            _push2(ssrRenderComponent(_sfc_main$10, {
+            _push2(ssrRenderComponent(_sfc_main$11, {
               onClick: exportData,
               class: "px-2 py-1.5 rounded"
             }, {
@@ -5689,6 +5689,8 @@ const _sfc_main$H = {
             _push2(ssrRenderComponent(unref(ChevronUpDownIcon), { class: "w-4 h-4" }, null, _parent2, _scopeId));
             _push2(`</div></th><th class="px-2 py-4 cursor-pointer"${_scopeId}><div class="flex justify-between items-center"${_scopeId}><span${_scopeId}>${ssrInterpolate(_ctx.lang().label.quantity)}</span>`);
             _push2(ssrRenderComponent(unref(ChevronUpDownIcon), { class: "w-4 h-4" }, null, _parent2, _scopeId));
+            _push2(`</div></th><th class="px-2 py-4 cursor-pointer"${_scopeId}><div class="flex justify-between items-center"${_scopeId}><span${_scopeId}>${ssrInterpolate(_ctx.lang().label.unit)}</span>`);
+            _push2(ssrRenderComponent(unref(ChevronUpDownIcon), { class: "w-4 h-4" }, null, _parent2, _scopeId));
             _push2(`</div></th><th class="px-2 py-4 cursor-pointer"${_scopeId}><div class="flex justify-between items-center"${_scopeId}><span${_scopeId}>${ssrInterpolate(_ctx.lang().label.status)}</span>`);
             _push2(ssrRenderComponent(unref(ChevronUpDownIcon), { class: "w-4 h-4" }, null, _parent2, _scopeId));
             _push2(`</div></th><th class="px-2 py-4 cursor-pointer"${_scopeId}><div class="flex justify-between items-center"${_scopeId}><span${_scopeId}>${ssrInterpolate(_ctx.lang().transaction.is_internal_transfer)}</span>`);
@@ -5702,7 +5704,7 @@ const _sfc_main$H = {
             _push2(`</div></th><th class="px-2 py-4 cursor-pointer"${_scopeId}><div class="flex justify-between items-center"${_scopeId}><span${_scopeId}>${ssrInterpolate(_ctx.lang().label.updated)}</span>`);
             _push2(ssrRenderComponent(unref(ChevronUpDownIcon), { class: "w-4 h-4" }, null, _parent2, _scopeId));
             _push2(`</div></th><th class="px-2 py-4 sr-only"${_scopeId}>Action</th></tr><tr${_scopeId}><th class="px-2 pb-3"${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$1p, {
+            _push2(ssrRenderComponent(_sfc_main$1q, {
               modelValue: data.params["id"],
               "onUpdate:modelValue": ($event) => data.params["id"] = $event,
               modelModifiers: { lazy: true },
@@ -5710,7 +5712,7 @@ const _sfc_main$H = {
               class: "block w-full rounded-lg size-8"
             }, null, _parent2, _scopeId));
             _push2(`</th><th class="px-2 pb-3"${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$1n, {
+            _push2(ssrRenderComponent(_sfc_main$1o, {
               id: "warehouse_id",
               class: "block w-full",
               style: { "line-height": "14px" },
@@ -5720,14 +5722,14 @@ const _sfc_main$H = {
               prompt: _ctx.lang().label.all
             }, null, _parent2, _scopeId));
             _push2(`</th><th class="px-2 pb-3"${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$1p, {
+            _push2(ssrRenderComponent(_sfc_main$1q, {
               modelValue: data.params["product_name"],
               "onUpdate:modelValue": ($event) => data.params["product_name"] = $event,
               type: "text",
               class: "block w-full rounded-lg size-8"
             }, null, _parent2, _scopeId));
             _push2(`</th><th class="px-2 pb-3"${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$1n, {
+            _push2(ssrRenderComponent(_sfc_main$1o, {
               id: "type",
               class: "block w-full",
               style: { "line-height": "14px" },
@@ -5741,7 +5743,7 @@ const _sfc_main$H = {
               prompt: _ctx.lang().label.all
             }, null, _parent2, _scopeId));
             _push2(`</th><th class="px-2 pb-3"${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$1p, {
+            _push2(ssrRenderComponent(_sfc_main$1q, {
               modelValue: data.params["quantity"],
               "onUpdate:modelValue": ($event) => data.params["quantity"] = $event,
               type: "number",
@@ -5749,7 +5751,15 @@ const _sfc_main$H = {
               placeholder: _ctx.lang().label.quantity
             }, null, _parent2, _scopeId));
             _push2(`</th><th class="px-2 pb-3"${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$1n, {
+            _push2(ssrRenderComponent(_sfc_main$1q, {
+              modelValue: data.params["product_unit"],
+              "onUpdate:modelValue": ($event) => data.params["product_unit"] = $event,
+              type: "text",
+              class: "block w-full rounded-lg size-8",
+              placeholder: _ctx.lang().label.unit
+            }, null, _parent2, _scopeId));
+            _push2(`</th><th class="px-2 pb-3"${_scopeId}>`);
+            _push2(ssrRenderComponent(_sfc_main$1o, {
               id: "status",
               class: "block w-full",
               style: { "line-height": "14px" },
@@ -5759,7 +5769,7 @@ const _sfc_main$H = {
               prompt: _ctx.lang().label.all
             }, null, _parent2, _scopeId));
             _push2(`</th><th class="px-2 pb-3"${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$1n, {
+            _push2(ssrRenderComponent(_sfc_main$1o, {
               id: "is_internal_transfer",
               class: "block w-full",
               style: { "line-height": "14px" },
@@ -5773,14 +5783,14 @@ const _sfc_main$H = {
               prompt: _ctx.lang().label.all
             }, null, _parent2, _scopeId));
             _push2(`</th><th class="px-2 pb-3"${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$1p, {
+            _push2(ssrRenderComponent(_sfc_main$1q, {
               modelValue: data.params["source"],
               "onUpdate:modelValue": ($event) => data.params["source"] = $event,
               type: "text",
               class: "block w-full rounded-lg size-8"
             }, null, _parent2, _scopeId));
             _push2(`</th><th class="px-2 pb-3"${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$1p, {
+            _push2(ssrRenderComponent(_sfc_main$1q, {
               modelValue: data.params["destination"],
               "onUpdate:modelValue": ($event) => data.params["destination"] = $event,
               type: "text",
@@ -5803,7 +5813,7 @@ const _sfc_main$H = {
               ]
             }, null, _parent2, _scopeId));
             _push2(`</th><th class="px-2 pb-3"${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$1p, {
+            _push2(ssrRenderComponent(_sfc_main$1q, {
               modelValue: data.params.updated_at,
               "onUpdate:modelValue": ($event) => data.params.updated_at = $event,
               type: "text",
@@ -5811,7 +5821,7 @@ const _sfc_main$H = {
             }, null, _parent2, _scopeId));
             _push2(`</th><th class="px-2 pb-3"${_scopeId}></th></tr></thead><tbody${_scopeId}><!--[-->`);
             ssrRenderList(__props.transactions.data, (transaction, index) => {
-              _push2(`<tr class="${ssrRenderClass([{ "bg-slate-200/30 dark:bg-slate-900/20": transaction.deleted_at }, "border-t border-slate-200 dark:border-slate-700 hover:bg-slate-200/30 hover:dark:bg-slate-900/20"])}"${_scopeId}><td class="whitespace-nowrap py-4 px-2 sm:py-3 text-center"${_scopeId}>${ssrInterpolate(transaction.id)}</td><td class="${ssrRenderClass([{ "bg-red-300 text-dark": !transaction.warehouse_isset }, "whitespace-nowrap py-4 px-2 sm:py-3 text-left"])}"${_scopeId}>${ssrInterpolate(transaction.warehouse_name)}</td><td class="whitespace-nowrap py-4 px-2 sm:py-3 text-left"${_scopeId}>${ssrInterpolate(transaction.product_name)}</td><td class="whitespace-nowrap py-4 px-2 sm:py-3 text-center"${_scopeId}>`);
+              _push2(`<tr class="${ssrRenderClass([{ "bg-slate-200/30 dark:bg-slate-900/20": transaction.deleted_at }, "border-t border-slate-200 dark:border-slate-700 hover:bg-slate-200/30 hover:dark:bg-slate-900/20"])}"${_scopeId}><td class="whitespace-nowrap py-1 px-2 sm:py-1 text-center"${_scopeId}>${ssrInterpolate(transaction.id)}</td><td class="${ssrRenderClass([{ "bg-red-300 text-dark": !transaction.warehouse_isset }, "whitespace-nowrap py-1 px-2 sm:py-1 text-left"])}"${_scopeId}>${ssrInterpolate(transaction.warehouse_name)}</td><td class="whitespace-nowrap py-1 px-2 sm:py-1 text-left"${_scopeId}>${ssrInterpolate(transaction.product_name)}</td><td class="whitespace-nowrap py-1 px-2 sm:py-1 text-center"${_scopeId}>`);
               if (transaction.type === "in") {
                 _push2(`<span class="text-green-500"${_scopeId}>`);
                 _push2(ssrRenderComponent(unref(ArrowDownTrayIcon), { class: "w-7 h-7 mx-auto" }, null, _parent2, _scopeId));
@@ -5821,7 +5831,7 @@ const _sfc_main$H = {
                 _push2(ssrRenderComponent(unref(ArrowUpTrayIcon), { class: "w-7 h-7 mx-auto" }, null, _parent2, _scopeId));
                 _push2(`</span>`);
               }
-              _push2(`</td><td class="whitespace-nowrap py-4 px-2 sm:py-3 text-center"${_scopeId}>${ssrInterpolate(transaction.quantity)}</td><td class="whitespace-nowrap py-4 px-2 sm:py-3 text-left font-bold"${_scopeId}>`);
+              _push2(`</td><td class="whitespace-nowrap py-1 px-2 sm:py-1 text-center"${_scopeId}>${ssrInterpolate(transaction.quantity)}</td><td class="whitespace-nowrap py-1 px-2 sm:py-1 text-left"${_scopeId}>${ssrInterpolate(transaction.product_unit)}</td><td class="whitespace-nowrap py-1 px-2 sm:py-1 text-left font-bold"${_scopeId}>`);
               if (transaction.status === "completed") {
                 _push2(`<span class="text-green-500"${_scopeId}>${ssrInterpolate(_ctx.lang().transaction.status_completed)}</span>`);
               } else if (transaction.status === "pending") {
@@ -5831,7 +5841,7 @@ const _sfc_main$H = {
               } else {
                 _push2(`<span class="text-rose-500"${_scopeId}>${ssrInterpolate(_ctx.lang().warehouse.status_unknown)}</span>`);
               }
-              _push2(`</td><td class="whitespace-nowrap py-4 px-2 sm:py-3 text-center"${_scopeId}>${ssrInterpolate(transaction.is_internal_transfer)}</td><td class="whitespace-nowrap py-4 px-2 sm:py-3"${_scopeId}>${ssrInterpolate(transaction.source)}</td><td class="whitespace-nowrap py-4 px-2 sm:py-3"${_scopeId}>${ssrInterpolate(transaction.destination)}</td><td class="whitespace-nowrap py-4 px-2 sm:py-3"${_scopeId}>${ssrInterpolate(transaction.created_at)}</td><td class="whitespace-nowrap py-4 px-2 sm:py-3"${_scopeId}>${ssrInterpolate(transaction.updated_at)}</td><td class="whitespace-nowrap py-4 px-2 sm:py-3"${_scopeId}><div class="flex justify-center items-center"${_scopeId}><div class="rounded-md overflow-hidden"${_scopeId}>`);
+              _push2(`</td><td class="whitespace-nowrap py-1 px-2 sm:py-1 text-center"${_scopeId}>${ssrInterpolate(transaction.is_internal_transfer === 1 ? _ctx.lang().button.yes : _ctx.lang().button.no)}</td><td class="whitespace-nowrap py-1 px-2 sm:py-1"${_scopeId}>${ssrInterpolate(transaction.source)}</td><td class="whitespace-nowrap py-1 px-2 sm:py-1"${_scopeId}>${ssrInterpolate(transaction.destination)}</td><td class="whitespace-nowrap py-1 px-2 sm:py-1"${_scopeId}>${ssrInterpolate(transaction.created_at)}</td><td class="whitespace-nowrap py-1 px-2 sm:py-1"${_scopeId}>${ssrInterpolate(transaction.updated_at)}</td><td class="whitespace-nowrap py-1 px-2 sm:py-1"${_scopeId}><div class="flex justify-center items-center"${_scopeId}><div class="rounded-md overflow-hidden"${_scopeId}>`);
               _push2(ssrRenderComponent(unref(Link), {
                 class: "inline-flex items-center px-2 py-1.5 bg-green-600 border border-transparent font-semibold text-xs text-white uppercase tracking-widest hover:bg-green-500 active:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 dark:focus:ring-offset-slate-800 transition ease-in-out duration-150",
                 href: _ctx.route("admin.transaction.show", transaction == null ? void 0 : transaction.id),
@@ -5848,7 +5858,7 @@ const _sfc_main$H = {
                 }),
                 _: 2
               }, _parent2, _scopeId));
-              _push2(ssrRenderComponent(_sfc_main$10, mergeProps({
+              _push2(ssrRenderComponent(_sfc_main$11, mergeProps({
                 style: _ctx.can(["Transaction Update"]) ? null : { display: "none" },
                 type: "button",
                 onClick: ($event) => (data.editOpen = true, data.transaction = transaction),
@@ -5865,7 +5875,7 @@ const _sfc_main$H = {
                 }),
                 _: 2
               }, _parent2, _scopeId));
-              _push2(ssrRenderComponent(_sfc_main$1g, mergeProps({
+              _push2(ssrRenderComponent(_sfc_main$1h, mergeProps({
                 style: _ctx.can(["Transaction Delete"]) ? null : { display: "none" },
                 type: "button",
                 onClick: ($event) => (data.deleteOpen = true, data.transaction = transaction),
@@ -5885,28 +5895,28 @@ const _sfc_main$H = {
               _push2(`</div></div></td></tr>`);
             });
             _push2(`<!--]--></tbody></table></div><div class="flex justify-between items-center p-2 border-t border-slate-200 dark:border-slate-700"${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$_, {
+            _push2(ssrRenderComponent(_sfc_main$$, {
               links: props.transactions,
               filters: data.params
             }, null, _parent2, _scopeId));
             _push2(`</div></div></div>`);
           } else {
             return [
-              createVNode(_sfc_main$12, {
+              createVNode(_sfc_main$13, {
                 title: __props.title,
                 breadcrumbs: __props.breadcrumbs
               }, null, 8, ["title", "breadcrumbs"]),
               createVNode("div", { class: "space-y-4" }, [
                 createVNode("div", { class: "px-4 sm:px-0" }, [
                   createVNode("div", { class: "rounded-lg overflow-hidden w-fit" }, [
-                    createVNode(_sfc_main$I, {
+                    createVNode(_sfc_main$J, {
                       show: data.editOpen,
                       onClose: ($event) => data.editOpen = false,
                       transaction: data.transaction,
                       title: props.title,
                       status_list: props.status_list
                     }, null, 8, ["show", "onClose", "transaction", "title", "status_list"]),
-                    createVNode(_sfc_main$K, {
+                    createVNode(_sfc_main$L, {
                       show: data.deleteOpen,
                       onClose: ($event) => data.deleteOpen = false,
                       transaction: data.transaction,
@@ -5917,7 +5927,7 @@ const _sfc_main$H = {
                 createVNode("div", { class: "relative bg-white dark:bg-slate-800 shadow sm:rounded-lg" }, [
                   createVNode("div", { class: "flex justify-between p-2" }, [
                     createVNode("div", { class: "flex space-x-2" }, [
-                      createVNode(_sfc_main$11, {
+                      createVNode(_sfc_main$12, {
                         modelValue: data.params.perPage,
                         "onUpdate:modelValue": ($event) => data.params.perPage = $event,
                         dataSet: data.dataSet
@@ -5935,7 +5945,7 @@ const _sfc_main$H = {
                       ], 8, ["onUpdate:modelValue"]), [
                         [vModelSelect, selectedFileType.value]
                       ]),
-                      createVNode(_sfc_main$10, {
+                      createVNode(_sfc_main$11, {
                         onClick: exportData,
                         class: "px-2 py-1.5 rounded"
                       }, {
@@ -5996,6 +6006,12 @@ const _sfc_main$H = {
                               createVNode(unref(ChevronUpDownIcon), { class: "w-4 h-4" })
                             ])
                           ], 8, ["onClick"]),
+                          createVNode("th", { class: "px-2 py-4 cursor-pointer" }, [
+                            createVNode("div", { class: "flex justify-between items-center" }, [
+                              createVNode("span", null, toDisplayString(_ctx.lang().label.unit), 1),
+                              createVNode(unref(ChevronUpDownIcon), { class: "w-4 h-4" })
+                            ])
+                          ]),
                           createVNode("th", {
                             class: "px-2 py-4 cursor-pointer",
                             onClick: ($event) => order("status")
@@ -6054,7 +6070,7 @@ const _sfc_main$H = {
                         ]),
                         createVNode("tr", null, [
                           createVNode("th", { class: "px-2 pb-3" }, [
-                            createVNode(_sfc_main$1p, {
+                            createVNode(_sfc_main$1q, {
                               modelValue: data.params["id"],
                               "onUpdate:modelValue": ($event) => data.params["id"] = $event,
                               modelModifiers: { lazy: true },
@@ -6063,7 +6079,7 @@ const _sfc_main$H = {
                             }, null, 8, ["modelValue", "onUpdate:modelValue"])
                           ]),
                           createVNode("th", { class: "px-2 pb-3" }, [
-                            createVNode(_sfc_main$1n, {
+                            createVNode(_sfc_main$1o, {
                               id: "warehouse_id",
                               class: "block w-full",
                               style: { "line-height": "14px" },
@@ -6074,7 +6090,7 @@ const _sfc_main$H = {
                             }, null, 8, ["modelValue", "onUpdate:modelValue", "dataSet", "prompt"])
                           ]),
                           createVNode("th", { class: "px-2 pb-3" }, [
-                            createVNode(_sfc_main$1p, {
+                            createVNode(_sfc_main$1q, {
                               modelValue: data.params["product_name"],
                               "onUpdate:modelValue": ($event) => data.params["product_name"] = $event,
                               type: "text",
@@ -6082,7 +6098,7 @@ const _sfc_main$H = {
                             }, null, 8, ["modelValue", "onUpdate:modelValue"])
                           ]),
                           createVNode("th", { class: "px-2 pb-3" }, [
-                            createVNode(_sfc_main$1n, {
+                            createVNode(_sfc_main$1o, {
                               id: "type",
                               class: "block w-full",
                               style: { "line-height": "14px" },
@@ -6097,7 +6113,7 @@ const _sfc_main$H = {
                             }, null, 8, ["modelValue", "onUpdate:modelValue", "dataSet", "prompt"])
                           ]),
                           createVNode("th", { class: "px-2 pb-3" }, [
-                            createVNode(_sfc_main$1p, {
+                            createVNode(_sfc_main$1q, {
                               modelValue: data.params["quantity"],
                               "onUpdate:modelValue": ($event) => data.params["quantity"] = $event,
                               type: "number",
@@ -6106,7 +6122,16 @@ const _sfc_main$H = {
                             }, null, 8, ["modelValue", "onUpdate:modelValue", "placeholder"])
                           ]),
                           createVNode("th", { class: "px-2 pb-3" }, [
-                            createVNode(_sfc_main$1n, {
+                            createVNode(_sfc_main$1q, {
+                              modelValue: data.params["product_unit"],
+                              "onUpdate:modelValue": ($event) => data.params["product_unit"] = $event,
+                              type: "text",
+                              class: "block w-full rounded-lg size-8",
+                              placeholder: _ctx.lang().label.unit
+                            }, null, 8, ["modelValue", "onUpdate:modelValue", "placeholder"])
+                          ]),
+                          createVNode("th", { class: "px-2 pb-3" }, [
+                            createVNode(_sfc_main$1o, {
                               id: "status",
                               class: "block w-full",
                               style: { "line-height": "14px" },
@@ -6117,7 +6142,7 @@ const _sfc_main$H = {
                             }, null, 8, ["modelValue", "onUpdate:modelValue", "dataSet", "prompt"])
                           ]),
                           createVNode("th", { class: "px-2 pb-3" }, [
-                            createVNode(_sfc_main$1n, {
+                            createVNode(_sfc_main$1o, {
                               id: "is_internal_transfer",
                               class: "block w-full",
                               style: { "line-height": "14px" },
@@ -6132,7 +6157,7 @@ const _sfc_main$H = {
                             }, null, 8, ["modelValue", "onUpdate:modelValue", "dataSet", "prompt"])
                           ]),
                           createVNode("th", { class: "px-2 pb-3" }, [
-                            createVNode(_sfc_main$1p, {
+                            createVNode(_sfc_main$1q, {
                               modelValue: data.params["source"],
                               "onUpdate:modelValue": ($event) => data.params["source"] = $event,
                               type: "text",
@@ -6140,7 +6165,7 @@ const _sfc_main$H = {
                             }, null, 8, ["modelValue", "onUpdate:modelValue"])
                           ]),
                           createVNode("th", { class: "px-2 pb-3" }, [
-                            createVNode(_sfc_main$1p, {
+                            createVNode(_sfc_main$1q, {
                               modelValue: data.params["destination"],
                               "onUpdate:modelValue": ($event) => data.params["destination"] = $event,
                               type: "text",
@@ -6165,7 +6190,7 @@ const _sfc_main$H = {
                             }, null, 8, ["modelValue", "onUpdate:modelValue", "start-time", "locale", "timezone"])
                           ]),
                           createVNode("th", { class: "px-2 pb-3" }, [
-                            createVNode(_sfc_main$1p, {
+                            createVNode(_sfc_main$1q, {
                               modelValue: data.params.updated_at,
                               "onUpdate:modelValue": ($event) => data.params.updated_at = $event,
                               type: "text",
@@ -6181,12 +6206,12 @@ const _sfc_main$H = {
                             key: index,
                             class: ["border-t border-slate-200 dark:border-slate-700 hover:bg-slate-200/30 hover:dark:bg-slate-900/20", { "bg-slate-200/30 dark:bg-slate-900/20": transaction.deleted_at }]
                           }, [
-                            createVNode("td", { class: "whitespace-nowrap py-4 px-2 sm:py-3 text-center" }, toDisplayString(transaction.id), 1),
+                            createVNode("td", { class: "whitespace-nowrap py-1 px-2 sm:py-1 text-center" }, toDisplayString(transaction.id), 1),
                             createVNode("td", {
-                              class: ["whitespace-nowrap py-4 px-2 sm:py-3 text-left", { "bg-red-300 text-dark": !transaction.warehouse_isset }]
+                              class: ["whitespace-nowrap py-1 px-2 sm:py-1 text-left", { "bg-red-300 text-dark": !transaction.warehouse_isset }]
                             }, toDisplayString(transaction.warehouse_name), 3),
-                            createVNode("td", { class: "whitespace-nowrap py-4 px-2 sm:py-3 text-left" }, toDisplayString(transaction.product_name), 1),
-                            createVNode("td", { class: "whitespace-nowrap py-4 px-2 sm:py-3 text-center" }, [
+                            createVNode("td", { class: "whitespace-nowrap py-1 px-2 sm:py-1 text-left" }, toDisplayString(transaction.product_name), 1),
+                            createVNode("td", { class: "whitespace-nowrap py-1 px-2 sm:py-1 text-center" }, [
                               transaction.type === "in" ? (openBlock(), createBlock("span", {
                                 key: 0,
                                 class: "text-green-500"
@@ -6199,8 +6224,9 @@ const _sfc_main$H = {
                                 createVNode(unref(ArrowUpTrayIcon), { class: "w-7 h-7 mx-auto" })
                               ]))
                             ]),
-                            createVNode("td", { class: "whitespace-nowrap py-4 px-2 sm:py-3 text-center" }, toDisplayString(transaction.quantity), 1),
-                            createVNode("td", { class: "whitespace-nowrap py-4 px-2 sm:py-3 text-left font-bold" }, [
+                            createVNode("td", { class: "whitespace-nowrap py-1 px-2 sm:py-1 text-center" }, toDisplayString(transaction.quantity), 1),
+                            createVNode("td", { class: "whitespace-nowrap py-1 px-2 sm:py-1 text-left" }, toDisplayString(transaction.product_unit), 1),
+                            createVNode("td", { class: "whitespace-nowrap py-1 px-2 sm:py-1 text-left font-bold" }, [
                               transaction.status === "completed" ? (openBlock(), createBlock("span", {
                                 key: 0,
                                 class: "text-green-500"
@@ -6215,12 +6241,12 @@ const _sfc_main$H = {
                                 class: "text-rose-500"
                               }, toDisplayString(_ctx.lang().warehouse.status_unknown), 1))
                             ]),
-                            createVNode("td", { class: "whitespace-nowrap py-4 px-2 sm:py-3 text-center" }, toDisplayString(transaction.is_internal_transfer), 1),
-                            createVNode("td", { class: "whitespace-nowrap py-4 px-2 sm:py-3" }, toDisplayString(transaction.source), 1),
-                            createVNode("td", { class: "whitespace-nowrap py-4 px-2 sm:py-3" }, toDisplayString(transaction.destination), 1),
-                            createVNode("td", { class: "whitespace-nowrap py-4 px-2 sm:py-3" }, toDisplayString(transaction.created_at), 1),
-                            createVNode("td", { class: "whitespace-nowrap py-4 px-2 sm:py-3" }, toDisplayString(transaction.updated_at), 1),
-                            createVNode("td", { class: "whitespace-nowrap py-4 px-2 sm:py-3" }, [
+                            createVNode("td", { class: "whitespace-nowrap py-1 px-2 sm:py-1 text-center" }, toDisplayString(transaction.is_internal_transfer === 1 ? _ctx.lang().button.yes : _ctx.lang().button.no), 1),
+                            createVNode("td", { class: "whitespace-nowrap py-1 px-2 sm:py-1" }, toDisplayString(transaction.source), 1),
+                            createVNode("td", { class: "whitespace-nowrap py-1 px-2 sm:py-1" }, toDisplayString(transaction.destination), 1),
+                            createVNode("td", { class: "whitespace-nowrap py-1 px-2 sm:py-1" }, toDisplayString(transaction.created_at), 1),
+                            createVNode("td", { class: "whitespace-nowrap py-1 px-2 sm:py-1" }, toDisplayString(transaction.updated_at), 1),
+                            createVNode("td", { class: "whitespace-nowrap py-1 px-2 sm:py-1" }, [
                               createVNode("div", { class: "flex justify-center items-center" }, [
                                 createVNode("div", { class: "rounded-md overflow-hidden" }, [
                                   createVNode(unref(Link), {
@@ -6233,7 +6259,7 @@ const _sfc_main$H = {
                                     ]),
                                     _: 2
                                   }, 1032, ["href"]),
-                                  withDirectives((openBlock(), createBlock(_sfc_main$10, {
+                                  withDirectives((openBlock(), createBlock(_sfc_main$11, {
                                     type: "button",
                                     onClick: ($event) => (data.editOpen = true, data.transaction = transaction),
                                     class: "px-2 py-1.5 rounded-none"
@@ -6246,7 +6272,7 @@ const _sfc_main$H = {
                                     [vShow, _ctx.can(["Transaction Update"])],
                                     [_directive_tooltip, _ctx.lang().tooltip.edit]
                                   ]),
-                                  withDirectives((openBlock(), createBlock(_sfc_main$1g, {
+                                  withDirectives((openBlock(), createBlock(_sfc_main$1h, {
                                     type: "button",
                                     onClick: ($event) => (data.deleteOpen = true, data.transaction = transaction),
                                     class: "px-2 py-1.5 rounded-none"
@@ -6268,7 +6294,7 @@ const _sfc_main$H = {
                     ])
                   ]),
                   createVNode("div", { class: "flex justify-between items-center p-2 border-t border-slate-200 dark:border-slate-700" }, [
-                    createVNode(_sfc_main$_, {
+                    createVNode(_sfc_main$$, {
                       links: props.transactions,
                       filters: data.params
                     }, null, 8, ["links", "filters"])
@@ -6284,17 +6310,461 @@ const _sfc_main$H = {
     };
   }
 };
+const _sfc_setup$I = _sfc_main$I.setup;
+_sfc_main$I.setup = (props, ctx) => {
+  const ssrContext = useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Pages/Admin/Transaction/Index.vue");
+  return _sfc_setup$I ? _sfc_setup$I(props, ctx) : void 0;
+};
+const Index$6 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  default: _sfc_main$I
+}, Symbol.toStringTag, { value: "Module" }));
+const _sfc_main$H = {
+  __name: "Show",
+  __ssrInlineRender: true,
+  props: {
+    title: String,
+    breadcrumbs: Object,
+    status_list: Object
+  },
+  setup(__props) {
+    const { _, debounce, pickBy } = pkg;
+    const props = __props;
+    const data = reactive({
+      params: {},
+      transaction: null,
+      editOpen: false
+    });
+    const { transaction } = usePage().props;
+    watch(() => data.editOpen, (newVal) => {
+      if (!newVal) {
+        location.reload();
+      }
+    });
+    return (_ctx, _push, _parent, _attrs) => {
+      const _directive_tooltip = resolveDirective("tooltip");
+      _push(`<!--[-->`);
+      _push(ssrRenderComponent(unref(Head), {
+        title: props.title
+      }, null, _parent));
+      _push(ssrRenderComponent(_sfc_main$14, null, {
+        default: withCtx((_2, _push2, _parent2, _scopeId) => {
+          if (_push2) {
+            _push2(ssrRenderComponent(_sfc_main$13, {
+              title: __props.title,
+              breadcrumbs: __props.breadcrumbs
+            }, null, _parent2, _scopeId));
+            _push2(`<div class="space-y-4"${_scopeId}><div class="px-4 sm:px-0"${_scopeId}><div class="rounded-lg overflow-hidden w-fit"${_scopeId}>`);
+            _push2(ssrRenderComponent(_sfc_main$J, {
+              show: data.editOpen,
+              onClose: ($event) => data.editOpen = false,
+              transaction: data.transaction,
+              title: props.title,
+              status_list: props.status_list
+            }, null, _parent2, _scopeId));
+            _push2(`</div></div></div><div class="grid grid-cols-1 md:grid-cols-3 gap-4"${_scopeId}><div class="col-span-2 px-4 sm:px-0"${_scopeId}><div class="space-y-4"${_scopeId}><div class="px-4 sm:px-0"${_scopeId}><div class="bg-white dark:bg-slate-800 shadow sm:rounded-lg"${_scopeId}><div class="px-4 py-5 sm:px-6"${_scopeId}><div class="grid grid-cols-6 md:grid-cols-6 gap-4"${_scopeId}><div class="col-span-5"${_scopeId}><h3 class="text-lg leading-6 font-medium text-gray-900 dark:text-slate-200"${_scopeId}>${ssrInterpolate(unref(transaction).id)}</h3></div><div class="col-span-1"${_scopeId}>`);
+            _push2(ssrRenderComponent(_sfc_main$11, mergeProps({
+              style: _ctx.can(["Warehouse Update"]) ? null : { display: "none" },
+              type: "button",
+              onClick: ($event) => (data.editOpen = true, data.transaction = unref(transaction)),
+              class: "px-2 py-1.5 rounded float-right"
+            }, ssrGetDirectiveProps(_ctx, _directive_tooltip, _ctx.lang().label.edit)), {
+              default: withCtx((_3, _push3, _parent3, _scopeId2) => {
+                if (_push3) {
+                  _push3(ssrRenderComponent(unref(PencilIcon$1), { class: "w-4 h-4" }, null, _parent3, _scopeId2));
+                } else {
+                  return [
+                    createVNode(unref(PencilIcon$1), { class: "w-4 h-4" })
+                  ];
+                }
+              }),
+              _: 1
+            }, _parent2, _scopeId));
+            _push2(`</div></div></div><div class="border-t border-gray-200 dark:border-slate-700"${_scopeId}><div${_scopeId}><div class="bg-white dark:bg-slate-900 px-4 py-2.5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6"${_scopeId}><dt class="text-sm font-medium text-gray-500 dark:text-slate-400"${_scopeId}> ID </dt><dd class="mt-1 text-sm text-gray-900 dark:text-slate-200 sm:mt-0 sm:col-span-2"${_scopeId}>${ssrInterpolate(unref(transaction).id)}</dd></div><div class="bg-gray-50 dark:bg-slate-900 px-4 py-2.5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6"${_scopeId}><dt class="text-sm font-medium text-gray-500 dark:text-slate-400"${_scopeId}>${ssrInterpolate(_ctx.lang().label.warehouse)}</dt><dd class="mt-1 text-sm text-gray-900 dark:text-slate-200 sm:mt-0 sm:col-span-2"${_scopeId}>${ssrInterpolate(unref(transaction).warehouse_id)}</dd></div><div class="bg-gray-50 dark:bg-slate-900 px-4 py-2.5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6"${_scopeId}><dt class="text-sm font-medium text-gray-500 dark:text-slate-400"${_scopeId}>${ssrInterpolate(_ctx.lang().label.status)}</dt><dd class="mt-1 text-sm text-gray-900 dark:text-slate-200 sm:mt-0 sm:col-span-2"${_scopeId}>`);
+            if (unref(transaction).status === "completed") {
+              _push2(`<span class="text-green-500"${_scopeId}>${ssrInterpolate(_ctx.lang().transaction.status_completed)}</span>`);
+            } else if (unref(transaction).status === "cancelled") {
+              _push2(`<span class="text-rose-500"${_scopeId}>${ssrInterpolate(_ctx.lang().transaction.status_cancelled)}</span>`);
+            } else if (unref(transaction).status === "pending") {
+              _push2(`<span class="text-yellow-500"${_scopeId}>${ssrInterpolate(_ctx.lang().transaction.status_pending)}</span>`);
+            } else {
+              _push2(`<span class="text-rose-500"${_scopeId}>${ssrInterpolate(_ctx.lang().transaction.status_unknown)}</span>`);
+            }
+            _push2(`</dd></div><div class="bg-white dark:bg-slate-800 px-4 py-2.5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6"${_scopeId}><dt class="text-sm font-medium text-gray-500 dark:text-slate-400"${_scopeId}>${ssrInterpolate(_ctx.lang().label.created_at)}</dt><dd class="mt-1 text-sm text-gray-900 dark:text-slate-200 sm:mt-0 sm:col-span-2"${_scopeId}>${ssrInterpolate(unref(transaction).created_at)}</dd></div><div class="bg-gray-50 dark:bg-slate-900 px-4 py-2.5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6"${_scopeId}><dt class="text-sm font-medium text-gray-500 dark:text-slate-400"${_scopeId}>${ssrInterpolate(_ctx.lang().label.updated_at)}</dt><dd class="mt-1 text-sm text-gray-900 dark:text-slate-200 sm:mt-0 sm:col-span-2"${_scopeId}>${ssrInterpolate(unref(transaction).updated_at)}</dd></div></div></div></div></div></div></div></div>`);
+          } else {
+            return [
+              createVNode(_sfc_main$13, {
+                title: __props.title,
+                breadcrumbs: __props.breadcrumbs
+              }, null, 8, ["title", "breadcrumbs"]),
+              createVNode("div", { class: "space-y-4" }, [
+                createVNode("div", { class: "px-4 sm:px-0" }, [
+                  createVNode("div", { class: "rounded-lg overflow-hidden w-fit" }, [
+                    createVNode(_sfc_main$J, {
+                      show: data.editOpen,
+                      onClose: ($event) => data.editOpen = false,
+                      transaction: data.transaction,
+                      title: props.title,
+                      status_list: props.status_list
+                    }, null, 8, ["show", "onClose", "transaction", "title", "status_list"])
+                  ])
+                ])
+              ]),
+              createVNode("div", { class: "grid grid-cols-1 md:grid-cols-3 gap-4" }, [
+                createVNode("div", { class: "col-span-2 px-4 sm:px-0" }, [
+                  createVNode("div", { class: "space-y-4" }, [
+                    createVNode("div", { class: "px-4 sm:px-0" }, [
+                      createVNode("div", { class: "bg-white dark:bg-slate-800 shadow sm:rounded-lg" }, [
+                        createVNode("div", { class: "px-4 py-5 sm:px-6" }, [
+                          createVNode("div", { class: "grid grid-cols-6 md:grid-cols-6 gap-4" }, [
+                            createVNode("div", { class: "col-span-5" }, [
+                              createVNode("h3", { class: "text-lg leading-6 font-medium text-gray-900 dark:text-slate-200" }, toDisplayString(unref(transaction).id), 1)
+                            ]),
+                            createVNode("div", { class: "col-span-1" }, [
+                              withDirectives((openBlock(), createBlock(_sfc_main$11, {
+                                type: "button",
+                                onClick: ($event) => (data.editOpen = true, data.transaction = unref(transaction)),
+                                class: "px-2 py-1.5 rounded float-right"
+                              }, {
+                                default: withCtx(() => [
+                                  createVNode(unref(PencilIcon$1), { class: "w-4 h-4" })
+                                ]),
+                                _: 1
+                              }, 8, ["onClick"])), [
+                                [vShow, _ctx.can(["Warehouse Update"])],
+                                [_directive_tooltip, _ctx.lang().label.edit]
+                              ])
+                            ])
+                          ])
+                        ]),
+                        createVNode("div", { class: "border-t border-gray-200 dark:border-slate-700" }, [
+                          createVNode("div", null, [
+                            createVNode("div", { class: "bg-white dark:bg-slate-900 px-4 py-2.5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6" }, [
+                              createVNode("dt", { class: "text-sm font-medium text-gray-500 dark:text-slate-400" }, " ID "),
+                              createVNode("dd", { class: "mt-1 text-sm text-gray-900 dark:text-slate-200 sm:mt-0 sm:col-span-2" }, toDisplayString(unref(transaction).id), 1)
+                            ]),
+                            createVNode("div", { class: "bg-gray-50 dark:bg-slate-900 px-4 py-2.5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6" }, [
+                              createVNode("dt", { class: "text-sm font-medium text-gray-500 dark:text-slate-400" }, toDisplayString(_ctx.lang().label.warehouse), 1),
+                              createVNode("dd", { class: "mt-1 text-sm text-gray-900 dark:text-slate-200 sm:mt-0 sm:col-span-2" }, toDisplayString(unref(transaction).warehouse_id), 1)
+                            ]),
+                            createVNode("div", { class: "bg-gray-50 dark:bg-slate-900 px-4 py-2.5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6" }, [
+                              createVNode("dt", { class: "text-sm font-medium text-gray-500 dark:text-slate-400" }, toDisplayString(_ctx.lang().label.status), 1),
+                              createVNode("dd", { class: "mt-1 text-sm text-gray-900 dark:text-slate-200 sm:mt-0 sm:col-span-2" }, [
+                                unref(transaction).status === "completed" ? (openBlock(), createBlock("span", {
+                                  key: 0,
+                                  class: "text-green-500"
+                                }, toDisplayString(_ctx.lang().transaction.status_completed), 1)) : unref(transaction).status === "cancelled" ? (openBlock(), createBlock("span", {
+                                  key: 1,
+                                  class: "text-rose-500"
+                                }, toDisplayString(_ctx.lang().transaction.status_cancelled), 1)) : unref(transaction).status === "pending" ? (openBlock(), createBlock("span", {
+                                  key: 2,
+                                  class: "text-yellow-500"
+                                }, toDisplayString(_ctx.lang().transaction.status_pending), 1)) : (openBlock(), createBlock("span", {
+                                  key: 3,
+                                  class: "text-rose-500"
+                                }, toDisplayString(_ctx.lang().transaction.status_unknown), 1))
+                              ])
+                            ]),
+                            createVNode("div", { class: "bg-white dark:bg-slate-800 px-4 py-2.5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6" }, [
+                              createVNode("dt", { class: "text-sm font-medium text-gray-500 dark:text-slate-400" }, toDisplayString(_ctx.lang().label.created_at), 1),
+                              createVNode("dd", { class: "mt-1 text-sm text-gray-900 dark:text-slate-200 sm:mt-0 sm:col-span-2" }, toDisplayString(unref(transaction).created_at), 1)
+                            ]),
+                            createVNode("div", { class: "bg-gray-50 dark:bg-slate-900 px-4 py-2.5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6" }, [
+                              createVNode("dt", { class: "text-sm font-medium text-gray-500 dark:text-slate-400" }, toDisplayString(_ctx.lang().label.updated_at), 1),
+                              createVNode("dd", { class: "mt-1 text-sm text-gray-900 dark:text-slate-200 sm:mt-0 sm:col-span-2" }, toDisplayString(unref(transaction).updated_at), 1)
+                            ])
+                          ])
+                        ])
+                      ])
+                    ])
+                  ])
+                ])
+              ])
+            ];
+          }
+        }),
+        _: 1
+      }, _parent));
+      _push(`<!--]-->`);
+    };
+  }
+};
 const _sfc_setup$H = _sfc_main$H.setup;
 _sfc_main$H.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Pages/Admin/Transaction/Index.vue");
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Pages/Admin/Transaction/Show.vue");
   return _sfc_setup$H ? _sfc_setup$H(props, ctx) : void 0;
 };
-const Index$6 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const Show$2 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   default: _sfc_main$H
 }, Symbol.toStringTag, { value: "Module" }));
 const _sfc_main$G = {
+  __name: "Create",
+  __ssrInlineRender: true,
+  props: {
+    show: Boolean,
+    title: String,
+    status_list: {
+      type: Object,
+      default: () => ({})
+    }
+  },
+  emits: ["close"],
+  setup(__props, { emit: __emit }) {
+    const props = __props;
+    const status_list = Object.keys(props.status_list).map((key) => ({
+      label: props.status_list[key],
+      value: key
+    }));
+    const locales = usePage().props.locales;
+    const emit = __emit;
+    const form = useForm({
+      name: "",
+      location: "",
+      status: ""
+    });
+    const create = () => {
+      form.post(route("admin.warehouse.store"), {
+        preserveScroll: true,
+        onSuccess: () => {
+          emit("close");
+          form.reset();
+        },
+        onError: () => null,
+        onFinish: () => null
+      });
+    };
+    watchEffect(() => {
+      if (props.show) {
+        form.errors = {};
+      }
+    });
+    return (_ctx, _push, _parent, _attrs) => {
+      _push(`<section${ssrRenderAttrs(mergeProps({ class: "space-y-6" }, _attrs))}>`);
+      _push(ssrRenderComponent(_sfc_main$1l, {
+        show: props.show,
+        onClose: ($event) => emit("close"),
+        "max-width": `4xl`
+      }, {
+        default: withCtx((_, _push2, _parent2, _scopeId) => {
+          if (_push2) {
+            _push2(`<form class="p-6"${_scopeId}><h2 class="text-lg font-medium text-slate-900 dark:text-slate-100"${_scopeId}>${ssrInterpolate(_ctx.lang().label.add)} ${ssrInterpolate(_ctx.lang().label.warehouse)}</h2><div class="my-6 space-y-4"${_scopeId}>`);
+            _push2(ssrRenderComponent(_sfc_main$N, {
+              form: unref(form),
+              locales: unref(locales),
+              status_list: unref(status_list)
+            }, null, _parent2, _scopeId));
+            _push2(`</div><div class="flex justify-end"${_scopeId}>`);
+            _push2(ssrRenderComponent(_sfc_main$1j, {
+              disabled: unref(form).processing,
+              onClick: ($event) => emit("close")
+            }, {
+              default: withCtx((_2, _push3, _parent3, _scopeId2) => {
+                if (_push3) {
+                  _push3(`${ssrInterpolate(_ctx.lang().button.close)}`);
+                } else {
+                  return [
+                    createTextVNode(toDisplayString(_ctx.lang().button.close), 1)
+                  ];
+                }
+              }),
+              _: 1
+            }, _parent2, _scopeId));
+            _push2(ssrRenderComponent(_sfc_main$1k, {
+              class: ["ml-3", { "opacity-25": unref(form).processing }],
+              disabled: unref(form).processing,
+              onClick: create
+            }, {
+              default: withCtx((_2, _push3, _parent3, _scopeId2) => {
+                if (_push3) {
+                  _push3(`${ssrInterpolate(unref(form).processing ? _ctx.lang().button.add + "..." : _ctx.lang().button.add)}`);
+                } else {
+                  return [
+                    createTextVNode(toDisplayString(unref(form).processing ? _ctx.lang().button.add + "..." : _ctx.lang().button.add), 1)
+                  ];
+                }
+              }),
+              _: 1
+            }, _parent2, _scopeId));
+            _push2(`</div></form>`);
+          } else {
+            return [
+              createVNode("form", {
+                class: "p-6",
+                onSubmit: withModifiers(create, ["prevent"])
+              }, [
+                createVNode("h2", { class: "text-lg font-medium text-slate-900 dark:text-slate-100" }, toDisplayString(_ctx.lang().label.add) + " " + toDisplayString(_ctx.lang().label.warehouse), 1),
+                createVNode("div", { class: "my-6 space-y-4" }, [
+                  createVNode(_sfc_main$N, {
+                    form: unref(form),
+                    locales: unref(locales),
+                    status_list: unref(status_list)
+                  }, null, 8, ["form", "locales", "status_list"])
+                ]),
+                createVNode("div", { class: "flex justify-end" }, [
+                  createVNode(_sfc_main$1j, {
+                    disabled: unref(form).processing,
+                    onClick: ($event) => emit("close")
+                  }, {
+                    default: withCtx(() => [
+                      createTextVNode(toDisplayString(_ctx.lang().button.close), 1)
+                    ]),
+                    _: 1
+                  }, 8, ["disabled", "onClick"]),
+                  createVNode(_sfc_main$1k, {
+                    class: ["ml-3", { "opacity-25": unref(form).processing }],
+                    disabled: unref(form).processing,
+                    onClick: create
+                  }, {
+                    default: withCtx(() => [
+                      createTextVNode(toDisplayString(unref(form).processing ? _ctx.lang().button.add + "..." : _ctx.lang().button.add), 1)
+                    ]),
+                    _: 1
+                  }, 8, ["class", "disabled"])
+                ])
+              ], 32)
+            ];
+          }
+        }),
+        _: 1
+      }, _parent));
+      _push(`</section>`);
+    };
+  }
+};
+const _sfc_setup$G = _sfc_main$G.setup;
+_sfc_main$G.setup = (props, ctx) => {
+  const ssrContext = useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Pages/Admin/Warehouse/Create.vue");
+  return _sfc_setup$G ? _sfc_setup$G(props, ctx) : void 0;
+};
+const Create$4 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  default: _sfc_main$G
+}, Symbol.toStringTag, { value: "Module" }));
+const _sfc_main$F = {
+  __name: "Delete",
+  __ssrInlineRender: true,
+  props: {
+    show: Boolean,
+    title: String,
+    warehouse: Object
+  },
+  emits: ["close"],
+  setup(__props, { emit: __emit }) {
+    const props = __props;
+    const emit = __emit;
+    const form = useForm({});
+    const destroy = () => {
+      var _a;
+      form.delete(route("admin.warehouse.delete", (_a = props.warehouse) == null ? void 0 : _a.id), {
+        preserveScroll: true,
+        onSuccess: () => {
+          emit("close");
+          form.reset();
+        },
+        onError: () => null,
+        onFinish: () => null
+      });
+    };
+    return (_ctx, _push, _parent, _attrs) => {
+      _push(`<section${ssrRenderAttrs(mergeProps({ class: "space-y-6" }, _attrs))}>`);
+      _push(ssrRenderComponent(_sfc_main$1l, {
+        show: props.show,
+        onClose: ($event) => emit("close"),
+        maxWidth: "lg"
+      }, {
+        default: withCtx((_, _push2, _parent2, _scopeId) => {
+          var _a, _b;
+          if (_push2) {
+            _push2(`<form class="p-6"${_scopeId}><h2 class="text-lg font-medium text-slate-900 dark:text-slate-100"${_scopeId}>${ssrInterpolate(_ctx.lang().label.delete)}</h2><p class="mt-1 text-sm text-slate-600 dark:text-slate-400"${_scopeId}>${ssrInterpolate(_ctx.lang().label.delete_confirm)} <b${_scopeId}>${ssrInterpolate((_a = props.warehouse) == null ? void 0 : _a.name)}</b></p><div class="mt-6 flex justify-end"${_scopeId}>`);
+            _push2(ssrRenderComponent(_sfc_main$1j, {
+              disabled: unref(form).processing,
+              onClick: ($event) => emit("close")
+            }, {
+              default: withCtx((_2, _push3, _parent3, _scopeId2) => {
+                if (_push3) {
+                  _push3(`${ssrInterpolate(_ctx.lang().button.close)}`);
+                } else {
+                  return [
+                    createTextVNode(toDisplayString(_ctx.lang().button.close), 1)
+                  ];
+                }
+              }),
+              _: 1
+            }, _parent2, _scopeId));
+            _push2(ssrRenderComponent(_sfc_main$1h, {
+              class: ["ml-3", { "opacity-25": unref(form).processing }],
+              disabled: unref(form).processing,
+              onClick: destroy
+            }, {
+              default: withCtx((_2, _push3, _parent3, _scopeId2) => {
+                if (_push3) {
+                  _push3(`${ssrInterpolate(unref(form).processing ? _ctx.lang().button.delete + "..." : _ctx.lang().button.delete)}`);
+                } else {
+                  return [
+                    createTextVNode(toDisplayString(unref(form).processing ? _ctx.lang().button.delete + "..." : _ctx.lang().button.delete), 1)
+                  ];
+                }
+              }),
+              _: 1
+            }, _parent2, _scopeId));
+            _push2(`</div></form>`);
+          } else {
+            return [
+              createVNode("form", {
+                class: "p-6",
+                onSubmit: withModifiers(destroy, ["prevent"])
+              }, [
+                createVNode("h2", { class: "text-lg font-medium text-slate-900 dark:text-slate-100" }, toDisplayString(_ctx.lang().label.delete), 1),
+                createVNode("p", { class: "mt-1 text-sm text-slate-600 dark:text-slate-400" }, [
+                  createTextVNode(toDisplayString(_ctx.lang().label.delete_confirm) + " ", 1),
+                  createVNode("b", null, toDisplayString((_b = props.warehouse) == null ? void 0 : _b.name), 1)
+                ]),
+                createVNode("div", { class: "mt-6 flex justify-end" }, [
+                  createVNode(_sfc_main$1j, {
+                    disabled: unref(form).processing,
+                    onClick: ($event) => emit("close")
+                  }, {
+                    default: withCtx(() => [
+                      createTextVNode(toDisplayString(_ctx.lang().button.close), 1)
+                    ]),
+                    _: 1
+                  }, 8, ["disabled", "onClick"]),
+                  createVNode(_sfc_main$1h, {
+                    class: ["ml-3", { "opacity-25": unref(form).processing }],
+                    disabled: unref(form).processing,
+                    onClick: destroy
+                  }, {
+                    default: withCtx(() => [
+                      createTextVNode(toDisplayString(unref(form).processing ? _ctx.lang().button.delete + "..." : _ctx.lang().button.delete), 1)
+                    ]),
+                    _: 1
+                  }, 8, ["class", "disabled"])
+                ])
+              ], 32)
+            ];
+          }
+        }),
+        _: 1
+      }, _parent));
+      _push(`</section>`);
+    };
+  }
+};
+const _sfc_setup$F = _sfc_main$F.setup;
+_sfc_main$F.setup = (props, ctx) => {
+  const ssrContext = useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Pages/Admin/Warehouse/Delete.vue");
+  return _sfc_setup$F ? _sfc_setup$F(props, ctx) : void 0;
+};
+const Delete$4 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  default: _sfc_main$F
+}, Symbol.toStringTag, { value: "Module" }));
+const _sfc_main$E = {
   __name: "Edit",
   __ssrInlineRender: true,
   props: {
@@ -6364,7 +6834,7 @@ const _sfc_main$G = {
     });
     return (_ctx, _push, _parent, _attrs) => {
       _push(`<section${ssrRenderAttrs(mergeProps({ class: "space-y-6" }, _attrs))}>`);
-      _push(ssrRenderComponent(_sfc_main$1k, {
+      _push(ssrRenderComponent(_sfc_main$1l, {
         show: props.show,
         onClose: ($event) => emit("close"),
         "max-width": `4xl`
@@ -6372,12 +6842,12 @@ const _sfc_main$G = {
         default: withCtx((_, _push2, _parent2, _scopeId) => {
           if (_push2) {
             _push2(`<form class="p-6"${_scopeId}><h2 class="text-lg font-medium text-slate-900 dark:text-slate-100"${_scopeId}>${ssrInterpolate(_ctx.lang().label.edit)} ${ssrInterpolate(props.title)}</h2><div class="my-6 space-y-4"${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$M, {
+            _push2(ssrRenderComponent(_sfc_main$N, {
               form: unref(form),
               status_list: unref(status_list)
             }, null, _parent2, _scopeId));
             _push2(`</div><div class="flex justify-end"${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$1i, {
+            _push2(ssrRenderComponent(_sfc_main$1j, {
               disabled: unref(form).processing,
               onClick: ($event) => emit("close")
             }, {
@@ -6392,7 +6862,7 @@ const _sfc_main$G = {
               }),
               _: 1
             }, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$1j, {
+            _push2(ssrRenderComponent(_sfc_main$1k, {
               class: ["ml-3", { "opacity-25": unref(form).processing }],
               disabled: unref(form).processing,
               onClick: update
@@ -6417,13 +6887,13 @@ const _sfc_main$G = {
               }, [
                 createVNode("h2", { class: "text-lg font-medium text-slate-900 dark:text-slate-100" }, toDisplayString(_ctx.lang().label.edit) + " " + toDisplayString(props.title), 1),
                 createVNode("div", { class: "my-6 space-y-4" }, [
-                  createVNode(_sfc_main$M, {
+                  createVNode(_sfc_main$N, {
                     form: unref(form),
                     status_list: unref(status_list)
                   }, null, 8, ["form", "status_list"])
                 ]),
                 createVNode("div", { class: "flex justify-end" }, [
-                  createVNode(_sfc_main$1i, {
+                  createVNode(_sfc_main$1j, {
                     disabled: unref(form).processing,
                     onClick: ($event) => emit("close")
                   }, {
@@ -6432,7 +6902,7 @@ const _sfc_main$G = {
                     ]),
                     _: 1
                   }, 8, ["disabled", "onClick"]),
-                  createVNode(_sfc_main$1j, {
+                  createVNode(_sfc_main$1k, {
                     class: ["ml-3", { "opacity-25": unref(form).processing }],
                     disabled: unref(form).processing,
                     onClick: update
@@ -6453,458 +6923,18 @@ const _sfc_main$G = {
     };
   }
 };
-const _sfc_setup$G = _sfc_main$G.setup;
-_sfc_main$G.setup = (props, ctx) => {
-  const ssrContext = useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Pages/Admin/Warehouse/Edit.vue");
-  return _sfc_setup$G ? _sfc_setup$G(props, ctx) : void 0;
-};
-const Edit$4 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
-  __proto__: null,
-  default: _sfc_main$G
-}, Symbol.toStringTag, { value: "Module" }));
-const _sfc_main$F = {
-  __name: "Show",
-  __ssrInlineRender: true,
-  props: {
-    title: String,
-    items: Object,
-    breadcrumbs: Object,
-    status_list: Object
-  },
-  setup(__props) {
-    const { _, debounce, pickBy } = pkg;
-    const props = __props;
-    const data = reactive({
-      params: {},
-      warehouse: null,
-      editOpen: false
-    });
-    const { warehouse } = usePage().props;
-    watch(() => data.editOpen, (newVal) => {
-      if (!newVal) {
-        location.reload();
-      }
-    });
-    return (_ctx, _push, _parent, _attrs) => {
-      const _directive_tooltip = resolveDirective("tooltip");
-      _push(`<!--[-->`);
-      _push(ssrRenderComponent(unref(Head), {
-        title: props.title
-      }, null, _parent));
-      _push(ssrRenderComponent(_sfc_main$13, null, {
-        default: withCtx((_2, _push2, _parent2, _scopeId) => {
-          if (_push2) {
-            _push2(ssrRenderComponent(_sfc_main$12, {
-              title: __props.title,
-              breadcrumbs: __props.breadcrumbs
-            }, null, _parent2, _scopeId));
-            _push2(`<div class="space-y-4"${_scopeId}><div class="px-4 sm:px-0"${_scopeId}><div class="rounded-lg overflow-hidden w-fit"${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$G, {
-              show: data.editOpen,
-              onClose: ($event) => data.editOpen = false,
-              warehouse: data.warehouse,
-              title: props.title,
-              status_list: props.status_list
-            }, null, _parent2, _scopeId));
-            _push2(`</div></div></div><div class="grid grid-cols-1 md:grid-cols-3 gap-4"${_scopeId}><div class="col-span-2 px-4 sm:px-0"${_scopeId}><div class="space-y-4"${_scopeId}><div class="px-4 sm:px-0"${_scopeId}><div class="bg-white dark:bg-slate-800 shadow sm:rounded-lg"${_scopeId}><div class="px-4 py-5 sm:px-6"${_scopeId}><div class="grid grid-cols-6 md:grid-cols-6 gap-4"${_scopeId}><div class="col-span-5"${_scopeId}><h3 class="text-lg leading-6 font-medium text-gray-900 dark:text-slate-200"${_scopeId}>${ssrInterpolate(unref(warehouse).name)}</h3></div><div class="col-span-1"${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$10, mergeProps({
-              style: _ctx.can(["Warehouse Update"]) ? null : { display: "none" },
-              type: "button",
-              onClick: ($event) => (data.editOpen = true, data.warehouse = unref(warehouse)),
-              class: "px-2 py-1.5 rounded float-right"
-            }, ssrGetDirectiveProps(_ctx, _directive_tooltip, _ctx.lang().label.edit)), {
-              default: withCtx((_3, _push3, _parent3, _scopeId2) => {
-                if (_push3) {
-                  _push3(ssrRenderComponent(unref(PencilIcon$1), { class: "w-4 h-4" }, null, _parent3, _scopeId2));
-                } else {
-                  return [
-                    createVNode(unref(PencilIcon$1), { class: "w-4 h-4" })
-                  ];
-                }
-              }),
-              _: 1
-            }, _parent2, _scopeId));
-            _push2(`</div></div></div><div class="border-t border-gray-200 dark:border-slate-700"${_scopeId}><div${_scopeId}><div class="bg-white dark:bg-slate-900 px-4 py-2.5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6"${_scopeId}><dt class="text-sm font-medium text-gray-500 dark:text-slate-400"${_scopeId}> ID </dt><dd class="mt-1 text-sm text-gray-900 dark:text-slate-200 sm:mt-0 sm:col-span-2"${_scopeId}>${ssrInterpolate(unref(warehouse).id)}</dd></div><div class="bg-gray-50 dark:bg-slate-900 px-4 py-2.5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6"${_scopeId}><dt class="text-sm font-medium text-gray-500 dark:text-slate-400"${_scopeId}>${ssrInterpolate(_ctx.lang().label.address)}</dt><dd class="mt-1 text-sm text-gray-900 dark:text-slate-200 sm:mt-0 sm:col-span-2"${_scopeId}>${ssrInterpolate(unref(warehouse).location)}</dd></div><div class="bg-gray-50 dark:bg-slate-900 px-4 py-2.5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6"${_scopeId}><dt class="text-sm font-medium text-gray-500 dark:text-slate-400"${_scopeId}>${ssrInterpolate(_ctx.lang().label.status)}</dt><dd class="mt-1 text-sm text-gray-900 dark:text-slate-200 sm:mt-0 sm:col-span-2"${_scopeId}>`);
-            if (unref(warehouse).status === "active") {
-              _push2(`<span class="text-green-500"${_scopeId}>${ssrInterpolate(_ctx.lang().warehouse.status_active)}</span>`);
-            } else if (unref(warehouse).status === "inactive") {
-              _push2(`<span class="text-rose-500"${_scopeId}>${ssrInterpolate(_ctx.lang().warehouse.status_inactive)}</span>`);
-            } else {
-              _push2(`<span class="text-rose-500"${_scopeId}>${ssrInterpolate(_ctx.lang().warehouse.status_unknown)}</span>`);
-            }
-            _push2(`</dd></div><div class="bg-white dark:bg-slate-800 px-4 py-2.5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6"${_scopeId}><dt class="text-sm font-medium text-gray-500 dark:text-slate-400"${_scopeId}>${ssrInterpolate(_ctx.lang().label.created_at)}</dt><dd class="mt-1 text-sm text-gray-900 dark:text-slate-200 sm:mt-0 sm:col-span-2"${_scopeId}>${ssrInterpolate(unref(warehouse).created_at)}</dd></div><div class="bg-gray-50 dark:bg-slate-900 px-4 py-2.5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6"${_scopeId}><dt class="text-sm font-medium text-gray-500 dark:text-slate-400"${_scopeId}>${ssrInterpolate(_ctx.lang().label.updated_at)}</dt><dd class="mt-1 text-sm text-gray-900 dark:text-slate-200 sm:mt-0 sm:col-span-2"${_scopeId}>${ssrInterpolate(unref(warehouse).updated_at)}</dd></div></div></div></div></div></div></div></div>`);
-          } else {
-            return [
-              createVNode(_sfc_main$12, {
-                title: __props.title,
-                breadcrumbs: __props.breadcrumbs
-              }, null, 8, ["title", "breadcrumbs"]),
-              createVNode("div", { class: "space-y-4" }, [
-                createVNode("div", { class: "px-4 sm:px-0" }, [
-                  createVNode("div", { class: "rounded-lg overflow-hidden w-fit" }, [
-                    createVNode(_sfc_main$G, {
-                      show: data.editOpen,
-                      onClose: ($event) => data.editOpen = false,
-                      warehouse: data.warehouse,
-                      title: props.title,
-                      status_list: props.status_list
-                    }, null, 8, ["show", "onClose", "warehouse", "title", "status_list"])
-                  ])
-                ])
-              ]),
-              createVNode("div", { class: "grid grid-cols-1 md:grid-cols-3 gap-4" }, [
-                createVNode("div", { class: "col-span-2 px-4 sm:px-0" }, [
-                  createVNode("div", { class: "space-y-4" }, [
-                    createVNode("div", { class: "px-4 sm:px-0" }, [
-                      createVNode("div", { class: "bg-white dark:bg-slate-800 shadow sm:rounded-lg" }, [
-                        createVNode("div", { class: "px-4 py-5 sm:px-6" }, [
-                          createVNode("div", { class: "grid grid-cols-6 md:grid-cols-6 gap-4" }, [
-                            createVNode("div", { class: "col-span-5" }, [
-                              createVNode("h3", { class: "text-lg leading-6 font-medium text-gray-900 dark:text-slate-200" }, toDisplayString(unref(warehouse).name), 1)
-                            ]),
-                            createVNode("div", { class: "col-span-1" }, [
-                              withDirectives((openBlock(), createBlock(_sfc_main$10, {
-                                type: "button",
-                                onClick: ($event) => (data.editOpen = true, data.warehouse = unref(warehouse)),
-                                class: "px-2 py-1.5 rounded float-right"
-                              }, {
-                                default: withCtx(() => [
-                                  createVNode(unref(PencilIcon$1), { class: "w-4 h-4" })
-                                ]),
-                                _: 1
-                              }, 8, ["onClick"])), [
-                                [vShow, _ctx.can(["Warehouse Update"])],
-                                [_directive_tooltip, _ctx.lang().label.edit]
-                              ])
-                            ])
-                          ])
-                        ]),
-                        createVNode("div", { class: "border-t border-gray-200 dark:border-slate-700" }, [
-                          createVNode("div", null, [
-                            createVNode("div", { class: "bg-white dark:bg-slate-900 px-4 py-2.5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6" }, [
-                              createVNode("dt", { class: "text-sm font-medium text-gray-500 dark:text-slate-400" }, " ID "),
-                              createVNode("dd", { class: "mt-1 text-sm text-gray-900 dark:text-slate-200 sm:mt-0 sm:col-span-2" }, toDisplayString(unref(warehouse).id), 1)
-                            ]),
-                            createVNode("div", { class: "bg-gray-50 dark:bg-slate-900 px-4 py-2.5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6" }, [
-                              createVNode("dt", { class: "text-sm font-medium text-gray-500 dark:text-slate-400" }, toDisplayString(_ctx.lang().label.address), 1),
-                              createVNode("dd", { class: "mt-1 text-sm text-gray-900 dark:text-slate-200 sm:mt-0 sm:col-span-2" }, toDisplayString(unref(warehouse).location), 1)
-                            ]),
-                            createVNode("div", { class: "bg-gray-50 dark:bg-slate-900 px-4 py-2.5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6" }, [
-                              createVNode("dt", { class: "text-sm font-medium text-gray-500 dark:text-slate-400" }, toDisplayString(_ctx.lang().label.status), 1),
-                              createVNode("dd", { class: "mt-1 text-sm text-gray-900 dark:text-slate-200 sm:mt-0 sm:col-span-2" }, [
-                                unref(warehouse).status === "active" ? (openBlock(), createBlock("span", {
-                                  key: 0,
-                                  class: "text-green-500"
-                                }, toDisplayString(_ctx.lang().warehouse.status_active), 1)) : unref(warehouse).status === "inactive" ? (openBlock(), createBlock("span", {
-                                  key: 1,
-                                  class: "text-rose-500"
-                                }, toDisplayString(_ctx.lang().warehouse.status_inactive), 1)) : (openBlock(), createBlock("span", {
-                                  key: 2,
-                                  class: "text-rose-500"
-                                }, toDisplayString(_ctx.lang().warehouse.status_unknown), 1))
-                              ])
-                            ]),
-                            createVNode("div", { class: "bg-white dark:bg-slate-800 px-4 py-2.5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6" }, [
-                              createVNode("dt", { class: "text-sm font-medium text-gray-500 dark:text-slate-400" }, toDisplayString(_ctx.lang().label.created_at), 1),
-                              createVNode("dd", { class: "mt-1 text-sm text-gray-900 dark:text-slate-200 sm:mt-0 sm:col-span-2" }, toDisplayString(unref(warehouse).created_at), 1)
-                            ]),
-                            createVNode("div", { class: "bg-gray-50 dark:bg-slate-900 px-4 py-2.5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6" }, [
-                              createVNode("dt", { class: "text-sm font-medium text-gray-500 dark:text-slate-400" }, toDisplayString(_ctx.lang().label.updated_at), 1),
-                              createVNode("dd", { class: "mt-1 text-sm text-gray-900 dark:text-slate-200 sm:mt-0 sm:col-span-2" }, toDisplayString(unref(warehouse).updated_at), 1)
-                            ])
-                          ])
-                        ])
-                      ])
-                    ])
-                  ])
-                ])
-              ])
-            ];
-          }
-        }),
-        _: 1
-      }, _parent));
-      _push(`<!--]-->`);
-    };
-  }
-};
-const _sfc_setup$F = _sfc_main$F.setup;
-_sfc_main$F.setup = (props, ctx) => {
-  const ssrContext = useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Pages/Admin/Transaction/Show.vue");
-  return _sfc_setup$F ? _sfc_setup$F(props, ctx) : void 0;
-};
-const Show$2 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
-  __proto__: null,
-  default: _sfc_main$F
-}, Symbol.toStringTag, { value: "Module" }));
-const _sfc_main$E = {
-  __name: "Create",
-  __ssrInlineRender: true,
-  props: {
-    show: Boolean,
-    title: String,
-    status_list: {
-      type: Object,
-      default: () => ({})
-    }
-  },
-  emits: ["close"],
-  setup(__props, { emit: __emit }) {
-    const props = __props;
-    const status_list = Object.keys(props.status_list).map((key) => ({
-      label: props.status_list[key],
-      value: key
-    }));
-    const locales = usePage().props.locales;
-    const emit = __emit;
-    const form = useForm({
-      name: "",
-      location: "",
-      status: ""
-    });
-    const create = () => {
-      form.post(route("admin.warehouse.store"), {
-        preserveScroll: true,
-        onSuccess: () => {
-          emit("close");
-          form.reset();
-        },
-        onError: () => null,
-        onFinish: () => null
-      });
-    };
-    watchEffect(() => {
-      if (props.show) {
-        form.errors = {};
-      }
-    });
-    return (_ctx, _push, _parent, _attrs) => {
-      _push(`<section${ssrRenderAttrs(mergeProps({ class: "space-y-6" }, _attrs))}>`);
-      _push(ssrRenderComponent(_sfc_main$1k, {
-        show: props.show,
-        onClose: ($event) => emit("close"),
-        "max-width": `4xl`
-      }, {
-        default: withCtx((_, _push2, _parent2, _scopeId) => {
-          if (_push2) {
-            _push2(`<form class="p-6"${_scopeId}><h2 class="text-lg font-medium text-slate-900 dark:text-slate-100"${_scopeId}>${ssrInterpolate(_ctx.lang().label.add)} ${ssrInterpolate(_ctx.lang().label.warehouse)}</h2><div class="my-6 space-y-4"${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$M, {
-              form: unref(form),
-              locales: unref(locales),
-              status_list: unref(status_list)
-            }, null, _parent2, _scopeId));
-            _push2(`</div><div class="flex justify-end"${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$1i, {
-              disabled: unref(form).processing,
-              onClick: ($event) => emit("close")
-            }, {
-              default: withCtx((_2, _push3, _parent3, _scopeId2) => {
-                if (_push3) {
-                  _push3(`${ssrInterpolate(_ctx.lang().button.close)}`);
-                } else {
-                  return [
-                    createTextVNode(toDisplayString(_ctx.lang().button.close), 1)
-                  ];
-                }
-              }),
-              _: 1
-            }, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$1j, {
-              class: ["ml-3", { "opacity-25": unref(form).processing }],
-              disabled: unref(form).processing,
-              onClick: create
-            }, {
-              default: withCtx((_2, _push3, _parent3, _scopeId2) => {
-                if (_push3) {
-                  _push3(`${ssrInterpolate(unref(form).processing ? _ctx.lang().button.add + "..." : _ctx.lang().button.add)}`);
-                } else {
-                  return [
-                    createTextVNode(toDisplayString(unref(form).processing ? _ctx.lang().button.add + "..." : _ctx.lang().button.add), 1)
-                  ];
-                }
-              }),
-              _: 1
-            }, _parent2, _scopeId));
-            _push2(`</div></form>`);
-          } else {
-            return [
-              createVNode("form", {
-                class: "p-6",
-                onSubmit: withModifiers(create, ["prevent"])
-              }, [
-                createVNode("h2", { class: "text-lg font-medium text-slate-900 dark:text-slate-100" }, toDisplayString(_ctx.lang().label.add) + " " + toDisplayString(_ctx.lang().label.warehouse), 1),
-                createVNode("div", { class: "my-6 space-y-4" }, [
-                  createVNode(_sfc_main$M, {
-                    form: unref(form),
-                    locales: unref(locales),
-                    status_list: unref(status_list)
-                  }, null, 8, ["form", "locales", "status_list"])
-                ]),
-                createVNode("div", { class: "flex justify-end" }, [
-                  createVNode(_sfc_main$1i, {
-                    disabled: unref(form).processing,
-                    onClick: ($event) => emit("close")
-                  }, {
-                    default: withCtx(() => [
-                      createTextVNode(toDisplayString(_ctx.lang().button.close), 1)
-                    ]),
-                    _: 1
-                  }, 8, ["disabled", "onClick"]),
-                  createVNode(_sfc_main$1j, {
-                    class: ["ml-3", { "opacity-25": unref(form).processing }],
-                    disabled: unref(form).processing,
-                    onClick: create
-                  }, {
-                    default: withCtx(() => [
-                      createTextVNode(toDisplayString(unref(form).processing ? _ctx.lang().button.add + "..." : _ctx.lang().button.add), 1)
-                    ]),
-                    _: 1
-                  }, 8, ["class", "disabled"])
-                ])
-              ], 32)
-            ];
-          }
-        }),
-        _: 1
-      }, _parent));
-      _push(`</section>`);
-    };
-  }
-};
 const _sfc_setup$E = _sfc_main$E.setup;
 _sfc_main$E.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Pages/Admin/Warehouse/Create.vue");
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Pages/Admin/Warehouse/Edit.vue");
   return _sfc_setup$E ? _sfc_setup$E(props, ctx) : void 0;
 };
-const Create$4 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const Edit$4 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   default: _sfc_main$E
 }, Symbol.toStringTag, { value: "Module" }));
-const _sfc_main$D = {
-  __name: "Delete",
-  __ssrInlineRender: true,
-  props: {
-    show: Boolean,
-    title: String,
-    warehouse: Object
-  },
-  emits: ["close"],
-  setup(__props, { emit: __emit }) {
-    const props = __props;
-    const emit = __emit;
-    const form = useForm({});
-    const destroy = () => {
-      var _a;
-      form.delete(route("admin.warehouse.delete", (_a = props.warehouse) == null ? void 0 : _a.id), {
-        preserveScroll: true,
-        onSuccess: () => {
-          emit("close");
-          form.reset();
-        },
-        onError: () => null,
-        onFinish: () => null
-      });
-    };
-    return (_ctx, _push, _parent, _attrs) => {
-      _push(`<section${ssrRenderAttrs(mergeProps({ class: "space-y-6" }, _attrs))}>`);
-      _push(ssrRenderComponent(_sfc_main$1k, {
-        show: props.show,
-        onClose: ($event) => emit("close"),
-        maxWidth: "lg"
-      }, {
-        default: withCtx((_, _push2, _parent2, _scopeId) => {
-          var _a, _b;
-          if (_push2) {
-            _push2(`<form class="p-6"${_scopeId}><h2 class="text-lg font-medium text-slate-900 dark:text-slate-100"${_scopeId}>${ssrInterpolate(_ctx.lang().label.delete)}</h2><p class="mt-1 text-sm text-slate-600 dark:text-slate-400"${_scopeId}>${ssrInterpolate(_ctx.lang().label.delete_confirm)} <b${_scopeId}>${ssrInterpolate((_a = props.warehouse) == null ? void 0 : _a.name)}</b></p><div class="mt-6 flex justify-end"${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$1i, {
-              disabled: unref(form).processing,
-              onClick: ($event) => emit("close")
-            }, {
-              default: withCtx((_2, _push3, _parent3, _scopeId2) => {
-                if (_push3) {
-                  _push3(`${ssrInterpolate(_ctx.lang().button.close)}`);
-                } else {
-                  return [
-                    createTextVNode(toDisplayString(_ctx.lang().button.close), 1)
-                  ];
-                }
-              }),
-              _: 1
-            }, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$1g, {
-              class: ["ml-3", { "opacity-25": unref(form).processing }],
-              disabled: unref(form).processing,
-              onClick: destroy
-            }, {
-              default: withCtx((_2, _push3, _parent3, _scopeId2) => {
-                if (_push3) {
-                  _push3(`${ssrInterpolate(unref(form).processing ? _ctx.lang().button.delete + "..." : _ctx.lang().button.delete)}`);
-                } else {
-                  return [
-                    createTextVNode(toDisplayString(unref(form).processing ? _ctx.lang().button.delete + "..." : _ctx.lang().button.delete), 1)
-                  ];
-                }
-              }),
-              _: 1
-            }, _parent2, _scopeId));
-            _push2(`</div></form>`);
-          } else {
-            return [
-              createVNode("form", {
-                class: "p-6",
-                onSubmit: withModifiers(destroy, ["prevent"])
-              }, [
-                createVNode("h2", { class: "text-lg font-medium text-slate-900 dark:text-slate-100" }, toDisplayString(_ctx.lang().label.delete), 1),
-                createVNode("p", { class: "mt-1 text-sm text-slate-600 dark:text-slate-400" }, [
-                  createTextVNode(toDisplayString(_ctx.lang().label.delete_confirm) + " ", 1),
-                  createVNode("b", null, toDisplayString((_b = props.warehouse) == null ? void 0 : _b.name), 1)
-                ]),
-                createVNode("div", { class: "mt-6 flex justify-end" }, [
-                  createVNode(_sfc_main$1i, {
-                    disabled: unref(form).processing,
-                    onClick: ($event) => emit("close")
-                  }, {
-                    default: withCtx(() => [
-                      createTextVNode(toDisplayString(_ctx.lang().button.close), 1)
-                    ]),
-                    _: 1
-                  }, 8, ["disabled", "onClick"]),
-                  createVNode(_sfc_main$1g, {
-                    class: ["ml-3", { "opacity-25": unref(form).processing }],
-                    disabled: unref(form).processing,
-                    onClick: destroy
-                  }, {
-                    default: withCtx(() => [
-                      createTextVNode(toDisplayString(unref(form).processing ? _ctx.lang().button.delete + "..." : _ctx.lang().button.delete), 1)
-                    ]),
-                    _: 1
-                  }, 8, ["class", "disabled"])
-                ])
-              ], 32)
-            ];
-          }
-        }),
-        _: 1
-      }, _parent));
-      _push(`</section>`);
-    };
-  }
-};
-const _sfc_setup$D = _sfc_main$D.setup;
-_sfc_main$D.setup = (props, ctx) => {
-  const ssrContext = useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Pages/Admin/Warehouse/Delete.vue");
-  return _sfc_setup$D ? _sfc_setup$D(props, ctx) : void 0;
-};
-const Delete$4 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
-  __proto__: null,
-  default: _sfc_main$D
-}, Symbol.toStringTag, { value: "Module" }));
 const datetime_format$1 = "yyyy-MM-dd HH:mm";
-const _sfc_main$C = {
+const _sfc_main$D = {
   __name: "Index",
   __ssrInlineRender: true,
   props: {
@@ -6962,15 +6992,15 @@ const _sfc_main$C = {
       _push(ssrRenderComponent(unref(Head), {
         title: props.title
       }, null, _parent));
-      _push(ssrRenderComponent(_sfc_main$13, null, {
+      _push(ssrRenderComponent(_sfc_main$14, null, {
         default: withCtx((_2, _push2, _parent2, _scopeId) => {
           if (_push2) {
-            _push2(ssrRenderComponent(_sfc_main$12, {
+            _push2(ssrRenderComponent(_sfc_main$13, {
               title: __props.title,
               breadcrumbs: __props.breadcrumbs
             }, null, _parent2, _scopeId));
             _push2(`<div class="space-y-4" data-v-6c1e64f1${_scopeId}><div class="px-4 sm:px-0" data-v-6c1e64f1${_scopeId}><div class="rounded-lg overflow-hidden w-fit" data-v-6c1e64f1${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$1j, {
+            _push2(ssrRenderComponent(_sfc_main$1k, {
               style: _ctx.can(["Warehouse Create"]) ? null : { display: "none" },
               class: "rounded-none",
               onClick: ($event) => data.createOpen = true
@@ -6986,27 +7016,27 @@ const _sfc_main$C = {
               }),
               _: 1
             }, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$E, {
+            _push2(ssrRenderComponent(_sfc_main$G, {
               show: data.createOpen,
               onClose: ($event) => data.createOpen = false,
               title: props.title,
               status_list: props.status_list
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$G, {
+            _push2(ssrRenderComponent(_sfc_main$E, {
               show: data.editOpen,
               onClose: ($event) => data.editOpen = false,
               warehouse: data.warehouse,
               title: props.title,
               status_list: props.status_list
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$D, {
+            _push2(ssrRenderComponent(_sfc_main$F, {
               show: data.deleteOpen,
               onClose: ($event) => data.deleteOpen = false,
               warehouse: data.warehouse,
               title: props.title
             }, null, _parent2, _scopeId));
             _push2(`</div></div><div class="relative bg-white dark:bg-slate-800 shadow sm:rounded-lg" data-v-6c1e64f1${_scopeId}><div class="flex justify-between p-2" data-v-6c1e64f1${_scopeId}><div class="flex space-x-2" data-v-6c1e64f1${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$11, {
+            _push2(ssrRenderComponent(_sfc_main$12, {
               modelValue: data.params.perPage,
               "onUpdate:modelValue": ($event) => data.params.perPage = $event,
               dataSet: data.dataSet
@@ -7024,7 +7054,7 @@ const _sfc_main$C = {
             _push2(`</div></th><th class="px-2 py-4 cursor-pointer" data-v-6c1e64f1${_scopeId}><div class="flex justify-between items-center" data-v-6c1e64f1${_scopeId}><span data-v-6c1e64f1${_scopeId}>${ssrInterpolate(_ctx.lang().label.updated)}</span>`);
             _push2(ssrRenderComponent(unref(ChevronUpDownIcon), { class: "w-4 h-4" }, null, _parent2, _scopeId));
             _push2(`</div></th><th class="px-2 py-4 sr-only" data-v-6c1e64f1${_scopeId}>Action</th></tr><tr data-v-6c1e64f1${_scopeId}><th class="px-2 pb-3" data-v-6c1e64f1${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$1p, {
+            _push2(ssrRenderComponent(_sfc_main$1q, {
               modelValue: data.params["id"],
               "onUpdate:modelValue": ($event) => data.params["id"] = $event,
               modelModifiers: { lazy: true },
@@ -7032,14 +7062,14 @@ const _sfc_main$C = {
               class: "block w-full rounded-lg size-8"
             }, null, _parent2, _scopeId));
             _push2(`</th><th class="px-2 pb-3" data-v-6c1e64f1${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$1p, {
+            _push2(ssrRenderComponent(_sfc_main$1q, {
               modelValue: data.params["name"],
               "onUpdate:modelValue": ($event) => data.params["name"] = $event,
               type: "text",
               class: "block w-full rounded-lg size-8"
             }, null, _parent2, _scopeId));
             _push2(`</th><th class="px-2 pb-3" data-v-6c1e64f1${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$1p, {
+            _push2(ssrRenderComponent(_sfc_main$1q, {
               modelValue: data.params["location"],
               "onUpdate:modelValue": ($event) => data.params["location"] = $event,
               type: "text",
@@ -7047,7 +7077,7 @@ const _sfc_main$C = {
               placeholder: _ctx.lang().label.address
             }, null, _parent2, _scopeId));
             _push2(`</th><th class="px-2 pb-3" data-v-6c1e64f1${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$11, {
+            _push2(ssrRenderComponent(_sfc_main$12, {
               class: "block w-24 rounded-lg size-8 font-light py-0",
               modelValue: data.params["status"],
               "onUpdate:modelValue": ($event) => data.params["status"] = $event,
@@ -7075,7 +7105,7 @@ const _sfc_main$C = {
               ]
             }, null, _parent2, _scopeId));
             _push2(`</th><th class="px-2 pb-3" data-v-6c1e64f1${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$1p, {
+            _push2(ssrRenderComponent(_sfc_main$1q, {
               modelValue: data.params.updated_at,
               "onUpdate:modelValue": ($event) => data.params.updated_at = $event,
               type: "text",
@@ -7108,7 +7138,7 @@ const _sfc_main$C = {
                 }),
                 _: 2
               }, _parent2, _scopeId));
-              _push2(ssrRenderComponent(_sfc_main$10, mergeProps({
+              _push2(ssrRenderComponent(_sfc_main$11, mergeProps({
                 style: _ctx.can(["Warehouse Update"]) ? null : { display: "none" },
                 type: "button",
                 onClick: ($event) => (data.editOpen = true, data.warehouse = warehouse),
@@ -7125,7 +7155,7 @@ const _sfc_main$C = {
                 }),
                 _: 2
               }, _parent2, _scopeId));
-              _push2(ssrRenderComponent(_sfc_main$1g, mergeProps({
+              _push2(ssrRenderComponent(_sfc_main$1h, mergeProps({
                 style: _ctx.can(["Warehouse Delete"]) ? null : { display: "none" },
                 type: "button",
                 onClick: ($event) => (data.deleteOpen = true, data.warehouse = warehouse),
@@ -7145,21 +7175,21 @@ const _sfc_main$C = {
               _push2(`</div></div></td></tr>`);
             });
             _push2(`<!--]--></tbody></table></div><div class="flex justify-between items-center p-2 border-t border-slate-200 dark:border-slate-700" data-v-6c1e64f1${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$_, {
+            _push2(ssrRenderComponent(_sfc_main$$, {
               links: props.warehouses,
               filters: data.params
             }, null, _parent2, _scopeId));
             _push2(`</div></div></div>`);
           } else {
             return [
-              createVNode(_sfc_main$12, {
+              createVNode(_sfc_main$13, {
                 title: __props.title,
                 breadcrumbs: __props.breadcrumbs
               }, null, 8, ["title", "breadcrumbs"]),
               createVNode("div", { class: "space-y-4" }, [
                 createVNode("div", { class: "px-4 sm:px-0" }, [
                   createVNode("div", { class: "rounded-lg overflow-hidden w-fit" }, [
-                    withDirectives(createVNode(_sfc_main$1j, {
+                    withDirectives(createVNode(_sfc_main$1k, {
                       class: "rounded-none",
                       onClick: ($event) => data.createOpen = true
                     }, {
@@ -7170,20 +7200,20 @@ const _sfc_main$C = {
                     }, 8, ["onClick"]), [
                       [vShow, _ctx.can(["Warehouse Create"])]
                     ]),
-                    createVNode(_sfc_main$E, {
+                    createVNode(_sfc_main$G, {
                       show: data.createOpen,
                       onClose: ($event) => data.createOpen = false,
                       title: props.title,
                       status_list: props.status_list
                     }, null, 8, ["show", "onClose", "title", "status_list"]),
-                    createVNode(_sfc_main$G, {
+                    createVNode(_sfc_main$E, {
                       show: data.editOpen,
                       onClose: ($event) => data.editOpen = false,
                       warehouse: data.warehouse,
                       title: props.title,
                       status_list: props.status_list
                     }, null, 8, ["show", "onClose", "warehouse", "title", "status_list"]),
-                    createVNode(_sfc_main$D, {
+                    createVNode(_sfc_main$F, {
                       show: data.deleteOpen,
                       onClose: ($event) => data.deleteOpen = false,
                       warehouse: data.warehouse,
@@ -7194,7 +7224,7 @@ const _sfc_main$C = {
                 createVNode("div", { class: "relative bg-white dark:bg-slate-800 shadow sm:rounded-lg" }, [
                   createVNode("div", { class: "flex justify-between p-2" }, [
                     createVNode("div", { class: "flex space-x-2" }, [
-                      createVNode(_sfc_main$11, {
+                      createVNode(_sfc_main$12, {
                         modelValue: data.params.perPage,
                         "onUpdate:modelValue": ($event) => data.params.perPage = $event,
                         dataSet: data.dataSet
@@ -7263,7 +7293,7 @@ const _sfc_main$C = {
                         ]),
                         createVNode("tr", null, [
                           createVNode("th", { class: "px-2 pb-3" }, [
-                            createVNode(_sfc_main$1p, {
+                            createVNode(_sfc_main$1q, {
                               modelValue: data.params["id"],
                               "onUpdate:modelValue": ($event) => data.params["id"] = $event,
                               modelModifiers: { lazy: true },
@@ -7272,7 +7302,7 @@ const _sfc_main$C = {
                             }, null, 8, ["modelValue", "onUpdate:modelValue"])
                           ]),
                           createVNode("th", { class: "px-2 pb-3" }, [
-                            createVNode(_sfc_main$1p, {
+                            createVNode(_sfc_main$1q, {
                               modelValue: data.params["name"],
                               "onUpdate:modelValue": ($event) => data.params["name"] = $event,
                               type: "text",
@@ -7280,7 +7310,7 @@ const _sfc_main$C = {
                             }, null, 8, ["modelValue", "onUpdate:modelValue"])
                           ]),
                           createVNode("th", { class: "px-2 pb-3" }, [
-                            createVNode(_sfc_main$1p, {
+                            createVNode(_sfc_main$1q, {
                               modelValue: data.params["location"],
                               "onUpdate:modelValue": ($event) => data.params["location"] = $event,
                               type: "text",
@@ -7289,7 +7319,7 @@ const _sfc_main$C = {
                             }, null, 8, ["modelValue", "onUpdate:modelValue", "placeholder"])
                           ]),
                           createVNode("th", { class: "px-2 pb-3" }, [
-                            createVNode(_sfc_main$11, {
+                            createVNode(_sfc_main$12, {
                               class: "block w-24 rounded-lg size-8 font-light py-0",
                               modelValue: data.params["status"],
                               "onUpdate:modelValue": ($event) => data.params["status"] = $event,
@@ -7319,7 +7349,7 @@ const _sfc_main$C = {
                             }, null, 8, ["modelValue", "onUpdate:modelValue", "start-time", "locale", "timezone"])
                           ]),
                           createVNode("th", { class: "px-2 pb-3" }, [
-                            createVNode(_sfc_main$1p, {
+                            createVNode(_sfc_main$1q, {
                               modelValue: data.params.updated_at,
                               "onUpdate:modelValue": ($event) => data.params.updated_at = $event,
                               type: "text",
@@ -7365,7 +7395,7 @@ const _sfc_main$C = {
                                     ]),
                                     _: 2
                                   }, 1032, ["href"]),
-                                  withDirectives((openBlock(), createBlock(_sfc_main$10, {
+                                  withDirectives((openBlock(), createBlock(_sfc_main$11, {
                                     type: "button",
                                     onClick: ($event) => (data.editOpen = true, data.warehouse = warehouse),
                                     class: "px-2 py-1.5 rounded-none"
@@ -7378,7 +7408,7 @@ const _sfc_main$C = {
                                     [vShow, _ctx.can(["Warehouse Update"])],
                                     [_directive_tooltip, _ctx.lang().tooltip.edit]
                                   ]),
-                                  withDirectives((openBlock(), createBlock(_sfc_main$1g, {
+                                  withDirectives((openBlock(), createBlock(_sfc_main$1h, {
                                     type: "button",
                                     onClick: ($event) => (data.deleteOpen = true, data.warehouse = warehouse),
                                     class: "px-2 py-1.5 rounded-none"
@@ -7400,7 +7430,7 @@ const _sfc_main$C = {
                     ])
                   ]),
                   createVNode("div", { class: "flex justify-between items-center p-2 border-t border-slate-200 dark:border-slate-700" }, [
-                    createVNode(_sfc_main$_, {
+                    createVNode(_sfc_main$$, {
                       links: props.warehouses,
                       filters: data.params
                     }, null, 8, ["links", "filters"])
@@ -7416,18 +7446,18 @@ const _sfc_main$C = {
     };
   }
 };
-const _sfc_setup$C = _sfc_main$C.setup;
-_sfc_main$C.setup = (props, ctx) => {
+const _sfc_setup$D = _sfc_main$D.setup;
+_sfc_main$D.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Pages/Admin/Warehouse/Index.vue");
-  return _sfc_setup$C ? _sfc_setup$C(props, ctx) : void 0;
+  return _sfc_setup$D ? _sfc_setup$D(props, ctx) : void 0;
 };
-const Index$4 = /* @__PURE__ */ _export_sfc(_sfc_main$C, [["__scopeId", "data-v-6c1e64f1"]]);
+const Index$4 = /* @__PURE__ */ _export_sfc(_sfc_main$D, [["__scopeId", "data-v-6c1e64f1"]]);
 const Index$5 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   default: Index$4
 }, Symbol.toStringTag, { value: "Module" }));
-const _sfc_main$B = {
+const _sfc_main$C = {
   __name: "Show",
   __ssrInlineRender: true,
   props: {
@@ -7456,23 +7486,23 @@ const _sfc_main$B = {
       _push(ssrRenderComponent(unref(Head), {
         title: props.title
       }, null, _parent));
-      _push(ssrRenderComponent(_sfc_main$13, null, {
+      _push(ssrRenderComponent(_sfc_main$14, null, {
         default: withCtx((_2, _push2, _parent2, _scopeId) => {
           if (_push2) {
-            _push2(ssrRenderComponent(_sfc_main$12, {
+            _push2(ssrRenderComponent(_sfc_main$13, {
               title: __props.title,
               breadcrumbs: __props.breadcrumbs
             }, null, _parent2, _scopeId));
             _push2(`<div class="space-y-4"${_scopeId}><div class="px-4 sm:px-0"${_scopeId}><div class="rounded-lg overflow-hidden w-fit"${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$G, {
+            _push2(ssrRenderComponent(_sfc_main$E, {
               show: data.editOpen,
               onClose: ($event) => data.editOpen = false,
               warehouse: data.warehouse,
               title: props.title,
               status_list: props.status_list
             }, null, _parent2, _scopeId));
-            _push2(`</div></div></div><div class="grid grid-cols-1 md:grid-cols-3 gap-4"${_scopeId}><div class="col-span-2 px-4 sm:px-0"${_scopeId}><div class="space-y-4"${_scopeId}><div class="px-4 sm:px-0"${_scopeId}><div class="bg-white dark:bg-slate-800 shadow sm:rounded-lg"${_scopeId}><div class="px-4 py-5 sm:px-6"${_scopeId}><div class="grid grid-cols-6 md:grid-cols-6 gap-4"${_scopeId}><div class="col-span-5"${_scopeId}><h3 class="text-lg leading-6 font-medium text-gray-900 dark:text-slate-200"${_scopeId}>${ssrInterpolate(unref(warehouse).name)}</h3></div><div class="col-span-1"${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$10, mergeProps({
+            _push2(`</div></div></div><div class="grid grid-cols-1 md:grid-cols-3 gap-4"${_scopeId}><div class="col-span-2 md:px-4 sm:px-0"${_scopeId}><div class="space-y-4"${_scopeId}><div class="px-4 sm:px-0"${_scopeId}><div class="bg-white dark:bg-slate-800 shadow sm:rounded-lg"${_scopeId}><div class="px-4 py-5 sm:px-6"${_scopeId}><div class="grid grid-cols-6 md:grid-cols-6 gap-4"${_scopeId}><div class="col-span-5"${_scopeId}><h3 class="text-lg leading-6 font-medium text-gray-900 dark:text-slate-200"${_scopeId}>${ssrInterpolate(unref(warehouse).name)}</h3></div><div class="col-span-1"${_scopeId}>`);
+            _push2(ssrRenderComponent(_sfc_main$11, mergeProps({
               style: _ctx.can(["Warehouse Update"]) ? null : { display: "none" },
               type: "button",
               onClick: ($event) => (data.editOpen = true, data.warehouse = unref(warehouse)),
@@ -7500,14 +7530,14 @@ const _sfc_main$B = {
             _push2(`</dd></div><div class="bg-white dark:bg-slate-800 px-4 py-2.5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6"${_scopeId}><dt class="text-sm font-medium text-gray-500 dark:text-slate-400"${_scopeId}>${ssrInterpolate(_ctx.lang().label.created_at)}</dt><dd class="mt-1 text-sm text-gray-900 dark:text-slate-200 sm:mt-0 sm:col-span-2"${_scopeId}>${ssrInterpolate(unref(warehouse).created_at)}</dd></div><div class="bg-gray-50 dark:bg-slate-900 px-4 py-2.5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6"${_scopeId}><dt class="text-sm font-medium text-gray-500 dark:text-slate-400"${_scopeId}>${ssrInterpolate(_ctx.lang().label.updated_at)}</dt><dd class="mt-1 text-sm text-gray-900 dark:text-slate-200 sm:mt-0 sm:col-span-2"${_scopeId}>${ssrInterpolate(unref(warehouse).updated_at)}</dd></div></div></div></div></div></div></div></div>`);
           } else {
             return [
-              createVNode(_sfc_main$12, {
+              createVNode(_sfc_main$13, {
                 title: __props.title,
                 breadcrumbs: __props.breadcrumbs
               }, null, 8, ["title", "breadcrumbs"]),
               createVNode("div", { class: "space-y-4" }, [
                 createVNode("div", { class: "px-4 sm:px-0" }, [
                   createVNode("div", { class: "rounded-lg overflow-hidden w-fit" }, [
-                    createVNode(_sfc_main$G, {
+                    createVNode(_sfc_main$E, {
                       show: data.editOpen,
                       onClose: ($event) => data.editOpen = false,
                       warehouse: data.warehouse,
@@ -7518,7 +7548,7 @@ const _sfc_main$B = {
                 ])
               ]),
               createVNode("div", { class: "grid grid-cols-1 md:grid-cols-3 gap-4" }, [
-                createVNode("div", { class: "col-span-2 px-4 sm:px-0" }, [
+                createVNode("div", { class: "col-span-2 md:px-4 sm:px-0" }, [
                   createVNode("div", { class: "space-y-4" }, [
                     createVNode("div", { class: "px-4 sm:px-0" }, [
                       createVNode("div", { class: "bg-white dark:bg-slate-800 shadow sm:rounded-lg" }, [
@@ -7528,7 +7558,7 @@ const _sfc_main$B = {
                               createVNode("h3", { class: "text-lg leading-6 font-medium text-gray-900 dark:text-slate-200" }, toDisplayString(unref(warehouse).name), 1)
                             ]),
                             createVNode("div", { class: "col-span-1" }, [
-                              withDirectives((openBlock(), createBlock(_sfc_main$10, {
+                              withDirectives((openBlock(), createBlock(_sfc_main$11, {
                                 type: "button",
                                 onClick: ($event) => (data.editOpen = true, data.warehouse = unref(warehouse)),
                                 class: "px-2 py-1.5 rounded float-right"
@@ -7593,32 +7623,32 @@ const _sfc_main$B = {
     };
   }
 };
-const _sfc_setup$B = _sfc_main$B.setup;
-_sfc_main$B.setup = (props, ctx) => {
+const _sfc_setup$C = _sfc_main$C.setup;
+_sfc_main$C.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Pages/Admin/Warehouse/Show.vue");
-  return _sfc_setup$B ? _sfc_setup$B(props, ctx) : void 0;
+  return _sfc_setup$C ? _sfc_setup$C(props, ctx) : void 0;
 };
 const Show$1 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: _sfc_main$B
+  default: _sfc_main$C
 }, Symbol.toStringTag, { value: "Module" }));
-const _sfc_main$A = {};
+const _sfc_main$B = {};
 function _sfc_ssrRender(_ctx, _push, _parent, _attrs) {
   _push(`<!--[--><div class="grid grid-cols-3 gap-4 animate-pulse"><div class="col-span-full md:col-span-1 h-10 bg-gray-300 rounded"></div></div><div class="grid grid-cols-3 gap-4 animate-pulse mt-6"><div class="col-span-full md:col-span-1 h-10 bg-gray-300 rounded"></div><div class="col-span-full md:col-span-1 h-10 bg-gray-300 rounded"></div><div class="col-span-full md:col-span-1 h-10 bg-gray-300 rounded"></div></div><!--]-->`);
 }
-const _sfc_setup$A = _sfc_main$A.setup;
-_sfc_main$A.setup = (props, ctx) => {
+const _sfc_setup$B = _sfc_main$B.setup;
+_sfc_main$B.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Pages/Admin/WarehouseProduct/EmptyForm.vue");
-  return _sfc_setup$A ? _sfc_setup$A(props, ctx) : void 0;
+  return _sfc_setup$B ? _sfc_setup$B(props, ctx) : void 0;
 };
-const EmptyForm = /* @__PURE__ */ _export_sfc(_sfc_main$A, [["ssrRender", _sfc_ssrRender]]);
+const EmptyForm = /* @__PURE__ */ _export_sfc(_sfc_main$B, [["ssrRender", _sfc_ssrRender]]);
 const EmptyForm$1 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   default: EmptyForm
 }, Symbol.toStringTag, { value: "Module" }));
-const _sfc_main$z = {
+const _sfc_main$A = {
   __name: "CreateForm",
   __ssrInlineRender: true,
   props: {
@@ -7679,11 +7709,11 @@ const _sfc_main$z = {
         _push(`</div>`);
       } else {
         _push(`<div data-v-93cda047><div class="grid grid-cols-3 gap-4" data-v-93cda047><div class="col-span-full md:col-span-1" data-v-93cda047>`);
-        _push(ssrRenderComponent(_sfc_main$1r, {
+        _push(ssrRenderComponent(_sfc_main$1s, {
           for: "product",
           value: _ctx.lang().label.product
         }, null, _parent));
-        _push(ssrRenderComponent(_sfc_main$1p, {
+        _push(ssrRenderComponent(_sfc_main$1q, {
           id: "product",
           type: "text",
           class: "mt-1 block w-full",
@@ -7693,7 +7723,7 @@ const _sfc_main$z = {
           required: "",
           placeholder: _ctx.lang().label.product
         }, null, _parent));
-        _push(ssrRenderComponent(_sfc_main$1q, {
+        _push(ssrRenderComponent(_sfc_main$1r, {
           class: "mt-2",
           message: __props.form.errors.product_id
         }, null, _parent));
@@ -7707,7 +7737,7 @@ const _sfc_main$z = {
         } else {
           _push(`<!---->`);
         }
-        _push(ssrRenderComponent(_sfc_main$1p, {
+        _push(ssrRenderComponent(_sfc_main$1q, {
           id: "product_id",
           type: "hidden",
           class: "mt-1 block w-full",
@@ -7717,11 +7747,11 @@ const _sfc_main$z = {
           required: ""
         }, null, _parent));
         _push(`</div></div></div><div class="grid grid-cols-3 gap-4 mt-5" data-v-93cda047><div class="col-span-full md:col-span-1" data-v-93cda047><div data-v-93cda047>`);
-        _push(ssrRenderComponent(_sfc_main$1r, {
+        _push(ssrRenderComponent(_sfc_main$1s, {
           for: "source",
           value: _ctx.lang().transaction.source
         }, null, _parent));
-        _push(ssrRenderComponent(_sfc_main$1p, {
+        _push(ssrRenderComponent(_sfc_main$1q, {
           id: "source",
           modelValue: __props.form.source,
           "onUpdate:modelValue": ($event) => __props.form.source = $event,
@@ -7730,16 +7760,16 @@ const _sfc_main$z = {
           class: "mt-1 block w-full",
           error: __props.form.errors.source
         }, null, _parent));
-        _push(ssrRenderComponent(_sfc_main$1q, {
+        _push(ssrRenderComponent(_sfc_main$1r, {
           class: "mt-2",
           message: __props.form.errors.source
         }, null, _parent));
         _push(`</div></div><div class="col-span-full md:col-span-1" data-v-93cda047>`);
-        _push(ssrRenderComponent(_sfc_main$1r, {
+        _push(ssrRenderComponent(_sfc_main$1s, {
           for: "quantity",
           value: _ctx.lang().label.quantity
         }, null, _parent));
-        _push(ssrRenderComponent(_sfc_main$1p, {
+        _push(ssrRenderComponent(_sfc_main$1q, {
           id: "quantity",
           type: "number",
           min: "1",
@@ -7751,16 +7781,16 @@ const _sfc_main$z = {
           placeholder: _ctx.lang().placeholder.quantity,
           error: __props.form.errors.quantity
         }, null, _parent));
-        _push(ssrRenderComponent(_sfc_main$1q, {
+        _push(ssrRenderComponent(_sfc_main$1r, {
           class: "mt-2",
           message: __props.form.errors.quantity
         }, null, _parent));
         _push(`</div><div class="col-span-full md:col-span-1" data-v-93cda047><div class="" data-v-93cda047>`);
-        _push(ssrRenderComponent(_sfc_main$1r, {
+        _push(ssrRenderComponent(_sfc_main$1s, {
           for: "warehouse_id",
           value: _ctx.lang().label.warehouse
         }, null, _parent));
-        _push(ssrRenderComponent(_sfc_main$1n, {
+        _push(ssrRenderComponent(_sfc_main$1o, {
           id: "warehouse_id",
           class: "mt-1 block w-full",
           modelValue: __props.form.warehouse_id,
@@ -7768,7 +7798,7 @@ const _sfc_main$z = {
           required: "",
           dataSet: __props.warehouse_list
         }, null, _parent));
-        _push(ssrRenderComponent(_sfc_main$1q, {
+        _push(ssrRenderComponent(_sfc_main$1r, {
           class: "mt-2",
           message: __props.form.errors.warehouse_id
         }, null, _parent));
@@ -7778,18 +7808,18 @@ const _sfc_main$z = {
     };
   }
 };
-const _sfc_setup$z = _sfc_main$z.setup;
-_sfc_main$z.setup = (props, ctx) => {
+const _sfc_setup$A = _sfc_main$A.setup;
+_sfc_main$A.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Pages/Admin/WarehouseProduct/CreateForm.vue");
-  return _sfc_setup$z ? _sfc_setup$z(props, ctx) : void 0;
+  return _sfc_setup$A ? _sfc_setup$A(props, ctx) : void 0;
 };
-const WarehouseProductCreateForm = /* @__PURE__ */ _export_sfc(_sfc_main$z, [["__scopeId", "data-v-93cda047"]]);
+const WarehouseProductCreateForm = /* @__PURE__ */ _export_sfc(_sfc_main$A, [["__scopeId", "data-v-93cda047"]]);
 const CreateForm = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   default: WarehouseProductCreateForm
 }, Symbol.toStringTag, { value: "Module" }));
-const _sfc_main$y = {
+const _sfc_main$z = {
   __name: "Create",
   __ssrInlineRender: true,
   props: {
@@ -7838,7 +7868,7 @@ const _sfc_main$y = {
     });
     return (_ctx, _push, _parent, _attrs) => {
       _push(`<section${ssrRenderAttrs(mergeProps({ class: "space-y-6" }, _attrs))}>`);
-      _push(ssrRenderComponent(_sfc_main$1k, {
+      _push(ssrRenderComponent(_sfc_main$1l, {
         show: props.show,
         onClose: ($event) => emit("close"),
         "max-width": `4xl`
@@ -7853,7 +7883,7 @@ const _sfc_main$y = {
               is_create: true
             }, null, _parent2, _scopeId));
             _push2(`</div><div class="flex justify-end"${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$1i, {
+            _push2(ssrRenderComponent(_sfc_main$1j, {
               disabled: unref(form).processing,
               onClick: ($event) => emit("close")
             }, {
@@ -7868,7 +7898,7 @@ const _sfc_main$y = {
               }),
               _: 1
             }, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$1j, {
+            _push2(ssrRenderComponent(_sfc_main$1k, {
               class: ["ml-3", { "opacity-25": unref(form).processing }],
               disabled: unref(form).processing,
               onClick: create
@@ -7901,7 +7931,7 @@ const _sfc_main$y = {
                   }, null, 8, ["form", "warehouse_list", "product_list"])
                 ]),
                 createVNode("div", { class: "flex justify-end" }, [
-                  createVNode(_sfc_main$1i, {
+                  createVNode(_sfc_main$1j, {
                     disabled: unref(form).processing,
                     onClick: ($event) => emit("close")
                   }, {
@@ -7910,7 +7940,7 @@ const _sfc_main$y = {
                     ]),
                     _: 1
                   }, 8, ["disabled", "onClick"]),
-                  createVNode(_sfc_main$1j, {
+                  createVNode(_sfc_main$1k, {
                     class: ["ml-3", { "opacity-25": unref(form).processing }],
                     disabled: unref(form).processing,
                     onClick: create
@@ -7931,17 +7961,17 @@ const _sfc_main$y = {
     };
   }
 };
-const _sfc_setup$y = _sfc_main$y.setup;
-_sfc_main$y.setup = (props, ctx) => {
+const _sfc_setup$z = _sfc_main$z.setup;
+_sfc_main$z.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Pages/Admin/WarehouseProduct/Create.vue");
-  return _sfc_setup$y ? _sfc_setup$y(props, ctx) : void 0;
+  return _sfc_setup$z ? _sfc_setup$z(props, ctx) : void 0;
 };
 const Create$3 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: _sfc_main$y
+  default: _sfc_main$z
 }, Symbol.toStringTag, { value: "Module" }));
-const _sfc_main$x = {
+const _sfc_main$y = {
   __name: "Delete",
   __ssrInlineRender: true,
   props: {
@@ -7968,7 +7998,7 @@ const _sfc_main$x = {
     };
     return (_ctx, _push, _parent, _attrs) => {
       _push(`<section${ssrRenderAttrs(mergeProps({ class: "space-y-6" }, _attrs))}>`);
-      _push(ssrRenderComponent(_sfc_main$1k, {
+      _push(ssrRenderComponent(_sfc_main$1l, {
         show: props.show,
         onClose: ($event) => emit("close"),
         maxWidth: "lg"
@@ -7977,7 +8007,7 @@ const _sfc_main$x = {
           var _a, _b;
           if (_push2) {
             _push2(`<form class="p-6"${_scopeId}><h2 class="text-lg font-medium text-slate-900 dark:text-slate-100"${_scopeId}>${ssrInterpolate(_ctx.lang().label.delete)} ${ssrInterpolate(props.title)}</h2><p class="mt-1 text-sm text-slate-600 dark:text-slate-400"${_scopeId}>${ssrInterpolate(_ctx.lang().label.delete_confirm)} <b${_scopeId}>${ssrInterpolate((_a = props.warehouse) == null ? void 0 : _a.name)}</b></p><div class="mt-6 flex justify-end"${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$1i, {
+            _push2(ssrRenderComponent(_sfc_main$1j, {
               disabled: unref(form).processing,
               onClick: ($event) => emit("close")
             }, {
@@ -7992,7 +8022,7 @@ const _sfc_main$x = {
               }),
               _: 1
             }, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$1g, {
+            _push2(ssrRenderComponent(_sfc_main$1h, {
               class: ["ml-3", { "opacity-25": unref(form).processing }],
               disabled: unref(form).processing,
               onClick: destroy
@@ -8021,7 +8051,7 @@ const _sfc_main$x = {
                   createVNode("b", null, toDisplayString((_b = props.warehouse) == null ? void 0 : _b.name), 1)
                 ]),
                 createVNode("div", { class: "mt-6 flex justify-end" }, [
-                  createVNode(_sfc_main$1i, {
+                  createVNode(_sfc_main$1j, {
                     disabled: unref(form).processing,
                     onClick: ($event) => emit("close")
                   }, {
@@ -8030,7 +8060,7 @@ const _sfc_main$x = {
                     ]),
                     _: 1
                   }, 8, ["disabled", "onClick"]),
-                  createVNode(_sfc_main$1g, {
+                  createVNode(_sfc_main$1h, {
                     class: ["ml-3", { "opacity-25": unref(form).processing }],
                     disabled: unref(form).processing,
                     onClick: destroy
@@ -8051,16 +8081,65 @@ const _sfc_main$x = {
     };
   }
 };
-const _sfc_setup$x = _sfc_main$x.setup;
-_sfc_main$x.setup = (props, ctx) => {
+const _sfc_setup$y = _sfc_main$y.setup;
+_sfc_main$y.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Pages/Admin/WarehouseProduct/Delete.vue");
-  return _sfc_setup$x ? _sfc_setup$x(props, ctx) : void 0;
+  return _sfc_setup$y ? _sfc_setup$y(props, ctx) : void 0;
 };
 const Delete$3 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: _sfc_main$x
+  default: _sfc_main$y
 }, Symbol.toStringTag, { value: "Module" }));
+const _sfc_main$x = {
+  __name: "TextInputGroup",
+  __ssrInlineRender: true,
+  props: {
+    modelValue: [String, Number],
+    error: {
+      type: String,
+      default: null
+    },
+    unit: {
+      type: String,
+      default: null
+    }
+  },
+  emits: ["update:modelValue"],
+  setup(__props, { expose: __expose }) {
+    const input = ref(null);
+    onMounted(() => {
+      if (input.value.hasAttribute("autofocus")) {
+        input.value.focus();
+      }
+    });
+    __expose({ focus: () => input.value.focus() });
+    return (_ctx, _push, _parent, _attrs) => {
+      _push(`<!--[--><div class="relative flex rounded-md shadow-sm mt-1"><input class="${ssrRenderClass([[
+        "block w-full rounded-none rounded-l-md",
+        __props.error ? "border-red-500 dark:border-red-400 dark:bg-slate-900 dark:text-slate-300 focus:border-red-500 dark:focus:border-red-400 focus:ring-red-500 dark:focus:ring-red-400" : "border-slate-300 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-300 focus:border-primary dark:focus:border-primary focus:ring-primary dark:focus:ring-primary"
+      ], "placeholder:text-slate-400 placeholder:dark:text-slate-400/50"])}"${ssrRenderAttr("value", __props.modelValue)}>`);
+      if (__props.unit) {
+        _push(`<span class="inline-flex items-center rounded-r-md border border-l-0 border-slate-300 dark:border-slate-700 px-3 text-sm text-gray-500 dark:text-slate-400 bg-gray-50 dark:bg-slate-800">${ssrInterpolate(__props.unit)}</span>`);
+      } else {
+        _push(`<!---->`);
+      }
+      _push(`</div>`);
+      if (__props.error) {
+        _push(`<p class="mt-1 text-sm text-red-600 dark:text-red-400">${ssrInterpolate(__props.error)}</p>`);
+      } else {
+        _push(`<!---->`);
+      }
+      _push(`<!--]-->`);
+    };
+  }
+};
+const _sfc_setup$x = _sfc_main$x.setup;
+_sfc_main$x.setup = (props, ctx) => {
+  const ssrContext = useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Components/TextInputGroup.vue");
+  return _sfc_setup$x ? _sfc_setup$x(props, ctx) : void 0;
+};
 const _sfc_main$w = {
   __name: "IncomeForm",
   __ssrInlineRender: true,
@@ -8084,11 +8163,11 @@ const _sfc_main$w = {
         _push(`</div>`);
       } else {
         _push(`<div><div class="grid grid-cols-3 gap-4"><div class="col-span-full md:col-span-1">`);
-        _push(ssrRenderComponent(_sfc_main$1r, {
+        _push(ssrRenderComponent(_sfc_main$1s, {
           for: "product",
           value: _ctx.lang().label.product
         }, null, _parent));
-        _push(ssrRenderComponent(_sfc_main$1p, {
+        _push(ssrRenderComponent(_sfc_main$1q, {
           id: "product",
           type: "text",
           class: "mt-1 block w-full",
@@ -8098,12 +8177,12 @@ const _sfc_main$w = {
           required: "",
           placeholder: _ctx.lang().label.product
         }, null, _parent));
-        _push(ssrRenderComponent(_sfc_main$1q, {
+        _push(ssrRenderComponent(_sfc_main$1r, {
           class: "mt-2",
           message: __props.form.errors.product_id
         }, null, _parent));
         _push(`</div><div class="col-span-full md:col-span-1"><div class="">`);
-        _push(ssrRenderComponent(_sfc_main$1p, {
+        _push(ssrRenderComponent(_sfc_main$1q, {
           id: "product_id",
           type: "hidden",
           class: "mt-1 block w-full",
@@ -8112,11 +8191,11 @@ const _sfc_main$w = {
           required: ""
         }, null, _parent));
         _push(`</div></div></div><div class="grid grid-cols-3 gap-4 mt-5"><div class="col-span-full md:col-span-1"><div>`);
-        _push(ssrRenderComponent(_sfc_main$1r, {
+        _push(ssrRenderComponent(_sfc_main$1s, {
           for: "source",
           value: _ctx.lang().transaction.source
         }, null, _parent));
-        _push(ssrRenderComponent(_sfc_main$1p, {
+        _push(ssrRenderComponent(_sfc_main$1q, {
           id: "source",
           modelValue: __props.form.source,
           "onUpdate:modelValue": ($event) => __props.form.source = $event,
@@ -8125,18 +8204,18 @@ const _sfc_main$w = {
           class: "mt-1 block w-full",
           error: __props.form.errors.source
         }, null, _parent));
-        _push(ssrRenderComponent(_sfc_main$1q, {
+        _push(ssrRenderComponent(_sfc_main$1r, {
           class: "mt-2",
           message: __props.form.errors.source
         }, null, _parent));
         _push(`</div></div><div class="col-span-full md:col-span-1">`);
         if (_ctx.is_create) {
           _push(`<div>`);
-          _push(ssrRenderComponent(_sfc_main$1r, {
+          _push(ssrRenderComponent(_sfc_main$1s, {
             for: "quantity",
             value: _ctx.lang().label.quantity
           }, null, _parent));
-          _push(ssrRenderComponent(_sfc_main$1p, {
+          _push(ssrRenderComponent(_sfc_main$x, {
             id: "quantity",
             type: "number",
             min: "1",
@@ -8144,45 +8223,47 @@ const _sfc_main$w = {
             class: "mt-1 block w-full",
             modelValue: __props.form.quantity,
             "onUpdate:modelValue": ($event) => __props.form.quantity = $event,
+            unit: __props.form.product_unit,
             required: "",
             placeholder: _ctx.lang().placeholder.quantity,
             error: __props.form.errors.quantity
           }, null, _parent));
-          _push(ssrRenderComponent(_sfc_main$1q, {
+          _push(ssrRenderComponent(_sfc_main$1r, {
             class: "mt-2",
             message: __props.form.errors.quantity
           }, null, _parent));
           _push(`</div>`);
         } else {
           _push(`<div>`);
-          _push(ssrRenderComponent(_sfc_main$1r, {
+          _push(ssrRenderComponent(_sfc_main$1s, {
             for: "receive_quantity",
             value: _ctx.lang().label.quantity
           }, null, _parent));
-          _push(ssrRenderComponent(_sfc_main$1p, {
+          _push(ssrRenderComponent(_sfc_main$x, {
             id: "receive_quantity",
             type: "number",
             min: "1",
             step: "1",
-            class: "mt-1 block w-full",
+            class: "mt-2 block w-full",
             modelValue: __props.form.receive_quantity,
             "onUpdate:modelValue": ($event) => __props.form.receive_quantity = $event,
+            unit: __props.form.product_unit,
             required: "",
             placeholder: _ctx.lang().placeholder.quantity,
             error: __props.form.errors.receive_quantity
           }, null, _parent));
-          _push(ssrRenderComponent(_sfc_main$1q, {
+          _push(ssrRenderComponent(_sfc_main$1r, {
             class: "mt-2",
             message: __props.form.errors.receive_quantity
           }, null, _parent));
           _push(`</div>`);
         }
         _push(`</div><div class="col-span-full md:col-span-1"><div class="">`);
-        _push(ssrRenderComponent(_sfc_main$1r, {
+        _push(ssrRenderComponent(_sfc_main$1s, {
           for: "warehouse_id",
           value: _ctx.lang().transaction.source
         }, null, _parent));
-        _push(ssrRenderComponent(_sfc_main$1n, {
+        _push(ssrRenderComponent(_sfc_main$1o, {
           id: "warehouse_id",
           class: "mt-1 block w-full",
           modelValue: __props.form.warehouse_id,
@@ -8191,7 +8272,7 @@ const _sfc_main$w = {
           disabled: props.is_create !== true,
           dataSet: __props.warehouse_list
         }, null, _parent));
-        _push(ssrRenderComponent(_sfc_main$1q, {
+        _push(ssrRenderComponent(_sfc_main$1r, {
           class: "mt-2",
           message: __props.form.errors.warehouse_id
         }, null, _parent));
@@ -8229,6 +8310,7 @@ const _sfc_main$v = {
       warehouse_id: "",
       product_id: "",
       product_name: "",
+      product_unit: "",
       receive_quantity: "",
       destination: "",
       source: "",
@@ -8289,7 +8371,7 @@ const _sfc_main$v = {
     });
     return (_ctx, _push, _parent, _attrs) => {
       _push(`<section${ssrRenderAttrs(mergeProps({ class: "space-y-6" }, _attrs))}>`);
-      _push(ssrRenderComponent(_sfc_main$1k, {
+      _push(ssrRenderComponent(_sfc_main$1l, {
         show: props.show,
         onClose: ($event) => emit("close"),
         "max-width": `4xl`
@@ -8303,7 +8385,7 @@ const _sfc_main$v = {
               product_list: unref(product_list)
             }, null, _parent2, _scopeId));
             _push2(`</div><div class="flex justify-end"${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$1i, {
+            _push2(ssrRenderComponent(_sfc_main$1j, {
               disabled: unref(form).processing,
               onClick: ($event) => emit("close")
             }, {
@@ -8318,7 +8400,7 @@ const _sfc_main$v = {
               }),
               _: 1
             }, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$1j, {
+            _push2(ssrRenderComponent(_sfc_main$1k, {
               class: ["ml-3", { "opacity-25": unref(form).processing }],
               disabled: unref(form).processing,
               onClick: update
@@ -8350,7 +8432,7 @@ const _sfc_main$v = {
                   }, null, 8, ["form", "warehouse_list", "product_list"])
                 ]),
                 createVNode("div", { class: "flex justify-end" }, [
-                  createVNode(_sfc_main$1i, {
+                  createVNode(_sfc_main$1j, {
                     disabled: unref(form).processing,
                     onClick: ($event) => emit("close")
                   }, {
@@ -8359,7 +8441,7 @@ const _sfc_main$v = {
                     ]),
                     _: 1
                   }, 8, ["disabled", "onClick"]),
-                  createVNode(_sfc_main$1j, {
+                  createVNode(_sfc_main$1k, {
                     class: ["ml-3", { "opacity-25": unref(form).processing }],
                     disabled: unref(form).processing,
                     onClick: update
@@ -8451,11 +8533,11 @@ const _sfc_main$t = {
         _push(`</div>`);
       } else {
         _push(`<div><div class="grid grid-cols-3 gap-4"><div class="col-span-full md:col-span-1"><div class="">`);
-        _push(ssrRenderComponent(_sfc_main$1r, {
+        _push(ssrRenderComponent(_sfc_main$1s, {
           for: "product_id",
           value: _ctx.lang().label.product_id
         }, null, _parent));
-        _push(ssrRenderComponent(_sfc_main$1n, {
+        _push(ssrRenderComponent(_sfc_main$1o, {
           id: "product_id",
           class: "mt-1 block w-full",
           modelValue: __props.form.product_id,
@@ -8464,23 +8546,23 @@ const _sfc_main$t = {
           disabled: "disabled",
           dataSet: __props.product_list
         }, null, _parent));
-        _push(ssrRenderComponent(_sfc_main$1q, {
+        _push(ssrRenderComponent(_sfc_main$1r, {
           class: "mt-2",
           message: __props.form.errors.product_id
         }, null, _parent));
         _push(`</div></div><div class="col-span-full md:col-span-1"><div>`);
-        _push(ssrRenderComponent(_sfc_main$1o, {
+        _push(ssrRenderComponent(_sfc_main$1p, {
           id: "is_internal_transfer",
           modelValue: __props.form.is_internal_transfer,
           "onUpdate:modelValue": ($event) => __props.form.is_internal_transfer = $event,
           label: _ctx.lang().transaction.is_internal_transfer
         }, null, _parent));
         _push(`<label for="is_internal_transfer" class="ml-2 font-medium text-sm text-slate-600 dark:text-slate-400">${ssrInterpolate(_ctx.lang().transaction.is_internal_transfer)}</label></div></div></div><div class="grid grid-cols-3 gap-4 mt-5"><div class="col-span-full md:col-span-1"><div class="">`);
-        _push(ssrRenderComponent(_sfc_main$1r, {
+        _push(ssrRenderComponent(_sfc_main$1s, {
           for: "warehouse_id",
           value: _ctx.lang().transaction.source
         }, null, _parent));
-        _push(ssrRenderComponent(_sfc_main$1n, {
+        _push(ssrRenderComponent(_sfc_main$1o, {
           id: "warehouse_id",
           class: "mt-1 block w-full",
           modelValue: __props.form.warehouse_id,
@@ -8489,38 +8571,39 @@ const _sfc_main$t = {
           disabled: "disabled",
           dataSet: __props.warehouse_list
         }, null, _parent));
-        _push(ssrRenderComponent(_sfc_main$1q, {
+        _push(ssrRenderComponent(_sfc_main$1r, {
           class: "mt-2",
           message: __props.form.errors.warehouse_id
         }, null, _parent));
         _push(`</div></div><div class="col-span-full md:col-span-1">`);
-        _push(ssrRenderComponent(_sfc_main$1r, {
+        _push(ssrRenderComponent(_sfc_main$1s, {
           for: "send_quantity",
           value: _ctx.lang().label.quantity
         }, null, _parent));
-        _push(ssrRenderComponent(_sfc_main$1p, {
+        _push(ssrRenderComponent(_sfc_main$x, {
           id: "send_quantity",
           type: "number",
           min: "1",
           class: "mt-1 block w-full",
           modelValue: __props.form.send_quantity,
           "onUpdate:modelValue": ($event) => __props.form.send_quantity = $event,
+          unit: __props.form.product_unit,
           required: "",
           placeholder: _ctx.lang().placeholder.quantity,
           error: __props.form.errors.send_quantity
         }, null, _parent));
-        _push(ssrRenderComponent(_sfc_main$1q, {
+        _push(ssrRenderComponent(_sfc_main$1r, {
           class: "mt-2",
           message: __props.form.errors.send_quantity
         }, null, _parent));
         _push(`</div><div class="col-span-full md:col-span-1">`);
         if (__props.form.is_internal_transfer) {
           _push(`<div>`);
-          _push(ssrRenderComponent(_sfc_main$1r, {
+          _push(ssrRenderComponent(_sfc_main$1s, {
             for: "destination_warehouse_id",
             value: _ctx.lang().transaction.destination
           }, null, _parent));
-          _push(ssrRenderComponent(_sfc_main$1n, {
+          _push(ssrRenderComponent(_sfc_main$1o, {
             class: "mt-1 block w-full",
             id: "destination_warehouse_id",
             modelValue: __props.form.destination,
@@ -8529,17 +8612,17 @@ const _sfc_main$t = {
             dataSet: filteredDestinationWarehouses.value,
             prompt: _ctx.lang().warehouse.select
           }, null, _parent));
-          _push(ssrRenderComponent(_sfc_main$1q, {
+          _push(ssrRenderComponent(_sfc_main$1r, {
             message: __props.form.errors.destination
           }, null, _parent));
           _push(`</div>`);
         } else {
           _push(`<div>`);
-          _push(ssrRenderComponent(_sfc_main$1r, {
+          _push(ssrRenderComponent(_sfc_main$1s, {
             for: "destination",
             value: _ctx.lang().transaction.destination
           }, null, _parent));
-          _push(ssrRenderComponent(_sfc_main$1p, {
+          _push(ssrRenderComponent(_sfc_main$1q, {
             id: "destination",
             modelValue: __props.form.destination,
             "onUpdate:modelValue": ($event) => __props.form.destination = $event,
@@ -8547,7 +8630,7 @@ const _sfc_main$t = {
             type: "text",
             class: "mt-1 block w-full"
           }, null, _parent));
-          _push(ssrRenderComponent(_sfc_main$1q, {
+          _push(ssrRenderComponent(_sfc_main$1r, {
             message: __props.form.errors.destination
           }, null, _parent));
           _push(`</div>`);
@@ -8587,6 +8670,7 @@ const _sfc_main$s = {
       product_id: "",
       quantity: "",
       send_quantity: "",
+      product_unit: "",
       destination: null,
       source: null,
       type: "out",
@@ -8646,7 +8730,7 @@ const _sfc_main$s = {
     });
     return (_ctx, _push, _parent, _attrs) => {
       _push(`<section${ssrRenderAttrs(mergeProps({ class: "space-y-6" }, _attrs))}>`);
-      _push(ssrRenderComponent(_sfc_main$1k, {
+      _push(ssrRenderComponent(_sfc_main$1l, {
         show: props.show,
         onClose: ($event) => emit("close"),
         "max-width": `4xl`
@@ -8660,7 +8744,7 @@ const _sfc_main$s = {
               product_list: unref(product_list)
             }, null, _parent2, _scopeId));
             _push2(`</div><div class="flex justify-end"${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$1i, {
+            _push2(ssrRenderComponent(_sfc_main$1j, {
               disabled: unref(form).processing,
               onClick: ($event) => emit("close")
             }, {
@@ -8675,7 +8759,7 @@ const _sfc_main$s = {
               }),
               _: 1
             }, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$1j, {
+            _push2(ssrRenderComponent(_sfc_main$1k, {
               class: ["ml-3", { "opacity-25": unref(form).processing }],
               disabled: unref(form).processing,
               onClick: update
@@ -8707,7 +8791,7 @@ const _sfc_main$s = {
                   }, null, 8, ["form", "warehouse_list", "product_list"])
                 ]),
                 createVNode("div", { class: "flex justify-end" }, [
-                  createVNode(_sfc_main$1i, {
+                  createVNode(_sfc_main$1j, {
                     disabled: unref(form).processing,
                     onClick: ($event) => emit("close")
                   }, {
@@ -8716,7 +8800,7 @@ const _sfc_main$s = {
                     ]),
                     _: 1
                   }, 8, ["disabled", "onClick"]),
-                  createVNode(_sfc_main$1j, {
+                  createVNode(_sfc_main$1k, {
                     class: ["ml-3", { "opacity-25": unref(form).processing }],
                     disabled: unref(form).processing,
                     onClick: update
@@ -8815,15 +8899,15 @@ const _sfc_main$r = {
       _push(ssrRenderComponent(unref(Head), {
         title: props.title
       }, null, _parent));
-      _push(ssrRenderComponent(_sfc_main$13, null, {
+      _push(ssrRenderComponent(_sfc_main$14, null, {
         default: withCtx((_2, _push2, _parent2, _scopeId) => {
           if (_push2) {
-            _push2(ssrRenderComponent(_sfc_main$12, {
+            _push2(ssrRenderComponent(_sfc_main$13, {
               title: __props.title,
               breadcrumbs: __props.breadcrumbs
             }, null, _parent2, _scopeId));
             _push2(`<div class="space-y-4"${_scopeId}><div class="px-4 sm:px-0"${_scopeId}><div class="rounded-lg overflow-hidden w-fit"${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$1j, {
+            _push2(ssrRenderComponent(_sfc_main$1k, {
               style: _ctx.can(["WarehouseProduct Create"]) ? null : { display: "none" },
               class: "rounded-none",
               onClick: ($event) => data.createOpen = true
@@ -8839,7 +8923,7 @@ const _sfc_main$r = {
               }),
               _: 1
             }, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$y, {
+            _push2(ssrRenderComponent(_sfc_main$z, {
               show: data.createOpen,
               onClose: ($event) => data.createOpen = false,
               title: props.title,
@@ -8862,14 +8946,14 @@ const _sfc_main$r = {
               warehouses: props.warehouses,
               products: props.products
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$x, {
+            _push2(ssrRenderComponent(_sfc_main$y, {
               show: data.deleteOpen,
               onClose: ($event) => data.deleteOpen = false,
               warehouse_product: data.warehouse_product,
               title: props.title
             }, null, _parent2, _scopeId));
             _push2(`</div></div><div class="relative bg-white dark:bg-slate-800 shadow sm:rounded-lg"${_scopeId}><div class="flex justify-between p-2"${_scopeId}><div class="flex space-x-2"${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$11, {
+            _push2(ssrRenderComponent(_sfc_main$12, {
               modelValue: data.params.perPage,
               "onUpdate:modelValue": ($event) => data.params.perPage = $event,
               dataSet: data.dataSet
@@ -8887,7 +8971,7 @@ const _sfc_main$r = {
             _push2(`</div></th><th class="px-2 py-4 cursor-pointer"${_scopeId}><div class="flex justify-between items-center"${_scopeId}><span${_scopeId}>${ssrInterpolate(_ctx.lang().label.updated)}</span>`);
             _push2(ssrRenderComponent(unref(ChevronUpDownIcon), { class: "w-4 h-4" }, null, _parent2, _scopeId));
             _push2(`</div></th><th class="px-2 py-4 sr-only"${_scopeId}>Action</th></tr><tr${_scopeId}><th class="px-2 pb-3"${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$1n, {
+            _push2(ssrRenderComponent(_sfc_main$1o, {
               id: "warehouse_id",
               class: "block w-full",
               style: { "line-height": "14px" },
@@ -8897,14 +8981,14 @@ const _sfc_main$r = {
               prompt: _ctx.lang().label.all
             }, null, _parent2, _scopeId));
             _push2(`</th><th class="px-2 pb-3"${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$1p, {
+            _push2(ssrRenderComponent(_sfc_main$1q, {
               modelValue: data.params["product_name"],
               "onUpdate:modelValue": ($event) => data.params["product_name"] = $event,
               type: "text",
               class: "block w-full rounded-lg size-8"
             }, null, _parent2, _scopeId));
             _push2(`</th><th class="px-2 pb-3"${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$1p, {
+            _push2(ssrRenderComponent(_sfc_main$1q, {
               modelValue: data.params["quantity"],
               "onUpdate:modelValue": ($event) => data.params["quantity"] = $event,
               type: "number",
@@ -8912,7 +8996,7 @@ const _sfc_main$r = {
               placeholder: _ctx.lang().label.quantity
             }, null, _parent2, _scopeId));
             _push2(`</th><th class="px-2 pb-3"${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$1p, {
+            _push2(ssrRenderComponent(_sfc_main$1q, {
               modelValue: data.params["product_unit"],
               "onUpdate:modelValue": ($event) => data.params["product_unit"] = $event,
               type: "text",
@@ -8937,7 +9021,7 @@ const _sfc_main$r = {
               style: `padding-top:0,padding-bottom:0`
             }, null, _parent2, _scopeId));
             _push2(`</th><th class="px-2 pb-3"${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$1p, {
+            _push2(ssrRenderComponent(_sfc_main$1q, {
               modelValue: data.params.updated_at,
               "onUpdate:modelValue": ($event) => data.params.updated_at = $event,
               type: "text",
@@ -8979,7 +9063,7 @@ const _sfc_main$r = {
                 }),
                 _: 2
               }, _parent2, _scopeId));
-              _push2(ssrRenderComponent(_sfc_main$1g, mergeProps({
+              _push2(ssrRenderComponent(_sfc_main$1h, mergeProps({
                 style: _ctx.can(["WarehouseProduct Update"]) ? null : { display: "none" },
                 type: "button",
                 onClick: ($event) => (data.outcomeOpen = true, data.warehouse_product = warehouse_product, data.transaction_type = "out"),
@@ -8999,21 +9083,21 @@ const _sfc_main$r = {
               _push2(`</div></div></td></tr>`);
             });
             _push2(`<!--]--></tbody></table></div><div class="flex justify-between items-center p-2 border-t border-slate-200 dark:border-slate-700"${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$_, {
+            _push2(ssrRenderComponent(_sfc_main$$, {
               links: props.warehouse_products,
               filters: data.params
             }, null, _parent2, _scopeId));
             _push2(`</div></div></div>`);
           } else {
             return [
-              createVNode(_sfc_main$12, {
+              createVNode(_sfc_main$13, {
                 title: __props.title,
                 breadcrumbs: __props.breadcrumbs
               }, null, 8, ["title", "breadcrumbs"]),
               createVNode("div", { class: "space-y-4" }, [
                 createVNode("div", { class: "px-4 sm:px-0" }, [
                   createVNode("div", { class: "rounded-lg overflow-hidden w-fit" }, [
-                    withDirectives(createVNode(_sfc_main$1j, {
+                    withDirectives(createVNode(_sfc_main$1k, {
                       class: "rounded-none",
                       onClick: ($event) => data.createOpen = true
                     }, {
@@ -9024,7 +9108,7 @@ const _sfc_main$r = {
                     }, 8, ["onClick"]), [
                       [vShow, _ctx.can(["WarehouseProduct Create"])]
                     ]),
-                    createVNode(_sfc_main$y, {
+                    createVNode(_sfc_main$z, {
                       show: data.createOpen,
                       onClose: ($event) => data.createOpen = false,
                       title: props.title,
@@ -9047,7 +9131,7 @@ const _sfc_main$r = {
                       warehouses: props.warehouses,
                       products: props.products
                     }, null, 8, ["show", "onClose", "warehouse_product", "title", "warehouses", "products"]),
-                    createVNode(_sfc_main$x, {
+                    createVNode(_sfc_main$y, {
                       show: data.deleteOpen,
                       onClose: ($event) => data.deleteOpen = false,
                       warehouse_product: data.warehouse_product,
@@ -9058,7 +9142,7 @@ const _sfc_main$r = {
                 createVNode("div", { class: "relative bg-white dark:bg-slate-800 shadow sm:rounded-lg" }, [
                   createVNode("div", { class: "flex justify-between p-2" }, [
                     createVNode("div", { class: "flex space-x-2" }, [
-                      createVNode(_sfc_main$11, {
+                      createVNode(_sfc_main$12, {
                         modelValue: data.params.perPage,
                         "onUpdate:modelValue": ($event) => data.params.perPage = $event,
                         dataSet: data.dataSet
@@ -9127,7 +9211,7 @@ const _sfc_main$r = {
                         ]),
                         createVNode("tr", null, [
                           createVNode("th", { class: "px-2 pb-3" }, [
-                            createVNode(_sfc_main$1n, {
+                            createVNode(_sfc_main$1o, {
                               id: "warehouse_id",
                               class: "block w-full",
                               style: { "line-height": "14px" },
@@ -9138,7 +9222,7 @@ const _sfc_main$r = {
                             }, null, 8, ["modelValue", "onUpdate:modelValue", "dataSet", "prompt"])
                           ]),
                           createVNode("th", { class: "px-2 pb-3" }, [
-                            createVNode(_sfc_main$1p, {
+                            createVNode(_sfc_main$1q, {
                               modelValue: data.params["product_name"],
                               "onUpdate:modelValue": ($event) => data.params["product_name"] = $event,
                               type: "text",
@@ -9146,7 +9230,7 @@ const _sfc_main$r = {
                             }, null, 8, ["modelValue", "onUpdate:modelValue"])
                           ]),
                           createVNode("th", { class: "px-2 pb-3" }, [
-                            createVNode(_sfc_main$1p, {
+                            createVNode(_sfc_main$1q, {
                               modelValue: data.params["quantity"],
                               "onUpdate:modelValue": ($event) => data.params["quantity"] = $event,
                               type: "number",
@@ -9155,7 +9239,7 @@ const _sfc_main$r = {
                             }, null, 8, ["modelValue", "onUpdate:modelValue", "placeholder"])
                           ]),
                           createVNode("th", { class: "px-2 pb-3" }, [
-                            createVNode(_sfc_main$1p, {
+                            createVNode(_sfc_main$1q, {
                               modelValue: data.params["product_unit"],
                               "onUpdate:modelValue": ($event) => data.params["product_unit"] = $event,
                               type: "text",
@@ -9182,7 +9266,7 @@ const _sfc_main$r = {
                             }, null, 8, ["modelValue", "onUpdate:modelValue", "start-time", "locale", "timezone"])
                           ]),
                           createVNode("th", { class: "px-2 pb-3" }, [
-                            createVNode(_sfc_main$1p, {
+                            createVNode(_sfc_main$1q, {
                               modelValue: data.params.updated_at,
                               "onUpdate:modelValue": ($event) => data.params.updated_at = $event,
                               type: "text",
@@ -9232,7 +9316,7 @@ const _sfc_main$r = {
                                     [vShow, _ctx.can(["WarehouseProduct Update"])],
                                     [_directive_tooltip, _ctx.lang().tooltip.edit]
                                   ]),
-                                  withDirectives((openBlock(), createBlock(_sfc_main$1g, {
+                                  withDirectives((openBlock(), createBlock(_sfc_main$1h, {
                                     type: "button",
                                     onClick: ($event) => (data.outcomeOpen = true, data.warehouse_product = warehouse_product, data.transaction_type = "out"),
                                     class: "px-2 py-1.5 rounded-none"
@@ -9254,7 +9338,7 @@ const _sfc_main$r = {
                     ])
                   ]),
                   createVNode("div", { class: "flex justify-between items-center p-2 border-t border-slate-200 dark:border-slate-700" }, [
-                    createVNode(_sfc_main$_, {
+                    createVNode(_sfc_main$$, {
                       links: props.warehouse_products,
                       filters: data.params
                     }, null, 8, ["links", "filters"])
@@ -9310,10 +9394,10 @@ const _sfc_main$q = {
       _push(ssrRenderComponent(unref(Head), {
         title: props.title
       }, null, _parent));
-      _push(ssrRenderComponent(_sfc_main$13, null, {
+      _push(ssrRenderComponent(_sfc_main$14, null, {
         default: withCtx((_2, _push2, _parent2, _scopeId) => {
           if (_push2) {
-            _push2(ssrRenderComponent(_sfc_main$12, {
+            _push2(ssrRenderComponent(_sfc_main$13, {
               title: __props.title,
               breadcrumbs: __props.breadcrumbs
             }, null, _parent2, _scopeId));
@@ -9334,7 +9418,7 @@ const _sfc_main$q = {
               warehouses: props.warehouses,
               products: props.products
             }, null, _parent2, _scopeId));
-            _push2(`</div></div></div><div class="grid grid-cols-1 md:grid-cols-3 gap-4"${_scopeId}><div class="col-span-2 px-4 sm:px-0"${_scopeId}><div class="space-y-4"${_scopeId}><div class="px-4 sm:px-0"${_scopeId}><div class="bg-white dark:bg-slate-800 shadow sm:rounded-lg"${_scopeId}><div class="px-4 py-5 sm:px-6"${_scopeId}><div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-4"${_scopeId}><div class="col-span-2 md:col-span-4 lg:col-span-4"${_scopeId}><h3 class="text-lg leading-6 font-medium text-gray-900 dark:text-slate-200"${_scopeId}>${ssrInterpolate(unref(warehouse_product).product_name)}</h3></div><div class="col-span-2 md:col-span-1 lg:col-span-2 sm:text-right"${_scopeId}>`);
+            _push2(`</div></div></div><div class="grid grid-cols-1 md:grid-cols-3 gap-4"${_scopeId}><div class="col-span-2 md:px-4 sm:px-0"${_scopeId}><div class="space-y-4"${_scopeId}><div class="px-4 sm:px-0"${_scopeId}><div class="bg-white dark:bg-slate-800 shadow sm:rounded-lg"${_scopeId}><div class="px-4 py-5 sm:px-6"${_scopeId}><div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-4"${_scopeId}><div class="col-span-2 md:col-span-4 lg:col-span-4"${_scopeId}><h3 class="text-lg leading-6 font-medium text-gray-900 dark:text-slate-200"${_scopeId}>${ssrInterpolate(unref(warehouse_product).product_name)}</h3></div><div class="col-span-2 md:col-span-1 lg:col-span-2 sm:text-right"${_scopeId}>`);
             _push2(ssrRenderComponent(_sfc_main$u, mergeProps({
               style: _ctx.can(["WarehouseProduct Update"]) ? null : { display: "none" },
               type: "button",
@@ -9352,7 +9436,7 @@ const _sfc_main$q = {
               }),
               _: 1
             }, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$1g, mergeProps({
+            _push2(ssrRenderComponent(_sfc_main$1h, mergeProps({
               style: _ctx.can(["WarehouseProduct Update"]) ? null : { display: "none" },
               type: "button",
               onClick: ($event) => (data.outcomeOpen = true, data.warehouse_product = unref(warehouse_product), data.transaction_type = "out"),
@@ -9372,7 +9456,7 @@ const _sfc_main$q = {
             _push2(`</div></div></div><div class="border-t border-gray-200 dark:border-slate-700"${_scopeId}><div${_scopeId}><div class="bg-gray-50 dark:bg-slate-900 px-4 py-2.5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6"${_scopeId}><dt class="text-sm font-medium text-gray-500 dark:text-slate-400"${_scopeId}> ID </dt><dd class="mt-1 text-sm text-gray-900 dark:text-slate-200 sm:mt-0 sm:col-span-2"${_scopeId}>${ssrInterpolate(unref(warehouse_product).id)}</dd></div><div class="bg-white dark:bg-slate-900 px-4 py-2.5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6"${_scopeId}><dt class="text-sm font-medium text-gray-500 dark:text-slate-400"${_scopeId}>${ssrInterpolate(_ctx.lang().label.warehouse_id)}</dt><dd class="mt-1 text-sm text-gray-900 dark:text-slate-200 sm:mt-0 sm:col-span-2"${_scopeId}>${ssrInterpolate(unref(warehouse_product).warehouse_id)}</dd></div><div class="bg-gray-50 dark:bg-slate-900 px-4 py-2.5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6"${_scopeId}><dt class="text-sm font-medium text-gray-500 dark:text-slate-400"${_scopeId}>${ssrInterpolate(_ctx.lang().label.warehouse)}</dt><dd class="mt-1 text-sm text-gray-900 dark:text-slate-200 sm:mt-0 sm:col-span-2"${_scopeId}>${ssrInterpolate(unref(warehouse_product).warehouse_name)}</dd></div><div class="bg-white dark:bg-slate-900 px-4 py-2.5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6"${_scopeId}><dt class="text-sm font-medium text-gray-500 dark:text-slate-400"${_scopeId}>${ssrInterpolate(_ctx.lang().label.product_id)}</dt><dd class="mt-1 text-sm text-gray-900 dark:text-slate-200 sm:mt-0 sm:col-span-2"${_scopeId}>${ssrInterpolate(unref(warehouse_product).product_id)}</dd></div><div class="bg-gray-50 dark:bg-slate-900 px-4 py-2.5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6"${_scopeId}><dt class="text-sm font-medium text-gray-500 dark:text-slate-400"${_scopeId}>${ssrInterpolate(_ctx.lang().label.product)}</dt><dd class="mt-1 text-sm text-gray-900 dark:text-slate-200 sm:mt-0 sm:col-span-2"${_scopeId}>${ssrInterpolate(unref(warehouse_product).product_name)}</dd></div><div class="bg-white dark:bg-slate-900 px-4 py-2.5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6"${_scopeId}><dt class="text-sm font-medium text-gray-500 dark:text-slate-400"${_scopeId}>${ssrInterpolate(_ctx.lang().label.created_at)}</dt><dd class="mt-1 text-sm text-gray-900 dark:text-slate-200 sm:mt-0 sm:col-span-2"${_scopeId}>${ssrInterpolate(unref(warehouse_product).created_at)}</dd></div><div class="bg-gray-50 dark:bg-slate-900 px-4 py-2.5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6"${_scopeId}><dt class="text-sm font-medium text-gray-500 dark:text-slate-400"${_scopeId}>${ssrInterpolate(_ctx.lang().label.updated_at)}</dt><dd class="mt-1 text-sm text-gray-900 dark:text-slate-200 sm:mt-0 sm:col-span-2"${_scopeId}>${ssrInterpolate(unref(warehouse_product).updated_at)}</dd></div></div></div></div></div></div></div></div>`);
           } else {
             return [
-              createVNode(_sfc_main$12, {
+              createVNode(_sfc_main$13, {
                 title: __props.title,
                 breadcrumbs: __props.breadcrumbs
               }, null, 8, ["title", "breadcrumbs"]),
@@ -9399,7 +9483,7 @@ const _sfc_main$q = {
                 ])
               ]),
               createVNode("div", { class: "grid grid-cols-1 md:grid-cols-3 gap-4" }, [
-                createVNode("div", { class: "col-span-2 px-4 sm:px-0" }, [
+                createVNode("div", { class: "col-span-2 md:px-4 sm:px-0" }, [
                   createVNode("div", { class: "space-y-4" }, [
                     createVNode("div", { class: "px-4 sm:px-0" }, [
                       createVNode("div", { class: "bg-white dark:bg-slate-800 shadow sm:rounded-lg" }, [
@@ -9422,7 +9506,7 @@ const _sfc_main$q = {
                                 [vShow, _ctx.can(["WarehouseProduct Update"])],
                                 [_directive_tooltip, _ctx.lang().tooltip.edit]
                               ]),
-                              withDirectives((openBlock(), createBlock(_sfc_main$1g, {
+                              withDirectives((openBlock(), createBlock(_sfc_main$1h, {
                                 type: "button",
                                 onClick: ($event) => (data.outcomeOpen = true, data.warehouse_product = unref(warehouse_product), data.transaction_type = "out"),
                                 class: "px-2 py-1.5 rounded-r-md rounded-l-none"
@@ -9547,7 +9631,7 @@ const _sfc_main$o = {
         _: 1
       }, _parent));
       _push(`<div class="flex space-x-2 items-center">`);
-      _push(ssrRenderComponent(_sfc_main$19, null, null, _parent));
+      _push(ssrRenderComponent(_sfc_main$1a, null, null, _parent));
       _push(ssrRenderComponent(_sfc_main$p, null, null, _parent));
       _push(`</div></div>`);
       ssrRenderSlot(_ctx.$slots, "default", {}, null, _push, _parent);
@@ -9637,11 +9721,11 @@ const _sfc_main$m = {
               _push2(`<!---->`);
             }
             _push2(`<form${_scopeId}><div${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$1r, {
+            _push2(ssrRenderComponent(_sfc_main$1s, {
               for: "email",
               value: _ctx.lang().label.email
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$1p, {
+            _push2(ssrRenderComponent(_sfc_main$1q, {
               id: "email",
               type: "email",
               class: "mt-1 block w-full",
@@ -9653,16 +9737,16 @@ const _sfc_main$m = {
               placeholder: _ctx.lang().placeholder.email,
               error: unref(form).errors.email
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$1q, {
+            _push2(ssrRenderComponent(_sfc_main$1r, {
               class: "mt-2",
               message: unref(form).errors.email
             }, null, _parent2, _scopeId));
             _push2(`</div><div class="mt-4"${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$1r, {
+            _push2(ssrRenderComponent(_sfc_main$1s, {
               for: "password",
               value: _ctx.lang().label.password
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$1p, {
+            _push2(ssrRenderComponent(_sfc_main$1q, {
               id: "password",
               type: "password",
               class: "mt-1 block w-full",
@@ -9673,12 +9757,12 @@ const _sfc_main$m = {
               placeholder: _ctx.lang().placeholder.password,
               error: unref(form).errors.password
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$1q, {
+            _push2(ssrRenderComponent(_sfc_main$1r, {
               class: "mt-2",
               message: unref(form).errors.password
             }, null, _parent2, _scopeId));
             _push2(`</div><div class="block mt-4"${_scopeId}><label class="flex items-center"${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$1o, {
+            _push2(ssrRenderComponent(_sfc_main$1p, {
               name: "remember",
               checked: unref(form).remember,
               "onUpdate:checked": ($event) => unref(form).remember = $event
@@ -9687,7 +9771,7 @@ const _sfc_main$m = {
             {
               _push2(`<!---->`);
             }
-            _push2(ssrRenderComponent(_sfc_main$1j, {
+            _push2(ssrRenderComponent(_sfc_main$1k, {
               class: ["ml-4 float-right", { "opacity-25": unref(form).processing }],
               disabled: unref(form).processing
             }, {
@@ -9716,11 +9800,11 @@ const _sfc_main$m = {
                 onSubmit: withModifiers(submit, ["prevent"])
               }, [
                 createVNode("div", null, [
-                  createVNode(_sfc_main$1r, {
+                  createVNode(_sfc_main$1s, {
                     for: "email",
                     value: _ctx.lang().label.email
                   }, null, 8, ["value"]),
-                  createVNode(_sfc_main$1p, {
+                  createVNode(_sfc_main$1q, {
                     id: "email",
                     type: "email",
                     class: "mt-1 block w-full",
@@ -9732,17 +9816,17 @@ const _sfc_main$m = {
                     placeholder: _ctx.lang().placeholder.email,
                     error: unref(form).errors.email
                   }, null, 8, ["modelValue", "onUpdate:modelValue", "placeholder", "error"]),
-                  createVNode(_sfc_main$1q, {
+                  createVNode(_sfc_main$1r, {
                     class: "mt-2",
                     message: unref(form).errors.email
                   }, null, 8, ["message"])
                 ]),
                 createVNode("div", { class: "mt-4" }, [
-                  createVNode(_sfc_main$1r, {
+                  createVNode(_sfc_main$1s, {
                     for: "password",
                     value: _ctx.lang().label.password
                   }, null, 8, ["value"]),
-                  createVNode(_sfc_main$1p, {
+                  createVNode(_sfc_main$1q, {
                     id: "password",
                     type: "password",
                     class: "mt-1 block w-full",
@@ -9753,14 +9837,14 @@ const _sfc_main$m = {
                     placeholder: _ctx.lang().placeholder.password,
                     error: unref(form).errors.password
                   }, null, 8, ["modelValue", "onUpdate:modelValue", "placeholder", "error"]),
-                  createVNode(_sfc_main$1q, {
+                  createVNode(_sfc_main$1r, {
                     class: "mt-2",
                     message: unref(form).errors.password
                   }, null, 8, ["message"])
                 ]),
                 createVNode("div", { class: "block mt-4" }, [
                   createVNode("label", { class: "flex items-center" }, [
-                    createVNode(_sfc_main$1o, {
+                    createVNode(_sfc_main$1p, {
                       name: "remember",
                       checked: unref(form).remember,
                       "onUpdate:checked": ($event) => unref(form).remember = $event
@@ -9770,7 +9854,7 @@ const _sfc_main$m = {
                 ]),
                 createVNode("div", { class: "flex items-center justify-between mt-4" }, [
                   createCommentVNode("", true),
-                  createVNode(_sfc_main$1j, {
+                  createVNode(_sfc_main$1k, {
                     class: ["ml-4 float-right", { "opacity-25": unref(form).processing }],
                     disabled: unref(form).processing
                   }, {
@@ -9813,10 +9897,10 @@ const _sfc_main$l = {
     return (_ctx, _push, _parent, _attrs) => {
       _push(`<!--[-->`);
       _push(ssrRenderComponent(unref(Head), { title: "Dashboard" }, null, _parent));
-      _push(ssrRenderComponent(_sfc_main$13, null, {
+      _push(ssrRenderComponent(_sfc_main$14, null, {
         default: withCtx((_, _push2, _parent2, _scopeId) => {
           if (_push2) {
-            _push2(ssrRenderComponent(_sfc_main$12, {
+            _push2(ssrRenderComponent(_sfc_main$13, {
               title: "Dashboard",
               breadcrumbs: []
             }, null, _parent2, _scopeId));
@@ -9883,7 +9967,7 @@ const _sfc_main$l = {
             _push2(`</div></div></div></div>`);
           } else {
             return [
-              createVNode(_sfc_main$12, {
+              createVNode(_sfc_main$13, {
                 title: "Dashboard",
                 breadcrumbs: []
               }),
@@ -10011,18 +10095,18 @@ const _sfc_main$k = {
     });
     return (_ctx, _push, _parent, _attrs) => {
       _push(`<section${ssrRenderAttrs(mergeProps({ class: "space-y-6" }, _attrs))}>`);
-      _push(ssrRenderComponent(_sfc_main$1k, {
+      _push(ssrRenderComponent(_sfc_main$1l, {
         show: props.show,
         onClose: ($event) => emit("close")
       }, {
         default: withCtx((_, _push2, _parent2, _scopeId) => {
           if (_push2) {
             _push2(`<form class="p-6"${_scopeId}><h2 class="text-lg font-medium text-slate-900 dark:text-slate-100"${_scopeId}>${ssrInterpolate(_ctx.lang().label.add)} ${ssrInterpolate(props.title)}</h2><div class="my-6 space-y-4"${_scopeId}><div${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$1r, {
+            _push2(ssrRenderComponent(_sfc_main$1s, {
               for: "name",
               value: _ctx.lang().label.role
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$1p, {
+            _push2(ssrRenderComponent(_sfc_main$1q, {
               id: "name",
               type: "text",
               class: "mt-1 block w-full",
@@ -10032,12 +10116,12 @@ const _sfc_main$k = {
               placeholder: _ctx.lang().placeholder.name,
               error: unref(form).errors.name
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$1q, {
+            _push2(ssrRenderComponent(_sfc_main$1r, {
               class: "mt-2",
               message: unref(form).errors.name
             }, null, _parent2, _scopeId));
             _push2(`</div></div><div class="flex justify-end"${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$1i, {
+            _push2(ssrRenderComponent(_sfc_main$1j, {
               disabled: unref(form).processing,
               onClick: ($event) => emit("close")
             }, {
@@ -10052,7 +10136,7 @@ const _sfc_main$k = {
               }),
               _: 1
             }, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$1j, {
+            _push2(ssrRenderComponent(_sfc_main$1k, {
               class: ["ml-3", { "opacity-25": unref(form).processing }],
               disabled: unref(form).processing,
               onClick: create
@@ -10078,11 +10162,11 @@ const _sfc_main$k = {
                 createVNode("h2", { class: "text-lg font-medium text-slate-900 dark:text-slate-100" }, toDisplayString(_ctx.lang().label.add) + " " + toDisplayString(props.title), 1),
                 createVNode("div", { class: "my-6 space-y-4" }, [
                   createVNode("div", null, [
-                    createVNode(_sfc_main$1r, {
+                    createVNode(_sfc_main$1s, {
                       for: "name",
                       value: _ctx.lang().label.role
                     }, null, 8, ["value"]),
-                    createVNode(_sfc_main$1p, {
+                    createVNode(_sfc_main$1q, {
                       id: "name",
                       type: "text",
                       class: "mt-1 block w-full",
@@ -10092,14 +10176,14 @@ const _sfc_main$k = {
                       placeholder: _ctx.lang().placeholder.name,
                       error: unref(form).errors.name
                     }, null, 8, ["modelValue", "onUpdate:modelValue", "placeholder", "error"]),
-                    createVNode(_sfc_main$1q, {
+                    createVNode(_sfc_main$1r, {
                       class: "mt-2",
                       message: unref(form).errors.name
                     }, null, 8, ["message"])
                   ])
                 ]),
                 createVNode("div", { class: "flex justify-end" }, [
-                  createVNode(_sfc_main$1i, {
+                  createVNode(_sfc_main$1j, {
                     disabled: unref(form).processing,
                     onClick: ($event) => emit("close")
                   }, {
@@ -10108,7 +10192,7 @@ const _sfc_main$k = {
                     ]),
                     _: 1
                   }, 8, ["disabled", "onClick"]),
-                  createVNode(_sfc_main$1j, {
+                  createVNode(_sfc_main$1k, {
                     class: ["ml-3", { "opacity-25": unref(form).processing }],
                     disabled: unref(form).processing,
                     onClick: create
@@ -10166,7 +10250,7 @@ const _sfc_main$j = {
     };
     return (_ctx, _push, _parent, _attrs) => {
       _push(`<section${ssrRenderAttrs(mergeProps({ class: "space-y-6" }, _attrs))}>`);
-      _push(ssrRenderComponent(_sfc_main$1k, {
+      _push(ssrRenderComponent(_sfc_main$1l, {
         show: props.show,
         onClose: ($event) => emit("close"),
         maxWidth: "lg"
@@ -10175,7 +10259,7 @@ const _sfc_main$j = {
           var _a, _b;
           if (_push2) {
             _push2(`<form class="p-6"${_scopeId}><h2 class="text-lg font-medium text-slate-900 dark:text-slate-100"${_scopeId}>${ssrInterpolate(_ctx.lang().label.delete)} ${ssrInterpolate(props.title)}</h2><p class="mt-1 text-sm text-slate-600 dark:text-slate-400"${_scopeId}>${ssrInterpolate(_ctx.lang().label.delete_confirm)} <b${_scopeId}>${ssrInterpolate((_a = props.permission) == null ? void 0 : _a.name)}</b>? </p><div class="mt-6 flex justify-end"${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$1i, {
+            _push2(ssrRenderComponent(_sfc_main$1j, {
               disabled: unref(form).processing,
               onClick: ($event) => emit("close")
             }, {
@@ -10190,7 +10274,7 @@ const _sfc_main$j = {
               }),
               _: 1
             }, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$1g, {
+            _push2(ssrRenderComponent(_sfc_main$1h, {
               class: ["ml-3", { "opacity-25": unref(form).processing }],
               disabled: unref(form).processing,
               onClick: destroy
@@ -10220,7 +10304,7 @@ const _sfc_main$j = {
                   createTextVNode("? ")
                 ]),
                 createVNode("div", { class: "mt-6 flex justify-end" }, [
-                  createVNode(_sfc_main$1i, {
+                  createVNode(_sfc_main$1j, {
                     disabled: unref(form).processing,
                     onClick: ($event) => emit("close")
                   }, {
@@ -10229,7 +10313,7 @@ const _sfc_main$j = {
                     ]),
                     _: 1
                   }, 8, ["disabled", "onClick"]),
-                  createVNode(_sfc_main$1g, {
+                  createVNode(_sfc_main$1h, {
                     class: ["ml-3", { "opacity-25": unref(form).processing }],
                     disabled: unref(form).processing,
                     onClick: destroy
@@ -10293,7 +10377,7 @@ const _sfc_main$i = {
     });
     return (_ctx, _push, _parent, _attrs) => {
       _push(`<section${ssrRenderAttrs(mergeProps({ class: "space-y-6" }, _attrs))}>`);
-      _push(ssrRenderComponent(_sfc_main$1k, {
+      _push(ssrRenderComponent(_sfc_main$1l, {
         show: props.show,
         onClose: ($event) => emit("close"),
         maxWidth: "lg"
@@ -10302,7 +10386,7 @@ const _sfc_main$i = {
           var _a, _b;
           if (_push2) {
             _push2(`<form class="p-6"${_scopeId}><h2 class="text-lg font-medium text-slate-900 dark:text-slate-100"${_scopeId}>${ssrInterpolate(_ctx.lang().label.delete)} ${ssrInterpolate(props.title)}</h2><p class="mt-1 text-sm text-slate-600 dark:text-slate-400"${_scopeId}>${ssrInterpolate(_ctx.lang().label.delete_confirm)} ${ssrInterpolate((_a = props.selectedId) == null ? void 0 : _a.length)} ${ssrInterpolate(props.title)}? </p><div class="mt-6 flex justify-end"${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$1i, {
+            _push2(ssrRenderComponent(_sfc_main$1j, {
               disabled: unref(form).processing,
               onClick: ($event) => emit("close")
             }, {
@@ -10317,7 +10401,7 @@ const _sfc_main$i = {
               }),
               _: 1
             }, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$1g, {
+            _push2(ssrRenderComponent(_sfc_main$1h, {
               class: ["ml-3", { "opacity-25": unref(form).processing }],
               disabled: unref(form).processing,
               onClick: destroy
@@ -10343,7 +10427,7 @@ const _sfc_main$i = {
                 createVNode("h2", { class: "text-lg font-medium text-slate-900 dark:text-slate-100" }, toDisplayString(_ctx.lang().label.delete) + " " + toDisplayString(props.title), 1),
                 createVNode("p", { class: "mt-1 text-sm text-slate-600 dark:text-slate-400" }, toDisplayString(_ctx.lang().label.delete_confirm) + " " + toDisplayString((_b = props.selectedId) == null ? void 0 : _b.length) + " " + toDisplayString(props.title) + "? ", 1),
                 createVNode("div", { class: "mt-6 flex justify-end" }, [
-                  createVNode(_sfc_main$1i, {
+                  createVNode(_sfc_main$1j, {
                     disabled: unref(form).processing,
                     onClick: ($event) => emit("close")
                   }, {
@@ -10352,7 +10436,7 @@ const _sfc_main$i = {
                     ]),
                     _: 1
                   }, 8, ["disabled", "onClick"]),
-                  createVNode(_sfc_main$1g, {
+                  createVNode(_sfc_main$1h, {
                     class: ["ml-3", { "opacity-25": unref(form).processing }],
                     disabled: unref(form).processing,
                     onClick: destroy
@@ -10419,18 +10503,18 @@ const _sfc_main$h = {
     });
     return (_ctx, _push, _parent, _attrs) => {
       _push(`<section${ssrRenderAttrs(mergeProps({ class: "space-y-6" }, _attrs))}>`);
-      _push(ssrRenderComponent(_sfc_main$1k, {
+      _push(ssrRenderComponent(_sfc_main$1l, {
         show: props.show,
         onClose: ($event) => emit("close")
       }, {
         default: withCtx((_, _push2, _parent2, _scopeId) => {
           if (_push2) {
             _push2(`<form class="p-6"${_scopeId}><h2 class="text-lg font-medium text-slate-900 dark:text-slate-100"${_scopeId}>${ssrInterpolate(_ctx.lang().label.edit)} ${ssrInterpolate(props.title)}</h2><div class="my-6 space-y-4"${_scopeId}><div${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$1r, {
+            _push2(ssrRenderComponent(_sfc_main$1s, {
               for: "name",
               value: _ctx.lang().label.role
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$1p, {
+            _push2(ssrRenderComponent(_sfc_main$1q, {
               id: "name",
               type: "text",
               class: "mt-1 block w-full",
@@ -10440,12 +10524,12 @@ const _sfc_main$h = {
               placeholder: _ctx.lang().placeholder.name,
               error: unref(form).errors.name
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$1q, {
+            _push2(ssrRenderComponent(_sfc_main$1r, {
               class: "mt-2",
               message: unref(form).errors.name
             }, null, _parent2, _scopeId));
             _push2(`</div></div><div class="flex justify-end"${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$1i, {
+            _push2(ssrRenderComponent(_sfc_main$1j, {
               disabled: unref(form).processing,
               onClick: ($event) => emit("close")
             }, {
@@ -10460,7 +10544,7 @@ const _sfc_main$h = {
               }),
               _: 1
             }, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$1j, {
+            _push2(ssrRenderComponent(_sfc_main$1k, {
               class: ["ml-3", { "opacity-25": unref(form).processing }],
               disabled: unref(form).processing,
               onClick: update
@@ -10486,11 +10570,11 @@ const _sfc_main$h = {
                 createVNode("h2", { class: "text-lg font-medium text-slate-900 dark:text-slate-100" }, toDisplayString(_ctx.lang().label.edit) + " " + toDisplayString(props.title), 1),
                 createVNode("div", { class: "my-6 space-y-4" }, [
                   createVNode("div", null, [
-                    createVNode(_sfc_main$1r, {
+                    createVNode(_sfc_main$1s, {
                       for: "name",
                       value: _ctx.lang().label.role
                     }, null, 8, ["value"]),
-                    createVNode(_sfc_main$1p, {
+                    createVNode(_sfc_main$1q, {
                       id: "name",
                       type: "text",
                       class: "mt-1 block w-full",
@@ -10500,14 +10584,14 @@ const _sfc_main$h = {
                       placeholder: _ctx.lang().placeholder.name,
                       error: unref(form).errors.name
                     }, null, 8, ["modelValue", "onUpdate:modelValue", "placeholder", "error"]),
-                    createVNode(_sfc_main$1q, {
+                    createVNode(_sfc_main$1r, {
                       class: "mt-2",
                       message: unref(form).errors.name
                     }, null, 8, ["message"])
                   ])
                 ]),
                 createVNode("div", { class: "flex justify-end" }, [
-                  createVNode(_sfc_main$1i, {
+                  createVNode(_sfc_main$1j, {
                     disabled: unref(form).processing,
                     onClick: ($event) => emit("close")
                   }, {
@@ -10516,7 +10600,7 @@ const _sfc_main$h = {
                     ]),
                     _: 1
                   }, 8, ["disabled", "onClick"]),
-                  createVNode(_sfc_main$1j, {
+                  createVNode(_sfc_main$1k, {
                     class: ["ml-3", { "opacity-25": unref(form).processing }],
                     disabled: unref(form).processing,
                     onClick: update
@@ -10581,7 +10665,7 @@ const _sfc_main$g = {
       }
       if (__props.links.data.length == 0) {
         _push(`<div class="flex flex-col space-y-2 mx-auto p-6 text-lg">`);
-        _push(ssrRenderComponent(_sfc_main$$, {
+        _push(ssrRenderComponent(_sfc_main$10, {
           name: "nodata",
           class: "w-auto h-16"
         }, null, _parent));
@@ -10672,15 +10756,15 @@ const _sfc_main$f = {
       _push(ssrRenderComponent(unref(Head), {
         title: props.title
       }, null, _parent));
-      _push(ssrRenderComponent(_sfc_main$13, null, {
+      _push(ssrRenderComponent(_sfc_main$14, null, {
         default: withCtx((_2, _push2, _parent2, _scopeId) => {
           if (_push2) {
-            _push2(ssrRenderComponent(_sfc_main$12, {
+            _push2(ssrRenderComponent(_sfc_main$13, {
               title: __props.title,
               breadcrumbs: __props.breadcrumbs
             }, null, _parent2, _scopeId));
             _push2(`<div class="space-y-4"${_scopeId}><div class="px-4 sm:px-0"${_scopeId}><div class="rounded-lg overflow-hidden w-fit"${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$1j, {
+            _push2(ssrRenderComponent(_sfc_main$1k, {
               style: _ctx.can(["create permission"]) ? null : { display: "none" },
               class: "rounded-none",
               onClick: ($event) => data.createOpen = true
@@ -10720,12 +10804,12 @@ const _sfc_main$f = {
               title: props.title
             }, null, _parent2, _scopeId));
             _push2(`</div></div><div class="relative bg-white dark:bg-slate-800 shadow sm:rounded-lg"${_scopeId}><div class="flex justify-between p-2"${_scopeId}><div class="flex space-x-2"${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$11, {
+            _push2(ssrRenderComponent(_sfc_main$12, {
               modelValue: data.params.perPage,
               "onUpdate:modelValue": ($event) => data.params.perPage = $event,
               dataSet: data.dataSet
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$1g, mergeProps({
+            _push2(ssrRenderComponent(_sfc_main$1h, mergeProps({
               onClick: ($event) => data.deleteBulkOpen = true,
               style: data.selectedId.length != 0 && _ctx.can(["delete permission"]) ? null : { display: "none" },
               class: "px-3 py-1.5"
@@ -10742,7 +10826,7 @@ const _sfc_main$f = {
               _: 1
             }, _parent2, _scopeId));
             _push2(`</div>`);
-            _push2(ssrRenderComponent(_sfc_main$1p, {
+            _push2(ssrRenderComponent(_sfc_main$1q, {
               modelValue: data.params.search,
               "onUpdate:modelValue": ($event) => data.params.search = $event,
               type: "text",
@@ -10750,7 +10834,7 @@ const _sfc_main$f = {
               placeholder: _ctx.lang().placeholder.search
             }, null, _parent2, _scopeId));
             _push2(`</div><div class="overflow-x-auto scrollbar-table"${_scopeId}><table class="w-full"${_scopeId}><thead class="uppercase text-sm border-t border-slate-200 dark:border-slate-700"${_scopeId}><tr class="dark:bg-slate-900/50 text-left"${_scopeId}><th class="px-2 py-4 text-center"${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$1o, {
+            _push2(ssrRenderComponent(_sfc_main$1p, {
               checked: data.multipleSelect,
               "onUpdate:checked": ($event) => data.multipleSelect = $event,
               onChange: selectAll
@@ -10766,7 +10850,7 @@ const _sfc_main$f = {
             _push2(`</div></th><th class="px-2 py-4 sr-only"${_scopeId}>Action</th></tr></thead><tbody${_scopeId}><!--[-->`);
             ssrRenderList(__props.permissions.data, (permission, index) => {
               _push2(`<tr class="border-t border-slate-200 dark:border-slate-700 hover:bg-slate-200/30 hover:dark:bg-slate-900/20"${_scopeId}><td class="whitespace-nowrap py-4 px-2 sm:py-3 text-center"${_scopeId}><input class="rounded dark:bg-slate-900 border-slate-300 dark:border-slate-700 text-primary dark:text-primary shadow-sm focus:ring-primary/80 dark:focus:ring-primary dark:focus:ring-offset-slate-800 dark:checked:bg-primary dark:checked:border-primary" type="checkbox"${ssrRenderAttr("value", permission.id)}${ssrIncludeBooleanAttr(Array.isArray(data.selectedId) ? ssrLooseContain(data.selectedId, permission.id) : data.selectedId) ? " checked" : ""}${_scopeId}></td><td class="whitespace-nowrap py-4 px-2 sm:py-3 text-center"${_scopeId}>${ssrInterpolate(++index)}</td><td class="whitespace-nowrap py-4 px-2 sm:py-3"${_scopeId}>${ssrInterpolate(permission.name)}</td><td class="whitespace-nowrap py-4 px-2 sm:py-3"${_scopeId}>${ssrInterpolate(permission.guard_name)}</td><td class="whitespace-nowrap py-4 px-2 sm:py-3"${_scopeId}>${ssrInterpolate(permission.created_at)}</td><td class="whitespace-nowrap py-4 px-2 sm:py-3"${_scopeId}>${ssrInterpolate(permission.updated_at)}</td><td class="whitespace-nowrap py-4 px-2 sm:py-3"${_scopeId}><div class="flex justify-center items-center"${_scopeId}><div class="rounded-md overflow-hidden"${_scopeId}>`);
-              _push2(ssrRenderComponent(_sfc_main$10, mergeProps({
+              _push2(ssrRenderComponent(_sfc_main$11, mergeProps({
                 style: _ctx.can(["update permission"]) ? null : { display: "none" },
                 type: "button",
                 onClick: ($event) => (data.editOpen = true, data.permission = permission),
@@ -10783,7 +10867,7 @@ const _sfc_main$f = {
                 }),
                 _: 2
               }, _parent2, _scopeId));
-              _push2(ssrRenderComponent(_sfc_main$1g, mergeProps({
+              _push2(ssrRenderComponent(_sfc_main$1h, mergeProps({
                 style: _ctx.can(["delete permission"]) ? null : { display: "none" },
                 type: "button",
                 onClick: ($event) => (data.deleteOpen = true, data.permission = permission),
@@ -10814,14 +10898,14 @@ const _sfc_main$f = {
             _push2(`</div></div></div>`);
           } else {
             return [
-              createVNode(_sfc_main$12, {
+              createVNode(_sfc_main$13, {
                 title: __props.title,
                 breadcrumbs: __props.breadcrumbs
               }, null, 8, ["title", "breadcrumbs"]),
               createVNode("div", { class: "space-y-4" }, [
                 createVNode("div", { class: "px-4 sm:px-0" }, [
                   createVNode("div", { class: "rounded-lg overflow-hidden w-fit" }, [
-                    withDirectives(createVNode(_sfc_main$1j, {
+                    withDirectives(createVNode(_sfc_main$1k, {
                       class: "rounded-none",
                       onClick: ($event) => data.createOpen = true
                     }, {
@@ -10860,12 +10944,12 @@ const _sfc_main$f = {
                 createVNode("div", { class: "relative bg-white dark:bg-slate-800 shadow sm:rounded-lg" }, [
                   createVNode("div", { class: "flex justify-between p-2" }, [
                     createVNode("div", { class: "flex space-x-2" }, [
-                      createVNode(_sfc_main$11, {
+                      createVNode(_sfc_main$12, {
                         modelValue: data.params.perPage,
                         "onUpdate:modelValue": ($event) => data.params.perPage = $event,
                         dataSet: data.dataSet
                       }, null, 8, ["modelValue", "onUpdate:modelValue", "dataSet"]),
-                      withDirectives((openBlock(), createBlock(_sfc_main$1g, {
+                      withDirectives((openBlock(), createBlock(_sfc_main$1h, {
                         onClick: ($event) => data.deleteBulkOpen = true,
                         class: "px-3 py-1.5"
                       }, {
@@ -10881,7 +10965,7 @@ const _sfc_main$f = {
                         [_directive_tooltip, _ctx.lang().tooltip.delete_selected]
                       ])
                     ]),
-                    createVNode(_sfc_main$1p, {
+                    createVNode(_sfc_main$1q, {
                       modelValue: data.params.search,
                       "onUpdate:modelValue": ($event) => data.params.search = $event,
                       type: "text",
@@ -10894,7 +10978,7 @@ const _sfc_main$f = {
                       createVNode("thead", { class: "uppercase text-sm border-t border-slate-200 dark:border-slate-700" }, [
                         createVNode("tr", { class: "dark:bg-slate-900/50 text-left" }, [
                           createVNode("th", { class: "px-2 py-4 text-center" }, [
-                            createVNode(_sfc_main$1o, {
+                            createVNode(_sfc_main$1p, {
                               checked: data.multipleSelect,
                               "onUpdate:checked": ($event) => data.multipleSelect = $event,
                               onChange: selectAll
@@ -10965,7 +11049,7 @@ const _sfc_main$f = {
                             createVNode("td", { class: "whitespace-nowrap py-4 px-2 sm:py-3" }, [
                               createVNode("div", { class: "flex justify-center items-center" }, [
                                 createVNode("div", { class: "rounded-md overflow-hidden" }, [
-                                  withDirectives((openBlock(), createBlock(_sfc_main$10, {
+                                  withDirectives((openBlock(), createBlock(_sfc_main$11, {
                                     type: "button",
                                     onClick: ($event) => (data.editOpen = true, data.permission = permission),
                                     class: "px-2 py-1.5 rounded-none"
@@ -10981,7 +11065,7 @@ const _sfc_main$f = {
                                     ],
                                     [_directive_tooltip, _ctx.lang().tooltip.edit]
                                   ]),
-                                  withDirectives((openBlock(), createBlock(_sfc_main$1g, {
+                                  withDirectives((openBlock(), createBlock(_sfc_main$1h, {
                                     type: "button",
                                     onClick: ($event) => (data.deleteOpen = true, data.permission = permission),
                                     class: "px-2 py-1.5 rounded-none"
@@ -11062,7 +11146,7 @@ const _sfc_main$e = {
     };
     return (_ctx, _push, _parent, _attrs) => {
       _push(`<section${ssrRenderAttrs(mergeProps({ class: "space-y-6" }, _attrs))}><header><h2 class="text-lg font-medium text-slate-900 dark:text-slate-100">${ssrInterpolate(_ctx.lang().profile.delete_account)}</h2><p class="mt-1 text-sm text-slate-600 dark:text-slate-400">${ssrInterpolate(_ctx.lang().profile.delete_account_caption)}</p></header>`);
-      _push(ssrRenderComponent(_sfc_main$1g, { onClick: confirmUserDeletion }, {
+      _push(ssrRenderComponent(_sfc_main$1h, { onClick: confirmUserDeletion }, {
         default: withCtx((_, _push2, _parent2, _scopeId) => {
           if (_push2) {
             _push2(`${ssrInterpolate(_ctx.lang().button.delete_account)}`);
@@ -11074,19 +11158,19 @@ const _sfc_main$e = {
         }),
         _: 1
       }, _parent));
-      _push(ssrRenderComponent(_sfc_main$1k, {
+      _push(ssrRenderComponent(_sfc_main$1l, {
         show: confirmingUserDeletion.value,
         onClose: closeModal
       }, {
         default: withCtx((_, _push2, _parent2, _scopeId) => {
           if (_push2) {
             _push2(`<div class="p-6"${_scopeId}><h2 class="text-lg font-medium text-slate-900 dark:text-slate-100"${_scopeId}>${ssrInterpolate(_ctx.lang().profile.delete_account_modal_title)}</h2><p class="mt-1 text-sm text-slate-600 dark:text-slate-400"${_scopeId}>${ssrInterpolate(_ctx.lang().profile.delete_account_modal_caption)}</p><div class="mt-6"${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$1r, {
+            _push2(ssrRenderComponent(_sfc_main$1s, {
               for: "password",
               value: _ctx.lang().label.password,
               class: "sr-only"
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$1p, {
+            _push2(ssrRenderComponent(_sfc_main$1q, {
               id: "password",
               ref_key: "passwordInput",
               ref: passwordInput,
@@ -11098,12 +11182,12 @@ const _sfc_main$e = {
               placeholder: _ctx.lang().placeholder.password,
               error: unref(form).errors.password
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$1q, {
+            _push2(ssrRenderComponent(_sfc_main$1r, {
               message: unref(form).errors.password,
               class: "mt-2"
             }, null, _parent2, _scopeId));
             _push2(`</div><div class="mt-6 flex justify-end"${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$1i, { onClick: closeModal }, {
+            _push2(ssrRenderComponent(_sfc_main$1j, { onClick: closeModal }, {
               default: withCtx((_2, _push3, _parent3, _scopeId2) => {
                 if (_push3) {
                   _push3(`${ssrInterpolate(_ctx.lang().button.close)}`);
@@ -11115,7 +11199,7 @@ const _sfc_main$e = {
               }),
               _: 1
             }, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$1g, {
+            _push2(ssrRenderComponent(_sfc_main$1h, {
               class: ["ml-3", { "opacity-25": unref(form).processing }],
               disabled: unref(form).processing,
               onClick: deleteUser
@@ -11138,12 +11222,12 @@ const _sfc_main$e = {
                 createVNode("h2", { class: "text-lg font-medium text-slate-900 dark:text-slate-100" }, toDisplayString(_ctx.lang().profile.delete_account_modal_title), 1),
                 createVNode("p", { class: "mt-1 text-sm text-slate-600 dark:text-slate-400" }, toDisplayString(_ctx.lang().profile.delete_account_modal_caption), 1),
                 createVNode("div", { class: "mt-6" }, [
-                  createVNode(_sfc_main$1r, {
+                  createVNode(_sfc_main$1s, {
                     for: "password",
                     value: _ctx.lang().label.password,
                     class: "sr-only"
                   }, null, 8, ["value"]),
-                  createVNode(_sfc_main$1p, {
+                  createVNode(_sfc_main$1q, {
                     id: "password",
                     ref_key: "passwordInput",
                     ref: passwordInput,
@@ -11155,19 +11239,19 @@ const _sfc_main$e = {
                     placeholder: _ctx.lang().placeholder.password,
                     error: unref(form).errors.password
                   }, null, 8, ["modelValue", "onUpdate:modelValue", "placeholder", "error"]),
-                  createVNode(_sfc_main$1q, {
+                  createVNode(_sfc_main$1r, {
                     message: unref(form).errors.password,
                     class: "mt-2"
                   }, null, 8, ["message"])
                 ]),
                 createVNode("div", { class: "mt-6 flex justify-end" }, [
-                  createVNode(_sfc_main$1i, { onClick: closeModal }, {
+                  createVNode(_sfc_main$1j, { onClick: closeModal }, {
                     default: withCtx(() => [
                       createTextVNode(toDisplayString(_ctx.lang().button.close), 1)
                     ]),
                     _: 1
                   }),
-                  createVNode(_sfc_main$1g, {
+                  createVNode(_sfc_main$1h, {
                     class: ["ml-3", { "opacity-25": unref(form).processing }],
                     disabled: unref(form).processing,
                     onClick: deleteUser
@@ -11211,11 +11295,11 @@ const _sfc_main$d = {
     });
     return (_ctx, _push, _parent, _attrs) => {
       _push(`<section${ssrRenderAttrs(_attrs)}><header><h2 class="text-lg font-medium text-slate-900 dark:text-slate-100">${ssrInterpolate(_ctx.lang().profile.update_password)}</h2><p class="mt-1 text-sm text-slate-600 dark:text-slate-400">${ssrInterpolate(_ctx.lang().profile.update_password_caption)}</p></header><form class="mt-6 space-y-6"><div>`);
-      _push(ssrRenderComponent(_sfc_main$1r, {
+      _push(ssrRenderComponent(_sfc_main$1s, {
         for: "current_password",
         value: _ctx.lang().profile.current_password
       }, null, _parent));
-      _push(ssrRenderComponent(_sfc_main$1p, {
+      _push(ssrRenderComponent(_sfc_main$1q, {
         id: "current_password",
         ref_key: "currentPasswordInput",
         ref: currentPasswordInput,
@@ -11227,16 +11311,16 @@ const _sfc_main$d = {
         placeholder: _ctx.lang().placeholder.password,
         error: unref(form).errors.current_password
       }, null, _parent));
-      _push(ssrRenderComponent(_sfc_main$1q, {
+      _push(ssrRenderComponent(_sfc_main$1r, {
         message: unref(form).errors.current_password,
         class: "mt-2"
       }, null, _parent));
       _push(`</div><div>`);
-      _push(ssrRenderComponent(_sfc_main$1r, {
+      _push(ssrRenderComponent(_sfc_main$1s, {
         for: "password",
         value: _ctx.lang().profile.new_password
       }, null, _parent));
-      _push(ssrRenderComponent(_sfc_main$1p, {
+      _push(ssrRenderComponent(_sfc_main$1q, {
         id: "password",
         ref_key: "passwordInput",
         ref: passwordInput,
@@ -11248,16 +11332,16 @@ const _sfc_main$d = {
         placeholder: _ctx.lang().placeholder.password,
         error: unref(form).errors.password
       }, null, _parent));
-      _push(ssrRenderComponent(_sfc_main$1q, {
+      _push(ssrRenderComponent(_sfc_main$1r, {
         message: unref(form).errors.password,
         class: "mt-2"
       }, null, _parent));
       _push(`</div><div>`);
-      _push(ssrRenderComponent(_sfc_main$1r, {
+      _push(ssrRenderComponent(_sfc_main$1s, {
         for: "password_confirmation",
         value: _ctx.lang().label.password_confirmation
       }, null, _parent));
-      _push(ssrRenderComponent(_sfc_main$1p, {
+      _push(ssrRenderComponent(_sfc_main$1q, {
         id: "password_confirmation",
         modelValue: unref(form).password_confirmation,
         "onUpdate:modelValue": ($event) => unref(form).password_confirmation = $event,
@@ -11267,12 +11351,12 @@ const _sfc_main$d = {
         placeholder: _ctx.lang().placeholder.password_confirmation,
         error: unref(form).errors.password_confirmation
       }, null, _parent));
-      _push(ssrRenderComponent(_sfc_main$1q, {
+      _push(ssrRenderComponent(_sfc_main$1r, {
         message: unref(form).errors.password_confirmation,
         class: "mt-2"
       }, null, _parent));
       _push(`</div><div class="flex items-center gap-4">`);
-      _push(ssrRenderComponent(_sfc_main$1j, {
+      _push(ssrRenderComponent(_sfc_main$1k, {
         class: { "opacity-25": unref(form).processing },
         disabled: unref(form).processing
       }, {
@@ -11322,11 +11406,11 @@ const _sfc_main$c = {
     });
     return (_ctx, _push, _parent, _attrs) => {
       _push(`<section${ssrRenderAttrs(_attrs)}><header><h2 class="text-lg font-medium text-slate-900 dark:text-slate-100">${ssrInterpolate(_ctx.lang().profile.profile_information)}</h2><p class="mt-1 text-sm text-slate-600 dark:text-slate-400">${ssrInterpolate(_ctx.lang().profile.update_profile)}</p></header><form class="mt-6 space-y-6"><div>`);
-      _push(ssrRenderComponent(_sfc_main$1r, {
+      _push(ssrRenderComponent(_sfc_main$1s, {
         for: "name",
         value: _ctx.lang().label.name
       }, null, _parent));
-      _push(ssrRenderComponent(_sfc_main$1p, {
+      _push(ssrRenderComponent(_sfc_main$1q, {
         id: "name",
         type: "text",
         class: "mt-1 block w-full",
@@ -11338,16 +11422,16 @@ const _sfc_main$c = {
         placeholder: _ctx.lang().placeholder.name,
         error: unref(form).errors.name
       }, null, _parent));
-      _push(ssrRenderComponent(_sfc_main$1q, {
+      _push(ssrRenderComponent(_sfc_main$1r, {
         class: "mt-2",
         message: unref(form).errors.name
       }, null, _parent));
       _push(`</div><div>`);
-      _push(ssrRenderComponent(_sfc_main$1r, {
+      _push(ssrRenderComponent(_sfc_main$1s, {
         for: "email",
         value: _ctx.lang().label.email
       }, null, _parent));
-      _push(ssrRenderComponent(_sfc_main$1p, {
+      _push(ssrRenderComponent(_sfc_main$1q, {
         id: "email",
         type: "email",
         class: "mt-1 block w-full",
@@ -11358,7 +11442,7 @@ const _sfc_main$c = {
         placeholder: _ctx.lang().placeholder.email,
         error: unref(form).errors.email
       }, null, _parent));
-      _push(ssrRenderComponent(_sfc_main$1q, {
+      _push(ssrRenderComponent(_sfc_main$1r, {
         class: "mt-2",
         message: unref(form).errors.email
       }, null, _parent));
@@ -11387,7 +11471,7 @@ const _sfc_main$c = {
         _push(`<!---->`);
       }
       _push(`<div class="flex items-center gap-4">`);
-      _push(ssrRenderComponent(_sfc_main$1j, {
+      _push(ssrRenderComponent(_sfc_main$1k, {
         class: { "opacity-25": unref(form).processing },
         disabled: unref(form).processing
       }, {
@@ -11434,10 +11518,10 @@ const _sfc_main$b = {
       _push(ssrRenderComponent(unref(Head), {
         title: _ctx.lang().label.profile
       }, null, _parent));
-      _push(ssrRenderComponent(_sfc_main$13, null, {
+      _push(ssrRenderComponent(_sfc_main$14, null, {
         default: withCtx((_, _push2, _parent2, _scopeId) => {
           if (_push2) {
-            _push2(ssrRenderComponent(_sfc_main$12, {
+            _push2(ssrRenderComponent(_sfc_main$13, {
               title: "Profile",
               breadcrumbs: []
             }, null, _parent2, _scopeId));
@@ -11454,7 +11538,7 @@ const _sfc_main$b = {
             _push2(`</div></div>`);
           } else {
             return [
-              createVNode(_sfc_main$12, {
+              createVNode(_sfc_main$13, {
                 title: "Profile",
                 breadcrumbs: []
               }),
@@ -11548,18 +11632,18 @@ const _sfc_main$a = {
     };
     return (_ctx, _push, _parent, _attrs) => {
       _push(`<section${ssrRenderAttrs(mergeProps({ class: "space-y-6" }, _attrs))}>`);
-      _push(ssrRenderComponent(_sfc_main$1k, {
+      _push(ssrRenderComponent(_sfc_main$1l, {
         show: props.show,
         onClose: ($event) => emit("close")
       }, {
         default: withCtx((_, _push2, _parent2, _scopeId) => {
           if (_push2) {
             _push2(`<form class="p-6"${_scopeId}><h2 class="text-lg font-medium text-slate-900 dark:text-slate-100"${_scopeId}>${ssrInterpolate(_ctx.lang().label.add)} ${ssrInterpolate(props.title)}</h2><div class="my-6 space-y-4"${_scopeId}><div${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$1r, {
+            _push2(ssrRenderComponent(_sfc_main$1s, {
               for: "name",
               value: _ctx.lang().label.role
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$1p, {
+            _push2(ssrRenderComponent(_sfc_main$1q, {
               id: "name",
               type: "text",
               class: "mt-1 block w-full",
@@ -11569,40 +11653,40 @@ const _sfc_main$a = {
               placeholder: _ctx.lang().placeholder.name,
               error: unref(form).errors.name
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$1q, {
+            _push2(ssrRenderComponent(_sfc_main$1r, {
               class: "mt-2",
               message: unref(form).errors.name
             }, null, _parent2, _scopeId));
             _push2(`</div><div${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$1r, {
+            _push2(ssrRenderComponent(_sfc_main$1s, {
               value: _ctx.lang().label.permission
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$1q, {
+            _push2(ssrRenderComponent(_sfc_main$1r, {
               class: "mt-2",
               message: unref(form).errors.permissions
             }, null, _parent2, _scopeId));
             _push2(`<div class="flex justify-start items-center space-x-2 mt-2"${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$1o, {
+            _push2(ssrRenderComponent(_sfc_main$1p, {
               id: "permission-all",
               checked: data.multipleSelect,
               "onUpdate:checked": ($event) => data.multipleSelect = $event,
               onChange: selectAll
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$1r, {
+            _push2(ssrRenderComponent(_sfc_main$1s, {
               for: "permission-all",
               value: _ctx.lang().label.check_all
             }, null, _parent2, _scopeId));
             _push2(`</div><div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 mt-2"${_scopeId}><!--[-->`);
             ssrRenderList(props.permissions, (permission, index) => {
               _push2(`<div class="flex items-center justify-start space-x-2"${_scopeId}><input class="rounded dark:bg-slate-900 border-slate-300 dark:border-slate-700 text-primary dark:text-primary shadow-sm focus:ring-primary/80 dark:focus:ring-primary dark:focus:ring-offset-slate-800 dark:checked:bg-primary dark:checked:border-primary" type="checkbox"${ssrRenderAttr("id", "permission_" + permission.id)}${ssrRenderAttr("value", permission.id)}${ssrIncludeBooleanAttr(Array.isArray(unref(form).permissions) ? ssrLooseContain(unref(form).permissions, permission.id) : unref(form).permissions) ? " checked" : ""}${_scopeId}>`);
-              _push2(ssrRenderComponent(_sfc_main$1r, {
+              _push2(ssrRenderComponent(_sfc_main$1s, {
                 for: "permission_" + permission.id,
                 value: permission.name
               }, null, _parent2, _scopeId));
               _push2(`</div>`);
             });
             _push2(`<!--]--></div></div></div><div class="flex justify-end"${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$1i, {
+            _push2(ssrRenderComponent(_sfc_main$1j, {
               disabled: unref(form).processing,
               onClick: ($event) => emit("close")
             }, {
@@ -11617,7 +11701,7 @@ const _sfc_main$a = {
               }),
               _: 1
             }, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$1j, {
+            _push2(ssrRenderComponent(_sfc_main$1k, {
               class: ["ml-3", { "opacity-25": unref(form).processing }],
               disabled: unref(form).processing,
               onClick: create
@@ -11643,11 +11727,11 @@ const _sfc_main$a = {
                 createVNode("h2", { class: "text-lg font-medium text-slate-900 dark:text-slate-100" }, toDisplayString(_ctx.lang().label.add) + " " + toDisplayString(props.title), 1),
                 createVNode("div", { class: "my-6 space-y-4" }, [
                   createVNode("div", null, [
-                    createVNode(_sfc_main$1r, {
+                    createVNode(_sfc_main$1s, {
                       for: "name",
                       value: _ctx.lang().label.role
                     }, null, 8, ["value"]),
-                    createVNode(_sfc_main$1p, {
+                    createVNode(_sfc_main$1q, {
                       id: "name",
                       type: "text",
                       class: "mt-1 block w-full",
@@ -11657,27 +11741,27 @@ const _sfc_main$a = {
                       placeholder: _ctx.lang().placeholder.name,
                       error: unref(form).errors.name
                     }, null, 8, ["modelValue", "onUpdate:modelValue", "placeholder", "error"]),
-                    createVNode(_sfc_main$1q, {
+                    createVNode(_sfc_main$1r, {
                       class: "mt-2",
                       message: unref(form).errors.name
                     }, null, 8, ["message"])
                   ]),
                   createVNode("div", null, [
-                    createVNode(_sfc_main$1r, {
+                    createVNode(_sfc_main$1s, {
                       value: _ctx.lang().label.permission
                     }, null, 8, ["value"]),
-                    createVNode(_sfc_main$1q, {
+                    createVNode(_sfc_main$1r, {
                       class: "mt-2",
                       message: unref(form).errors.permissions
                     }, null, 8, ["message"]),
                     createVNode("div", { class: "flex justify-start items-center space-x-2 mt-2" }, [
-                      createVNode(_sfc_main$1o, {
+                      createVNode(_sfc_main$1p, {
                         id: "permission-all",
                         checked: data.multipleSelect,
                         "onUpdate:checked": ($event) => data.multipleSelect = $event,
                         onChange: selectAll
                       }, null, 8, ["checked", "onUpdate:checked"]),
-                      createVNode(_sfc_main$1r, {
+                      createVNode(_sfc_main$1s, {
                         for: "permission-all",
                         value: _ctx.lang().label.check_all
                       }, null, 8, ["value"])
@@ -11698,7 +11782,7 @@ const _sfc_main$a = {
                           }, null, 40, ["id", "value", "onUpdate:modelValue"]), [
                             [vModelCheckbox, unref(form).permissions]
                           ]),
-                          createVNode(_sfc_main$1r, {
+                          createVNode(_sfc_main$1s, {
                             for: "permission_" + permission.id,
                             value: permission.name
                           }, null, 8, ["for", "value"])
@@ -11708,7 +11792,7 @@ const _sfc_main$a = {
                   ])
                 ]),
                 createVNode("div", { class: "flex justify-end" }, [
-                  createVNode(_sfc_main$1i, {
+                  createVNode(_sfc_main$1j, {
                     disabled: unref(form).processing,
                     onClick: ($event) => emit("close")
                   }, {
@@ -11717,7 +11801,7 @@ const _sfc_main$a = {
                     ]),
                     _: 1
                   }, 8, ["disabled", "onClick"]),
-                  createVNode(_sfc_main$1j, {
+                  createVNode(_sfc_main$1k, {
                     class: ["ml-3", { "opacity-25": unref(form).processing }],
                     disabled: unref(form).processing,
                     onClick: create
@@ -11775,7 +11859,7 @@ const _sfc_main$9 = {
     };
     return (_ctx, _push, _parent, _attrs) => {
       _push(`<section${ssrRenderAttrs(mergeProps({ class: "space-y-6" }, _attrs))}>`);
-      _push(ssrRenderComponent(_sfc_main$1k, {
+      _push(ssrRenderComponent(_sfc_main$1l, {
         show: props.show,
         onClose: ($event) => emit("close"),
         maxWidth: "lg"
@@ -11784,7 +11868,7 @@ const _sfc_main$9 = {
           var _a, _b;
           if (_push2) {
             _push2(`<form class="p-6"${_scopeId}><h2 class="text-lg font-medium text-slate-900 dark:text-slate-100"${_scopeId}>${ssrInterpolate(_ctx.lang().label.delete)} ${ssrInterpolate(props.title)}</h2><p class="mt-1 text-sm text-slate-600 dark:text-slate-400"${_scopeId}>${ssrInterpolate(_ctx.lang().label.delete_confirm)} <b${_scopeId}>${ssrInterpolate((_a = props.role) == null ? void 0 : _a.name)}</b>? </p><div class="mt-6 flex justify-end"${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$1i, {
+            _push2(ssrRenderComponent(_sfc_main$1j, {
               disabled: unref(form).processing,
               onClick: ($event) => emit("close")
             }, {
@@ -11799,7 +11883,7 @@ const _sfc_main$9 = {
               }),
               _: 1
             }, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$1g, {
+            _push2(ssrRenderComponent(_sfc_main$1h, {
               class: ["ml-3", { "opacity-25": unref(form).processing }],
               disabled: unref(form).processing,
               onClick: destroy
@@ -11829,7 +11913,7 @@ const _sfc_main$9 = {
                   createTextVNode("? ")
                 ]),
                 createVNode("div", { class: "mt-6 flex justify-end" }, [
-                  createVNode(_sfc_main$1i, {
+                  createVNode(_sfc_main$1j, {
                     disabled: unref(form).processing,
                     onClick: ($event) => emit("close")
                   }, {
@@ -11838,7 +11922,7 @@ const _sfc_main$9 = {
                     ]),
                     _: 1
                   }, 8, ["disabled", "onClick"]),
-                  createVNode(_sfc_main$1g, {
+                  createVNode(_sfc_main$1h, {
                     class: ["ml-3", { "opacity-25": unref(form).processing }],
                     disabled: unref(form).processing,
                     onClick: destroy
@@ -11902,7 +11986,7 @@ const _sfc_main$8 = {
     });
     return (_ctx, _push, _parent, _attrs) => {
       _push(`<section${ssrRenderAttrs(mergeProps({ class: "space-y-6" }, _attrs))}>`);
-      _push(ssrRenderComponent(_sfc_main$1k, {
+      _push(ssrRenderComponent(_sfc_main$1l, {
         show: props.show,
         onClose: ($event) => emit("close"),
         maxWidth: "lg"
@@ -11911,7 +11995,7 @@ const _sfc_main$8 = {
           var _a, _b;
           if (_push2) {
             _push2(`<form class="p-6"${_scopeId}><h2 class="text-lg font-medium text-slate-900 dark:text-slate-100"${_scopeId}>${ssrInterpolate(_ctx.lang().label.delete)} ${ssrInterpolate(props.title)}</h2><p class="mt-1 text-sm text-slate-600 dark:text-slate-400"${_scopeId}>${ssrInterpolate(_ctx.lang().label.delete_confirm)} ${ssrInterpolate((_a = props.selectedId) == null ? void 0 : _a.length)} ${ssrInterpolate(props.title)}? </p><div class="mt-6 flex justify-end"${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$1i, {
+            _push2(ssrRenderComponent(_sfc_main$1j, {
               disabled: unref(form).processing,
               onClick: ($event) => emit("close")
             }, {
@@ -11926,7 +12010,7 @@ const _sfc_main$8 = {
               }),
               _: 1
             }, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$1g, {
+            _push2(ssrRenderComponent(_sfc_main$1h, {
               class: ["ml-3", { "opacity-25": unref(form).processing }],
               disabled: unref(form).processing,
               onClick: destroy
@@ -11952,7 +12036,7 @@ const _sfc_main$8 = {
                 createVNode("h2", { class: "text-lg font-medium text-slate-900 dark:text-slate-100" }, toDisplayString(_ctx.lang().label.delete) + " " + toDisplayString(props.title), 1),
                 createVNode("p", { class: "mt-1 text-sm text-slate-600 dark:text-slate-400" }, toDisplayString(_ctx.lang().label.delete_confirm) + " " + toDisplayString((_b = props.selectedId) == null ? void 0 : _b.length) + " " + toDisplayString(props.title) + "? ", 1),
                 createVNode("div", { class: "mt-6 flex justify-end" }, [
-                  createVNode(_sfc_main$1i, {
+                  createVNode(_sfc_main$1j, {
                     disabled: unref(form).processing,
                     onClick: ($event) => emit("close")
                   }, {
@@ -11961,7 +12045,7 @@ const _sfc_main$8 = {
                     ]),
                     _: 1
                   }, 8, ["disabled", "onClick"]),
-                  createVNode(_sfc_main$1g, {
+                  createVNode(_sfc_main$1h, {
                     class: ["ml-3", { "opacity-25": unref(form).processing }],
                     disabled: unref(form).processing,
                     onClick: destroy
@@ -12057,7 +12141,7 @@ const _sfc_main$7 = {
     };
     return (_ctx, _push, _parent, _attrs) => {
       _push(`<section${ssrRenderAttrs(mergeProps({ class: "space-y-6" }, _attrs))}>`);
-      _push(ssrRenderComponent(_sfc_main$1k, {
+      _push(ssrRenderComponent(_sfc_main$1l, {
         show: props.show,
         onClose: ($event) => emit("close"),
         maxWidth: "4xl"
@@ -12065,11 +12149,11 @@ const _sfc_main$7 = {
         default: withCtx((_, _push2, _parent2, _scopeId) => {
           if (_push2) {
             _push2(`<form class="p-6"${_scopeId}><h2 class="text-lg font-medium text-slate-900 dark:text-slate-100"${_scopeId}>${ssrInterpolate(_ctx.lang().label.edit)} ${ssrInterpolate(props.title)}</h2><div class="my-6 space-y-4"${_scopeId}><div${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$1r, {
+            _push2(ssrRenderComponent(_sfc_main$1s, {
               for: "name",
               value: _ctx.lang().label.role
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$1p, {
+            _push2(ssrRenderComponent(_sfc_main$1q, {
               id: "name",
               type: "text",
               class: "mt-1 block w-full",
@@ -12079,40 +12163,40 @@ const _sfc_main$7 = {
               placeholder: _ctx.lang().placeholder.name,
               error: unref(form).errors.name
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$1q, {
+            _push2(ssrRenderComponent(_sfc_main$1r, {
               class: "mt-2",
               message: unref(form).errors.name
             }, null, _parent2, _scopeId));
             _push2(`</div><div${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$1r, {
+            _push2(ssrRenderComponent(_sfc_main$1s, {
               value: _ctx.lang().label.permission
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$1q, {
+            _push2(ssrRenderComponent(_sfc_main$1r, {
               class: "mt-2",
               message: unref(form).errors.permissions
             }, null, _parent2, _scopeId));
             _push2(`<div class="flex justify-start items-center space-x-2 mt-2"${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$1o, {
+            _push2(ssrRenderComponent(_sfc_main$1p, {
               id: "permission-all",
               checked: data.multipleSelect,
               "onUpdate:checked": ($event) => data.multipleSelect = $event,
               onChange: selectAll
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$1r, {
+            _push2(ssrRenderComponent(_sfc_main$1s, {
               for: "permission-all",
               value: _ctx.lang().label.check_all
             }, null, _parent2, _scopeId));
             _push2(`</div><div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-2 mt-2"${_scopeId}><!--[-->`);
             ssrRenderList(props.permissions, (permission, index) => {
               _push2(`<div class="flex items-center justify-start space-x-2"${_scopeId}><input class="rounded dark:bg-slate-900 border-slate-300 dark:border-slate-700 text-primary dark:text-primary shadow-sm focus:ring-primary/80 dark:focus:ring-primary dark:focus:ring-offset-slate-800 dark:checked:bg-primary dark:checked:border-primary" type="checkbox"${ssrRenderAttr("id", "permission_" + permission.id)}${ssrRenderAttr("value", permission.id)}${ssrIncludeBooleanAttr(Array.isArray(unref(form).permissions) ? ssrLooseContain(unref(form).permissions, permission.id) : unref(form).permissions) ? " checked" : ""}${_scopeId}>`);
-              _push2(ssrRenderComponent(_sfc_main$1r, {
+              _push2(ssrRenderComponent(_sfc_main$1s, {
                 for: "permission_" + permission.id,
                 value: permission.name
               }, null, _parent2, _scopeId));
               _push2(`</div>`);
             });
             _push2(`<!--]--></div></div></div><div class="flex justify-end"${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$1i, {
+            _push2(ssrRenderComponent(_sfc_main$1j, {
               disabled: unref(form).processing,
               onClick: ($event) => emit("close")
             }, {
@@ -12127,7 +12211,7 @@ const _sfc_main$7 = {
               }),
               _: 1
             }, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$1j, {
+            _push2(ssrRenderComponent(_sfc_main$1k, {
               class: ["ml-3", { "opacity-25": unref(form).processing }],
               disabled: unref(form).processing,
               onClick: update
@@ -12153,11 +12237,11 @@ const _sfc_main$7 = {
                 createVNode("h2", { class: "text-lg font-medium text-slate-900 dark:text-slate-100" }, toDisplayString(_ctx.lang().label.edit) + " " + toDisplayString(props.title), 1),
                 createVNode("div", { class: "my-6 space-y-4" }, [
                   createVNode("div", null, [
-                    createVNode(_sfc_main$1r, {
+                    createVNode(_sfc_main$1s, {
                       for: "name",
                       value: _ctx.lang().label.role
                     }, null, 8, ["value"]),
-                    createVNode(_sfc_main$1p, {
+                    createVNode(_sfc_main$1q, {
                       id: "name",
                       type: "text",
                       class: "mt-1 block w-full",
@@ -12167,27 +12251,27 @@ const _sfc_main$7 = {
                       placeholder: _ctx.lang().placeholder.name,
                       error: unref(form).errors.name
                     }, null, 8, ["modelValue", "onUpdate:modelValue", "placeholder", "error"]),
-                    createVNode(_sfc_main$1q, {
+                    createVNode(_sfc_main$1r, {
                       class: "mt-2",
                       message: unref(form).errors.name
                     }, null, 8, ["message"])
                   ]),
                   createVNode("div", null, [
-                    createVNode(_sfc_main$1r, {
+                    createVNode(_sfc_main$1s, {
                       value: _ctx.lang().label.permission
                     }, null, 8, ["value"]),
-                    createVNode(_sfc_main$1q, {
+                    createVNode(_sfc_main$1r, {
                       class: "mt-2",
                       message: unref(form).errors.permissions
                     }, null, 8, ["message"]),
                     createVNode("div", { class: "flex justify-start items-center space-x-2 mt-2" }, [
-                      createVNode(_sfc_main$1o, {
+                      createVNode(_sfc_main$1p, {
                         id: "permission-all",
                         checked: data.multipleSelect,
                         "onUpdate:checked": ($event) => data.multipleSelect = $event,
                         onChange: selectAll
                       }, null, 8, ["checked", "onUpdate:checked"]),
-                      createVNode(_sfc_main$1r, {
+                      createVNode(_sfc_main$1s, {
                         for: "permission-all",
                         value: _ctx.lang().label.check_all
                       }, null, 8, ["value"])
@@ -12208,7 +12292,7 @@ const _sfc_main$7 = {
                           }, null, 40, ["id", "value", "onUpdate:modelValue"]), [
                             [vModelCheckbox, unref(form).permissions]
                           ]),
-                          createVNode(_sfc_main$1r, {
+                          createVNode(_sfc_main$1s, {
                             for: "permission_" + permission.id,
                             value: permission.name
                           }, null, 8, ["for", "value"])
@@ -12218,7 +12302,7 @@ const _sfc_main$7 = {
                   ])
                 ]),
                 createVNode("div", { class: "flex justify-end" }, [
-                  createVNode(_sfc_main$1i, {
+                  createVNode(_sfc_main$1j, {
                     disabled: unref(form).processing,
                     onClick: ($event) => emit("close")
                   }, {
@@ -12227,7 +12311,7 @@ const _sfc_main$7 = {
                     ]),
                     _: 1
                   }, 8, ["disabled", "onClick"]),
-                  createVNode(_sfc_main$1j, {
+                  createVNode(_sfc_main$1k, {
                     class: ["ml-3", { "opacity-25": unref(form).processing }],
                     disabled: unref(form).processing,
                     onClick: update
@@ -12272,7 +12356,7 @@ const _sfc_main$6 = {
     const emit = __emit;
     return (_ctx, _push, _parent, _attrs) => {
       _push(`<section${ssrRenderAttrs(mergeProps({ class: "space-y-6" }, _attrs))}>`);
-      _push(ssrRenderComponent(_sfc_main$1k, {
+      _push(ssrRenderComponent(_sfc_main$1l, {
         show: props.show,
         onClose: ($event) => emit("close"),
         maxWidth: "4xl"
@@ -12285,7 +12369,7 @@ const _sfc_main$6 = {
               _push2(`<div class="flex justify-between w-full px-4 pb-1"${_scopeId}>${ssrInterpolate(++index + ". " + permission.name)}</div>`);
             });
             _push2(`<!--]--></div><div class="mt-6 flex justify-end"${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$1i, {
+            _push2(ssrRenderComponent(_sfc_main$1j, {
               onClick: ($event) => emit("close")
             }, {
               default: withCtx((_2, _push3, _parent3, _scopeId2) => {
@@ -12317,7 +12401,7 @@ const _sfc_main$6 = {
                   }), 128))
                 ]),
                 createVNode("div", { class: "mt-6 flex justify-end" }, [
-                  createVNode(_sfc_main$1i, {
+                  createVNode(_sfc_main$1j, {
                     onClick: ($event) => emit("close")
                   }, {
                     default: withCtx(() => [
@@ -12416,15 +12500,15 @@ const _sfc_main$5 = {
       _push(ssrRenderComponent(unref(Head), {
         title: props.title
       }, null, _parent));
-      _push(ssrRenderComponent(_sfc_main$13, null, {
+      _push(ssrRenderComponent(_sfc_main$14, null, {
         default: withCtx((_2, _push2, _parent2, _scopeId) => {
           if (_push2) {
-            _push2(ssrRenderComponent(_sfc_main$12, {
+            _push2(ssrRenderComponent(_sfc_main$13, {
               title: __props.title,
               breadcrumbs: __props.breadcrumbs
             }, null, _parent2, _scopeId));
             _push2(`<div class="space-y-4"${_scopeId}><div class="px-4 sm:px-0"${_scopeId}><div class="rounded-lg overflow-hidden w-fit"${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$1j, {
+            _push2(ssrRenderComponent(_sfc_main$1k, {
               style: _ctx.can(["create role"]) ? null : { display: "none" },
               class: "rounded-none",
               onClick: ($event) => data.createOpen = true
@@ -12472,12 +12556,12 @@ const _sfc_main$5 = {
               title: props.title
             }, null, _parent2, _scopeId));
             _push2(`</div></div><div class="relative bg-white dark:bg-slate-800 shadow sm:rounded-lg"${_scopeId}><div class="flex justify-between p-2"${_scopeId}><div class="flex space-x-2"${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$11, {
+            _push2(ssrRenderComponent(_sfc_main$12, {
               modelValue: data.params.perPage,
               "onUpdate:modelValue": ($event) => data.params.perPage = $event,
               dataSet: data.dataSet
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$1g, mergeProps({
+            _push2(ssrRenderComponent(_sfc_main$1h, mergeProps({
               onClick: ($event) => data.deleteBulkOpen = true,
               style: data.selectedId.length != 0 && _ctx.can(["delete role"]) ? null : { display: "none" },
               class: "px-3 py-1.5"
@@ -12494,7 +12578,7 @@ const _sfc_main$5 = {
               _: 1
             }, _parent2, _scopeId));
             _push2(`</div>`);
-            _push2(ssrRenderComponent(_sfc_main$1p, {
+            _push2(ssrRenderComponent(_sfc_main$1q, {
               modelValue: data.params.search,
               "onUpdate:modelValue": ($event) => data.params.search = $event,
               type: "text",
@@ -12502,7 +12586,7 @@ const _sfc_main$5 = {
               placeholder: _ctx.lang().placeholder.search
             }, null, _parent2, _scopeId));
             _push2(`</div><div class="overflow-x-auto scrollbar-table"${_scopeId}><table class="w-full"${_scopeId}><thead class="uppercase text-sm border-t border-slate-200 dark:border-slate-700"${_scopeId}><tr class="dark:bg-slate-900/50 text-left"${_scopeId}><th class="px-2 py-4 text-center"${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$1o, {
+            _push2(ssrRenderComponent(_sfc_main$1p, {
               checked: data.multipleSelect,
               "onUpdate:checked": ($event) => data.multipleSelect = $event,
               onChange: selectAll
@@ -12526,7 +12610,7 @@ const _sfc_main$5 = {
                 _push2(`<td class="whitespace-nowrap py-4 px-2 sm:py-3"${_scopeId}>${ssrInterpolate(_ctx.lang().label.no_permission)}</td>`);
               }
               _push2(`<td class="whitespace-nowrap py-4 px-2 sm:py-3"${_scopeId}>${ssrInterpolate(role.created_at)}</td><td class="whitespace-nowrap py-4 px-2 sm:py-3"${_scopeId}>${ssrInterpolate(role.updated_at)}</td><td class="whitespace-nowrap py-4 px-2 sm:py-3"${_scopeId}><div class="flex justify-center items-center"${_scopeId}><div class="rounded-md overflow-hidden"${_scopeId}>`);
-              _push2(ssrRenderComponent(_sfc_main$10, mergeProps({
+              _push2(ssrRenderComponent(_sfc_main$11, mergeProps({
                 style: _ctx.can(["update role"]) ? null : { display: "none" },
                 type: "button",
                 onClick: ($event) => (data.editOpen = true, data.role = role),
@@ -12543,7 +12627,7 @@ const _sfc_main$5 = {
                 }),
                 _: 2
               }, _parent2, _scopeId));
-              _push2(ssrRenderComponent(_sfc_main$1g, mergeProps({
+              _push2(ssrRenderComponent(_sfc_main$1h, mergeProps({
                 style: _ctx.can(["delete role"]) ? null : { display: "none" },
                 type: "button",
                 onClick: ($event) => (data.deleteOpen = true, data.role = role),
@@ -12574,14 +12658,14 @@ const _sfc_main$5 = {
             _push2(`</div></div></div>`);
           } else {
             return [
-              createVNode(_sfc_main$12, {
+              createVNode(_sfc_main$13, {
                 title: __props.title,
                 breadcrumbs: __props.breadcrumbs
               }, null, 8, ["title", "breadcrumbs"]),
               createVNode("div", { class: "space-y-4" }, [
                 createVNode("div", { class: "px-4 sm:px-0" }, [
                   createVNode("div", { class: "rounded-lg overflow-hidden w-fit" }, [
-                    withDirectives(createVNode(_sfc_main$1j, {
+                    withDirectives(createVNode(_sfc_main$1k, {
                       class: "rounded-none",
                       onClick: ($event) => data.createOpen = true
                     }, {
@@ -12628,12 +12712,12 @@ const _sfc_main$5 = {
                 createVNode("div", { class: "relative bg-white dark:bg-slate-800 shadow sm:rounded-lg" }, [
                   createVNode("div", { class: "flex justify-between p-2" }, [
                     createVNode("div", { class: "flex space-x-2" }, [
-                      createVNode(_sfc_main$11, {
+                      createVNode(_sfc_main$12, {
                         modelValue: data.params.perPage,
                         "onUpdate:modelValue": ($event) => data.params.perPage = $event,
                         dataSet: data.dataSet
                       }, null, 8, ["modelValue", "onUpdate:modelValue", "dataSet"]),
-                      withDirectives((openBlock(), createBlock(_sfc_main$1g, {
+                      withDirectives((openBlock(), createBlock(_sfc_main$1h, {
                         onClick: ($event) => data.deleteBulkOpen = true,
                         class: "px-3 py-1.5"
                       }, {
@@ -12649,7 +12733,7 @@ const _sfc_main$5 = {
                         [_directive_tooltip, _ctx.lang().tooltip.delete_selected]
                       ])
                     ]),
-                    createVNode(_sfc_main$1p, {
+                    createVNode(_sfc_main$1q, {
                       modelValue: data.params.search,
                       "onUpdate:modelValue": ($event) => data.params.search = $event,
                       type: "text",
@@ -12662,7 +12746,7 @@ const _sfc_main$5 = {
                       createVNode("thead", { class: "uppercase text-sm border-t border-slate-200 dark:border-slate-700" }, [
                         createVNode("tr", { class: "dark:bg-slate-900/50 text-left" }, [
                           createVNode("th", { class: "px-2 py-4 text-center" }, [
-                            createVNode(_sfc_main$1o, {
+                            createVNode(_sfc_main$1p, {
                               checked: data.multipleSelect,
                               "onUpdate:checked": ($event) => data.multipleSelect = $event,
                               onChange: selectAll
@@ -12754,7 +12838,7 @@ const _sfc_main$5 = {
                             createVNode("td", { class: "whitespace-nowrap py-4 px-2 sm:py-3" }, [
                               createVNode("div", { class: "flex justify-center items-center" }, [
                                 createVNode("div", { class: "rounded-md overflow-hidden" }, [
-                                  withDirectives((openBlock(), createBlock(_sfc_main$10, {
+                                  withDirectives((openBlock(), createBlock(_sfc_main$11, {
                                     type: "button",
                                     onClick: ($event) => (data.editOpen = true, data.role = role),
                                     class: "px-2 py-1.5 rounded-none"
@@ -12767,7 +12851,7 @@ const _sfc_main$5 = {
                                     [vShow, _ctx.can(["update role"])],
                                     [_directive_tooltip, _ctx.lang().tooltip.edit]
                                   ]),
-                                  withDirectives((openBlock(), createBlock(_sfc_main$1g, {
+                                  withDirectives((openBlock(), createBlock(_sfc_main$1h, {
                                     type: "button",
                                     onClick: ($event) => (data.deleteOpen = true, data.role = role),
                                     class: "px-2 py-1.5 rounded-none"
@@ -12860,18 +12944,18 @@ const _sfc_main$4 = {
     }));
     return (_ctx, _push, _parent, _attrs) => {
       _push(`<section${ssrRenderAttrs(mergeProps({ class: "space-y-6" }, _attrs))}>`);
-      _push(ssrRenderComponent(_sfc_main$1k, {
+      _push(ssrRenderComponent(_sfc_main$1l, {
         show: props.show,
         onClose: ($event) => emit("close")
       }, {
         default: withCtx((_, _push2, _parent2, _scopeId) => {
           if (_push2) {
             _push2(`<form class="p-6"${_scopeId}><h2 class="text-lg font-medium text-slate-900 dark:text-slate-100"${_scopeId}>${ssrInterpolate(_ctx.lang().label.add)} ${ssrInterpolate(props.title)}</h2><div class="my-6 space-y-4"${_scopeId}><div class="grid grid-cols-2 gap-4"${_scopeId}><div${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$1r, {
+            _push2(ssrRenderComponent(_sfc_main$1s, {
               for: "name",
               value: _ctx.lang().label.name
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$1p, {
+            _push2(ssrRenderComponent(_sfc_main$1q, {
               id: "name",
               type: "text",
               class: "mt-1 block w-full",
@@ -12881,16 +12965,16 @@ const _sfc_main$4 = {
               placeholder: _ctx.lang().placeholder.name,
               error: unref(form).errors.name
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$1q, {
+            _push2(ssrRenderComponent(_sfc_main$1r, {
               class: "mt-2",
               message: unref(form).errors.name
             }, null, _parent2, _scopeId));
             _push2(`</div><div${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$1r, {
+            _push2(ssrRenderComponent(_sfc_main$1s, {
               for: "email",
               value: _ctx.lang().label.email
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$1p, {
+            _push2(ssrRenderComponent(_sfc_main$1q, {
               id: "email",
               type: "email",
               class: "mt-1 block w-full",
@@ -12899,16 +12983,16 @@ const _sfc_main$4 = {
               placeholder: _ctx.lang().placeholder.email,
               error: unref(form).errors.email
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$1q, {
+            _push2(ssrRenderComponent(_sfc_main$1r, {
               class: "mt-2",
               message: unref(form).errors.email
             }, null, _parent2, _scopeId));
             _push2(`</div></div><div class="grid grid-cols-2 gap-4"${_scopeId}><div${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$1r, {
+            _push2(ssrRenderComponent(_sfc_main$1s, {
               for: "password",
               value: _ctx.lang().label.password
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$1p, {
+            _push2(ssrRenderComponent(_sfc_main$1q, {
               id: "password",
               type: "password",
               class: "mt-1 block w-full",
@@ -12917,16 +13001,16 @@ const _sfc_main$4 = {
               placeholder: _ctx.lang().placeholder.password,
               error: unref(form).errors.password
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$1q, {
+            _push2(ssrRenderComponent(_sfc_main$1r, {
               class: "mt-2",
               message: unref(form).errors.password
             }, null, _parent2, _scopeId));
             _push2(`</div><div${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$1r, {
+            _push2(ssrRenderComponent(_sfc_main$1s, {
               for: "password_confirmation",
               value: _ctx.lang().label.password_confirmation
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$1p, {
+            _push2(ssrRenderComponent(_sfc_main$1q, {
               id: "password_confirmation",
               type: "password",
               class: "mt-1 block w-full",
@@ -12935,16 +13019,16 @@ const _sfc_main$4 = {
               placeholder: _ctx.lang().placeholder.password_confirmation,
               error: unref(form).errors.password_confirmation
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$1q, {
+            _push2(ssrRenderComponent(_sfc_main$1r, {
               class: "mt-2",
               message: unref(form).errors.password_confirmation
             }, null, _parent2, _scopeId));
             _push2(`</div></div><div class="grid grid-cols-2 gap-4"${_scopeId}><div${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$1r, {
+            _push2(ssrRenderComponent(_sfc_main$1s, {
               for: "role",
               value: _ctx.lang().label.role
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$11, {
+            _push2(ssrRenderComponent(_sfc_main$12, {
               id: "role",
               class: "mt-1 block w-full",
               modelValue: unref(form).role,
@@ -12952,12 +13036,12 @@ const _sfc_main$4 = {
               required: "",
               dataSet: unref(roles)
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$1q, {
+            _push2(ssrRenderComponent(_sfc_main$1r, {
               class: "mt-2",
               message: unref(form).errors.role
             }, null, _parent2, _scopeId));
             _push2(`</div></div></div><div class="flex justify-end"${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$1i, {
+            _push2(ssrRenderComponent(_sfc_main$1j, {
               disabled: unref(form).processing,
               onClick: ($event) => emit("close")
             }, {
@@ -12972,7 +13056,7 @@ const _sfc_main$4 = {
               }),
               _: 1
             }, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$1j, {
+            _push2(ssrRenderComponent(_sfc_main$1k, {
               class: ["ml-3", { "opacity-25": unref(form).processing }],
               disabled: unref(form).processing,
               onClick: create
@@ -12999,11 +13083,11 @@ const _sfc_main$4 = {
                 createVNode("div", { class: "my-6 space-y-4" }, [
                   createVNode("div", { class: "grid grid-cols-2 gap-4" }, [
                     createVNode("div", null, [
-                      createVNode(_sfc_main$1r, {
+                      createVNode(_sfc_main$1s, {
                         for: "name",
                         value: _ctx.lang().label.name
                       }, null, 8, ["value"]),
-                      createVNode(_sfc_main$1p, {
+                      createVNode(_sfc_main$1q, {
                         id: "name",
                         type: "text",
                         class: "mt-1 block w-full",
@@ -13013,17 +13097,17 @@ const _sfc_main$4 = {
                         placeholder: _ctx.lang().placeholder.name,
                         error: unref(form).errors.name
                       }, null, 8, ["modelValue", "onUpdate:modelValue", "placeholder", "error"]),
-                      createVNode(_sfc_main$1q, {
+                      createVNode(_sfc_main$1r, {
                         class: "mt-2",
                         message: unref(form).errors.name
                       }, null, 8, ["message"])
                     ]),
                     createVNode("div", null, [
-                      createVNode(_sfc_main$1r, {
+                      createVNode(_sfc_main$1s, {
                         for: "email",
                         value: _ctx.lang().label.email
                       }, null, 8, ["value"]),
-                      createVNode(_sfc_main$1p, {
+                      createVNode(_sfc_main$1q, {
                         id: "email",
                         type: "email",
                         class: "mt-1 block w-full",
@@ -13032,7 +13116,7 @@ const _sfc_main$4 = {
                         placeholder: _ctx.lang().placeholder.email,
                         error: unref(form).errors.email
                       }, null, 8, ["modelValue", "onUpdate:modelValue", "placeholder", "error"]),
-                      createVNode(_sfc_main$1q, {
+                      createVNode(_sfc_main$1r, {
                         class: "mt-2",
                         message: unref(form).errors.email
                       }, null, 8, ["message"])
@@ -13040,11 +13124,11 @@ const _sfc_main$4 = {
                   ]),
                   createVNode("div", { class: "grid grid-cols-2 gap-4" }, [
                     createVNode("div", null, [
-                      createVNode(_sfc_main$1r, {
+                      createVNode(_sfc_main$1s, {
                         for: "password",
                         value: _ctx.lang().label.password
                       }, null, 8, ["value"]),
-                      createVNode(_sfc_main$1p, {
+                      createVNode(_sfc_main$1q, {
                         id: "password",
                         type: "password",
                         class: "mt-1 block w-full",
@@ -13053,17 +13137,17 @@ const _sfc_main$4 = {
                         placeholder: _ctx.lang().placeholder.password,
                         error: unref(form).errors.password
                       }, null, 8, ["modelValue", "onUpdate:modelValue", "placeholder", "error"]),
-                      createVNode(_sfc_main$1q, {
+                      createVNode(_sfc_main$1r, {
                         class: "mt-2",
                         message: unref(form).errors.password
                       }, null, 8, ["message"])
                     ]),
                     createVNode("div", null, [
-                      createVNode(_sfc_main$1r, {
+                      createVNode(_sfc_main$1s, {
                         for: "password_confirmation",
                         value: _ctx.lang().label.password_confirmation
                       }, null, 8, ["value"]),
-                      createVNode(_sfc_main$1p, {
+                      createVNode(_sfc_main$1q, {
                         id: "password_confirmation",
                         type: "password",
                         class: "mt-1 block w-full",
@@ -13072,7 +13156,7 @@ const _sfc_main$4 = {
                         placeholder: _ctx.lang().placeholder.password_confirmation,
                         error: unref(form).errors.password_confirmation
                       }, null, 8, ["modelValue", "onUpdate:modelValue", "placeholder", "error"]),
-                      createVNode(_sfc_main$1q, {
+                      createVNode(_sfc_main$1r, {
                         class: "mt-2",
                         message: unref(form).errors.password_confirmation
                       }, null, 8, ["message"])
@@ -13080,11 +13164,11 @@ const _sfc_main$4 = {
                   ]),
                   createVNode("div", { class: "grid grid-cols-2 gap-4" }, [
                     createVNode("div", null, [
-                      createVNode(_sfc_main$1r, {
+                      createVNode(_sfc_main$1s, {
                         for: "role",
                         value: _ctx.lang().label.role
                       }, null, 8, ["value"]),
-                      createVNode(_sfc_main$11, {
+                      createVNode(_sfc_main$12, {
                         id: "role",
                         class: "mt-1 block w-full",
                         modelValue: unref(form).role,
@@ -13092,7 +13176,7 @@ const _sfc_main$4 = {
                         required: "",
                         dataSet: unref(roles)
                       }, null, 8, ["modelValue", "onUpdate:modelValue", "dataSet"]),
-                      createVNode(_sfc_main$1q, {
+                      createVNode(_sfc_main$1r, {
                         class: "mt-2",
                         message: unref(form).errors.role
                       }, null, 8, ["message"])
@@ -13100,7 +13184,7 @@ const _sfc_main$4 = {
                   ])
                 ]),
                 createVNode("div", { class: "flex justify-end" }, [
-                  createVNode(_sfc_main$1i, {
+                  createVNode(_sfc_main$1j, {
                     disabled: unref(form).processing,
                     onClick: ($event) => emit("close")
                   }, {
@@ -13109,7 +13193,7 @@ const _sfc_main$4 = {
                     ]),
                     _: 1
                   }, 8, ["disabled", "onClick"]),
-                  createVNode(_sfc_main$1j, {
+                  createVNode(_sfc_main$1k, {
                     class: ["ml-3", { "opacity-25": unref(form).processing }],
                     disabled: unref(form).processing,
                     onClick: create
@@ -13167,7 +13251,7 @@ const _sfc_main$3 = {
     };
     return (_ctx, _push, _parent, _attrs) => {
       _push(`<section${ssrRenderAttrs(mergeProps({ class: "space-y-6" }, _attrs))}>`);
-      _push(ssrRenderComponent(_sfc_main$1k, {
+      _push(ssrRenderComponent(_sfc_main$1l, {
         show: props.show,
         onClose: ($event) => emit("close"),
         maxWidth: "lg"
@@ -13176,7 +13260,7 @@ const _sfc_main$3 = {
           var _a, _b;
           if (_push2) {
             _push2(`<form class="p-6"${_scopeId}><h2 class="text-lg font-medium text-slate-900 dark:text-slate-100"${_scopeId}>${ssrInterpolate(_ctx.lang().label.delete)} ${ssrInterpolate(props.title)}</h2><p class="mt-1 text-sm text-slate-600 dark:text-slate-400"${_scopeId}>${ssrInterpolate(_ctx.lang().label.delete_confirm)} <b${_scopeId}>${ssrInterpolate((_a = props.user) == null ? void 0 : _a.name)}</b>? </p><div class="mt-6 flex justify-end"${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$1i, {
+            _push2(ssrRenderComponent(_sfc_main$1j, {
               disabled: unref(form).processing,
               onClick: ($event) => emit("close")
             }, {
@@ -13191,7 +13275,7 @@ const _sfc_main$3 = {
               }),
               _: 1
             }, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$1g, {
+            _push2(ssrRenderComponent(_sfc_main$1h, {
               class: ["ml-3", { "opacity-25": unref(form).processing }],
               disabled: unref(form).processing,
               onClick: destroy
@@ -13221,7 +13305,7 @@ const _sfc_main$3 = {
                   createTextVNode("? ")
                 ]),
                 createVNode("div", { class: "mt-6 flex justify-end" }, [
-                  createVNode(_sfc_main$1i, {
+                  createVNode(_sfc_main$1j, {
                     disabled: unref(form).processing,
                     onClick: ($event) => emit("close")
                   }, {
@@ -13230,7 +13314,7 @@ const _sfc_main$3 = {
                     ]),
                     _: 1
                   }, 8, ["disabled", "onClick"]),
-                  createVNode(_sfc_main$1g, {
+                  createVNode(_sfc_main$1h, {
                     class: ["ml-3", { "opacity-25": unref(form).processing }],
                     disabled: unref(form).processing,
                     onClick: destroy
@@ -13294,7 +13378,7 @@ const _sfc_main$2 = {
     });
     return (_ctx, _push, _parent, _attrs) => {
       _push(`<section${ssrRenderAttrs(mergeProps({ class: "space-y-6" }, _attrs))}>`);
-      _push(ssrRenderComponent(_sfc_main$1k, {
+      _push(ssrRenderComponent(_sfc_main$1l, {
         show: props.show,
         onClose: ($event) => emit("close"),
         maxWidth: "lg"
@@ -13303,7 +13387,7 @@ const _sfc_main$2 = {
           var _a, _b;
           if (_push2) {
             _push2(`<form class="p-6"${_scopeId}><h2 class="text-lg font-medium text-slate-900 dark:text-slate-100"${_scopeId}>${ssrInterpolate(_ctx.lang().label.delete)} ${ssrInterpolate(props.title)}</h2><p class="mt-1 text-sm text-slate-600 dark:text-slate-400"${_scopeId}>${ssrInterpolate(_ctx.lang().label.delete_confirm)} ${ssrInterpolate((_a = props.selectedId) == null ? void 0 : _a.length)} ${ssrInterpolate(props.title)}? </p><div class="mt-6 flex justify-end"${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$1i, {
+            _push2(ssrRenderComponent(_sfc_main$1j, {
               disabled: unref(form).processing,
               onClick: ($event) => emit("close")
             }, {
@@ -13318,7 +13402,7 @@ const _sfc_main$2 = {
               }),
               _: 1
             }, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$1g, {
+            _push2(ssrRenderComponent(_sfc_main$1h, {
               class: ["ml-3", { "opacity-25": unref(form).processing }],
               disabled: unref(form).processing,
               onClick: destroy
@@ -13344,7 +13428,7 @@ const _sfc_main$2 = {
                 createVNode("h2", { class: "text-lg font-medium text-slate-900 dark:text-slate-100" }, toDisplayString(_ctx.lang().label.delete) + " " + toDisplayString(props.title), 1),
                 createVNode("p", { class: "mt-1 text-sm text-slate-600 dark:text-slate-400" }, toDisplayString(_ctx.lang().label.delete_confirm) + " " + toDisplayString((_b = props.selectedId) == null ? void 0 : _b.length) + " " + toDisplayString(props.title) + "? ", 1),
                 createVNode("div", { class: "mt-6 flex justify-end" }, [
-                  createVNode(_sfc_main$1i, {
+                  createVNode(_sfc_main$1j, {
                     disabled: unref(form).processing,
                     onClick: ($event) => emit("close")
                   }, {
@@ -13353,7 +13437,7 @@ const _sfc_main$2 = {
                     ]),
                     _: 1
                   }, 8, ["disabled", "onClick"]),
-                  createVNode(_sfc_main$1g, {
+                  createVNode(_sfc_main$1h, {
                     class: ["ml-3", { "opacity-25": unref(form).processing }],
                     disabled: unref(form).processing,
                     onClick: destroy
@@ -13433,18 +13517,18 @@ const _sfc_main$1 = {
     }));
     return (_ctx, _push, _parent, _attrs) => {
       _push(`<section${ssrRenderAttrs(mergeProps({ class: "space-y-6" }, _attrs))}>`);
-      _push(ssrRenderComponent(_sfc_main$1k, {
+      _push(ssrRenderComponent(_sfc_main$1l, {
         show: props.show,
         onClose: ($event) => emit("close")
       }, {
         default: withCtx((_, _push2, _parent2, _scopeId) => {
           if (_push2) {
             _push2(`<form class="p-6"${_scopeId}><h2 class="text-lg font-medium text-slate-900 dark:text-slate-100"${_scopeId}>${ssrInterpolate(_ctx.lang().label.edit)} ${ssrInterpolate(props.title)}</h2><div class="my-6 space-y-4"${_scopeId}><div class="grid grid-cols-2 gap-4"${_scopeId}><div${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$1r, {
+            _push2(ssrRenderComponent(_sfc_main$1s, {
               for: "name",
               value: _ctx.lang().label.name
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$1p, {
+            _push2(ssrRenderComponent(_sfc_main$1q, {
               id: "name",
               type: "text",
               class: "mt-1 block w-full",
@@ -13454,16 +13538,16 @@ const _sfc_main$1 = {
               placeholder: _ctx.lang().placeholder.name,
               error: unref(form).errors.name
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$1q, {
+            _push2(ssrRenderComponent(_sfc_main$1r, {
               class: "mt-2",
               message: unref(form).errors.name
             }, null, _parent2, _scopeId));
             _push2(`</div><div${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$1r, {
+            _push2(ssrRenderComponent(_sfc_main$1s, {
               for: "email",
               value: _ctx.lang().label.email
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$1p, {
+            _push2(ssrRenderComponent(_sfc_main$1q, {
               id: "email",
               type: "email",
               class: "mt-1 block w-full",
@@ -13472,16 +13556,16 @@ const _sfc_main$1 = {
               placeholder: _ctx.lang().placeholder.email,
               error: unref(form).errors.email
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$1q, {
+            _push2(ssrRenderComponent(_sfc_main$1r, {
               class: "mt-2",
               message: unref(form).errors.email
             }, null, _parent2, _scopeId));
             _push2(`</div></div><div class="grid grid-cols-2 gap-4"${_scopeId}><div${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$1r, {
+            _push2(ssrRenderComponent(_sfc_main$1s, {
               for: "password",
               value: _ctx.lang().label.password
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$1p, {
+            _push2(ssrRenderComponent(_sfc_main$1q, {
               id: "password",
               type: "password",
               class: "mt-1 block w-full",
@@ -13490,16 +13574,16 @@ const _sfc_main$1 = {
               placeholder: _ctx.lang().placeholder.password,
               error: unref(form).errors.password
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$1q, {
+            _push2(ssrRenderComponent(_sfc_main$1r, {
               class: "mt-2",
               message: unref(form).errors.password
             }, null, _parent2, _scopeId));
             _push2(`</div><div${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$1r, {
+            _push2(ssrRenderComponent(_sfc_main$1s, {
               for: "password_confirmation",
               value: _ctx.lang().label.password_confirmation
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$1p, {
+            _push2(ssrRenderComponent(_sfc_main$1q, {
               id: "password_confirmation",
               type: "password",
               class: "mt-1 block w-full",
@@ -13508,16 +13592,16 @@ const _sfc_main$1 = {
               placeholder: _ctx.lang().placeholder.password_confirmation,
               error: unref(form).errors.password_confirmation
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$1q, {
+            _push2(ssrRenderComponent(_sfc_main$1r, {
               class: "mt-2",
               message: unref(form).errors.password_confirmation
             }, null, _parent2, _scopeId));
             _push2(`</div></div><div class="grid grid-cols-2 gap-4"${_scopeId}><div${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$1r, {
+            _push2(ssrRenderComponent(_sfc_main$1s, {
               for: "role",
               value: _ctx.lang().label.role
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$11, {
+            _push2(ssrRenderComponent(_sfc_main$12, {
               id: "role",
               class: "mt-1 block w-full",
               modelValue: unref(form).role,
@@ -13525,12 +13609,12 @@ const _sfc_main$1 = {
               required: "",
               dataSet: unref(roles)
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$1q, {
+            _push2(ssrRenderComponent(_sfc_main$1r, {
               class: "mt-2",
               message: unref(form).errors.role
             }, null, _parent2, _scopeId));
             _push2(`</div></div></div><div class="flex justify-end"${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$1i, {
+            _push2(ssrRenderComponent(_sfc_main$1j, {
               disabled: unref(form).processing,
               onClick: ($event) => emit("close")
             }, {
@@ -13545,7 +13629,7 @@ const _sfc_main$1 = {
               }),
               _: 1
             }, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$1j, {
+            _push2(ssrRenderComponent(_sfc_main$1k, {
               class: ["ml-3", { "opacity-25": unref(form).processing }],
               disabled: unref(form).processing,
               onClick: update
@@ -13572,11 +13656,11 @@ const _sfc_main$1 = {
                 createVNode("div", { class: "my-6 space-y-4" }, [
                   createVNode("div", { class: "grid grid-cols-2 gap-4" }, [
                     createVNode("div", null, [
-                      createVNode(_sfc_main$1r, {
+                      createVNode(_sfc_main$1s, {
                         for: "name",
                         value: _ctx.lang().label.name
                       }, null, 8, ["value"]),
-                      createVNode(_sfc_main$1p, {
+                      createVNode(_sfc_main$1q, {
                         id: "name",
                         type: "text",
                         class: "mt-1 block w-full",
@@ -13586,17 +13670,17 @@ const _sfc_main$1 = {
                         placeholder: _ctx.lang().placeholder.name,
                         error: unref(form).errors.name
                       }, null, 8, ["modelValue", "onUpdate:modelValue", "placeholder", "error"]),
-                      createVNode(_sfc_main$1q, {
+                      createVNode(_sfc_main$1r, {
                         class: "mt-2",
                         message: unref(form).errors.name
                       }, null, 8, ["message"])
                     ]),
                     createVNode("div", null, [
-                      createVNode(_sfc_main$1r, {
+                      createVNode(_sfc_main$1s, {
                         for: "email",
                         value: _ctx.lang().label.email
                       }, null, 8, ["value"]),
-                      createVNode(_sfc_main$1p, {
+                      createVNode(_sfc_main$1q, {
                         id: "email",
                         type: "email",
                         class: "mt-1 block w-full",
@@ -13605,7 +13689,7 @@ const _sfc_main$1 = {
                         placeholder: _ctx.lang().placeholder.email,
                         error: unref(form).errors.email
                       }, null, 8, ["modelValue", "onUpdate:modelValue", "placeholder", "error"]),
-                      createVNode(_sfc_main$1q, {
+                      createVNode(_sfc_main$1r, {
                         class: "mt-2",
                         message: unref(form).errors.email
                       }, null, 8, ["message"])
@@ -13613,11 +13697,11 @@ const _sfc_main$1 = {
                   ]),
                   createVNode("div", { class: "grid grid-cols-2 gap-4" }, [
                     createVNode("div", null, [
-                      createVNode(_sfc_main$1r, {
+                      createVNode(_sfc_main$1s, {
                         for: "password",
                         value: _ctx.lang().label.password
                       }, null, 8, ["value"]),
-                      createVNode(_sfc_main$1p, {
+                      createVNode(_sfc_main$1q, {
                         id: "password",
                         type: "password",
                         class: "mt-1 block w-full",
@@ -13626,17 +13710,17 @@ const _sfc_main$1 = {
                         placeholder: _ctx.lang().placeholder.password,
                         error: unref(form).errors.password
                       }, null, 8, ["modelValue", "onUpdate:modelValue", "placeholder", "error"]),
-                      createVNode(_sfc_main$1q, {
+                      createVNode(_sfc_main$1r, {
                         class: "mt-2",
                         message: unref(form).errors.password
                       }, null, 8, ["message"])
                     ]),
                     createVNode("div", null, [
-                      createVNode(_sfc_main$1r, {
+                      createVNode(_sfc_main$1s, {
                         for: "password_confirmation",
                         value: _ctx.lang().label.password_confirmation
                       }, null, 8, ["value"]),
-                      createVNode(_sfc_main$1p, {
+                      createVNode(_sfc_main$1q, {
                         id: "password_confirmation",
                         type: "password",
                         class: "mt-1 block w-full",
@@ -13645,7 +13729,7 @@ const _sfc_main$1 = {
                         placeholder: _ctx.lang().placeholder.password_confirmation,
                         error: unref(form).errors.password_confirmation
                       }, null, 8, ["modelValue", "onUpdate:modelValue", "placeholder", "error"]),
-                      createVNode(_sfc_main$1q, {
+                      createVNode(_sfc_main$1r, {
                         class: "mt-2",
                         message: unref(form).errors.password_confirmation
                       }, null, 8, ["message"])
@@ -13653,11 +13737,11 @@ const _sfc_main$1 = {
                   ]),
                   createVNode("div", { class: "grid grid-cols-2 gap-4" }, [
                     createVNode("div", null, [
-                      createVNode(_sfc_main$1r, {
+                      createVNode(_sfc_main$1s, {
                         for: "role",
                         value: _ctx.lang().label.role
                       }, null, 8, ["value"]),
-                      createVNode(_sfc_main$11, {
+                      createVNode(_sfc_main$12, {
                         id: "role",
                         class: "mt-1 block w-full",
                         modelValue: unref(form).role,
@@ -13665,7 +13749,7 @@ const _sfc_main$1 = {
                         required: "",
                         dataSet: unref(roles)
                       }, null, 8, ["modelValue", "onUpdate:modelValue", "dataSet"]),
-                      createVNode(_sfc_main$1q, {
+                      createVNode(_sfc_main$1r, {
                         class: "mt-2",
                         message: unref(form).errors.role
                       }, null, 8, ["message"])
@@ -13673,7 +13757,7 @@ const _sfc_main$1 = {
                   ])
                 ]),
                 createVNode("div", { class: "flex justify-end" }, [
-                  createVNode(_sfc_main$1i, {
+                  createVNode(_sfc_main$1j, {
                     disabled: unref(form).processing,
                     onClick: ($event) => emit("close")
                   }, {
@@ -13682,7 +13766,7 @@ const _sfc_main$1 = {
                     ]),
                     _: 1
                   }, 8, ["disabled", "onClick"]),
-                  createVNode(_sfc_main$1j, {
+                  createVNode(_sfc_main$1k, {
                     class: ["ml-3", { "opacity-25": unref(form).processing }],
                     disabled: unref(form).processing,
                     onClick: update
@@ -13782,15 +13866,15 @@ const _sfc_main = {
       _push(ssrRenderComponent(unref(Head), {
         title: props.title
       }, null, _parent));
-      _push(ssrRenderComponent(_sfc_main$13, null, {
+      _push(ssrRenderComponent(_sfc_main$14, null, {
         default: withCtx((_2, _push2, _parent2, _scopeId) => {
           if (_push2) {
-            _push2(ssrRenderComponent(_sfc_main$12, {
+            _push2(ssrRenderComponent(_sfc_main$13, {
               title: __props.title,
               breadcrumbs: __props.breadcrumbs
             }, null, _parent2, _scopeId));
             _push2(`<div class="space-y-4"${_scopeId}><div class="px-4 sm:px-0"${_scopeId}><div class="rounded-lg overflow-hidden w-fit"${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$1j, {
+            _push2(ssrRenderComponent(_sfc_main$1k, {
               style: _ctx.can(["create user"]) ? null : { display: "none" },
               class: "rounded-none",
               onClick: ($event) => data.createOpen = true
@@ -13832,12 +13916,12 @@ const _sfc_main = {
               title: props.title
             }, null, _parent2, _scopeId));
             _push2(`</div></div><div class="relative bg-white dark:bg-slate-800 shadow sm:rounded-lg"${_scopeId}><div class="flex justify-between p-2"${_scopeId}><div class="flex space-x-2"${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$11, {
+            _push2(ssrRenderComponent(_sfc_main$12, {
               modelValue: data.params.perPage,
               "onUpdate:modelValue": ($event) => data.params.perPage = $event,
               dataSet: data.dataSet
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$1g, mergeProps({
+            _push2(ssrRenderComponent(_sfc_main$1h, mergeProps({
               onClick: ($event) => data.deleteBulkOpen = true,
               style: data.selectedId.length != 0 && _ctx.can(["delete user"]) ? null : { display: "none" },
               class: "px-3 py-1.5"
@@ -13854,7 +13938,7 @@ const _sfc_main = {
               _: 1
             }, _parent2, _scopeId));
             _push2(`</div>`);
-            _push2(ssrRenderComponent(_sfc_main$1p, {
+            _push2(ssrRenderComponent(_sfc_main$1q, {
               modelValue: data.params.search,
               "onUpdate:modelValue": ($event) => data.params.search = $event,
               type: "text",
@@ -13862,7 +13946,7 @@ const _sfc_main = {
               placeholder: _ctx.lang().placeholder.search
             }, null, _parent2, _scopeId));
             _push2(`</div><div class="overflow-x-auto scrollbar-table"${_scopeId}><table class="w-full"${_scopeId}><thead class="uppercase text-sm border-t border-slate-200 dark:border-slate-700"${_scopeId}><tr class="dark:bg-slate-900/50 text-left"${_scopeId}><th class="px-2 py-4 text-center"${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$1o, {
+            _push2(ssrRenderComponent(_sfc_main$1p, {
               checked: data.multipleSelect,
               "onUpdate:checked": ($event) => data.multipleSelect = $event,
               onChange: selectAll
@@ -13883,7 +13967,7 @@ const _sfc_main = {
                 style: user.email_verified_at ? null : { display: "none" }
               }, null, _parent2, _scopeId));
               _push2(`</span></td><td class="whitespace-nowrap py-4 px-2 sm:py-3"${_scopeId}>${ssrInterpolate(user.email)}</td><td class="whitespace-nowrap py-4 px-2 sm:py-3"${_scopeId}>${ssrInterpolate(user.roles.length == 0 ? "not selected" : user.roles[0].name)}</td><td class="whitespace-nowrap py-4 px-2 sm:py-3"${_scopeId}>${ssrInterpolate(user.created_at)}</td><td class="whitespace-nowrap py-4 px-2 sm:py-3"${_scopeId}>${ssrInterpolate(user.updated_at)}</td><td class="whitespace-nowrap py-4 px-2 sm:py-3"${_scopeId}><div class="flex justify-center items-center"${_scopeId}><div class="rounded-md overflow-hidden"${_scopeId}>`);
-              _push2(ssrRenderComponent(_sfc_main$10, mergeProps({
+              _push2(ssrRenderComponent(_sfc_main$11, mergeProps({
                 style: _ctx.can(["update user"]) ? null : { display: "none" },
                 type: "button",
                 onClick: ($event) => (data.editOpen = true, data.user = user),
@@ -13900,7 +13984,7 @@ const _sfc_main = {
                 }),
                 _: 2
               }, _parent2, _scopeId));
-              _push2(ssrRenderComponent(_sfc_main$1g, mergeProps({
+              _push2(ssrRenderComponent(_sfc_main$1h, mergeProps({
                 style: _ctx.can(["delete user"]) ? null : { display: "none" },
                 type: "button",
                 onClick: ($event) => (data.deleteOpen = true, data.user = user),
@@ -13931,14 +14015,14 @@ const _sfc_main = {
             _push2(`</div></div></div>`);
           } else {
             return [
-              createVNode(_sfc_main$12, {
+              createVNode(_sfc_main$13, {
                 title: __props.title,
                 breadcrumbs: __props.breadcrumbs
               }, null, 8, ["title", "breadcrumbs"]),
               createVNode("div", { class: "space-y-4" }, [
                 createVNode("div", { class: "px-4 sm:px-0" }, [
                   createVNode("div", { class: "rounded-lg overflow-hidden w-fit" }, [
-                    withDirectives(createVNode(_sfc_main$1j, {
+                    withDirectives(createVNode(_sfc_main$1k, {
                       class: "rounded-none",
                       onClick: ($event) => data.createOpen = true
                     }, {
@@ -13979,12 +14063,12 @@ const _sfc_main = {
                 createVNode("div", { class: "relative bg-white dark:bg-slate-800 shadow sm:rounded-lg" }, [
                   createVNode("div", { class: "flex justify-between p-2" }, [
                     createVNode("div", { class: "flex space-x-2" }, [
-                      createVNode(_sfc_main$11, {
+                      createVNode(_sfc_main$12, {
                         modelValue: data.params.perPage,
                         "onUpdate:modelValue": ($event) => data.params.perPage = $event,
                         dataSet: data.dataSet
                       }, null, 8, ["modelValue", "onUpdate:modelValue", "dataSet"]),
-                      withDirectives((openBlock(), createBlock(_sfc_main$1g, {
+                      withDirectives((openBlock(), createBlock(_sfc_main$1h, {
                         onClick: ($event) => data.deleteBulkOpen = true,
                         class: "px-3 py-1.5"
                       }, {
@@ -14000,7 +14084,7 @@ const _sfc_main = {
                         [_directive_tooltip, _ctx.lang().tooltip.delete_selected]
                       ])
                     ]),
-                    createVNode(_sfc_main$1p, {
+                    createVNode(_sfc_main$1q, {
                       modelValue: data.params.search,
                       "onUpdate:modelValue": ($event) => data.params.search = $event,
                       type: "text",
@@ -14013,7 +14097,7 @@ const _sfc_main = {
                       createVNode("thead", { class: "uppercase text-sm border-t border-slate-200 dark:border-slate-700" }, [
                         createVNode("tr", { class: "dark:bg-slate-900/50 text-left" }, [
                           createVNode("th", { class: "px-2 py-4 text-center" }, [
-                            createVNode(_sfc_main$1o, {
+                            createVNode(_sfc_main$1p, {
                               checked: data.multipleSelect,
                               "onUpdate:checked": ($event) => data.multipleSelect = $event,
                               onChange: selectAll
@@ -14093,7 +14177,7 @@ const _sfc_main = {
                             createVNode("td", { class: "whitespace-nowrap py-4 px-2 sm:py-3" }, [
                               createVNode("div", { class: "flex justify-center items-center" }, [
                                 createVNode("div", { class: "rounded-md overflow-hidden" }, [
-                                  withDirectives((openBlock(), createBlock(_sfc_main$10, {
+                                  withDirectives((openBlock(), createBlock(_sfc_main$11, {
                                     type: "button",
                                     onClick: ($event) => (data.editOpen = true, data.user = user),
                                     class: "px-2 py-1.5 rounded-none"
@@ -14106,7 +14190,7 @@ const _sfc_main = {
                                     [vShow, _ctx.can(["update user"])],
                                     [_directive_tooltip, _ctx.lang().tooltip.edit]
                                   ]),
-                                  withDirectives((openBlock(), createBlock(_sfc_main$1g, {
+                                  withDirectives((openBlock(), createBlock(_sfc_main$1h, {
                                     type: "button",
                                     onClick: ($event) => (data.deleteOpen = true, data.user = user),
                                     class: "px-2 py-1.5 rounded-none"
