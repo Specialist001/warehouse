@@ -16,4 +16,6 @@ RUN chown -R www-data:www-data .
 RUN php artisan optimize:clear
 RUN php artisan optimize
 
+RUN chmod +x deploy.sh
+
 ENTRYPOINT ["sh", "roadrunner-entrypoint.sh"]
