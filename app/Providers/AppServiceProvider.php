@@ -19,6 +19,7 @@ use Domains\WarehouseProduct\Repositories\EloquentWarehouseProductRepository;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Facades\URL;
 use Illuminate\Support\ServiceProvider;
 use Inertia\Inertia;
 use UniSharp\LaravelFilemanager\Events\ImageWasUploaded;
@@ -63,6 +64,9 @@ class AppServiceProvider extends ServiceProvider
         });
 
 //        URL::forceScheme(env('APP_SCHEME', 'https'));
+        if (app()->environment('production')) {
+            URL::forceScheme('https');
+        }
 
         Http::globalOptions([
             'timeout' => 60,
