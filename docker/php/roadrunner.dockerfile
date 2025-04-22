@@ -12,6 +12,8 @@ WORKDIR /var/www
 
 COPY . .
 
+RUN composer install --no-interaction --prefer-dist --optimize-autoloader
+
 RUN chown -R www-data:www-data .
 RUN php artisan optimize:clear
 RUN php artisan optimize
