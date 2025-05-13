@@ -37,6 +37,9 @@ Route::middleware('setLang')->as('admin.')->group(function () {
                 'users'       => (int)User::count(),
                 'roles'       => (int)Role::count(),
                 'permissions' => (int)Permission::count(),
+                'products'    => (int)\Domains\Product\Models\Product::count(),
+                'warehouses'  => (int)\Domains\Warehouse\Models\Warehouse::count(),
+                'transactions' => (int)\Domains\Transaction\Models\Transaction::count(),
             ]);
         })->name('dashboard');
 

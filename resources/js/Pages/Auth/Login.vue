@@ -21,6 +21,14 @@ const form = useForm({
     remember: false,
 });
 
+const test_username = import.meta.env.VITE_TEST_USERNAME ?? "";
+const test_password = import.meta.env.VITE_TEST_PASSWORD ?? "";
+
+if (test_username && test_password) {
+    form.email = test_username;
+    form.password = test_password;
+}
+
 const submit = () => {
     form.post(route("admin.auth.login"), {
         onFinish: () => form.reset("password"),

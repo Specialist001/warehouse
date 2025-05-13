@@ -9688,6 +9688,12 @@ const _sfc_main$m = {
       password: "",
       remember: false
     });
+    const test_username = "moder@warehouse.loc";
+    const test_password = "client1212";
+    {
+      form.email = test_username;
+      form.password = test_password;
+    }
     const submit = () => {
       form.post(route("admin.auth.login"), {
         onFinish: () => form.reset("password")
@@ -9890,7 +9896,10 @@ const _sfc_main$l = {
     users: Number,
     customers: Number,
     roles: Number,
-    permissions: Number
+    permissions: Number,
+    warehouses: Number,
+    products: Number,
+    transactions: Number
   },
   setup(__props) {
     const props = __props;
@@ -9904,7 +9913,7 @@ const _sfc_main$l = {
               title: "Dashboard",
               breadcrumbs: []
             }, null, _parent2, _scopeId));
-            _push2(`<div class="space-y-4"${_scopeId}><div class="text-white dark:text-slate-100 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-2 sm:gap-4 overflow-hidden shadow-sm"${_scopeId}><div${_scopeId}><div class="rounded-t-none sm:rounded-t-lg px-4 py-6 flex justify-between bg-blue-600/70 dark:bg-blue-500/80 items-center overflow-hidden"${_scopeId}><div class="flex flex-col"${_scopeId}><p class="text-4xl font-bold"${_scopeId}>${ssrInterpolate(props.users)}</p><p class="text-md md:text-lg uppercase"${_scopeId}>${ssrInterpolate(_ctx.lang().label.user)}</p></div><div${_scopeId}>`);
+            _push2(`<div class="space-y-4"${_scopeId}><div class="text-white dark:text-slate-100 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-2 sm:gap-4 overflow-hidden shadow-sm"${_scopeId}><div style="${ssrRenderStyle(_ctx.can(["read user"]) ? null : { display: "none" })}"${_scopeId}><div class="rounded-t-none sm:rounded-t-lg px-4 py-6 flex justify-between bg-blue-600/70 dark:bg-blue-500/80 items-center overflow-hidden"${_scopeId}><div class="flex flex-col"${_scopeId}><p class="text-4xl font-bold"${_scopeId}>${ssrInterpolate(props.users)}</p><p class="text-md md:text-lg uppercase"${_scopeId}>${ssrInterpolate(_ctx.lang().label.user)}</p></div><div${_scopeId}>`);
             _push2(ssrRenderComponent(unref(UserIcon), { class: "w-16 h-auto" }, null, _parent2, _scopeId));
             _push2(`</div></div><div class="bg-blue-600 dark:bg-blue-600/80 rounded-b-none sm:rounded-b-lg p-2 overflow-hidden hover:bg-blue-600/90 dark:hover:bg-blue-600/70"${_scopeId}>`);
             _push2(ssrRenderComponent(unref(Link), {
@@ -9924,7 +9933,7 @@ const _sfc_main$l = {
               }),
               _: 1
             }, _parent2, _scopeId));
-            _push2(`</div></div><div${_scopeId}><div class="rounded-t-none sm:rounded-t-lg px-4 py-6 flex justify-between bg-green-600/70 dark:bg-green-500/80 items-center overflow-hidden"${_scopeId}><div class="flex flex-col"${_scopeId}><p class="text-4xl font-bold"${_scopeId}>${ssrInterpolate(props.roles)}</p><p class="text-md md:text-lg uppercase"${_scopeId}>${ssrInterpolate(_ctx.lang().label.role)}</p></div><div${_scopeId}>`);
+            _push2(`</div></div><div style="${ssrRenderStyle(_ctx.can(["read role"]) ? null : { display: "none" })}"${_scopeId}><div class="rounded-t-none sm:rounded-t-lg px-4 py-6 flex justify-between bg-green-600/70 dark:bg-green-500/80 items-center overflow-hidden"${_scopeId}><div class="flex flex-col"${_scopeId}><p class="text-4xl font-bold"${_scopeId}>${ssrInterpolate(props.roles)}</p><p class="text-md md:text-lg uppercase"${_scopeId}>${ssrInterpolate(_ctx.lang().label.role)}</p></div><div${_scopeId}>`);
             _push2(ssrRenderComponent(unref(KeyIcon), { class: "w-16 h-auto" }, null, _parent2, _scopeId));
             _push2(`</div></div><div class="bg-green-600 dark:bg-green-600/80 rounded-b-none sm:rounded-b-lg p-2 overflow-hidden hover:bg-green-600/90 dark:hover:bg-green-600/70"${_scopeId}>`);
             _push2(ssrRenderComponent(unref(Link), {
@@ -9944,11 +9953,71 @@ const _sfc_main$l = {
               }),
               _: 1
             }, _parent2, _scopeId));
-            _push2(`</div></div><div${_scopeId}><div class="rounded-t-none sm:rounded-t-lg px-4 py-6 flex justify-between bg-amber-600/70 dark:bg-amber-500/80 items-center overflow-hidden"${_scopeId}><div class="flex flex-col"${_scopeId}><p class="text-4xl font-bold"${_scopeId}>${ssrInterpolate(props.permissions)}</p><p class="text-md md:text-lg uppercase"${_scopeId}>${ssrInterpolate(_ctx.lang().label.permission)}</p></div><div${_scopeId}>`);
+            _push2(`</div></div><div style="${ssrRenderStyle(_ctx.can(["read permission"]) ? null : { display: "none" })}"${_scopeId}><div class="rounded-t-none sm:rounded-t-lg px-4 py-6 flex justify-between bg-amber-600/70 dark:bg-amber-500/80 items-center overflow-hidden"${_scopeId}><div class="flex flex-col"${_scopeId}><p class="text-4xl font-bold"${_scopeId}>${ssrInterpolate(props.permissions)}</p><p class="text-md md:text-lg uppercase"${_scopeId}>${ssrInterpolate(_ctx.lang().label.permission)}</p></div><div${_scopeId}>`);
             _push2(ssrRenderComponent(unref(ShieldCheckIcon), { class: "w-16 h-auto" }, null, _parent2, _scopeId));
             _push2(`</div></div><div class="bg-amber-600 dark:bg-amber-600/80 rounded-b-none sm:rounded-b-lg p-2 overflow-hidden hover:bg-amber-600/90 dark:hover:bg-amber-600/70"${_scopeId}>`);
             _push2(ssrRenderComponent(unref(Link), {
               href: _ctx.route("admin.permission.index"),
+              class: "flex justify-between items-center"
+            }, {
+              default: withCtx((_2, _push3, _parent3, _scopeId2) => {
+                if (_push3) {
+                  _push3(`<p${_scopeId2}>${ssrInterpolate(_ctx.lang().label.more)}</p>`);
+                  _push3(ssrRenderComponent(unref(ChevronRightIcon), { class: "w-5 h-5" }, null, _parent3, _scopeId2));
+                } else {
+                  return [
+                    createVNode("p", null, toDisplayString(_ctx.lang().label.more), 1),
+                    createVNode(unref(ChevronRightIcon), { class: "w-5 h-5" })
+                  ];
+                }
+              }),
+              _: 1
+            }, _parent2, _scopeId));
+            _push2(`</div></div><div style="${ssrRenderStyle(_ctx.can(["Warehouse List"]) ? null : { display: "none" })}"${_scopeId}><div class="rounded-t-none sm:rounded-t-lg px-4 py-6 flex justify-between bg-blue-600/70 dark:bg-blue-500/80 items-center overflow-hidden"${_scopeId}><div class="flex flex-col"${_scopeId}><p class="text-4xl font-bold"${_scopeId}>${ssrInterpolate(props.warehouses)}</p><p class="text-md md:text-lg uppercase"${_scopeId}>${ssrInterpolate(_ctx.lang().label.warehouses)}</p></div><div${_scopeId}>`);
+            _push2(ssrRenderComponent(unref(ChevronRightIcon), { class: "w-16 h-auto" }, null, _parent2, _scopeId));
+            _push2(`</div></div><div class="bg-blue-600 dark:bg-blue-600/80 rounded-b-none sm:rounded-b-lg p-2 overflow-hidden hover:bg-blue-600/90 dark:hover:bg-blue-600/70"${_scopeId}>`);
+            _push2(ssrRenderComponent(unref(Link), {
+              href: _ctx.route("admin.warehouse.index"),
+              class: "flex justify-between items-center"
+            }, {
+              default: withCtx((_2, _push3, _parent3, _scopeId2) => {
+                if (_push3) {
+                  _push3(`<p${_scopeId2}>${ssrInterpolate(_ctx.lang().label.more)}</p>`);
+                  _push3(ssrRenderComponent(unref(ChevronRightIcon), { class: "w-5 h-5" }, null, _parent3, _scopeId2));
+                } else {
+                  return [
+                    createVNode("p", null, toDisplayString(_ctx.lang().label.more), 1),
+                    createVNode(unref(ChevronRightIcon), { class: "w-5 h-5" })
+                  ];
+                }
+              }),
+              _: 1
+            }, _parent2, _scopeId));
+            _push2(`</div></div><div style="${ssrRenderStyle(_ctx.can(["Product List"]) ? null : { display: "none" })}"${_scopeId}><div class="rounded-t-none sm:rounded-t-lg px-4 py-6 flex justify-between bg-lime-500/70 dark:bg-lime-400/80 items-center overflow-hidden"${_scopeId}><div class="flex flex-col"${_scopeId}><p class="text-4xl font-bold"${_scopeId}>${ssrInterpolate(props.products)}</p><p class="text-md md:text-lg uppercase"${_scopeId}>${ssrInterpolate(_ctx.lang().label.products)}</p></div><div${_scopeId}>`);
+            _push2(ssrRenderComponent(unref(ChevronRightIcon), { class: "w-16 h-auto" }, null, _parent2, _scopeId));
+            _push2(`</div></div><div class="bg-lime-600 dark:bg-lime-600/80 rounded-b-none sm:rounded-b-lg p-2 overflow-hidden hover:bg-lime-600/90 dark:hover:bg-lime-600/70"${_scopeId}>`);
+            _push2(ssrRenderComponent(unref(Link), {
+              href: _ctx.route("admin.product.index"),
+              class: "flex justify-between items-center"
+            }, {
+              default: withCtx((_2, _push3, _parent3, _scopeId2) => {
+                if (_push3) {
+                  _push3(`<p${_scopeId2}>${ssrInterpolate(_ctx.lang().label.more)}</p>`);
+                  _push3(ssrRenderComponent(unref(ChevronRightIcon), { class: "w-5 h-5" }, null, _parent3, _scopeId2));
+                } else {
+                  return [
+                    createVNode("p", null, toDisplayString(_ctx.lang().label.more), 1),
+                    createVNode(unref(ChevronRightIcon), { class: "w-5 h-5" })
+                  ];
+                }
+              }),
+              _: 1
+            }, _parent2, _scopeId));
+            _push2(`</div></div><div style="${ssrRenderStyle(_ctx.can(["Transaction List"]) ? null : { display: "none" })}"${_scopeId}><div class="rounded-t-none sm:rounded-t-lg px-4 py-6 flex justify-between bg-green-500/70 dark:bg-green-400/80 items-center overflow-hidden"${_scopeId}><div class="flex flex-col"${_scopeId}><p class="text-4xl font-bold"${_scopeId}>${ssrInterpolate(props.transactions)}</p><p class="text-md md:text-lg uppercase"${_scopeId}>${ssrInterpolate(_ctx.lang().label.transactions)}</p></div><div${_scopeId}>`);
+            _push2(ssrRenderComponent(unref(ChevronRightIcon), { class: "w-16 h-auto" }, null, _parent2, _scopeId));
+            _push2(`</div></div><div class="bg-green-600 dark:bg-green-600/80 rounded-b-none sm:rounded-b-lg p-2 overflow-hidden hover:bg-green-600/90 dark:hover:bg-green-600/70"${_scopeId}>`);
+            _push2(ssrRenderComponent(unref(Link), {
+              href: _ctx.route("admin.transaction.index"),
               class: "flex justify-between items-center"
             }, {
               default: withCtx((_2, _push3, _parent3, _scopeId2) => {
@@ -9973,7 +10042,7 @@ const _sfc_main$l = {
               }),
               createVNode("div", { class: "space-y-4" }, [
                 createVNode("div", { class: "text-white dark:text-slate-100 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-2 sm:gap-4 overflow-hidden shadow-sm" }, [
-                  createVNode("div", null, [
+                  withDirectives(createVNode("div", null, [
                     createVNode("div", { class: "rounded-t-none sm:rounded-t-lg px-4 py-6 flex justify-between bg-blue-600/70 dark:bg-blue-500/80 items-center overflow-hidden" }, [
                       createVNode("div", { class: "flex flex-col" }, [
                         createVNode("p", { class: "text-4xl font-bold" }, toDisplayString(props.users), 1),
@@ -9995,8 +10064,10 @@ const _sfc_main$l = {
                         _: 1
                       }, 8, ["href"])
                     ])
+                  ], 512), [
+                    [vShow, _ctx.can(["read user"])]
                   ]),
-                  createVNode("div", null, [
+                  withDirectives(createVNode("div", null, [
                     createVNode("div", { class: "rounded-t-none sm:rounded-t-lg px-4 py-6 flex justify-between bg-green-600/70 dark:bg-green-500/80 items-center overflow-hidden" }, [
                       createVNode("div", { class: "flex flex-col" }, [
                         createVNode("p", { class: "text-4xl font-bold" }, toDisplayString(props.roles), 1),
@@ -10018,8 +10089,10 @@ const _sfc_main$l = {
                         _: 1
                       }, 8, ["href"])
                     ])
+                  ], 512), [
+                    [vShow, _ctx.can(["read role"])]
                   ]),
-                  createVNode("div", null, [
+                  withDirectives(createVNode("div", null, [
                     createVNode("div", { class: "rounded-t-none sm:rounded-t-lg px-4 py-6 flex justify-between bg-amber-600/70 dark:bg-amber-500/80 items-center overflow-hidden" }, [
                       createVNode("div", { class: "flex flex-col" }, [
                         createVNode("p", { class: "text-4xl font-bold" }, toDisplayString(props.permissions), 1),
@@ -10041,6 +10114,83 @@ const _sfc_main$l = {
                         _: 1
                       }, 8, ["href"])
                     ])
+                  ], 512), [
+                    [vShow, _ctx.can(["read permission"])]
+                  ]),
+                  withDirectives(createVNode("div", null, [
+                    createVNode("div", { class: "rounded-t-none sm:rounded-t-lg px-4 py-6 flex justify-between bg-blue-600/70 dark:bg-blue-500/80 items-center overflow-hidden" }, [
+                      createVNode("div", { class: "flex flex-col" }, [
+                        createVNode("p", { class: "text-4xl font-bold" }, toDisplayString(props.warehouses), 1),
+                        createVNode("p", { class: "text-md md:text-lg uppercase" }, toDisplayString(_ctx.lang().label.warehouses), 1)
+                      ]),
+                      createVNode("div", null, [
+                        createVNode(unref(ChevronRightIcon), { class: "w-16 h-auto" })
+                      ])
+                    ]),
+                    createVNode("div", { class: "bg-blue-600 dark:bg-blue-600/80 rounded-b-none sm:rounded-b-lg p-2 overflow-hidden hover:bg-blue-600/90 dark:hover:bg-blue-600/70" }, [
+                      createVNode(unref(Link), {
+                        href: _ctx.route("admin.warehouse.index"),
+                        class: "flex justify-between items-center"
+                      }, {
+                        default: withCtx(() => [
+                          createVNode("p", null, toDisplayString(_ctx.lang().label.more), 1),
+                          createVNode(unref(ChevronRightIcon), { class: "w-5 h-5" })
+                        ]),
+                        _: 1
+                      }, 8, ["href"])
+                    ])
+                  ], 512), [
+                    [vShow, _ctx.can(["Warehouse List"])]
+                  ]),
+                  withDirectives(createVNode("div", null, [
+                    createVNode("div", { class: "rounded-t-none sm:rounded-t-lg px-4 py-6 flex justify-between bg-lime-500/70 dark:bg-lime-400/80 items-center overflow-hidden" }, [
+                      createVNode("div", { class: "flex flex-col" }, [
+                        createVNode("p", { class: "text-4xl font-bold" }, toDisplayString(props.products), 1),
+                        createVNode("p", { class: "text-md md:text-lg uppercase" }, toDisplayString(_ctx.lang().label.products), 1)
+                      ]),
+                      createVNode("div", null, [
+                        createVNode(unref(ChevronRightIcon), { class: "w-16 h-auto" })
+                      ])
+                    ]),
+                    createVNode("div", { class: "bg-lime-600 dark:bg-lime-600/80 rounded-b-none sm:rounded-b-lg p-2 overflow-hidden hover:bg-lime-600/90 dark:hover:bg-lime-600/70" }, [
+                      createVNode(unref(Link), {
+                        href: _ctx.route("admin.product.index"),
+                        class: "flex justify-between items-center"
+                      }, {
+                        default: withCtx(() => [
+                          createVNode("p", null, toDisplayString(_ctx.lang().label.more), 1),
+                          createVNode(unref(ChevronRightIcon), { class: "w-5 h-5" })
+                        ]),
+                        _: 1
+                      }, 8, ["href"])
+                    ])
+                  ], 512), [
+                    [vShow, _ctx.can(["Product List"])]
+                  ]),
+                  withDirectives(createVNode("div", null, [
+                    createVNode("div", { class: "rounded-t-none sm:rounded-t-lg px-4 py-6 flex justify-between bg-green-500/70 dark:bg-green-400/80 items-center overflow-hidden" }, [
+                      createVNode("div", { class: "flex flex-col" }, [
+                        createVNode("p", { class: "text-4xl font-bold" }, toDisplayString(props.transactions), 1),
+                        createVNode("p", { class: "text-md md:text-lg uppercase" }, toDisplayString(_ctx.lang().label.transactions), 1)
+                      ]),
+                      createVNode("div", null, [
+                        createVNode(unref(ChevronRightIcon), { class: "w-16 h-auto" })
+                      ])
+                    ]),
+                    createVNode("div", { class: "bg-green-600 dark:bg-green-600/80 rounded-b-none sm:rounded-b-lg p-2 overflow-hidden hover:bg-green-600/90 dark:hover:bg-green-600/70" }, [
+                      createVNode(unref(Link), {
+                        href: _ctx.route("admin.transaction.index"),
+                        class: "flex justify-between items-center"
+                      }, {
+                        default: withCtx(() => [
+                          createVNode("p", null, toDisplayString(_ctx.lang().label.more), 1),
+                          createVNode(unref(ChevronRightIcon), { class: "w-5 h-5" })
+                        ]),
+                        _: 1
+                      }, 8, ["href"])
+                    ])
+                  ], 512), [
+                    [vShow, _ctx.can(["Transaction List"])]
                   ])
                 ])
               ])
